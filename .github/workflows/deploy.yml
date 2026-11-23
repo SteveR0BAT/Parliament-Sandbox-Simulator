@@ -42,6 +42,16 @@ jobs:
           grep -Rni -C 24 "New Voting Issue" website/src --include="*.tsx" --include="*.ts" || true
           echo "=== Issue creation and voting mutation references ==="
           grep -RniE -C 5 "addIssue|createIssue|addVote|voteOn|voting.*issue|issue.*voting" website/src --include="*.tsx" --include="*.ts" | head -n 500 || true
+          echo "=== Exact addIssue store implementation ==="
+          nl -ba website/src/lib/store.ts | sed -n '438,475p'
+          echo "=== Active issue initialization and selection ==="
+          grep -Rni -C 4 "activeIssueId" website/src/lib website/src/components/VotingPanel.tsx --include="*.ts" --include="*.tsx" | head -n 220
+          echo "=== Issue creation defaults ==="
+          grep -Rni -A 35 -B 5 "function newIssue\|const newIssue" website/src/lib --include="*.ts" || true
+          echo "=== Full issue configuration view ==="
+          nl -ba website/src/components/VotingPanel.tsx | sed -n '145,250p'
+          echo "=== New issue UI handler ==="
+          nl -ba website/src/components/VotingPanel.tsx | sed -n '438,485p'
 
       - name: Prepare Next.js for static hosting
         run: python scripts/prepare_static.py
