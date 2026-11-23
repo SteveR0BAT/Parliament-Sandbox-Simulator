@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "parliament-sandbox-simulator.zip"
+      - "archive_parts/**"
       - ".github/workflows/deploy.yml"
       - "scripts/**"
   workflow_dispatch:
@@ -27,7 +27,8 @@ jobs:
 
       - name: Automatically extract uploaded ZIP
         run: |
-          test -f parliament-sandbox-simulator.zip
+          test -n "$(find archive_parts -maxdepth 1 -type f -name 'part-*' -print -quit)"
+          cat archive_parts/part-* | base64 --decode | xz --decompress --stdout > parliament-sandbox-simulator.zip
           mkdir website
           unzip -q parliament-sandbox-simulator.zip -d website
           test -f website/package.json
