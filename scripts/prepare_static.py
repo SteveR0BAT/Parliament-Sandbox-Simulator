@@ -148,14 +148,14 @@ export const independentsOf = (d: ProjectData) => independents(d);
         "Auto-saved in this browser. Status: ")
 
     replace_once("src/components/VotingPanel.tsx",
-        ```          <button
+        '''          <button
             className="btn btn-primary"
             onClick={() => {
               addIssue({ name: `Issue ${data.issues.length + 1}` });
               setSub("configure");
             }}
-          >```,
-        ```          <button
+          >''',
+        '''          <button
             type="button"
             className="btn btn-primary"
             onClick={() => {
@@ -173,7 +173,10 @@ export const independentsOf = (d: ProjectData) => independents(d);
                 useStore.getState().toast(`Could not create voting issue: ${message}`, "error");
               }
             }}
-          >```)
+          >''')
+    voting_panel = (ROOT / "src/components/VotingPanel.tsx").read_text(encoding="utf-8")
+    if 'type="button"' not in voting_panel or "const issueId = addIssue" not in voting_panel:
+        raise RuntimeError("New Voting Issue hardening was not applied to VotingPanel.tsx")
     shutil.rmtree(ROOT / "src/app/api", ignore_errors=True)
     shutil.rmtree(ROOT / "src/db", ignore_errors=True)
     (ROOT / "drizzle.config.json").unlink(missing_ok=True)
