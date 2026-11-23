@@ -156,7 +156,13 @@ export const independentsOf = (d: ProjectData) => independents(d);
     package["name"] = "parliament-sandbox-simulator"
     for section, dependencies in {
         "dependencies": ["dotenv", "drizzle-orm", "pg"],
-        "devDependencies": ["@types/pg", "drizzle-kit"],
+        "devDependencies": [
+            "@types/pg",
+            "drizzle-kit",
+            "typescript-eslint",
+            "@typescript-eslint/eslint-plugin",
+            "@typescript-eslint/parser",
+        ],
     }.items():
         for dependency in dependencies:
             package.get(section, {}).pop(dependency, None)
