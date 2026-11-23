@@ -147,6 +147,33 @@ export const independentsOf = (d: ProjectData) => independents(d);
         "Auto-saved to the database. Status: ",
         "Auto-saved in this browser. Status: ")
 
+    replace_once("src/components/VotingPanel.tsx",
+        ```          <button
+            className="btn btn-primary"
+            onClick={() => {
+              addIssue({ name: `Issue ${data.issues.length + 1}` });
+              setSub("configure");
+            }}
+          >```,
+        ```          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => {
+              try {
+                const issueId = addIssue({ name: `Issue ${data.issues.length + 1}` });
+                const current = useStore.getState();
+                if (!current.data.issues.some((item) => item.id === issueId)) {
+                  current.toast("The new voting issue could not be created.", "error");
+                  return;
+                }
+                current.patchUI({ activeIssueId: issueId });
+                setSub("configure");
+              } catch (error) {
+                const message = error instanceof Error ? error.message : "Unknown error";
+                useStore.getState().toast(`Could not create voting issue: ${message}`, "error");
+              }
+            }}
+          >```)
     shutil.rmtree(ROOT / "src/app/api", ignore_errors=True)
     shutil.rmtree(ROOT / "src/db", ignore_errors=True)
     (ROOT / "drizzle.config.json").unlink(missing_ok=True)
