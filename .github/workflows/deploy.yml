@@ -34,6 +34,15 @@ jobs:
           test -f website/package.json
           test -f website/src/app/page.tsx
 
+      - name: Inspect voting issue implementation
+        run: |
+          echo "=== Source files mentioning voting issue controls and handlers ==="
+          grep -RniE "New Voting Issue|new voting issue|voting issue|votingIssue|votingIssues|addVoting|createVoting" website/src --include="*.tsx" --include="*.ts" || true
+          echo "=== Context around the New Voting Issue button ==="
+          grep -Rni -C 24 "New Voting Issue" website/src --include="*.tsx" --include="*.ts" || true
+          echo "=== Issue creation and voting mutation references ==="
+          grep -RniE -C 5 "addIssue|createIssue|addVote|voteOn|voting.*issue|issue.*voting" website/src --include="*.tsx" --include="*.ts" | head -n 500 || true
+
       - name: Prepare Next.js for static hosting
         run: python scripts/prepare_static.py
 
