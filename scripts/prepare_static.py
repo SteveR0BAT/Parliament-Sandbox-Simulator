@@ -138,6 +138,45 @@ export async function saveNow(): Promise<boolean> {
 export const deputyListOf = (d: ProjectData) => deputyList(d);
 export const independentsOf = (d: ProjectData) => independents(d);
 '''
+    # Immer draft proxies cannot be passed to the browser structuredClone API.
+    # Convert draft values to plain snapshots before any structured cloning.
+    store_lines = store.splitlines()
+    immer_import_found = False
+    for line_index, line in enumerate(store_lines):
+        if 'from "immer"' in line or "from 'immer'" in line:
+            open_brace = line.find("{")
+            close_brace = line.find("}", open_brace + 1)
+            if open_brace < 0 or close_brace < 0:
+                raise RuntimeError("Could not locate named Immer imports in src/lib/store.ts")
+            imported_names = [name.strip() for name in line[open_brace + 1:close_brace].split(",")]
+            if "current" not in imported_names:
+                store_lines[line_index] = (
+                    line[:open_brace + 1] + " current, " + line[open_brace + 1:]
+                )
+            immer_import_found = True
+            break
+    if not immer_import_found:
+        raise RuntimeError("Could not find Immer import in src/lib/store.ts")
+    store = "\n".join(store_lines) + "\n"
+
+    issue_creation_call = "const i = newIssue(d.prefs, partial);"
+    if issue_creation_call not in store:
+        raise RuntimeError("Could not find newIssue call that receives the Immer prefs draft")
+    store = store.replace(
+        issue_creation_call,
+        "const i = newIssue(current(d.prefs), partial);",
+        1,
+    )
+
+    duplicate_clone_call = "const c = structuredClone(i);"
+    if duplicate_clone_call not in store:
+        raise RuntimeError("Could not find issue duplication structuredClone call")
+    store = store.replace(
+        duplicate_clone_call,
+        "const c = structuredClone(current(i));",
+        1,
+    )
+
     store_path.write_text(store, encoding="utf-8")
 
     replace_once("src/components/AppShell.tsx",
