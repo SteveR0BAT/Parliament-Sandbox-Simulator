@@ -1,12 +1,18 @@
 # Parliament Sandbox Simulator
 
-Automatic GitHub Pages deployment for the Parliament Sandbox Simulator.
+Automatic GitHub Pages publisher for the Parliament Sandbox Simulator.
 
-## How deployment works
+## One-time GitHub Pages setup
 
-The repository stores the uploaded project archive as compact base64 parts. GitHub Actions joins the parts, decodes and decompresses the archive to recover the original ZIP, extracts it, adapts the project for static hosting, builds the website, and deploys it to GitHub Pages.
+The ZIP is already stored in this repository as compact base64 archive parts. The GitHub Actions workflow joins those parts, reconstructs the original ZIP, extracts it, prepares the Next.js project for static hosting, builds the site, and deploys it.
 
-The workflow is triggered by updates to `archive_parts/**`. Future source updates can replace the archive parts, after which GitHub Actions will rebuild and republish the site.
+Before the first deployment, a repository owner must create the Pages site once:
+
+1. Open **Settings → Pages**: https://github.com/SteveR0BAT/Parliament-Sandbox-Simulator/settings/pages
+2. Under **Build and deployment → Source**, select **GitHub Actions**.
+3. Open **Actions → Publish Parliament Sandbox Simulator** and select **Run workflow**.
+
+After that initial setup, changes to `archive_parts/**` automatically trigger a rebuild and deployment.
 
 ## Public website
 
