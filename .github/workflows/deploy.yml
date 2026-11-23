@@ -41,6 +41,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+          cache-dependency-path: website/package-lock.json
 
       - name: Install dependencies
         working-directory: website
@@ -50,10 +52,11 @@ jobs:
         working-directory: website
         run: npm run build
 
+      - name: Verify static export
+        run: test -s website/out/index.html
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v3
