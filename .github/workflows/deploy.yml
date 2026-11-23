@@ -42,6 +42,11 @@ jobs:
           grep -Rni -C 24 "New Voting Issue" website/src --include="*.tsx" --include="*.ts" || true
           echo "=== Issue creation and voting mutation references ==="
           grep -RniE -C 5 "addIssue|createIssue|addVote|voteOn|voting.*issue|issue.*voting" website/src --include="*.tsx" --include="*.ts" | head -n 500 || true
+          echo "=== Shared store update/mutation helper ==="
+          nl -ba website/src/lib/store.ts | sed -n '130,245p'
+          echo "=== Voting panel configure/history render conditions ==="
+          nl -ba website/src/components/VotingPanel.tsx | sed -n '485,555p'
+          grep -n -A 14 -B 5 'sub === "configure"' website/src/components/VotingPanel.tsx || true
           echo "=== Exact addIssue store implementation ==="
           nl -ba website/src/lib/store.ts | sed -n '438,475p'
           echo "=== Active issue initialization and selection ==="
