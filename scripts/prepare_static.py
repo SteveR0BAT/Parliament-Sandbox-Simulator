@@ -227,7 +227,7 @@ export const independentsOf = (d: ProjectData) => independents(d);
     new_metadata = '''export const metadata: Metadata = {
   metadataBase: new URL("https://stever0bat.github.io/Parliament-Sandbox-Simulator/"),
   title: "Parliament Sandbox Simulator – Build Parties, Factions & Voting Systems",
-  description: "Design a custom parliament with configurable seats, parties, factions, coalitions, independents and over 100 ideologies. Simulate legislative votes with party discipline, voting behaviour and custom majority rules—all in your browser, completely free.",
+  description: "Build a custom parliament with parties, factions, coalitions, independents and 100+ ideologies. Simulate legislative votes for free in your browser.",
   applicationName: "Parliament Sandbox Simulator",
   alternates: {
     canonical: "/",
@@ -237,7 +237,7 @@ export const independentsOf = (d: ProjectData) => independents(d);
     url: "/",
     siteName: "Parliament Sandbox Simulator",
     title: "Parliament Sandbox Simulator – Build Parties, Factions & Voting Systems",
-    description: "Design a custom parliament with configurable seats, parties, factions, coalitions, independents and over 100 ideologies. Simulate legislative votes with party discipline, voting behaviour and custom majority rules—all in your browser, completely free.",
+    description: "Build a custom parliament with parties, factions, coalitions, independents and 100+ ideologies. Simulate legislative votes for free in your browser.",
   },
   twitter: {
     card: "summary",
@@ -304,7 +304,7 @@ export default function Home() {
     seo_component.write_text('''const sections = [
   {
     title: "Design the parliamentary chamber",
-    text: "Set the total number of seats and control the chamber's geometry: row layout, seats per row, seat size, spacing, curvature, orientation and the central area. Build anything from a compact assembly to a legislature with hundreds or thousands of deputies.",
+    text: "Set the total number of seats and control the chamber's geometry: row layout, seats per row, seat size, spacing, curvature, orientation and the central area. Build anything from a compact assembly to a very large legislature.",
   },
   {
     title: "Create parties, factions and coalitions",
