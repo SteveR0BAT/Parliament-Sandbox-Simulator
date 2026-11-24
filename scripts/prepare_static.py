@@ -420,7 +420,9 @@ export function SeoContent() {
     verification_source = Path(__file__).resolve().parents[1] / verification_filename
     if not verification_source.is_file():
         raise RuntimeError(f"Google Search Console verification file is missing: {verification_source}")
-    shutil.copy2(verification_source, ROOT / verification_filename)
+    public_dir = ROOT / "public"
+    public_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(verification_source, public_dir / verification_filename)
 
     sitemap_path = ROOT / "src/app/sitemap.ts"
     sitemap_path.write_text('''import type { MetadataRoute } from "next";
