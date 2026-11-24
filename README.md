@@ -1,4 +1,4 @@
-# Parliament Sandbox Simulator – Build Parties, Factions & Voting Systems
+# Parliament Sandbox Simulator - Build Parties, Factions & Voting Systems
 
 > Design a custom parliament with configurable seats, parties, factions, coalitions, independents and over 100 ideologies. Simulate legislative votes with party discipline, voting behaviour and custom majority rules—all in your browser, completely free.
 
