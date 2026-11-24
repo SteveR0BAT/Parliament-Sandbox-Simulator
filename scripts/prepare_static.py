@@ -417,6 +417,8 @@ export function SeoContent() {
     sitemap_path = ROOT / "src/app/sitemap.ts"
     sitemap_path.write_text('''import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
