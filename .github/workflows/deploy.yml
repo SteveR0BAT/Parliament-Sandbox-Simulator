@@ -7,11 +7,15 @@ on:
       - "archive_parts/**"
       - ".github/workflows/deploy.yml"
       - "scripts/**"
-      - "google5cf083c303490fdb.html"
+      - "website/**"
+      - "README.md"
+      - "LICENSE"
+      - "CONTRIBUTING.md"
+      - ".gitignore"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -25,22 +29,27 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Automatically extract uploaded ZIP
+      - name: Materialise the editable application source (one-time migration)
         run: |
-          test -n "$(find archive_parts -maxdepth 1 -type f -name 'part-*' -print -quit)"
-          cat archive_parts/part-* | base64 --decode | xz --decompress --stdout > parliament-sandbox-simulator.zip
-          mkdir website
-          unzip -q parliament-sandbox-simulator.zip -d website
-          test -f website/package.json
-          test -f website/src/app/page.tsx
-
-
-      - name: Prepare Next.js for static hosting
-        run: python scripts/prepare_static.py
-
-      - name: Add configurable generic deputy names
-        run: python scripts/add_deputy_names.py
+          if [ ! -f website/package.json ]; then
+            test -n "$(find archive_parts -maxdepth 1 -type f -name 'part-*' -print -quit)"
+            cat archive_parts/part-* | base64 --decode | xz --decompress --stdout > parliament-sandbox-simulator.zip
+            mkdir website
+            unzip -q parliament-sandbox-simulator.zip -d website
+            test -f website/package.json
+            test -f website/src/app/page.tsx
+            python scripts/prepare_static.py
+            python scripts/add_deputy_names.py
+            python scripts/upgrade_storage_and_tests.py
+            rm -rf archive_parts
+            rm -f scripts/prepare_static.py scripts/add_deputy_names.py scripts/upgrade_storage_and_tests.py
+            rmdir scripts 2>/dev/null || true
+          fi
+          test -f website/src/lib/projectStorage.ts
+          test -f website/tests/parliament.test.ts
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -51,11 +60,34 @@ jobs:
         working-directory: website
         run: npm install --no-audit --no-fund
 
+      - name: Commit the directly editable source tree
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A website README.md LICENSE CONTRIBUTING.md .gitignore
+          git add -u archive_parts scripts 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Materialise application source and modernise project storage"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Type-check application
+        working-directory: website
+        run: npm run typecheck
+
+      - name: Run parliamentary logic tests
+        working-directory: website
+        run: npm test
+
+      - name: Lint application
+        working-directory: website
+        run: npm run lint
+
       - name: Build static website
         working-directory: website
         run: npm run build
 
-      - name: Verify static export
+      - name: Verify static export and Google ownership file
         run: |
           test -s website/out/index.html
           test -s website/out/google5cf083c303490fdb.html
