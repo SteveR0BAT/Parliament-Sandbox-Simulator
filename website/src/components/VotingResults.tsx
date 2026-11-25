@@ -126,7 +126,7 @@ export function VotingResults() {
         <GroupTable title="By party" colors={vc} rows={[...tally.parties.map((p) => ({ key: p.id, name: `${p.name} (${p.abbr})`, color: p.color, counts: p.counts })), ...(tally.independents.counts.total ? [{ key: "ind", name: "Independents", color: "#94a3b8", counts: tally.independents.counts }] : [])]} />
         <GroupTable title="By coalition" colors={vc} rows={tally.coalitions.map((c: GroupRow) => ({ key: c.id, name: `${c.name} (${c.abbr})`, color: c.color, counts: c.counts }))} />
         <GroupTable title="By faction" colors={vc} rows={tally.factions.filter((f) => f.counts.total).map((f) => ({ key: f.id, name: `${f.name} · ${tally.parties.find((p) => p.id === f.partyId)?.abbr ?? ""}`, color: f.color, counts: f.counts }))} />
-        <GroupTable title="Ideological trends (deputy's effective ideology group)" colors={vc} rows={tally.categories.map((c) => ({ key: c.id, name: c.label, color: c.color, counts: c.counts }))} />
+        <GroupTable title="Ideological family voting trends" colors={vc} rows={tally.families.map((f) => ({ key: f.id, name: f.label, color: f.color, counts: f.counts }))} />
       </div>
 
       <div className="card p-3">

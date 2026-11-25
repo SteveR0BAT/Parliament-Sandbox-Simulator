@@ -1,4 +1,4 @@
-import type { CategoryId, Party, ProjectData, Role } from "./types";
+import type { IdeologyFamilyId, Party, ProjectData, Role } from "./types";
 import { deputyList, freeSeats, independents, partyDeputies } from "./parliament";
 import { lookupIdeology } from "./voting";
 
@@ -24,7 +24,8 @@ export interface Stats {
   status: string;
   statusKind: "good" | "warn" | "bad" | "info";
   coalitionSeats: { id: string; name: string; abbr: string; color: string; seats: number; parties: string[] }[];
-  categories: Record<CategoryId, number>;
+  families: Record<IdeologyFamilyId, number>;
+  axes: Record<"economic" | "social" | "authority", Record<string, number>>;
 }
 
 export function computeStats(d: ProjectData): Stats {
@@ -57,13 +58,18 @@ export function computeStats(d: ProjectData): Stats {
     statusKind = "bad";
   }
 
-  const categories = {} as Record<CategoryId, number>;
+  const families = {} as Record<IdeologyFamilyId, number>;
+  const axes: Stats["axes"] = { economic: {}, social: {}, authority: {} };
   for (const dep of deputyList(d)) {
     const party = dep.partyId ? d.parties.find((p) => p.id === dep.partyId) : undefined;
     const faction = dep.factionId ? d.factions.find((f) => f.id === dep.factionId) : undefined;
     const ideo = lookupIdeology(d.customIdeologies, dep.ideologyId) ?? lookupIdeology(d.customIdeologies, faction?.ideologyId) ?? lookupIdeology(d.customIdeologies, party?.ideologyId);
-    const k: CategoryId = ideo ? ideo.category : "unclassified";
-    categories[k] = (categories[k] ?? 0) + 1;
+    const family: IdeologyFamilyId = ideo?.family ?? "unclassified";
+    families[family] = (families[family] ?? 0) + 1;
+    for (const axis of ["economic", "social", "authority"] as const) {
+      const key = ideo?.positions[axis] === null || !ideo ? "unspecified" : String(ideo.positions[axis]);
+      axes[axis][key] = (axes[axis][key] ?? 0) + 1;
+    }
   }
 
   return {
@@ -88,6 +94,7 @@ export function computeStats(d: ProjectData): Stats {
       seats: rows.filter((r) => c.partyIds.includes(r.party.id)).reduce((a, r) => a + r.seats, 0),
       parties: c.partyIds,
     })),
-    categories,
+    families,
+    axes,
   };
 }

@@ -2,7 +2,7 @@
 import { useMemo } from "react";
 import { useStore } from "@/lib/store";
 import { computeStats } from "@/lib/stats";
-import { CATEGORIES } from "@/data/ideologies";
+import { IDEOLOGY_FAMILIES, IDEOLOGY_FAMILY_MAP, formatAxisPosition } from "@/data/ideologies";
 import { computeTally, pct } from "@/lib/voting";
 import { Bar, Empty, StatBox, Swatch } from "./ui";
 import { Dashboard } from "./ParliamentPanel";
@@ -13,7 +13,7 @@ export function StatisticsPage() {
   const name = useStore((s) => s.meta.name);
   const st = useMemo(() => computeStats(data), [data]);
   const tallies = useMemo(() => data.history.map((r) => ({ r, t: computeTally(r) })), [data.history]);
-  const maxCat = Math.max(1, ...Object.values(st.categories));
+  const maxFamily = Math.max(1, ...Object.values(st.families));
   const maxParty = Math.max(1, ...st.rows.map((r) => r.seats));
 
   return (
@@ -82,19 +82,37 @@ export function StatisticsPage() {
             ))}
           </div>
           <div className="panel p-4">
-            <h2 className="mb-3 text-sm font-bold">Ideological distribution (deputies)</h2>
-            {CATEGORIES.map((c) => {
-              const n = st.categories[c.id] ?? 0;
-              if (!n && c.id === "unclassified") return null;
-              return (
-                <div key={c.id} className="mb-1.5 grid grid-cols-[110px_1fr_40px] items-center gap-2 text-xs">
-                  <span className="font-semibold" style={{ color: c.color }}>
-                    {c.id === "unclassified" ? "No ideology" : c.label}
-                  </span>
-                  <Bar height={8} parts={[{ v: n, color: c.color }, { v: maxCat - n, color: "transparent" }]} />
-                  <span className="text-right">{n}</span>
-                </div>
-              );
+            <h2 className="mb-3 text-sm font-bold">Ideological family distribution (deputies)</h2>
+            {IDEOLOGY_FAMILIES.map((f) => {
+              const n = st.families[f.id] ?? 0;
+              if (!n) return null;
+              return <div key={f.id} className="mb-1.5 grid grid-cols-[minmax(110px,1fr)_1fr_32px] items-center gap-2 text-xs">
+                <span className="font-semibold" style={{ color: f.color }}>{f.label}</span>
+                <Bar height={8} parts={[{v:n,color:f.color},{v:maxFamily-n,color:"transparent"}]}/>
+                <span className="text-right">{n}</span>
+              </div>;
+            })}
+            {(st.families.unclassified ?? 0)>0&&<div className="mt-2 text-xs text-[var(--muted)]">Unclassified: {st.families.unclassified}</div>}
+          </div>
+        </div>
+        <div className="panel p-4">
+          <h2 className="mb-3 text-sm font-bold">Three-dimensional ideological distribution</h2>
+          <div className="grid gap-4 md:grid-cols-3">
+            {(["economic","social","authority"] as const).map(axis=>{
+              const order=["-3","-2","-1","0","1","2","3","unspecified"];
+              const counts=st.axes[axis]??{};
+              const max=Math.max(1,...order.map(k=>counts[k]??0));
+              return <section key={axis}>
+                <h3 className="mb-2 text-xs font-bold capitalize">{axis==="authority"?"Political authority":axis+" orientation"}</h3>
+                {order.map(key=>{
+                  const value=key==="unspecified"?null:Number(key) as -3|-2|-1|0|1|2|3;
+                  const label=value===null?"Not specified":formatAxisPosition(axis,value);
+                  const n=counts[key]??0;
+                  return <div key={key} className="mb-1 grid grid-cols-[minmax(90px,1fr)_1fr_24px] items-center gap-1.5 text-[10px]">
+                    <span className="truncate">{label}</span><Bar height={7} parts={[{v:n,color:axis==="economic"?"#3b82f6":axis==="social"?"#0d9488":"#7c3aed"},{v:max-n,color:"transparent"}]}/><span className="text-right">{n}</span>
+                  </div>;
+                })}
+              </section>;
             })}
           </div>
         </div>
