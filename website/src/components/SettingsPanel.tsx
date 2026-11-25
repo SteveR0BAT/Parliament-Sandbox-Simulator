@@ -2,9 +2,9 @@
 import { useStore } from "@/lib/store";
 import { InfoDialog } from "./InfoDialog";
 import { LANGUAGES, useLanguage, type Language } from "@/lib/language";
-import { CATEGORIES } from "@/data/ideologies";
+import { IDEOLOGY_FAMILIES } from "@/data/ideologies";
 import { DEFAULT_BEHAVIOR, DEFAULT_PREFS, DEFAULT_SETTINGS } from "@/lib/defaults";
-import type { ChamberSettings, CategoryId, DeputyNameStyle, VotingMode } from "@/lib/types";
+import type { ChamberSettings, IdeologyFamilyId, DeputyNameStyle, VotingMode } from "@/lib/types";
 import { ColorPicker } from "./ColorPicker";
 import { Field, NumInput, Section, Seg, SliderField, Toggle } from "./ui";
 
@@ -137,15 +137,11 @@ export function SettingsPanel() {
       <Section title="Ideology database" defaultOpen={false}>
         <Toggle label="Show sources & references" checked={prefs.ideology.showSources} onChange={(v) => updPrefs((p) => void (p.ideology.showSources = v))} />
         <Toggle label="Show classification notes (disputed placements)" checked={prefs.ideology.showDisputed} onChange={(v) => updPrefs((p) => void (p.ideology.showDisputed = v))} />
-        <Field label="Show categories">
-          <div className="grid grid-cols-2 gap-1.5">
-            {CATEGORIES.map((c) => (
-              <Toggle
-                key={c.id}
-                label={c.label}
-                checked={!prefs.ideology.hiddenCategories.includes(c.id)}
-                onChange={(v) => updPrefs((p) => void (p.ideology.hiddenCategories = v ? p.ideology.hiddenCategories.filter((x) => x !== c.id) : [...p.ideology.hiddenCategories, c.id as CategoryId]))}
-              />
+        <Field label="Show ideological families">
+          <div className="grid grid-cols-1 gap-1.5">
+            {IDEOLOGY_FAMILIES.map((f) => (
+              <Toggle key={f.id} label={f.label} checked={!prefs.ideology.hiddenFamilies.includes(f.id)}
+                onChange={(v) => updPrefs((p) => void (p.ideology.hiddenFamilies = v ? p.ideology.hiddenFamilies.filter((x) => x !== f.id) : [...p.ideology.hiddenFamilies, f.id as IdeologyFamilyId]))} />
             ))}
           </div>
         </Field>

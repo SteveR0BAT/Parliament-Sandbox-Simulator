@@ -3,16 +3,10 @@
 //  - a Faction is NOT a party (it belongs to exactly one party)
 //  - an Independent is a Deputy with partyId === null
 
-export type CategoryId =
-  | "far-right"
-  | "right"
-  | "center-right"
-  | "center"
-  | "center-left"
-  | "left"
-  | "far-left"
-  | "third-way"
-  | "unclassified";
+export type LegacyCategoryId = "far-right" | "right" | "center-right" | "center" | "center-left" | "left" | "far-left" | "third-way" | "unclassified";
+export type IdeologyFamilyId = "liberal-libertarian" | "conservative-traditionalist" | "social-democratic-reformist" | "socialist-communist" | "anarchist-anti-authoritarian" | "nationalist-sovereigntist" | "religious-communitarian" | "civic-ecological-crosscutting" | "unclassified";
+export type AxisValue = -3 | -2 | -1 | 0 | 1 | 2 | 3;
+export interface IdeologyPositions { economic: AxisValue | null; social: AxisValue | null; authority: AxisValue | null; }
 
 export interface Source {
   title: string;
@@ -22,7 +16,10 @@ export interface Source {
 export interface Ideology {
   id: string;
   name: string;
-  category: CategoryId;
+  family: IdeologyFamilyId;
+  positions: IdeologyPositions;
+  /** Original one-dimensional category retained only for saved-project voting compatibility. */
+  legacyCategory?: LegacyCategoryId;
   aliases: string[];
   description: string;
   economic: string;
@@ -205,7 +202,9 @@ export interface Issue {
   notes: string;
   votingType: "bill" | "resolution" | "motion" | "amendment" | "confidence" | "other";
   mode: VotingMode;
-  groupPositions: Partial<Record<CategoryId, PositionSpec>>;
+  groupPositions: Partial<Record<IdeologyFamilyId, PositionSpec>>;
+  /** Old category-level voting rules are used only when no new family rule is configured. */
+  legacyGroupPositions?: Partial<Record<LegacyCategoryId, PositionSpec>>;
   ideologyPositions: Record<string, PositionSpec>;
   partyVotes: Record<string, Vote>;
   factionVotes: Record<string, Vote>;
@@ -226,7 +225,9 @@ export interface Snapshot {
     name: string;
     partyId: string | null;
     factionId: string | null;
-    category: CategoryId | null;
+    family?: IdeologyFamilyId | null;
+    legacyCategory?: LegacyCategoryId | null;
+    positions?: IdeologyPositions | null;
     ideology: string;
   }[];
 }
@@ -272,7 +273,7 @@ export interface Prefs {
   ideology: {
     showSources: boolean;
     showDisputed: boolean;
-    hiddenCategories: CategoryId[];
+    hiddenFamilies: IdeologyFamilyId[];
   };
   defaults: {
     mode: VotingMode;

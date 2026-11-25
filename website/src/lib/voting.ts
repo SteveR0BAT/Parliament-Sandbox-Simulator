@@ -1,8 +1,8 @@
 // Voting engine. Pure functions only — no React / rendering concerns.
-import { BUILTIN_MAP, CATEGORY_MAP } from "@/data/ideologies";
+import { BUILTIN_MAP, IDEOLOGY_FAMILY_MAP } from "@/data/ideologies";
 import type {
   Behavior,
-  CategoryId,
+  IdeologyFamilyId,
   Deputy,
   Faction,
   Ideology,
@@ -228,7 +228,7 @@ export function runVoteEngine(ctx: VoteContext, issue: Issue, seed: number): Dep
         steps.push("no ideology assigned");
         vote = unset(steps);
       } else {
-        const spec: PositionSpec | undefined = issue.ideologyPositions[ideo.id] ?? issue.groupPositions[ideo.category];
+        const spec: PositionSpec | undefined = issue.ideologyPositions[ideo.id] ?? issue.groupPositions[ideo.family] ?? (ideo.legacyCategory ? issue.legacyGroupPositions?.[ideo.legacyCategory] : undefined);
         if (!spec) {
           steps.push(`${ideo.name} (${via}) has no configured position`);
           vote = unset(steps);
@@ -242,7 +242,7 @@ export function runVoteEngine(ctx: VoteContext, issue: Issue, seed: number): Dep
           ];
           vote = sample3(rng, mix);
           steps.push(
-            `ideology ${ideo.name} (via ${via}) → ${CATEGORY_MAP[ideo.category].label}: ${POSITION_LABELS[spec.pos]}; adherence ${b.ideologicalAdherence}% (P for ${(mix[0] * 100).toFixed(0)}%) → ${VOTE_LABELS[vote]}`,
+            `ideology ${ideo.name} (via ${via}) → ${IDEOLOGY_FAMILY_MAP[ideo.family].label}: ${POSITION_LABELS[spec.pos]}; adherence ${b.ideologicalAdherence}% (P for ${(mix[0] * 100).toFixed(0)}%) → ${VOTE_LABELS[vote]}`,
           );
         }
       }
@@ -305,7 +305,9 @@ export function buildSnapshot(data: ProjectData, priority: Behavior["priority"])
         name: d.name,
         partyId: d.partyId,
         factionId: d.factionId,
-        category: ideo ? ideo.category : null,
+        family: ideo ? ideo.family : null,
+        legacyCategory: ideo ? ideo.legacyCategory ?? null : null,
+        positions: ideo ? ideo.positions : null,
         ideology: ideo ? ideo.name : "",
       };
     }),
@@ -379,7 +381,7 @@ export interface TallyResult {
   independents: GroupRow;
   factions: (GroupRow & { partyId: string })[];
   coalitions: GroupRow[];
-  categories: { id: CategoryId; label: string; color: string; counts: Counts }[];
+  families: { id: IdeologyFamilyId; label: string; color: string; counts: Counts }[];
   threshold: ThresholdResult;
 }
 
@@ -449,7 +451,7 @@ export function computeTally(rec: VoteRecord): TallyResult {
   const coalitionsByParty = new Map<string, number[]>();
   snap.coalitions.forEach((c, i) => c.partyIds.forEach((pid) => coalitionsByParty.set(pid, [...(coalitionsByParty.get(pid) ?? []), i])));
   const independents: GroupRow = { id: "independents", name: "Independents", abbr: "IND", color: "#94a3b8", counts: emptyCounts() };
-  const cats = new Map<CategoryId, Counts>();
+  const families = new Map<IdeologyFamilyId, Counts>();
   const totalsC = emptyCounts();
 
   snap.deputies.forEach((d, i) => {
@@ -460,9 +462,9 @@ export function computeTally(rec: VoteRecord): TallyResult {
       (coalitionsByParty.get(d.partyId) ?? []).forEach((ci) => add(coalitions[ci].counts, v));
     } else add(independents.counts, v);
     if (d.factionId && factions.has(d.factionId)) add(factions.get(d.factionId)!.counts, v);
-    const cat: CategoryId = d.category ?? "unclassified";
-    if (!cats.has(cat)) cats.set(cat, emptyCounts());
-    add(cats.get(cat)!, v);
+    const family: IdeologyFamilyId = d.family ?? "unclassified";
+    if (!families.has(family)) families.set(family, emptyCounts());
+    add(families.get(family)!, v);
   });
 
   const deputies = snap.deputies.length;
@@ -479,7 +481,7 @@ export function computeTally(rec: VoteRecord): TallyResult {
     independents,
     factions: [...factions.values()],
     coalitions,
-    categories: [...cats.entries()].map(([id, counts]) => ({ id, label: id === "unclassified" ? "No ideology" : CATEGORY_MAP[id].label, color: CATEGORY_MAP[id].color, counts })),
+    families: [...families.entries()].map(([id, counts]) => ({ id, label: IDEOLOGY_FAMILY_MAP[id].label, color: IDEOLOGY_FAMILY_MAP[id].color, counts })),
     threshold: evaluateThreshold(rec.issue.threshold, totals),
   };
 }

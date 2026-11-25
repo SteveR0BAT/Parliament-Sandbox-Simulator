@@ -1,42 +1,31 @@
-// Researched ideology database (kept separate from application logic).
-//
-// Method: four research rounds — (1) major ideological families and their history
-// (Wikipedia "Left–right political spectrum" / "List of political ideologies", LibreTexts/OpenStax,
-// Britannica "third way"); (2) ideologies belonging to each category via Wikipedia category articles
-// (far-right, far-left, centre-left, centrism) and party-family literature (Klaus von Beyme, Cas Mudde);
-// (3) verification of definitions and disputed placements; (4) review for distinctness (synonyms are stored
-// as `aliases`, not as separate entries) and coverage of all eight categories.
-//
-// IMPORTANT: placing an ideology on a one-dimensional spectrum is always approximate. Entries carrying a
-// `note` are those where scholars place the ideology differently depending on time, country or definition.
+// Built-in ideology descriptions, historical context and references are preserved from the original database.
+// The eight family groups are for navigation only. Each ideology's economic, social and authority positions
+// are stored independently, and may be left unspecified where a general label does not determine them.
+// Original category assignments survive only as migration metadata for legacy projects and source references.
 
-import type { CategoryId, Ideology, Source } from "@/lib/types";
+import type { AxisValue, Ideology, IdeologyFamilyId, IdeologyPositions, LegacyCategoryId, Source } from "@/lib/types";
 
-export interface CategoryInfo {
-  id: CategoryId;
-  label: string;
-  color: string;
-  /** rough left(-100) to right(+100) score, used to order parties by ideology */
-  lr: number;
-  blurb: string;
-}
-
-export const CATEGORIES: CategoryInfo[] = [
-  { id: "far-right", label: "Far Right", color: "#7f1d1d", lr: 90, blurb: "Ultranationalist, authoritarian, exclusivist or reactionary currents to the right of the mainstream right." },
-  { id: "right", label: "Right-Wing", color: "#b91c1c", lr: 60, blurb: "Emphasis on tradition, hierarchy, order, nation or free markets and property rights." },
-  { id: "center-right", label: "Center-Right", color: "#ea580c", lr: 30, blurb: "Moderate conservative, Christian-democratic and market-liberal currents that accept the welfare state in some form." },
-  { id: "center", label: "Center", color: "#ca8a04", lr: 0, blurb: "Moderate, pragmatic and broadly liberal-democratic positions between left and right." },
-  { id: "center-left", label: "Center-Left", color: "#0d9488", lr: -30, blurb: "Reformist left: mixed economy, welfare state, social liberalism and environmental policy." },
-  { id: "left", label: "Left-Wing", color: "#2563eb", lr: -60, blurb: "Egalitarian, socialist and anti-capitalist traditions that mostly pursue change through democracy or movements." },
-  { id: "far-left", label: "Far Left", color: "#7c2d12", lr: -90, blurb: "Revolutionary or radical anti-capitalist currents: communism, revolutionary socialism and left anarchism." },
-  { id: "third-way", label: "Third Way", color: "#7c3aed", lr: 0, blurb: "Ideologies that explicitly claim to transcend, combine or sit outside the left–right axis." },
-  { id: "unclassified", label: "Custom / Unclassified", color: "#64748b", lr: 0, blurb: "User-defined positions that do not fit a conventional category." },
+export interface IdeologyFamilyInfo { id: Exclude<IdeologyFamilyId,"unclassified">; label:string; color:string; blurb:string; }
+export const IDEOLOGY_FAMILIES:IdeologyFamilyInfo[]=[
+{id:"liberal-libertarian",label:"Liberal & Libertarian Traditions",color:"#2563eb",blurb:"Political traditions centred on individual rights, liberal institutions, market freedom or voluntary association."},
+{id:"conservative-traditionalist",label:"Conservative & Traditionalist Traditions",color:"#b45309",blurb:"Traditions emphasising continuity, established institutions, social order, inherited practices or conservative reform."},
+{id:"social-democratic-reformist",label:"Social-Democratic & Reformist Traditions",color:"#0d9488",blurb:"Reformist traditions pursuing social protection, democratic change, labour rights and mixed-economy institutions."},
+{id:"socialist-communist",label:"Socialist & Communist Traditions",color:"#dc2626",blurb:"Traditions seeking social ownership, economic equality or socialist transformation through varied political strategies."},
+{id:"anarchist-anti-authoritarian",label:"Anarchist & Anti-Authoritarian Traditions",color:"#7c3aed",blurb:"Traditions opposing imposed hierarchy and favouring decentralised, voluntary or directly democratic organisation."},
+{id:"nationalist-sovereigntist",label:"Nationalist & Sovereigntist Traditions",color:"#64748b",blurb:"Traditions centred on national identity, sovereignty, self-determination or geopolitical independence."},
+{id:"religious-communitarian",label:"Religious & Communitarian Traditions",color:"#ca8a04",blurb:"Traditions grounding political organisation in religious ethics, communal solidarity or shared moral obligations."},
+{id:"civic-ecological-crosscutting",label:"Civic, Ecological & Cross-Cutting Traditions",color:"#16a34a",blurb:"Civic, ecological, pragmatic and cross-cutting traditions that do not form one conventional ideological family."}
 ];
-
-export const CATEGORY_MAP: Record<CategoryId, CategoryInfo> = Object.fromEntries(
-  CATEGORIES.map((c) => [c.id, c]),
-) as Record<CategoryId, CategoryInfo>;
-
+export const IDEOLOGY_FAMILY_MAP:Record<IdeologyFamilyId,{id:IdeologyFamilyId;label:string;color:string;blurb:string}>=Object.fromEntries([...IDEOLOGY_FAMILIES.map(f=>[f.id,f]),["unclassified",{id:"unclassified",label:"Unclassified",color:"#64748b",blurb:"Custom ideology awaiting family and dimensional classification."}]]) as Record<IdeologyFamilyId,{id:IdeologyFamilyId;label:string;color:string;blurb:string}>;
+// Retained strictly for migration compatibility; never used by the active ideology interface.
+export const LEGACY_CATEGORIES:{id:LegacyCategoryId;label:string;color:string;lr:number}[]=[
+{id:"far-right",label:"Far Right",color:"#7f1d1d",lr:90},{id:"right",label:"Right-Wing",color:"#b91c1c",lr:60},{id:"center-right",label:"Center-Right",color:"#ea580c",lr:30},{id:"center",label:"Center",color:"#ca8a04",lr:0},{id:"center-left",label:"Center-Left",color:"#0d9488",lr:-30},{id:"left",label:"Left-Wing",color:"#2563eb",lr:-60},{id:"far-left",label:"Far Left",color:"#7c2d12",lr:-90},{id:"third-way",label:"Third Way",color:"#7c3aed",lr:0},{id:"unclassified",label:"Custom / Unclassified",color:"#64748b",lr:0}];
+export function formatAxisPosition(axis:"economic"|"social"|"authority",value:AxisValue|null):string{
+ if(value===null)return "Not specified";
+ const labels={economic:["Far Left","Left","Center-Left","Center","Center-Right","Right","Far Right"],social:["Far Progressive","Progressive","Center-Progressive","Center","Center-Conservative","Conservative","Far Conservative"],authority:["Far Libertarian","Libertarian","Libertarian-Leaning","Center","Authoritarian-Leaning","Authoritarian","Far Authoritarian"]} as const;
+ return labels[axis][value+3];
+}
+export function ideologyPositionSummary(i:Pick<Ideology,"positions">):string{const p=i.positions;return `Economic: ${formatAxisPosition("economic",p.economic)} · Social: ${formatAxisPosition("social",p.social)} · Authority: ${formatAxisPosition("authority",p.authority)}`;}
 const S = {
   spectrum: { title: "Wikipedia — Left–right political spectrum", url: "https://en.wikipedia.org/wiki/Left%E2%80%93right_political_spectrum" },
   list: { title: "Wikipedia — List of political ideologies", url: "https://en.wikipedia.org/wiki/List_of_political_ideologies" },
@@ -49,7 +38,7 @@ const S = {
   libretexts: { title: "OpenStax/LibreTexts — Political Ideologies", url: "https://human.libretexts.org/Bookshelves/Philosophy/Introduction_to_Philosophy/Introduction_to_Philosophy_(OpenStax)/11:_Political_Philosophy/11.04:_Political_Ideologies" },
 };
 
-const CATEGORY_SOURCES: Record<CategoryId, Source[]> = {
+const CATEGORY_SOURCES: Record<LegacyCategoryId, Source[]> = {
   "far-right": [S.farRight, S.spectrum],
   right: [S.spectrum, S.list],
   "center-right": [S.spectrum, S.list],
@@ -227,7 +216,7 @@ const THIRD_WAY: Row[] = [
   ["Radical Democracy", "Deliberative democracy", "Deepens democracy through participation, deliberation and citizens' assemblies beyond electoral representation.", "Participatory", "Participatory, pluralist", "Libertarian Socialism|Civic Republicanism"],
 ];
 
-const GROUPS: [CategoryId, Row[]][] = [
+const LEGACY_GROUPS: [LegacyCategoryId, Row[]][] = [
   ["far-right", FAR_RIGHT],
   ["right", RIGHT],
   ["center-right", CENTER_RIGHT],
@@ -262,31 +251,19 @@ const HISTORY: Record<string, string> = {
   Fabianism: "Founded in 1884 in London; influenced the British Labour Party.",
 };
 
-export const BUILTIN_IDEOLOGIES: Ideology[] = GROUPS.flatMap(([category, rows]) =>
-  rows.map(([name, aliases, description, economic, social, related, note]): Ideology => ({
-    id: slug(name),
-    name,
-    category,
-    aliases: aliases ? aliases.split("|").filter(Boolean) : [],
-    description,
-    economic,
-    social,
-    related: related ? related.split("|").filter(Boolean) : [],
-    history: HISTORY[name],
-    sources: [
-      { title: `Wikipedia — ${name} (search)`, url: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(name)}` },
-      ...CATEGORY_SOURCES[category],
-    ],
-    disputed: note ? true : undefined,
-    note,
-  })),
-);
 
-export const BUILTIN_MAP: Record<string, Ideology> = Object.fromEntries(
-  BUILTIN_IDEOLOGIES.map((i) => [i.id, i]),
-);
-
-export function ideologyScore(i: Ideology | undefined | null): number {
-  if (!i) return 0;
-  return CATEGORY_MAP[i.category]?.lr ?? 0;
+const CLASSIFICATIONS:Record<string,{family:IdeologyFamilyId;positions:IdeologyPositions}>={"fascism":{"family":"nationalist-sovereigntist","positions":{"economic":1,"social":3,"authority":3}},"nazism":{"family":"nationalist-sovereigntist","positions":{"economic":0,"social":3,"authority":3}},"clerical-fascism":{"family":"religious-communitarian","positions":{"economic":1,"social":3,"authority":3}},"falangism":{"family":"religious-communitarian","positions":{"economic":1,"social":3,"authority":3}},"francoism":{"family":"nationalist-sovereigntist","positions":{"economic":1,"social":3,"authority":3}},"ultranationalism":{"family":"nationalist-sovereigntist","positions":{"economic":0,"social":3,"authority":3}},"integral-nationalism":{"family":"nationalist-sovereigntist","positions":{"economic":1,"social":3,"authority":2}},"ethnonationalism":{"family":"nationalist-sovereigntist","positions":{"economic":0,"social":3,"authority":2}},"white-nationalism":{"family":"nationalist-sovereigntist","positions":{"economic":1,"social":3,"authority":3}},"strasserism":{"family":"nationalist-sovereigntist","positions":{"economic":-1,"social":3,"authority":3}},"reactionary-conservatism":{"family":"conservative-traditionalist","positions":{"economic":1,"social":3,"authority":2}},"neoreaction":{"family":"conservative-traditionalist","positions":{"economic":2,"social":3,"authority":3}},"integralism":{"family":"religious-communitarian","positions":{"economic":1,"social":3,"authority":2}},"hindutva":{"family":"nationalist-sovereigntist","positions":{"economic":1,"social":2,"authority":2}},"nativism":{"family":"nationalist-sovereigntist","positions":{"economic":1,"social":2,"authority":2}},"conservatism":{"family":"conservative-traditionalist","positions":{"economic":1,"social":2,"authority":1}},"traditionalist-conservatism":{"family":"conservative-traditionalist","positions":{"economic":1,"social":3,"authority":1}},"paleoconservatism":{"family":"conservative-traditionalist","positions":{"economic":2,"social":3,"authority":1}},"neoconservatism":{"family":"conservative-traditionalist","positions":{"economic":2,"social":2,"authority":2}},"national-conservatism":{"family":"nationalist-sovereigntist","positions":{"economic":1,"social":2,"authority":2}},"social-conservatism":{"family":"conservative-traditionalist","positions":{"economic":1,"social":3,"authority":1}},"fiscal-conservatism":{"family":"conservative-traditionalist","positions":{"economic":3,"social":1,"authority":0}},"christian-right":{"family":"religious-communitarian","positions":{"economic":1,"social":3,"authority":2}},"right-wing-populism":{"family":"nationalist-sovereigntist","positions":{"economic":1,"social":2,"authority":2}},"neoliberalism":{"family":"liberal-libertarian","positions":{"economic":3,"social":0,"authority":0}},"thatcherism":{"family":"conservative-traditionalist","positions":{"economic":3,"social":2,"authority":1}},"right-libertarianism":{"family":"liberal-libertarian","positions":{"economic":3,"social":-1,"authority":-2}},"minarchism":{"family":"liberal-libertarian","positions":{"economic":3,"social":0,"authority":-3}},"anarcho-capitalism":{"family":"liberal-libertarian","positions":{"economic":3,"social":0,"authority":-3}},"objectivism":{"family":"liberal-libertarian","positions":{"economic":3,"social":-1,"authority":-2}},"monarchism":{"family":"conservative-traditionalist","positions":{"economic":1,"social":2,"authority":2}},"authoritarian-conservatism":{"family":"conservative-traditionalist","positions":{"economic":1,"social":2,"authority":3}},"islamism":{"family":"religious-communitarian","positions":{"economic":0,"social":3,"authority":2}},"liberal-conservatism":{"family":"conservative-traditionalist","positions":{"economic":2,"social":1,"authority":0}},"one-nation-conservatism":{"family":"conservative-traditionalist","positions":{"economic":1,"social":1,"authority":0}},"christian-democracy":{"family":"religious-communitarian","positions":{"economic":1,"social":1,"authority":0}},"gaullism":{"family":"nationalist-sovereigntist","positions":{"economic":1,"social":1,"authority":2}},"classical-liberalism":{"family":"liberal-libertarian","positions":{"economic":2,"social":-1,"authority":-1}},"economic-liberalism":{"family":"liberal-libertarian","positions":{"economic":3,"social":0,"authority":0}},"ordoliberalism":{"family":"liberal-libertarian","positions":{"economic":2,"social":0,"authority":0}},"social-market-economy":{"family":"conservative-traditionalist","positions":{"economic":1,"social":0,"authority":0}},"compassionate-conservatism":{"family":"conservative-traditionalist","positions":{"economic":1,"social":1,"authority":0}},"fusionism":{"family":"conservative-traditionalist","positions":{"economic":3,"social":2,"authority":-1}},"civic-nationalism":{"family":"nationalist-sovereigntist","positions":{"economic":1,"social":0,"authority":0}},"green-conservatism":{"family":"conservative-traditionalist","positions":{"economic":1,"social":1,"authority":0}},"muslim-democracy":{"family":"religious-communitarian","positions":{"economic":1,"social":1,"authority":0}},"centrism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":0,"authority":0}},"radical-centrism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":0,"authority":0}},"liberalism":{"family":"liberal-libertarian","positions":{"economic":1,"social":-1,"authority":-1}},"civic-republicanism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":-1,"authority":0}},"agrarianism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":1,"authority":0}},"secular-humanism":{"family":"liberal-libertarian","positions":{"economic":0,"social":-1,"authority":0}},"cosmopolitanism":{"family":"civic-ecological-crosscutting","positions":{"economic":1,"social":-1,"authority":-1}},"liberal-internationalism":{"family":"liberal-libertarian","positions":{"economic":1,"social":-1,"authority":0}},"federalism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":0,"authority":-1}},"pragmatism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":0,"authority":0}},"constitutionalism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":0,"authority":-1}},"regionalism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":0,"authority":-1}},"localism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":1,"authority":-1}},"centrist-populism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":0,"authority":1}},"social-democracy":{"family":"social-democratic-reformist","positions":{"economic":-1,"social":-1,"authority":0}},"social-liberalism":{"family":"liberal-libertarian","positions":{"economic":0,"social":-1,"authority":-1}},"progressivism":{"family":"social-democratic-reformist","positions":{"economic":0,"social":-2,"authority":0}},"modern-american-liberalism":{"family":"liberal-libertarian","positions":{"economic":0,"social":-1,"authority":-1}},"labourism":{"family":"social-democratic-reformist","positions":{"economic":-1,"social":-1,"authority":0}},"fabianism":{"family":"social-democratic-reformist","positions":{"economic":-2,"social":-1,"authority":0}},"keynesianism":{"family":"social-democratic-reformist","positions":{"economic":-1,"social":0,"authority":0}},"environmentalism":{"family":"civic-ecological-crosscutting","positions":{"economic":-1,"social":-1,"authority":0}},"liberal-feminism":{"family":"liberal-libertarian","positions":{"economic":0,"social":-2,"authority":-1}},"multiculturalism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":-2,"authority":-1}},"egalitarian-liberalism":{"family":"liberal-libertarian","positions":{"economic":0,"social":-2,"authority":-1}},"revisionist-socialism":{"family":"social-democratic-reformist","positions":{"economic":-2,"social":-1,"authority":0}},"liberal-socialism":{"family":"socialist-communist","positions":{"economic":-2,"social":-1,"authority":-1}},"christian-left":{"family":"religious-communitarian","positions":{"economic":-1,"social":-1,"authority":0}},"democratic-socialism":{"family":"socialist-communist","positions":{"economic":-2,"social":-1,"authority":-1}},"socialism":{"family":"socialist-communist","positions":{"economic":-3,"social":-1,"authority":0}},"market-socialism":{"family":"socialist-communist","positions":{"economic":-2,"social":-1,"authority":0}},"libertarian-socialism":{"family":"anarchist-anti-authoritarian","positions":{"economic":-3,"social":-2,"authority":-3}},"eco-socialism":{"family":"socialist-communist","positions":{"economic":-3,"social":-2,"authority":-1}},"christian-socialism":{"family":"religious-communitarian","positions":{"economic":-2,"social":-1,"authority":0}},"islamic-socialism":{"family":"religious-communitarian","positions":{"economic":-2,"social":0,"authority":0}},"african-socialism":{"family":"nationalist-sovereigntist","positions":{"economic":-2,"social":0,"authority":1}},"cooperativism":{"family":"socialist-communist","positions":{"economic":-2,"social":0,"authority":-1}},"mutualism":{"family":"anarchist-anti-authoritarian","positions":{"economic":-2,"social":0,"authority":-2}},"guild-socialism":{"family":"socialist-communist","positions":{"economic":-2,"social":0,"authority":-1}},"left-wing-populism":{"family":"social-democratic-reformist","positions":{"economic":-1,"social":-1,"authority":1}},"eurocommunism":{"family":"socialist-communist","positions":{"economic":-3,"social":-1,"authority":0}},"bolivarianism":{"family":"nationalist-sovereigntist","positions":{"economic":-2,"social":-1,"authority":2}},"social-ecology":{"family":"anarchist-anti-authoritarian","positions":{"economic":-2,"social":-2,"authority":-2}},"socialist-feminism":{"family":"socialist-communist","positions":{"economic":-3,"social":-2,"authority":-1}},"nasserism":{"family":"nationalist-sovereigntist","positions":{"economic":-2,"social":0,"authority":2}},"liberation-theology":{"family":"religious-communitarian","positions":{"economic":-2,"social":-1,"authority":0}},"left-wing-nationalism":{"family":"nationalist-sovereigntist","positions":{"economic":-2,"social":0,"authority":1}},"pan-africanism":{"family":"nationalist-sovereigntist","positions":{"economic":-1,"social":0,"authority":1}},"degrowth":{"family":"civic-ecological-crosscutting","positions":{"economic":-2,"social":-2,"authority":-1}},"communism":{"family":"socialist-communist","positions":{"economic":-3,"social":-1,"authority":2}},"marxism":{"family":"socialist-communist","positions":{"economic":-3,"social":-1,"authority":0}},"leninism":{"family":"socialist-communist","positions":{"economic":-3,"social":-1,"authority":3}},"marxism-leninism":{"family":"socialist-communist","positions":{"economic":-3,"social":-1,"authority":3}},"stalinism":{"family":"socialist-communist","positions":{"economic":-3,"social":1,"authority":3}},"trotskyism":{"family":"socialist-communist","positions":{"economic":-3,"social":-1,"authority":2}},"maoism":{"family":"socialist-communist","positions":{"economic":-3,"social":1,"authority":3}},"hoxhaism":{"family":"socialist-communist","positions":{"economic":-3,"social":1,"authority":3}},"juche":{"family":"nationalist-sovereigntist","positions":{"economic":-1,"social":1,"authority":3}},"luxemburgism":{"family":"socialist-communist","positions":{"economic":-3,"social":-1,"authority":-1}},"council-communism":{"family":"anarchist-anti-authoritarian","positions":{"economic":-3,"social":-1,"authority":-3}},"left-communism":{"family":"anarchist-anti-authoritarian","positions":{"economic":-3,"social":-1,"authority":-2}},"autonomism":{"family":"anarchist-anti-authoritarian","positions":{"economic":-2,"social":-1,"authority":-3}},"anarcho-communism":{"family":"anarchist-anti-authoritarian","positions":{"economic":-3,"social":-2,"authority":-3}},"anarcho-syndicalism":{"family":"anarchist-anti-authoritarian","positions":{"economic":-3,"social":-1,"authority":-3}},"insurrectionary-anarchism":{"family":"anarchist-anti-authoritarian","positions":{"economic":-2,"social":-1,"authority":-3}},"green-anarchism":{"family":"anarchist-anti-authoritarian","positions":{"economic":-2,"social":-2,"authority":-3}},"revolutionary-socialism":{"family":"socialist-communist","positions":{"economic":-3,"social":-1,"authority":1}},"third-way":{"family":"social-democratic-reformist","positions":{"economic":0,"social":-1,"authority":0}},"distributism":{"family":"religious-communitarian","positions":{"economic":-1,"social":1,"authority":0}},"corporatism":{"family":"religious-communitarian","positions":{"economic":0,"social":1,"authority":2}},"technocracy":{"family":"civic-ecological-crosscutting","positions":{"economic":null,"social":null,"authority":1}},"communitarianism":{"family":"religious-communitarian","positions":{"economic":0,"social":1,"authority":0}},"georgism":{"family":"liberal-libertarian","positions":{"economic":1,"social":-1,"authority":-1}},"pirate-politics":{"family":"liberal-libertarian","positions":{"economic":0,"social":-2,"authority":-1}},"anarcho-primitivism":{"family":"anarchist-anti-authoritarian","positions":{"economic":-1,"social":-2,"authority":-3}},"individualist-anarchism":{"family":"anarchist-anti-authoritarian","positions":{"economic":0,"social":-1,"authority":-3}},"transhumanism":{"family":"civic-ecological-crosscutting","positions":{"economic":0,"social":-2,"authority":-1}},"social-credit":{"family":"social-democratic-reformist","positions":{"economic":-1,"social":0,"authority":0}},"ba-athism":{"family":"nationalist-sovereigntist","positions":{"economic":-1,"social":1,"authority":3}},"peronism":{"family":"nationalist-sovereigntist","positions":{"economic":0,"social":1,"authority":2}},"kemalism":{"family":"nationalist-sovereigntist","positions":{"economic":0,"social":0,"authority":2}},"populism":{"family":"civic-ecological-crosscutting","positions":{"economic":null,"social":null,"authority":null}},"syncretic-politics":{"family":"civic-ecological-crosscutting","positions":{"economic":null,"social":null,"authority":null}},"radical-democracy":{"family":"civic-ecological-crosscutting","positions":{"economic":-1,"social":-1,"authority":-2}}} as Record<string,{family:IdeologyFamilyId;positions:IdeologyPositions}>;
+const legacyIds=new Set(LEGACY_GROUPS.flatMap(([_,rows])=>rows.map(([name])=>slug(name))));
+const missingIds=[...legacyIds].filter(id=>!CLASSIFICATIONS[id]);
+if(missingIds.length||legacyIds.size!==130)throw new Error(`Ideology classification mismatch: ${legacyIds.size} total, ${missingIds.length} missing.`);
+export const BUILTIN_IDEOLOGIES:Ideology[]=LEGACY_GROUPS.flatMap(([legacyCategory,rows])=>rows.map(([name,aliases,description,economic,social,related,note]):Ideology=>{
+ const id=slug(name),c=CLASSIFICATIONS[id];
+ return{id,name,family:c.family,positions:c.positions,legacyCategory,aliases:aliases?aliases.split("|").filter(Boolean):[],description,economic,social,related:related?related.split("|").filter(Boolean):[],history:HISTORY[name],sources:[{title:`Wikipedia — ${name} (search)`,url:`https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(name)}`},...CATEGORY_SOURCES[legacyCategory]],disputed:note?true:undefined,note};
+}));
+export const BUILTIN_MAP:Record<string,Ideology>=Object.fromEntries(BUILTIN_IDEOLOGIES.map(i=>[i.id,i]));
+export const BUILTIN_NAME_MAP:Record<string,Ideology>=Object.fromEntries(BUILTIN_IDEOLOGIES.map(i=>[i.name.toLowerCase(),i]));
+export function compareIdeologies(a:Ideology|null|undefined,b:Ideology|null|undefined):number{
+ const axes:(keyof IdeologyPositions)[]=["economic","social","authority"];
+ for(const axis of axes){const av=a?.positions[axis]??99,bv=b?.positions[axis]??99;if(av!==bv)return av-bv;}
+ return(a?.name??"").localeCompare(b?.name??"");
 }

@@ -1,8 +1,8 @@
 "use client";
 import { useMemo, useState } from "react";
-import { CATEGORIES } from "@/data/ideologies";
+import { IDEOLOGY_FAMILIES } from "@/data/ideologies";
 import { useStore } from "@/lib/store";
-import type { CategoryId, Issue, MixedMethod, Position, PositionSpec, Vote } from "@/lib/types";
+import type { IdeologyFamilyId, Issue, MixedMethod, Position, PositionSpec, Vote } from "@/lib/types";
 import { POSITION_LABELS, VOTE_LABELS, normalize } from "@/lib/voting";
 import { IdeologySelect, allIdeologies } from "./IdeologyPicker";
 import { Empty, Field, NumInput, Swatch } from "./ui";
@@ -122,18 +122,19 @@ export function IdeologyConfig({ issue, update }: { issue: Issue; update: Upd })
   return (
     <div className="space-y-3">
       <div>
-        <span className="label">Position of each ideological group (all optional)</span>
+        <span className="label">Position of each ideological family (all optional)</span>
+        <p className="muted mb-2 text-[11px]">Migrated projects retain old category-based issue rules as a fallback when no family position is configured. Clearing all group positions removes both current and legacy rules.</p>
         <div className="space-y-2">
-          {CATEGORIES.map((c) => (
-            <div key={c.id} className="grid grid-cols-[110px_1fr] items-start gap-2 text-xs">
-              <span className="flex items-center gap-1.5 pt-1 font-semibold" style={{ color: c.color }}>
-                <Swatch color={c.color} /> {c.label}
+          {IDEOLOGY_FAMILIES.map((family) => (
+            <div key={family.id} className="grid grid-cols-[minmax(130px,1fr)_1fr] items-start gap-2 text-xs">
+              <span className="flex items-center gap-1.5 pt-1 font-semibold" style={{ color: family.color }}>
+                <Swatch color={family.color} /> {family.label}
               </span>
-              <PositionPicker spec={issue.groupPositions[c.id as CategoryId]} onChange={(s) => update((i) => (s ? (i.groupPositions[c.id as CategoryId] = s) : delete i.groupPositions[c.id as CategoryId]))} />
+              <PositionPicker spec={issue.groupPositions[family.id]} onChange={(s) => update((i) => (s ? (i.groupPositions[family.id as IdeologyFamilyId] = s) : delete i.groupPositions[family.id as IdeologyFamilyId]))} />
             </div>
           ))}
         </div>
-        <button className="btn btn-sm mt-2" onClick={() => update((i) => (i.groupPositions = {}))}>
+        <button className="btn btn-sm mt-2" onClick={() => update((i) => { i.groupPositions = {}; i.legacyGroupPositions = {}; })}>
           Clear all group positions
         </button>
       </div>

@@ -13,7 +13,9 @@ Parliament Sandbox Simulator is a free, browser-based political sandbox for fict
 - **Parties, factions and coalitions:** define political groups, leaders, identities, ideological positions, and parliamentary relationships.
 - **Independent MPs:** configure individual deputies outside party structures.
 - **Deputy names:** generate deputies using configurable generic or regional name styles.
-- **Ideology library:** explore 130 built-in ideology entries and add custom ideologies.
+- **Multidimensional ideology library:** explore 130 built-in ideologies and custom entries, organised into eight ideological families and classified independently by economic orientation, social orientation and political authority.
+- **Ideology profiles:** inspect each ideology's family, three-axis coordinates, historical context, descriptive characteristics and references.
+- **Custom ideological profiles:** create and position custom ideologies across the same three dimensions.
 - **Voting engine:** simulate bills, resolutions, motions, amendments, and confidence votes using party, faction, ideology, individual, random, or mixed behaviour.
 - **Behaviour modelling:** configure party and faction discipline, ideological adherence, randomness, abstention, and absence.
 - **Constitutional rules:** configure majority thresholds, custom multi-part requirements, and quorum.
@@ -21,7 +23,9 @@ Parliament Sandbox Simulator is a free, browser-based political sandbox for fict
 - **Statistics and themes:** review political distributions and switch between supported interface languages and themes.
 - **Projects:** keep multiple parliament projects in the browser and import/export complete JSON projects.
 
-The voting engine is a configurable scenario model. Its results reflect the assumptions and rules entered by the user; they are not forecasts of real parliamentary behaviour.
+The ideology library uses eight browsing families; family membership is independent of each ideology's three reference coordinates. Economic positions run from far left to far right, social positions from far progressive to far conservative, and political authority from far libertarian to far authoritarian. A dimension may be left unspecified where the ideology does not determine it.
+
+The voting engine is a configurable scenario model. Issue-specific ideology positions override family-level positions. For projects created under the previous category model, old category-level voting rules are preserved as compatibility fallbacks during automatic migration. Results reflect the assumptions and rules entered by the user; they are not forecasts of real parliamentary behaviour.
 
 ## Repository structure
 

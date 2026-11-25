@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { apportion } from "../src/lib/parliament";
-import { newIssue, sampleProject } from "../src/lib/defaults";
+import { newIssue, normalizeProject, sampleProject } from "../src/lib/defaults";
+import { BUILTIN_IDEOLOGIES, IDEOLOGY_FAMILIES } from "../src/data/ideologies";
 import { buildContext, evaluateThreshold, runVoteEngine, type Totals } from "../src/lib/voting";
 import type { Threshold } from "../src/lib/types";
 const totals = (patch: Partial<Totals> = {}): Totals => ({
@@ -49,4 +50,53 @@ test("random voting uses the configured seed", () => {
     random: { pFor: 50, pAgainst: 50, pAbstain: 0, pAbsent: 0 } });
   const context = buildContext(project);
   assert.notDeepEqual(runVoteEngine(context, issue, 1).map((x) => x.vote), runVoteEngine(context, issue, 2).map((x) => x.vote));
+});
+
+test("all built-in ideologies have one of eight families and three valid coordinates", () => {
+  assert.equal(IDEOLOGY_FAMILIES.length, 8);
+  assert.equal(BUILTIN_IDEOLOGIES.length, 130);
+  const valid = (n: unknown) => n === null || [-3,-2,-1,0,1,2,3].includes(Number(n));
+  for (const ideology of BUILTIN_IDEOLOGIES) {
+    assert.ok(IDEOLOGY_FAMILIES.some((family) => family.id === ideology.family), ideology.name);
+    assert.ok(valid(ideology.positions.economic), ideology.name + " economic");
+    assert.ok(valid(ideology.positions.social), ideology.name + " social");
+    assert.ok(valid(ideology.positions.authority), ideology.name + " authority");
+  }
+});
+
+test("version 1 project migration preserves custom ideology metadata and legacy voting rules", () => {
+  const old = sampleProject();
+  const raw = {
+    ...old,
+    version: 1,
+    customIdeologies: [{
+      id: "custom-legacy",
+      name: "Legacy Custom",
+      category: "center-left",
+      aliases: ["Old name"],
+      description: "Keep this wording.",
+      economic: "Original economic text",
+      social: "Original social text",
+      related: [],
+      sources: [],
+      custom: true,
+    }],
+    issues: [{
+      ...old.issues[0],
+      groupPositions: { "far-left": { pos: "for" }, "right": { pos: "against" } },
+      legacyGroupPositions: undefined,
+    }],
+  };
+  const migrated = normalizeProject(raw);
+  assert.equal(migrated.version, 2);
+  assert.equal(migrated.customIdeologies[0].family, "unclassified");
+  assert.equal(migrated.customIdeologies[0].legacyCategory, "center-left");
+  assert.equal(migrated.customIdeologies[0].positions.economic, -1);
+  assert.equal(migrated.customIdeologies[0].positions.social, null);
+  assert.equal(migrated.customIdeologies[0].positions.authority, null);
+  assert.equal(migrated.customIdeologies[0].description, "Keep this wording.");
+  assert.equal(migrated.customIdeologies[0].economic, "Original economic text");
+  assert.equal(migrated.issues[0].legacyGroupPositions?.["far-left"]?.pos, "for");
+  assert.equal(migrated.issues[0].legacyGroupPositions?.right?.pos, "against");
+  assert.deepEqual(migrated.issues[0].groupPositions, {});
 });
