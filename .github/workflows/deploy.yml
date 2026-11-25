@@ -35,16 +35,12 @@ jobs:
           test -f website/package.json
           test -f website/src/app/page.tsx
 
-      - name: Temporary source inspection artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: parliament-source-inspection
-          path: website
-          if-no-files-found: error
-          retention-days: 1
 
       - name: Prepare Next.js for static hosting
         run: python scripts/prepare_static.py
+
+      - name: Add configurable generic deputy names
+        run: python scripts/add_deputy_names.py
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
