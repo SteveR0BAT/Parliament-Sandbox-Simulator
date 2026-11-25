@@ -307,6 +307,7 @@ export function buildSnapshot(data: ProjectData, priority: Behavior["priority"])
         factionId: d.factionId,
         family: ideo ? ideo.family : null,
         legacyCategory: ideo ? ideo.legacyCategory ?? null : null,
+        positions: ideo ? ideo.positions : null,
         ideology: ideo ? ideo.name : "",
       };
     }),

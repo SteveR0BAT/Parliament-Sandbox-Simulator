@@ -227,6 +227,7 @@ export interface Snapshot {
     factionId: string | null;
     family?: IdeologyFamilyId | null;
     legacyCategory?: LegacyCategoryId | null;
+    positions?: IdeologyPositions | null;
     ideology: string;
   }[];
 }
