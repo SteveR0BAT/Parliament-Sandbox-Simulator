@@ -1,64 +1,93 @@
-# Parliament Sandbox Simulator - Build Parties, Factions & Voting Systems
+# Parliament Sandbox Simulator
 
-> Design a custom parliament with configurable seats, parties, factions, coalitions, independents and over 100 ideologies. Simulate legislative votes with party discipline, voting behaviour and custom majority rules—all in your browser, completely free.
+Build custom parliaments, organize parties and factions, explore political ideologies, and simulate legislative votes.
 
-**[Open the live simulator](https://stever0bat.github.io/Parliament-Sandbox-Simulator/)**
+Parliament Sandbox Simulator is a free, browser-based political sandbox for fictional worldbuilding, alternate history, constitutional experiments, classroom exercises, and modelling parliamentary systems.
 
-Parliament Sandbox Simulator is a free, browser-based parliament builder and parliamentary voting sandbox. Create a legislature from the ground up, decide how its political groups are organized, and run votes using behaviour and passage rules that you configure.
-
-## What you can build
-
-- **A configurable chamber:** adjust the seat count, number of rows, seats per row, seat size, spacing, chamber curvature, orientation and other layout settings.
-- **Political parties:** define party names, abbreviations, colours, leaders, descriptions and ideological positions.
-- **Internal party factions:** create factions with their own names, leaders, colours and ideological identities.
-- **Coalitions:** group parties into coalitions and configure coalition leadership and political orientation.
-- **Independent MPs:** add deputies outside party structures and configure their individual voting behaviour.
-- **Custom ideologies:** use the built-in ideology library or create your own political positions.
-
-## 130 built-in ideology entries
-
-The built-in library contains 130 researched ideology entries, covering political traditions from the far left to the far right, alongside centrist and third-way currents. Entries include descriptions, economic and social characteristics, related ideologies and historical context where available. You can search the library and add custom ideologies to your project.
-
-Political classification is not always reducible to a single left–right spectrum. The simulator includes categories for disputed and third-way positions, and its ideology scores should be treated as a modelling aid rather than an authoritative scientific measurement.
-
-## Parliamentary voting simulation
-
-Create a bill, resolution, motion, amendment or confidence vote. Choose how deputies make decisions:
-
-- **Party-based:** deputies follow their party's configured voting line.
-- **Faction-based:** internal factions can take positions that differ from their wider party.
-- **Ideology-based:** voting decisions can follow ideological positions.
-- **Individual:** configure deputies' decisions separately.
-- **Random:** use configurable probabilities for votes for, against, abstention and absence.
-- **Mixed:** combine different decision methods in one parliamentary vote.
-
-The behaviour model includes party discipline, faction discipline, ideological adherence, randomness, abstention and absence probabilities. Party discipline can also be adjusted for individual parties.
-
-Configure the passage requirements with simple, absolute, qualified, two-thirds, three-fifths or custom majority rules, alongside quorum requirements. The results show whether the proposal passes under the rules you selected.
-
-## Results, history and exports
-
-Review the outcome of a vote and inspect individual deputy decisions. The simulator keeps a vote history, lets you compare recorded votes, and supports exports including:
-
-- Parliament compositions in CSV.
-- Voting records in CSV and JSON.
-- Complete parliament projects in JSON, which can be imported later.
-
-## Who is it for?
-
-The sandbox can be used for alternate history, fictional elections, political worldbuilding, classroom exercises, constitutional experiments, role-playing settings, or exploring how coalition arrangements and party discipline affect parliamentary majorities.
-
-## Data and project storage
-
-The public website runs in your browser. Parliament projects are saved in the browser's local storage on the device and browser you use; they are not automatically synchronized across devices. Use the JSON export to back up a project or move it to another browser.
-
-The simulator is a scenario-building tool. Its vote results are calculated from the parties, factions, deputies, behaviour settings and passage rules configured by the user. They are not forecasts of real parliamentary behaviour or future political events.
-
-## Feedback and bug reports
-
-Found a problem or have an idea for a feature? [Open an issue on GitHub](https://github.com/SteveR0BAT/Parliament-Sandbox-Simulator/issues).
-
----
-
-**Live website:** https://stever0bat.github.io/Parliament-Sandbox-Simulator/  
+**Live application:** https://stever0bat.github.io/Parliament-Sandbox-Simulator/  
 **Repository:** https://github.com/SteveR0BAT/Parliament-Sandbox-Simulator
+
+## Features
+
+- **Parliament builder:** configure seat counts, chamber geometry, rows, spacing, curvature, orientation, and visualisation.
+- **Parties, factions and coalitions:** define political groups, leaders, identities, ideological positions, and parliamentary relationships.
+- **Independent MPs:** configure individual deputies outside party structures.
+- **Deputy names:** generate deputies using configurable generic or regional name styles.
+- **Ideology library:** explore 130 built-in ideology entries and add custom ideologies.
+- **Voting engine:** simulate bills, resolutions, motions, amendments, and confidence votes using party, faction, ideology, individual, random, or mixed behaviour.
+- **Behaviour modelling:** configure party and faction discipline, ideological adherence, randomness, abstention, and absence.
+- **Constitutional rules:** configure majority thresholds, custom multi-part requirements, and quorum.
+- **Results and history:** inspect individual deputy decisions, compare recorded votes, and export compositions and voting records.
+- **Statistics and themes:** review political distributions and switch between supported interface languages and themes.
+- **Projects:** keep multiple parliament projects in the browser and import/export complete JSON projects.
+
+The voting engine is a configurable scenario model. Its results reflect the assumptions and rules entered by the user; they are not forecasts of real parliamentary behaviour.
+
+## Repository structure
+
+The application source is kept in the website/ directory as a normal Next.js project, not embedded in a compressed archive.
+
+```text
+.
+├── .github/workflows/deploy.yml
+├── website/
+│   ├── public/
+│   ├── src/
+│   │   ├── app/
+│   │   ├── components/
+│   │   ├── data/
+│   │   └── lib/
+│   ├── tests/
+│   ├── package.json
+│   └── package-lock.json
+├── LICENSE
+├── README.md
+└── CONTRIBUTING.md
+```
+
+## Run locally
+
+Requirements: Node.js 22 or later and npm.
+
+```bash
+cd website
+npm install
+npm run dev
+```
+
+Open http://localhost:3000.
+
+## Quality checks
+
+Run these commands from website/:
+
+```bash
+npm run typecheck
+npm test
+npm run lint  # core logic, data and tests
+npm run build
+```
+
+GitHub Actions runs type checking, automated tests, lint checks over the core logic/data and tests, and the production build before publishing the static site to GitHub Pages. Legacy UI components currently have separate lint findings; they do not block the core test/build pipeline.
+
+## Project storage and backups
+
+Projects are stored locally in the browser using IndexedDB. They are not uploaded to a server and do not automatically synchronize across browsers or devices.
+
+The application retains up to three recent recovery snapshots per project. A snapshot is created when a project is first created and before a changed saved version is overwritten or restored. Use Backups in the Projects window to inspect and restore previous versions. Create backup adds a manual recovery point.
+
+Existing projects stored by the previous localStorage-based version are migrated into IndexedDB when the updated application is first opened in that browser. The old localStorage data is intentionally left untouched during migration as an additional safety net.
+
+Browser storage is not a substitute for an external backup. Use Export JSON regularly to keep a portable copy of important projects or transfer them to another browser or device. Clearing browser site data can delete local projects and recovery snapshots.
+
+## Contributing
+
+Bug reports and feature suggestions are welcome through GitHub Issues. See CONTRIBUTING.md for development guidance.
+
+## License
+
+This project is distributed under the Parliament Sandbox Attribution License (PSAL) 1.0. It permits non-commercial and commercial use, modification, and redistribution. Commercial use requires clear attribution to **Parliament Sandbox Simulator by SteveR0BAT** and a link to this repository.
+
+Read the complete LICENSE before using or redistributing the project.
+
+PSAL is a custom attribution license, not an OSI-approved open-source license. Third-party dependencies and assets remain under their respective licenses.
