@@ -93,6 +93,7 @@ test("version 1 project migration preserves custom ideology metadata and legacy 
   assert.equal(migrated.customIdeologies[0].legacyCategory, "center-left");
   assert.equal(migrated.customIdeologies[0].positions.economic, -1);
   assert.equal(migrated.customIdeologies[0].positions.social, null);
+  assert.equal(migrated.customIdeologies[0].positions.authority, null);
   assert.equal(migrated.customIdeologies[0].description, "Keep this wording.");
   assert.equal(migrated.customIdeologies[0].economic, "Original economic text");
   assert.equal(migrated.issues[0].legacyGroupPositions?.["far-left"]?.pos, "for");
