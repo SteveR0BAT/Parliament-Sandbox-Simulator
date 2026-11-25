@@ -630,6 +630,220 @@ export default function sitemap(): MetadataRoute.Sitemap {
         content = path.read_text(encoding="utf-8")
         if 'fetch("/api/' in content or "fetch(`/api/" in content or 'from "@/db/' in content:
             raise RuntimeError(f"API/database dependency remains in {path.relative_to(ROOT)}")
+
+    # ---------------- UI localisation (presentation layer only) ----------------
+    # The language preference is browser-local and deliberately kept out of project data.
+    translations_path = Path(__file__).with_name("translations.json")
+    translations = json.loads(translations_path.read_text(encoding="utf-8"))
+    data_dir = ROOT / "src/data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    (data_dir / "translations.ts").write_text(
+        "const translations: Record<string, Record<string, string>> = "
+        + json.dumps(translations, ensure_ascii=False)
+        + ";\\nexport default translations;\\n",
+        encoding="utf-8",
+    )
+
+    (ROOT / "src/lib/language.tsx").write_text('''"use client";
+import { useCallback, useEffect, useState } from "react";
+import dictionary from "@/data/translations";
+
+export const LANGUAGES = [
+  { code: "en", label: "English" },
+  { code: "ru", label: "Русский" },
+  { code: "de", label: "Deutsch" },
+  { code: "fr", label: "Français" },
+  { code: "zh-CN", label: "简体中文" },
+  { code: "id", label: "Bahasa Indonesia" },
+  { code: "ka", label: "ქართული" },
+  { code: "es", label: "Español" },
+  { code: "ja", label: "日本語" },
+  { code: "ko", label: "한국어" },
+] as const;
+
+export type Language = (typeof LANGUAGES)[number]["code"];
+const STORAGE_KEY = "parliament-sandbox:language";
+const LANGUAGE_EVENT = "parliament-sandbox:language-change";
+
+export function useLanguage() {
+  const [language, setLanguageState] = useState<Language>("en");
+
+  useEffect(() => {
+    const readStoredLanguage = () => {
+      try {
+        const saved = window.localStorage.getItem(STORAGE_KEY);
+        if (LANGUAGES.some((item) => item.code === saved)) {
+          setLanguageState(saved as Language);
+        }
+      } catch {
+        // Keep English when browser storage is unavailable.
+      }
+    };
+    readStoredLanguage();
+    window.addEventListener(LANGUAGE_EVENT, readStoredLanguage);
+    window.addEventListener("storage", readStoredLanguage);
+    return () => {
+      window.removeEventListener(LANGUAGE_EVENT, readStoredLanguage);
+      window.removeEventListener("storage", readStoredLanguage);
+    };
+  }, []);
+
+  const setLanguage = useCallback((next: Language) => {
+    try {
+      window.localStorage.setItem(STORAGE_KEY, next);
+    } catch {
+      // The selection still applies for the current session.
+    }
+    setLanguageState(next);
+    window.dispatchEvent(new Event(LANGUAGE_EVENT));
+  }, []);
+
+  return { language, setLanguage };
+}
+
+export function translateText(value: string, language: Language): string {
+  if (language === "en") return value;
+  return dictionary[language]?.[value] ?? value;
+}
+''', encoding="utf-8")
+
+    (ROOT / "src/components/LanguageBridge.tsx").write_text('''"use client";
+import { useEffect } from "react";
+import { translateText, useLanguage } from "@/lib/language";
+
+type TextState = { original: string; applied: string };
+type AttributeState = { original: string; applied: string };
+const textStates = new WeakMap<Text, TextState>();
+const attributeStates = new WeakMap<Element, Map<string, AttributeState>>();
+const TRANSLATABLE_ATTRIBUTES = ["title", "placeholder", "aria-label", "alt"];
+
+function translateTextNode(node: Text, language: ReturnType<typeof useLanguage>["language"]) {
+  const raw = node.nodeValue ?? "";
+  const trimmed = raw.trim();
+  if (!trimmed) return;
+
+  const previous = textStates.get(node);
+  const original = previous && raw === previous.applied ? previous.original : trimmed;
+  const translated = translateText(original, language);
+  const start = raw.indexOf(trimmed);
+  const next = raw.slice(0, start) + translated + raw.slice(start + trimmed.length);
+  textStates.set(node, { original, applied: next });
+  if (raw !== next) node.nodeValue = next;
+}
+
+function translateAttribute(element: Element, name: string, language: ReturnType<typeof useLanguage>["language"]) {
+  const raw = element.getAttribute(name);
+  if (raw === null || !raw.trim()) return;
+  let states = attributeStates.get(element);
+  if (!states) {
+    states = new Map<string, AttributeState>();
+    attributeStates.set(element, states);
+  }
+  const previous = states.get(name);
+  const original = previous && raw === previous.applied ? previous.original : raw;
+  const translated = translateText(original, language);
+  states.set(name, { original, applied: translated });
+  if (raw !== translated) element.setAttribute(name, translated);
+}
+
+function translateTree(root: Node, language: ReturnType<typeof useLanguage>["language"]) {
+  if (root.nodeType === Node.TEXT_NODE) {
+    translateTextNode(root as Text, language);
+    return;
+  }
+  if (root instanceof Element) {
+    for (const name of TRANSLATABLE_ATTRIBUTES) translateAttribute(root, name, language);
+  }
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  let current = walker.nextNode();
+  while (current) {
+    translateTextNode(current as Text, language);
+    current = walker.nextNode();
+  }
+  if (root instanceof Element) {
+    for (const element of root.querySelectorAll("*")) {
+      for (const name of TRANSLATABLE_ATTRIBUTES) translateAttribute(element, name, language);
+    }
+  }
+}
+
+export function LanguageBridge() {
+  const { language } = useLanguage();
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+    if (!document.body) return;
+    translateTree(document.body, language);
+
+    const observer = new MutationObserver((records) => {
+      for (const record of records) {
+        if (record.type === "characterData" && record.target.nodeType === Node.TEXT_NODE) {
+          translateTextNode(record.target as Text, language);
+        } else if (record.type === "attributes" && record.target instanceof Element && record.attributeName) {
+          translateAttribute(record.target, record.attributeName, language);
+        } else if (record.type === "childList") {
+          for (const added of record.addedNodes) translateTree(added, language);
+        }
+      }
+    });
+    observer.observe(document.body, {
+      subtree: true,
+      childList: true,
+      characterData: true,
+      attributes: true,
+      attributeFilter: TRANSLATABLE_ATTRIBUTES,
+    });
+    return () => observer.disconnect();
+  }, [language]);
+
+  return null;
+}
+''', encoding="utf-8")
+
+    settings_path = ROOT / "src/components/SettingsPanel.tsx"
+    settings = settings_path.read_text(encoding="utf-8")
+    if 'from "@/lib/language"' not in settings:
+        settings = settings.replace(
+            'import { useStore } from "@/lib/store";',
+            'import { useStore } from "@/lib/store";\\nimport { LANGUAGES, useLanguage, type Language } from "@/lib/language";',
+            1,
+        )
+    if "const { language, setLanguage } = useLanguage();" not in settings:
+        settings = settings.replace(
+            '  const s = useStore((st) => st.data.settings);',
+            '  const { language, setLanguage } = useLanguage();\\n  const s = useStore((st) => st.data.settings);',
+            1,
+        )
+    interface_marker = '      <Section title="Interface" defaultOpen={false}>'
+    language_field = '''      <Section title="Interface" defaultOpen={false}>
+        <Field label="Language">
+          <select className="select" value={language} onChange={(e) => setLanguage(e.target.value as Language)}>
+            {LANGUAGES.map((item) => (
+              <option key={item.code} value={item.code}>{item.label}</option>
+            ))}
+          </select>
+        </Field>'''
+    if interface_marker not in settings:
+        raise RuntimeError("Could not find Interface settings section")
+    settings = settings.replace(interface_marker, language_field, 1)
+    settings_path.write_text(settings, encoding="utf-8")
+
+    shell_path = ROOT / "src/components/AppShell.tsx"
+    shell = shell_path.read_text(encoding="utf-8")
+    if 'import { LanguageBridge } from "./LanguageBridge";' not in shell:
+        shell = shell.replace(
+            'import { ProjectsModal, openProject } from "./ProjectsModal";',
+            'import { ProjectsModal, openProject } from "./ProjectsModal";\\nimport { LanguageBridge } from "./LanguageBridge";',
+            1,
+        )
+    shell = shell.replace(
+        '    <div className="flex h-screen flex-col">',
+        '    <div className="flex h-screen flex-col">\\n      <LanguageBridge />',
+        1,
+    )
+    shell_path.write_text(shell, encoding="utf-8")
+    print("Localisation assets injected: English, Russian, German, French, Simplified Chinese, Indonesian, Georgian, Spanish, Japanese and Korean.")
+
     print("Parliament Sandbox prepared for static GitHub Pages hosting.")
 
 if __name__ == "__main__":
