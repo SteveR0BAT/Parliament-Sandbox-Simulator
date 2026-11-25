@@ -22,6 +22,8 @@ def replace_once(path: str, old: str, new: str) -> None:
 def main() -> None:
     names_path = ROOT / "src/lib/deputyNames.ts"
     names_path.parent.mkdir(parents=True, exist_ok=True)
+    DEPUTY_NAMES_SOURCE = DEPUTY_NAMES_SOURCE.replace('chinese: ["Wei|Jian', 'chinese: ["Xi|Wei|Jian', 1)
+    DEPUTY_NAMES_SOURCE = DEPUTY_NAMES_SOURCE.replace('|Cao|Peng", 0.05', '|Cao|Peng|Wongyang", 0.05', 1)
     names_path.write_text(DEPUTY_NAMES_SOURCE, encoding="utf-8")
 
     replace_once(
@@ -65,7 +67,7 @@ export interface ChamberSettings {
     replace_once(
         "src/lib/parliament.ts",
         "      name: asLeader ? party.leader : randomName(),",
-        "      name: asLeader ? party.leader : randomName(d.settings.genericDeputyNames),",
+        "      name: asLeader && party.leader ? party.leader : randomName(d.settings.genericDeputyNames),",
     )
     replace_once(
         "src/lib/store.ts",
@@ -74,6 +76,11 @@ export interface ChamberSettings {
     )
     replace_once("src/lib/store.ts", "const dep = makeDeputy();", "const dep = makeDeputy({}, d.settings.genericDeputyNames);")
     replace_once("src/lib/store.ts", "const dep = makeDeputy({ partyId: party.id });", "const dep = makeDeputy({ partyId: party.id }, d.settings.genericDeputyNames)")
+    replace_once(
+        "src/lib/defaults.ts",
+        "{ ...makeDeputy(), ...(dep as object), id }",
+        "{ ...makeDeputy({}, d.settings.genericDeputyNames), ...(dep as object), id }",
+    )
     replace_once(
         "src/components/SettingsPanel.tsx",
         'import type { ChamberSettings, CategoryId, VotingMode } from "@/lib/types";',
