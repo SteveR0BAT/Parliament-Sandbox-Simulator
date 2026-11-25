@@ -14,7 +14,7 @@ npm run dev
 
 ## Before submitting a change
 
-Run the available checks:
+Run the available checks (the lint command currently targets core logic, data and tests):
 
 ```bash
 npm run typecheck
