@@ -22,9 +22,9 @@ def replace_once(path: str, old: str, new: str) -> None:
 def main() -> None:
     names_path = ROOT / "src/lib/deputyNames.ts"
     names_path.parent.mkdir(parents=True, exist_ok=True)
-    DEPUTY_NAMES_SOURCE = DEPUTY_NAMES_SOURCE.replace('chinese: ["Wei|Jian', 'chinese: ["Xi|Wei|Jian', 1)
-    DEPUTY_NAMES_SOURCE = DEPUTY_NAMES_SOURCE.replace('|Cao|Peng", 0.05', '|Cao|Peng|Wongyang", 0.05', 1)
-    names_path.write_text(DEPUTY_NAMES_SOURCE, encoding="utf-8")
+    deputy_names_source = DEPUTY_NAMES_SOURCE.replace('chinese: ["Wei|Jian', 'chinese: ["Xi|Wei|Jian', 1)
+    deputy_names_source = deputy_names_source.replace('|Cao|Peng", 0.05', '|Cao|Peng|Wongyang", 0.05', 1)
+    names_path.write_text(deputy_names_source, encoding="utf-8")
 
     replace_once(
         "src/lib/types.ts",
