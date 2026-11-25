@@ -294,6 +294,7 @@ export async function saveNow(): Promise<boolean> {
     package = json.loads(package_path.read_text(encoding="utf-8"))
     package["name"] = "parliament-sandbox-simulator"
     package.setdefault("scripts", {})["test"] = "tsx --test tests/*.test.ts"
+    package["scripts"]["lint"] = "eslint src/lib src/data tests"
     package["devDependencies"] = package.get("devDependencies", {})
     package["devDependencies"]["tsx"] = "^4.20.6"
     for key in ("dotenv", "drizzle-orm", "pg"): package.get("dependencies", {}).pop(key, None)
