@@ -35,7 +35,7 @@ import {
 } from "./parliament";
 import { newIssue, normalizeProject, sampleProject } from "./defaults";
 import { createRecord, lookupIdeology } from "./voting";
-import { CATEGORY_MAP } from "@/data/ideologies";
+import { compareIdeologies } from "@/data/ideologies";
 
 export type Tab = "parliament" | "parties" | "coalitions" | "factions" | "ideologies" | "voting" | "statistics" | "settings";
 export type Focus = { type: "party" | "faction" | "coalition" | "independents"; id: string } | null;
@@ -261,8 +261,8 @@ export const useStore = create<Store>((set, get) => {
       }),
     sortPartiesByIdeology: () =>
       run((d) => {
-        const score = (p: Party) => CATEGORY_MAP[lookupIdeology(d.customIdeologies, p.ideologyId)?.category ?? "center"].lr;
-        d.parties.sort((a, b) => score(a) - score(b));
+        const ideology = (p: Party) => lookupIdeology(d.customIdeologies, p.ideologyId);
+        d.parties.sort((a, b) => compareIdeologies(ideology(a), ideology(b)));
         d.seatingLocked = false;
         syncSeats(d);
       }),

@@ -157,7 +157,7 @@ export function PartiesPanel() {
           >
             By percentages…
           </button>
-          <button className="btn btn-sm" onClick={sortByIdeology} disabled={data.parties.length < 2} title="Order parties from left to right by ideology and re-arrange seats">
+          <button className="btn btn-sm" onClick={sortByIdeology} disabled={data.parties.length < 2} title="Order parties by economic, social and authority positions, then re-arrange seats">
             Sort by ideology
           </button>
           <button className="btn btn-sm" onClick={() => setMergeOpen(!mergeOpen)} disabled={data.parties.length < 2}>
