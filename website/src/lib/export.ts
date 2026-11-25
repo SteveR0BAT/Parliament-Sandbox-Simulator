@@ -1,5 +1,6 @@
 import type { ProjectData, VoteRecord } from "./types";
 import { computeTally, lookupIdeology, VOTE_LABELS } from "./voting";
+import { IDEOLOGY_FAMILY_MAP, formatAxisPosition } from "@/data/ideologies";
 import { deputyList } from "./parliament";
 
 export function downloadFile(filename: string, text: string, mime = "text/plain") {
@@ -47,12 +48,16 @@ const row = (cells: unknown[]) => cells.map(esc).join(",");
 export function compositionCSV(d: ProjectData): string {
   const lines: string[] = [];
   lines.push(row(["# Parties"]));
-  lines.push(row(["Party", "Abbreviation", "Leader", "Ideology", "Seats", "Share %", "Role", "Coalitions", "Color"]));
+  lines.push(row(["Party", "Abbreviation", "Leader", "Ideology", "Ideology family", "Economic position", "Social position", "Political authority", "Seats", "Share %", "Role", "Coalitions", "Color"]));
   for (const p of d.parties) {
     const seats = deputyList(d).filter((x) => x.partyId === p.id).length;
+    const ideology = lookupIdeology(d.customIdeologies, p.ideologyId);
     lines.push(
       row([
-        p.name, p.abbr, p.leader, lookupIdeology(d.customIdeologies, p.ideologyId)?.name ?? "", seats,
+        p.name, p.abbr, p.leader, ideology?.name ?? "", ideology ? IDEOLOGY_FAMILY_MAP[ideology.family].label : "",
+        ideology ? formatAxisPosition("economic", ideology.positions.economic) : "",
+        ideology ? formatAxisPosition("social", ideology.positions.social) : "",
+        ideology ? formatAxisPosition("authority", ideology.positions.authority) : "", seats,
         ((seats / d.settings.totalSeats) * 100).toFixed(2), p.role,
         d.coalitions.filter((c) => c.partyIds.includes(p.id)).map((c) => c.abbr || c.name).join("; "), p.color,
       ]),
@@ -60,17 +65,21 @@ export function compositionCSV(d: ProjectData): string {
   }
   lines.push("");
   lines.push(row(["# Seats"]));
-  lines.push(row(["Seat", "Deputy", "Party", "Faction", "Coalitions", "Individual ideology", "Independent role"]));
+  lines.push(row(["Seat", "Deputy", "Party", "Faction", "Coalitions", "Individual ideology", "Ideology family", "Economic position", "Social position", "Political authority", "Independent role"]));
   d.seats.forEach((id, i) => {
     const dep = id ? d.deputies[id] : undefined;
     if (!dep) return lines.push(row([i + 1, "(vacant)", "", "", "", "", ""]));
     const p = d.parties.find((x) => x.id === dep.partyId);
     const f = d.factions.find((x) => x.id === dep.factionId);
+    const ideology = lookupIdeology(d.customIdeologies, dep.ideologyId);
     lines.push(
       row([
         i + 1, dep.name, p ? p.name : "Independent", f?.name ?? "",
         p ? d.coalitions.filter((c) => c.partyIds.includes(p.id)).map((c) => c.abbr || c.name).join("; ") : "",
-        lookupIdeology(d.customIdeologies, dep.ideologyId)?.name ?? "", p ? "" : dep.role,
+        ideology?.name ?? "", ideology ? IDEOLOGY_FAMILY_MAP[ideology.family].label : "",
+        ideology ? formatAxisPosition("economic", ideology.positions.economic) : "",
+        ideology ? formatAxisPosition("social", ideology.positions.social) : "",
+        ideology ? formatAxisPosition("authority", ideology.positions.authority) : "", p ? "" : dep.role,
       ]),
     );
   });
@@ -100,11 +109,16 @@ export function voteCSV(rec: VoteRecord): string {
   for (const c of t.coalitions) L.push(row([c.name, c.counts.for, c.counts.against, c.counts.abstain, c.counts.absent]));
   L.push("");
   L.push(row(["# Deputies"]));
-  L.push(row(["Deputy", "Party", "Faction", "Ideology", "Vote", "Why"]));
+  L.push(row(["Deputy", "Party", "Faction", "Ideology", "Ideology family", "Economic position", "Social position", "Political authority", "Vote", "Why"]));
   rec.snapshot.deputies.forEach((x, i) => {
     const p = rec.snapshot.parties.find((y) => y.id === x.partyId);
     const f = rec.snapshot.factions.find((y) => y.id === x.factionId);
-    L.push(row([x.name, p?.name ?? "Independent", f?.name ?? "", x.ideology, VOTE_LABELS[rec.votes[i]], rec.reasons[i]]));
+    const family = x.family ?? "unclassified";
+    L.push(row([x.name, p?.name ?? "Independent", f?.name ?? "", x.ideology, IDEOLOGY_FAMILY_MAP[family].label,
+      x.positions ? formatAxisPosition("economic", x.positions.economic) : "",
+      x.positions ? formatAxisPosition("social", x.positions.social) : "",
+      x.positions ? formatAxisPosition("authority", x.positions.authority) : "",
+      VOTE_LABELS[rec.votes[i]], rec.reasons[i]]));
   });
   return L.join("\n");
 }

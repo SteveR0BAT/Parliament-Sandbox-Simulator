@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useStore, roleLabels } from "@/lib/store";
 import type { IndependentBehavior, Role, VoteRecord } from "@/lib/types";
 import { describeDeputy } from "./Chamber";
-import { IdeologySelect } from "./IdeologyPicker";
+import { FamilyBadge, IdeologyPositionLine, IdeologySelect } from "./IdeologyPicker";
 import { ColorPicker } from "./ColorPicker";
 import { Field, NumInput, Swatch } from "./ui";
 
@@ -78,9 +78,11 @@ export function SeatInspector({ seat, record, showVotes }: { seat: number; recor
                 <IdeologySelect value={dep.ideologyId} onChange={(v) => updateDeputy(dep.id, { ideologyId: v })} placeholder="Inherit from faction / party" />
               </Field>
               {info?.ideology && (
-                <p className="muted text-xs">
-                  Effective ideology: <b>{info.ideology.name}</b> ({info.via})
-                </p>
+                <div className="space-y-1">
+                  <p className="muted text-xs">Effective ideology: <b>{info.ideology.name}</b> ({info.via})</p>
+                  <FamilyBadge id={info.ideology.family}/>
+                  <IdeologyPositionLine ideology={info.ideology}/>
+                </div>
               )}
               {!dep.partyId && (
                 <>

@@ -3,7 +3,7 @@ import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { useStore } from "@/lib/store";
 import { computeGeometry, computeViewBox } from "@/lib/geometry";
 import { buildLookup, computeSeatStyles, type RevealState } from "@/lib/visual";
-import { CATEGORY_MAP } from "@/data/ideologies";
+import { IDEOLOGY_FAMILY_MAP, formatAxisPosition } from "@/data/ideologies";
 import { computeTally, lookupIdeology, mulberry32, VOTE_LABELS } from "@/lib/voting";
 import type { Layer, ProjectData, VoteRecord } from "@/lib/types";
 import { Seg, Swatch } from "./ui";
@@ -265,7 +265,11 @@ export function Chamber() {
                   {hoverInfo.party?.leader && <div className="muted">Leader: {hoverInfo.party.leader}</div>}
                   {hoverInfo.faction && <div>Faction: {hoverInfo.faction.name}</div>}
                   {hoverInfo.coalitions.length > 0 && <div>Coalition: {hoverInfo.coalitions.map((c) => c.name).join(", ")}</div>}
-                  {hoverInfo.ideology && <div>Ideology: {hoverInfo.ideology.name}{hoverInfo.via ? ` (${hoverInfo.via})` : ""}</div>}
+                  {hoverInfo.ideology && <>
+                    <div>Ideology: {hoverInfo.ideology.name}{hoverInfo.via ? ` (${hoverInfo.via})` : ""}</div>
+                    <div>Family: {IDEOLOGY_FAMILY_MAP[hoverInfo.ideology.family].label}</div>
+                    <div className="muted">Economic: {formatAxisPosition("economic", hoverInfo.ideology.positions.economic)} · Social: {formatAxisPosition("social", hoverInfo.ideology.positions.social)} · Authority: {formatAxisPosition("authority", hoverInfo.ideology.positions.authority)}</div>
+                  </>}
                   {hoverInfo.vote && <div className="font-bold">Vote: {hoverInfo.vote}</div>}
                 </div>
               )}
@@ -383,4 +387,3 @@ function Legend({ layer, showVotes }: { layer: Layer; showVotes: boolean }) {
   );
 }
 
-export { CATEGORY_MAP };
