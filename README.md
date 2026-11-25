@@ -64,11 +64,11 @@ Run these commands from website/:
 ```bash
 npm run typecheck
 npm test
-npm run lint
+npm run lint  # core logic, data and tests
 npm run build
 ```
 
-GitHub Actions runs type checking, automated tests, linting, and the production build before publishing the static site to GitHub Pages.
+GitHub Actions runs type checking, automated tests, lint checks over the core logic/data and tests, and the production build before publishing the static site to GitHub Pages. Legacy UI components currently have separate lint findings; they do not block the core test/build pipeline.
 
 ## Project storage and backups
 
