@@ -640,7 +640,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     (data_dir / "translations.ts").write_text(
         "const translations: Record<string, Record<string, string>> = "
         + json.dumps(translations, ensure_ascii=False)
-        + ";\\nexport default translations;\\n",
+        + ";\nexport default translations;\n",
         encoding="utf-8",
     )
 
@@ -805,13 +805,13 @@ export function LanguageBridge() {
     if 'from "@/lib/language"' not in settings:
         settings = settings.replace(
             'import { useStore } from "@/lib/store";',
-            'import { useStore } from "@/lib/store";\\nimport { LANGUAGES, useLanguage, type Language } from "@/lib/language";',
+            'import { useStore } from "@/lib/store";\nimport { LANGUAGES, useLanguage, type Language } from "@/lib/language";',
             1,
         )
     if "const { language, setLanguage } = useLanguage();" not in settings:
         settings = settings.replace(
             '  const s = useStore((st) => st.data.settings);',
-            '  const { language, setLanguage } = useLanguage();\\n  const s = useStore((st) => st.data.settings);',
+            '  const { language, setLanguage } = useLanguage();\n  const s = useStore((st) => st.data.settings);',
             1,
         )
     interface_marker = '      <Section title="Interface" defaultOpen={false}>'
@@ -833,12 +833,12 @@ export function LanguageBridge() {
     if 'import { LanguageBridge } from "./LanguageBridge";' not in shell:
         shell = shell.replace(
             'import { ProjectsModal, openProject } from "./ProjectsModal";',
-            'import { ProjectsModal, openProject } from "./ProjectsModal";\\nimport { LanguageBridge } from "./LanguageBridge";',
+            'import { ProjectsModal, openProject } from "./ProjectsModal";\nimport { LanguageBridge } from "./LanguageBridge";',
             1,
         )
     shell = shell.replace(
         '    <div className="flex h-screen flex-col">',
-        '    <div className="flex h-screen flex-col">\\n      <LanguageBridge />',
+        '    <div className="flex h-screen flex-col">\n      <LanguageBridge />',
         1,
     )
     shell_path.write_text(shell, encoding="utf-8")
