@@ -1,14 +1,7 @@
-// Researched ideology database (kept separate from application logic).
-//
-// Method: four research rounds — (1) major ideological families and their history
-// (Wikipedia "Left–right political spectrum" / "List of political ideologies", LibreTexts/OpenStax,
-// Britannica "third way"); (2) ideologies belonging to each category via Wikipedia category articles
-// (far-right, far-left, centre-left, centrism) and party-family literature (Klaus von Beyme, Cas Mudde);
-// (3) verification of definitions and disputed placements; (4) review for distinctness (synonyms are stored
-// as `aliases`, not as separate entries) and coverage of all eight categories.
-//
-// IMPORTANT: placing an ideology on a one-dimensional spectrum is always approximate. Entries carrying a
-// `note` are those where scholars place the ideology differently depending on time, country or definition.
+// Built-in ideology descriptions, historical context and references are preserved from the original database.
+// The eight family groups are for navigation only. Each ideology's economic, social and authority positions
+// are stored independently, and may be left unspecified where a general label does not determine them.
+// Original category assignments survive only as migration metadata for legacy projects and source references.
 
 import type { AxisValue, Ideology, IdeologyFamilyId, IdeologyPositions, LegacyCategoryId, Source } from "@/lib/types";
 
@@ -24,6 +17,7 @@ export const IDEOLOGY_FAMILIES:IdeologyFamilyInfo[]=[
 {id:"civic-ecological-crosscutting",label:"Civic, Ecological & Cross-Cutting Traditions",color:"#16a34a",blurb:"Civic, ecological, pragmatic and cross-cutting traditions that do not form one conventional ideological family."}
 ];
 export const IDEOLOGY_FAMILY_MAP:Record<IdeologyFamilyId,{id:IdeologyFamilyId;label:string;color:string;blurb:string}>=Object.fromEntries([...IDEOLOGY_FAMILIES.map(f=>[f.id,f]),["unclassified",{id:"unclassified",label:"Unclassified",color:"#64748b",blurb:"Custom ideology awaiting family and dimensional classification."}]]) as Record<IdeologyFamilyId,{id:IdeologyFamilyId;label:string;color:string;blurb:string}>;
+// Retained strictly for migration compatibility; never used by the active ideology interface.
 export const LEGACY_CATEGORIES:{id:LegacyCategoryId;label:string;color:string;lr:number}[]=[
 {id:"far-right",label:"Far Right",color:"#7f1d1d",lr:90},{id:"right",label:"Right-Wing",color:"#b91c1c",lr:60},{id:"center-right",label:"Center-Right",color:"#ea580c",lr:30},{id:"center",label:"Center",color:"#ca8a04",lr:0},{id:"center-left",label:"Center-Left",color:"#0d9488",lr:-30},{id:"left",label:"Left-Wing",color:"#2563eb",lr:-60},{id:"far-left",label:"Far Left",color:"#7c2d12",lr:-90},{id:"third-way",label:"Third Way",color:"#7c3aed",lr:0},{id:"unclassified",label:"Custom / Unclassified",color:"#64748b",lr:0}];
 export function formatAxisPosition(axis:"economic"|"social"|"authority",value:AxisValue|null):string{

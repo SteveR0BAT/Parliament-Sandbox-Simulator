@@ -219,8 +219,8 @@ function migrateCustomIdeology(raw:unknown):ProjectData["customIdeologies"][numb
  const i=(isObj(raw)?raw:{}) as Record<string,unknown>,legacy=typeof i.legacyCategory==="string"?i.legacyCategory:typeof i.category==="string"?i.category:"unclassified";
  const family=typeof i.family==="string"&&FAMILY_IDS.has(i.family)?i.family as IdeologyFamilyId:"unclassified";
  const positions=isObj(i.positions)?i.positions:{economic:LEGACY_ECONOMIC_COORDINATES[legacy]??null,social:null,authority:null};
- const valid=(v:unknown)=>[-3,-2,-1,0,1,2,3].includes(Number(v));
- return{...(i as unknown as ProjectData["customIdeologies"][number]),family,positions:{economic:valid(positions.economic)?Number(positions.economic) as -3|-2|-1|0|1|2|3:null,social:valid(positions.social)?Number(positions.social) as -3|-2|-1|0|1|2|3:null,authority:valid(positions.authority)?Number(positions.authority) as -3|-2|-1|0|1|2|3:null},legacyCategory:LEGACY_CATEGORY_IDS.has(legacy)?legacy as LegacyCategoryId:"unclassified"};
+ const axisValue=(v:unknown): -3|-2|-1|0|1|2|3|null => typeof v==="number" && Number.isInteger(v) && v>=-3 && v<=3 ? v as -3|-2|-1|0|1|2|3 : null;
+ return{...(i as unknown as ProjectData["customIdeologies"][number]),family,positions:{economic:axisValue(positions.economic),social:axisValue(positions.social),authority:axisValue(positions.authority)},legacyCategory:LEGACY_CATEGORY_IDS.has(legacy)?legacy as LegacyCategoryId:"unclassified"};
 }
 function migrateIssue(raw:unknown):Issue{
  const i=(isObj(raw)?raw:{}) as Record<string,unknown>,old=isObj(i.groupPositions)?i.groupPositions:{},groupPositions:Record<string,unknown>={},legacyGroupPositions:Record<string,unknown>=isObj(i.legacyGroupPositions)?{...i.legacyGroupPositions}:{};
@@ -232,7 +232,7 @@ function migrateHistory(raw:unknown):ProjectData["history"][number]{
  const deputies=Array.isArray(s.deputies)?s.deputies.map(rawDep=>{
   const d=(isObj(rawDep)?rawDep:{}) as Record<string,unknown>,old=typeof d.legacyCategory==="string"?d.legacyCategory:typeof d.category==="string"?d.category:null;
   const found=typeof d.ideology==="string"?BUILTIN_NAME_MAP[d.ideology.toLowerCase()]:undefined;
-  return{...d,family:typeof d.family==="string"?d.family:found?.family??"unclassified",legacyCategory:old&&LEGACY_CATEGORY_IDS.has(old)?old:found?.legacyCategory??null};
+  return{...d,family:typeof d.family==="string"?d.family:found?.family??"unclassified",legacyCategory:old&&LEGACY_CATEGORY_IDS.has(old)?old:found?.legacyCategory??null,positions:isObj(d.positions)?d.positions:found?.positions??null};
  }):[];
  return{...(r as unknown as ProjectData["history"][number]),issue:migrateIssue(r.issue),snapshot:{...s,deputies} as unknown as ProjectData["history"][number]["snapshot"]};
 }
