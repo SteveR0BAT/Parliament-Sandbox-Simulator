@@ -1,0 +1,98 @@
+Parliament Sandbox Attribution License (PSAL) 1.0
+
+Copyright (c) 2026 SteveR0BAT
+
+1. Definitions
+
+"Software" means the Parliament Sandbox Simulator source code and the portions of the
+project expressly identified by the copyright holder as being distributed under this
+License.
+
+"Author" means SteveR0BAT, the original author of the Parliament Sandbox Simulator.
+
+"Commercial Use" means use of the Software in connection with a product, service,
+business, paid offering, monetized distribution, or other activity intended primarily
+for commercial advantage or monetary compensation. Commercial Use includes use in
+hosted services and commercial modifications or derivative works.
+
+2. Permission Grant
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of the
+Software, to use, reproduce, modify, adapt, merge, publish, distribute, sublicense,
+make available, and sell copies of the Software and derivative works, in source or
+binary form, for non-commercial or commercial purposes, subject to the conditions
+below.
+
+This permission applies worldwide and lasts for the duration of the applicable
+copyright, unless terminated under the terms of this License.
+
+3. Conditions
+
+A. Retention of Notices
+
+Redistributions of the Software, or substantial portions of it, must retain this
+copyright notice and a copy of this License. Modified versions must clearly identify
+that they have been modified.
+
+B. Attribution for Commercial Use
+
+Any person or organization making Commercial Use of the Software, or of a derivative
+work containing a substantial portion of it, must provide clear and reasonably
+prominent attribution to the Author. The attribution must:
+
+  - identify the work as "Parliament Sandbox Simulator by SteveR0BAT"; and
+  - include a link to https://github.com/SteveR0BAT/Parliament-Sandbox-Simulator
+    or, where a link is not technically possible, the full project URL in text.
+
+The attribution must appear in a location reasonably accessible to users or recipients
+of the commercial product or service, such as an About, Credits, Acknowledgements,
+Documentation, or product information page. For a commercial hosted service, the
+attribution must be available from the service interface or its public documentation.
+
+C. No Endorsement
+
+This License does not grant permission to use the Author's name, handle, or branding
+to imply endorsement of a product, service, or modified version. The attribution
+required by Section 3.B is not an endorsement.
+
+D. No Removal of License Notices
+
+You may not remove or alter the copyright and license notices in copies of the
+Software in a way that obscures the origin or applicable terms of the Software.
+
+4. Contributions
+
+Unless a contributor states otherwise in writing, contributions intentionally
+submitted for inclusion in this project are licensed under this License. Contributors
+retain copyright in their contributions.
+
+5. Third-Party Material
+
+This License applies only to material owned by the Author and expressly distributed
+under it. Third-party libraries, fonts, icons, datasets, images, and other assets
+remain subject to their respective licenses and terms. Nothing in this License
+relicenses third-party material.
+
+6. Termination
+
+The permissions granted under this License terminate automatically if you fail to
+comply with its conditions. Your permissions will be reinstated when the violation
+is cured, to the extent permitted by applicable law.
+
+7. Disclaimer of Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR
+OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+8. Limitation
+
+This License is a custom attribution license. It is not an OSI-approved Open Source
+Initiative license and should not be described as OSI-approved open-source software.
+It grants both commercial and non-commercial permission, subject to the attribution
+condition for Commercial Use.
+
+END OF TERMS
