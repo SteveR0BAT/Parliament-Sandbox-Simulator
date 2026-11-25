@@ -123,6 +123,7 @@ export function IdeologyConfig({ issue, update }: { issue: Issue; update: Upd })
     <div className="space-y-3">
       <div>
         <span className="label">Position of each ideological family (all optional)</span>
+        <p className="muted mb-2 text-[11px]">Migrated projects retain old category-based issue rules as a fallback when no family position is configured. Clearing all group positions removes both current and legacy rules.</p>
         <div className="space-y-2">
           {IDEOLOGY_FAMILIES.map((family) => (
             <div key={family.id} className="grid grid-cols-[minmax(130px,1fr)_1fr] items-start gap-2 text-xs">
@@ -133,8 +134,8 @@ export function IdeologyConfig({ issue, update }: { issue: Issue; update: Upd })
             </div>
           ))}
         </div>
-        <button className="btn btn-sm mt-2" onClick={() => update((i) => (i.groupPositions = {}))}>
-          Clear all family positions
+        <button className="btn btn-sm mt-2" onClick={() => update((i) => { i.groupPositions = {}; i.legacyGroupPositions = {}; })}>
+          Clear all group positions
         </button>
       </div>
       <div>
