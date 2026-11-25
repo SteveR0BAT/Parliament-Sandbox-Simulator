@@ -1,0 +1,25 @@
+name: Temporary source inspection
+on:
+  push:
+    paths:
+      - ".github/workflows/source-inspection.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconstruct application source
+        run: |
+          cat archive_parts/part-* | base64 --decode | xz --decompress --stdout > source.zip
+          mkdir website
+          unzip -q source.zip -d website
+          test -f website/src/app/page.tsx
+          zip -qr reconstructed-source.zip website
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reconstructed-source
+          path: reconstructed-source.zip
+          retention-days: 1
