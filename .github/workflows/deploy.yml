@@ -12,6 +12,17 @@ on:
       - "LICENSE"
       - "CONTRIBUTING.md"
       - ".gitignore"
+  pull_request:
+    branches: [main]
+    paths:
+      - "archive_parts/**"
+      - ".github/workflows/deploy.yml"
+      - "scripts/**"
+      - "website/**"
+      - "README.md"
+      - "LICENSE"
+      - "CONTRIBUTING.md"
+      - ".gitignore"
   workflow_dispatch:
 
 permissions:
@@ -61,6 +72,7 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Commit the directly editable source tree
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -102,6 +114,7 @@ jobs:
           path: website/out
 
   deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
