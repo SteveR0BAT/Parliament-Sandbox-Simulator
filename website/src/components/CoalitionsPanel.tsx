@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { translateText, useLanguage } from "@/lib/language";
 import { useStore } from "@/lib/store";
 import type { Coalition } from "@/lib/types";
 import { ColorPicker } from "./ColorPicker";
@@ -8,6 +9,7 @@ import { Empty, Field, Swatch } from "./ui";
 import { partyDeputies } from "@/lib/parliament";
 
 export function CoalitionsPanel() {
+  const { language } = useLanguage();
   const data = useStore((s) => s.data);
   const focus = useStore((s) => s.ui.focus);
   const patchUI = useStore((s) => s.patchUI);
@@ -123,7 +125,7 @@ export function CoalitionsPanel() {
                   <button
                     className="btn btn-sm btn-danger"
                     onClick={() => {
-                      if (window.confirm(`Delete coalition ${c.name}? Its member parties are kept.`)) deleteCoalition(c.id);
+                      if (window.confirm(translateText(`Delete coalition ${c.name}? Its member parties are kept.`, language))) deleteCoalition(c.id);
                     }}
                   >
                     Delete
