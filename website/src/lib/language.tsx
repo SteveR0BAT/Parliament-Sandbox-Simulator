@@ -79,7 +79,8 @@ const COMPOSITE_TRANSLATION_KEYS = [
 ] as const;
 
 function escapeRegExp(value: string): string {
-  return value.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\$&");
+  const special = new Set([".", "*", "+", "?", "^", "$", "{", "}", "(", ")", "|", "[", "]", "\\"]);
+  return value.split("").map((character) => special.has(character) ? `\\${character}` : character).join("");
 }
 
 export function translateText(value: string, language: Language): string {
@@ -97,10 +98,7 @@ export function translateText(value: string, language: Language): string {
   for (const source of COMPOSITE_TRANSLATION_KEYS) {
     const replacement = runtimeTranslations[source]?.[language];
     if (!replacement) continue;
-    const pattern = new RegExp(
-      `(?<![\\\\p{L}\\\\p{N}_])${escapeRegExp(source)}(?![\\\\p{L}\\\\p{N}_])`,
-      "gu",
-    );
+    const pattern = new RegExp(`(?<![A-Za-z0-9_])${escapeRegExp(source)}(?![A-Za-z0-9_])`, "g");
     translated = translated.replace(pattern, replacement);
   }
   return translated;
