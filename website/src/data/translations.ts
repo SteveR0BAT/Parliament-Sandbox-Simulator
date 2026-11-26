@@ -1100,7 +1100,7 @@ const translations: Record<string, Record<string, string>> = {
     " custom": " custom",
     "{builtIn} built-in · {custom} custom": "{builtIn} built-in · {custom} custom",
     "{count} assignment(s)": "{count} assignment(s)",
-    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned."
+    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.",
     "Government offices": "Government offices",
     "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.": "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.",
     "eligible deputies": "eligible deputies",
@@ -2229,7 +2229,7 @@ const translations: Record<string, Record<string, string>> = {
     " custom": " пользовательских",
     "{builtIn} built-in · {custom} custom": "{builtIn} встроенных · {custom} пользовательских",
     "{count} assignment(s)": "{count} назначений",
-    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "Удалить «{name}»? Она используется в {count} записях партий, фракций или депутатов; после удаления они останутся без назначения."
+    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "Удалить «{name}»? Она используется в {count} записях партий, фракций или депутатов; после удаления они останутся без назначения.",
     "Government offices": "Правительственные должности",
     "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.": "Назначайте действующих депутатов от партий, обозначенных как правительственные, или указывайте внешнего кандидата по имени.",
     "eligible deputies": "депутатов, доступных для назначения",
@@ -3358,7 +3358,7 @@ const translations: Record<string, Record<string, string>> = {
     " custom": " benutzerdefinierte",
     "{builtIn} built-in · {custom} custom": "{builtIn} integriert · {custom} benutzerdefiniert",
     "{count} assignment(s)": "{count} Zuweisungen",
-    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "„{name}“ löschen? Die Ideologie wird in {count} Partei-, Fraktions- oder Abgeordneteneinträgen verwendet; diese Einträge verlieren danach ihre Zuordnung."
+    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "„{name}“ löschen? Die Ideologie wird in {count} Partei-, Fraktions- oder Abgeordneteneinträgen verwendet; diese Einträge verlieren danach ihre Zuordnung.",
     "Government offices": "Regierungsämter",
     "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.": "Ernennen Sie amtierende Abgeordnete aus Parteien mit Regierungsstatus oder geben Sie den Namen einer externen Amtsperson ein.",
     "eligible deputies": "wählbare Abgeordnete",
@@ -4487,7 +4487,7 @@ const translations: Record<string, Record<string, string>> = {
     " custom": " personnalisées",
     "{builtIn} built-in · {custom} custom": "{builtIn} intégrées · {custom} personnalisées",
     "{count} assignment(s)": "{count} affectation(s)",
-    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "Supprimer « {name} » ? Cette idéologie est utilisée dans {count} entrées de partis, factions ou députés, qui ne seront ensuite plus affectées."
+    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "Supprimer « {name} » ? Cette idéologie est utilisée dans {count} entrées de partis, factions ou députés, qui ne seront ensuite plus affectées.",
     "Government offices": "Postes gouvernementaux",
     "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.": "Nommez des députés issus de partis désignés comme membres du gouvernement, ou saisissez le nom d’une personne extérieure.",
     "eligible deputies": "députés éligibles",
@@ -5616,7 +5616,7 @@ const translations: Record<string, Record<string, string>> = {
     " custom": " 个自定义",
     "{builtIn} built-in · {custom} custom": "{builtIn} 个内置 · {custom} 个自定义",
     "{count} assignment(s)": "{count} 项分配",
-    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "删除“{name}”？它被 {count} 个政党、派系或议员条目使用；删除后这些条目将不再分配该意识形态。"
+    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "删除“{name}”？它被 {count} 个政党、派系或议员条目使用；删除后这些条目将不再分配该意识形态。",
     "Government offices": "政府职位",
     "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.": "从被标记为执政党的议员中任命人员，或直接输入外部任职者的姓名。",
     "eligible deputies": "名符合条件的议员",
@@ -6745,7 +6745,7 @@ const translations: Record<string, Record<string, string>> = {
     " custom": " khusus",
     "{builtIn} built-in · {custom} custom": "{builtIn} bawaan · {custom} khusus",
     "{count} assignment(s)": "{count} penetapan",
-    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "Hapus “{name}”? Ideologi ini digunakan oleh {count} entri partai, faksi, atau anggota parlemen; entri tersebut akan menjadi tidak ditetapkan."
+    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "Hapus “{name}”? Ideologi ini digunakan oleh {count} entri partai, faksi, atau anggota parlemen; entri tersebut akan menjadi tidak ditetapkan.",
     "Government offices": "Jabatan pemerintahan",
     "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.": "Tunjuk anggota parlemen aktif dari partai yang ditandai sebagai bagian pemerintah, atau masukkan nama pejabat dari luar parlemen.",
     "eligible deputies": "anggota parlemen yang memenuhi syarat",
@@ -7874,7 +7874,7 @@ const translations: Record<string, Record<string, string>> = {
     " custom": " მორგებული",
     "{builtIn} built-in · {custom} custom": "{builtIn} ჩაშენებული · {custom} მორგებული",
     "{count} assignment(s)": "{count} მინიჭება",
-    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "წაიშალოს „{name}“? იდეოლოგია გამოიყენება პარტიის, ფრაქციის ან დეპუტატის {count} ჩანაწერში; წაშლის შემდეგ მათ მინიჭებული იდეოლოგია აღარ ექნებათ."
+    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "წაიშალოს „{name}“? იდეოლოგია გამოიყენება პარტიის, ფრაქციის ან დეპუტატის {count} ჩანაწერში; წაშლის შემდეგ მათ მინიჭებული იდეოლოგია აღარ ექნებათ.",
     "Government offices": "სამთავრობო თანამდებობები",
     "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.": "დანიშნეთ მოქმედი დეპუტატები იმ პარტიებიდან, რომლებსაც მთავრობის სტატუსი აქვთ მინიჭებული, ან მიუთითეთ გარე კანდიდატის სახელი.",
     "eligible deputies": "დანიშვნისთვის შესაფერისი დეპუტატი",
@@ -9003,7 +9003,7 @@ const translations: Record<string, Record<string, string>> = {
     " custom": " personalizadas",
     "{builtIn} built-in · {custom} custom": "{builtIn} integradas · {custom} personalizadas",
     "{count} assignment(s)": "{count} asignación(es)",
-    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "¿Eliminar «{name}»? Esta ideología se utiliza en {count} registros de partidos, facciones o diputados, que quedarán sin asignación."
+    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "¿Eliminar «{name}»? Esta ideología se utiliza en {count} registros de partidos, facciones o diputados, que quedarán sin asignación.",
     "Government offices": "Cargos del Gobierno",
     "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.": "Nombra a diputados en ejercicio de partidos designados como parte del Gobierno o introduce el nombre de una persona externa.",
     "eligible deputies": "diputados elegibles",
@@ -10132,7 +10132,7 @@ const translations: Record<string, Record<string, string>> = {
     " custom": " カスタム",
     "{builtIn} built-in · {custom} custom": "組み込み {builtIn} 件・カスタム {custom} 件",
     "{count} assignment(s)": "{count} 件の割り当て",
-    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "「{name}」を削除しますか？このイデオロギーは政党・会派・議員の {count} 件で使用されており、削除すると未割り当てになります。"
+    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "「{name}」を削除しますか？このイデオロギーは政党・会派・議員の {count} 件で使用されており、削除すると未割り当てになります。",
     "Government offices": "政府の役職",
     "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.": "政府に指定された政党に所属する現職議員を任命するか、議会外の任命者の氏名を入力してください。",
     "eligible deputies": "任命可能な議員",
@@ -11261,7 +11261,7 @@ const translations: Record<string, Record<string, string>> = {
     " custom": " 사용자 지정",
     "{builtIn} built-in · {custom} custom": "기본 제공 {builtIn}개 · 사용자 지정 {custom}개",
     "{count} assignment(s)": "{count}건 배정",
-    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "‘{name}’을(를) 삭제할까요? 정당·파벌·의원 항목 {count}개에서 사용 중이며 삭제하면 해당 항목은 미지정 상태가 됩니다."
+    "Delete {name}? It is used by {count} party/faction/deputy entries, which will become unassigned.": "‘{name}’을(를) 삭제할까요? 정당·파벌·의원 항목 {count}개에서 사용 중이며 삭제하면 해당 항목은 미지정 상태가 됩니다.",
     "Government offices": "정부 직책",
     "Appoint sitting deputies from Government-designated parties, or enter an external officeholder by name.": "정부 소속으로 지정된 정당의 현직 의원을 임명하거나 외부 임명자의 이름을 입력하세요.",
     "eligible deputies": "임명 가능한 의원",
