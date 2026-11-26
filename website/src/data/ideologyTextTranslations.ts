@@ -2316,4 +2316,229 @@ ru:"Антиэстеблишментная",de:"Anti-etabliert",fr:"Anti-establi
 ru:"Участническая, плюралистическая",de:"Partizipativ, pluralistisch",fr:"Participatif, pluraliste","zh-CN":"参与式、多元主义",id:"Partisipatif, pluralis",ka:"მონაწილეობითი, პლურალისტური",es:"Participativa y pluralista",ja:"参加型・多元主義的",ko:"참여형, 다원주의적"}
 });
 
+
+Object.assign(rows, {
+// Historical-context summaries shown in built-in ideology profiles.
+"Emerged as a reaction to the French Revolution (1789); Edmund Burke's Reflections (1790) is its founding text.":{
+ru:"Возник как реакция на Французскую революцию 1789 года; основополагающим текстом считается «Размышление о революции во Франции» Эдмунда Бёрка (1790).",
+de:"Entstand als Reaktion auf die Französische Revolution von 1789; Edmund Burkes „Betrachtungen über die Französische Revolution“ (1790) gilt als Gründungstext.",
+fr:"Émerge en réaction à la Révolution française de 1789 ; les Réflexions sur la Révolution de France d’Edmund Burke (1790) constituent son texte fondateur.",
+"zh-CN":"作为对1789年法国大革命的回应而兴起；埃德蒙·伯克1790年的《法国革命论》被视为其奠基文本。",
+id:"Muncul sebagai reaksi terhadap Revolusi Prancis 1789; Reflections karya Edmund Burke (1790) menjadi teks pendirinya.",
+ka:"წარმოიშვა 1789 წლის საფრანგეთის რევოლუციის საპასუხოდ; მის ფუძემდებლურ ტექსტად ედმუნდ ბერკის 1790 წლის „საფრანგეთის რევოლუციის შესახებ მოსაზრებები“ მიიჩნევა.",
+es:"Surgió como reacción a la Revolución francesa de 1789; las Reflexiones sobre la Revolución en Francia de Edmund Burke (1790) son su texto fundacional.",
+ja:"1789年のフランス革命への反応として登場し、エドマンド・バークの『フランス革命の省察』（1790年）が創始文献とされる。",
+ko:"1789년 프랑스 혁명에 대한 반작용으로 등장했으며, 에드먼드 버크의 『프랑스 혁명에 관한 성찰』(1790)이 창시 문헌으로 여겨진다."
+},
+"Founded by Mussolini in Italy (1919–1922) in the wake of World War I; spread across interwar Europe.":{
+ru:"Основан Бенито Муссолини в Италии в 1919–1922 годах после Первой мировой войны; распространился по межвоенной Европе.",
+de:"Nach dem Ersten Weltkrieg 1919–1922 von Mussolini in Italien gegründet; verbreitete sich im Europa der Zwischenkriegszeit.",
+fr:"Fondé par Mussolini en Italie entre 1919 et 1922 dans le sillage de la Première Guerre mondiale ; il s’est répandu dans l’Europe de l’entre-deux-guerres.",
+"zh-CN":"第一次世界大战后，墨索里尼于1919至1922年在意大利创立；随后传播至两次世界大战之间的欧洲。",
+id:"Didirikan Mussolini di Italia pada 1919–1922 setelah Perang Dunia I; kemudian menyebar ke seluruh Eropa antarperang.",
+ka:"დააფუძნა მუსოლინიმ იტალიაში 1919–1922 წლებში, პირველი მსოფლიო ომის შემდეგ; შემდეგ გავრცელდა ომებს შორის პერიოდის ევროპაში.",
+es:"Fundado por Mussolini en Italia entre 1919 y 1922 tras la Primera Guerra Mundial; se extendió por la Europa de entreguerras.",
+ja:"第一次世界大戦後の1919～1922年にムッソリーニがイタリアで創設し、戦間期のヨーロッパに広がった。",
+ko:"제1차 세계대전 이후 1919~1922년 무솔리니가 이탈리아에서 창시했으며 전간기 유럽 전역으로 확산되었다."
+},
+"Emerged in Weimar Germany in the 1920s and ruled Germany 1933–1945.":{
+ru:"Возник в Веймарской Германии в 1920-х годах и находился у власти в Германии в 1933–1945 годах.",
+de:"Entstand in den 1920er Jahren in der Weimarer Republik und herrschte von 1933 bis 1945 in Deutschland.",
+fr:"Émerge dans l’Allemagne de Weimar dans les années 1920 et dirige l’Allemagne de 1933 à 1945.",
+"zh-CN":"20世纪20年代兴起于魏玛德国，并于1933至1945年统治德国。",
+id:"Muncul di Jerman Weimar pada 1920-an dan memerintah Jerman pada 1933–1945.",
+ka:"წარმოიშვა ვაიმარის გერმანიაში 1920-იან წლებში და გერმანიას მართავდა 1933–1945 წლებში.",
+es:"Surgió en la Alemania de Weimar en la década de 1920 y gobernó Alemania entre 1933 y 1945.",
+ja:"1920年代のヴァイマル共和国で台頭し、1933年から1945年までドイツを支配した。",
+ko:"1920년대 바이마르 독일에서 등장했으며 1933년부터 1945년까지 독일을 통치했다."
+},
+"Developed from the 17th–19th centuries: Locke, Montesquieu, Adam Smith and J. S. Mill.":{
+ru:"Формировался в XVII–XIX веках; ключевые мыслители — Локк, Монтескьё, Адам Смит и Джон Стюарт Милль.",
+de:"Entwickelte sich vom 17. bis zum 19. Jahrhundert; wichtige Denker waren Locke, Montesquieu, Adam Smith und J. S. Mill.",
+fr:"S’est développé du XVIIe au XIXe siècle, avec notamment Locke, Montesquieu, Adam Smith et J. S. Mill.",
+"zh-CN":"形成于17至19世纪，代表思想家包括洛克、孟德斯鸠、亚当·斯密和约翰·斯图尔特·密尔。",
+id:"Berkembang sejak abad ke-17 hingga ke-19; tokoh pentingnya meliputi Locke, Montesquieu, Adam Smith, dan J. S. Mill.",
+ka:"განვითარდა XVII–XIX საუკუნეებში; მნიშვნელოვანი მოაზროვნეები იყვნენ ლოკი, მონტესკიე, ადამ სმითი და ჯონ სტიუარტ მილი.",
+es:"Se desarrolló entre los siglos XVII y XIX: Locke, Montesquieu, Adam Smith y J. S. Mill fueron figuras clave.",
+ja:"17～19世紀に発展し、ロック、モンテスキュー、アダム・スミス、J・S・ミルらが思想を形作った。",
+ko:"17~19세기에 발전했으며 로크, 몽테스키외, 애덤 스미스, J. S. 밀 등이 주요 사상가였다."
+},
+"Grew from the late-19th-century split between revolutionary and reformist Marxism; shaped the post-war welfare states.":{
+ru:"Выросла из раскола конца XIX века между революционным и реформистским марксизмом; повлияла на послевоенные государства всеобщего благосостояния.",
+de:"Entstand aus der Spaltung zwischen revolutionärem und reformistischem Marxismus im späten 19. Jahrhundert und prägte die Wohlfahrtsstaaten der Nachkriegszeit.",
+fr:"Est issue de la scission, à la fin du XIXe siècle, entre marxisme révolutionnaire et réformiste ; elle a façonné les États-providence d’après-guerre.",
+"zh-CN":"源于19世纪末革命马克思主义与改良马克思主义的分裂，并塑造了战后福利国家。",
+id:"Berkembang dari perpecahan akhir abad ke-19 antara Marxisme revolusioner dan reformis; turut membentuk negara kesejahteraan pascaperang.",
+ka:"წარმოიშვა XIX საუკუნის მიწურულს რევოლუციურ და რეფორმისტულ მარქსიზმს შორის განხეთქილების შედეგად; გავლენა მოახდინა ომისშემდგომ კეთილდღეობის სახელმწიფოებზე.",
+es:"Surgió de la división de finales del siglo XIX entre el marxismo revolucionario y el reformista; dio forma a los Estados del bienestar de posguerra.",
+ja:"19世紀末の革命的マルクス主義と改良主義的マルクス主義の分裂から発展し、戦後の福祉国家形成に影響を与えた。",
+ko:"19세기 말 혁명적 마르크스주의와 개혁주의 마르크스주의의 분열에서 발전했으며 전후 복지국가 형성에 영향을 주었다."
+},
+"Developed from Catholic social teaching (Rerum Novarum, 1891) and dominated post-war Western Europe.":{
+ru:"Развилась из католического социального учения, прежде всего энциклики «Rerum Novarum» (1891), и доминировала в послевоенной Западной Европе.",
+de:"Entwickelte sich aus der katholischen Soziallehre, insbesondere Rerum Novarum (1891), und prägte das Nachkriegseuropa.",
+fr:"S’est développée à partir de la doctrine sociale catholique, notamment Rerum Novarum (1891), et a dominé l’Europe occidentale d’après-guerre.",
+"zh-CN":"源自天主教社会教义，尤其是1891年的《新事物通谕》，并在战后西欧占据主导地位。",
+id:"Berkembang dari ajaran sosial Katolik, terutama Rerum Novarum (1891), dan mendominasi Eropa Barat pascaperang.",
+ka:"განვითარდა კათოლიკური სოციალური მოძღვრებიდან, განსაკუთრებით 1891 წლის ენციკლიკიდან „Rerum Novarum“, და ომისშემდგომ დასავლეთ ევროპაში დომინირებდა.",
+es:"Se desarrolló a partir de la doctrina social católica, especialmente Rerum Novarum (1891), y dominó la Europa occidental de posguerra.",
+ja:"カトリック社会教説、とりわけ1891年の回勅『レールム・ノヴァールム』から発展し、戦後の西欧で大きな影響力を持った。",
+ko:"가톨릭 사회교리, 특히 1891년 회칙 『새로운 사태』에서 발전했으며 전후 서유럽에서 큰 영향력을 행사했다."
+},
+"Formulated by Marx and Engels in the mid-19th century (Communist Manifesto, 1848).":{
+ru:"Сформулирован Марксом и Энгельсом в середине XIX века; ключевой текст — «Манифест Коммунистической партии» (1848).",
+de:"Mitte des 19. Jahrhunderts von Marx und Engels formuliert; zentrale Schrift ist das Kommunistische Manifest (1848).",
+fr:"Formulé par Marx et Engels au milieu du XIXe siècle, notamment dans le Manifeste du Parti communiste (1848).",
+"zh-CN":"由马克思和恩格斯于19世纪中叶提出，代表性文本为1848年的《共产党宣言》。",
+id:"Dirumuskan Marx dan Engels pada pertengahan abad ke-19, terutama dalam Manifesto Komunis (1848).",
+ka:"ჩამოაყალიბეს მარქსმა და ენგელსმა XIX საუკუნის შუა ხანებში; მთავარი ტექსტია „კომუნისტური პარტიის მანიფესტი“ (1848).",
+es:"Formulado por Marx y Engels a mediados del siglo XIX, con el Manifiesto del Partido Comunista (1848) como texto clave.",
+ja:"19世紀半ばにマルクスとエンゲルスが定式化し、『共産党宣言』（1848年）が代表的文献となった。",
+ko:"19세기 중반 마르크스와 엥겔스가 정립했으며 『공산당 선언』(1848)이 대표 문헌이다."
+},
+"Developed by Lenin around the 1903 party split and the 1917 Russian Revolution.":{
+ru:"Развивался Лениным в контексте раскола РСДРП в 1903 году и Русской революции 1917 года.",
+de:"Wurde von Lenin im Umfeld der Parteispaltung von 1903 und der Russischen Revolution von 1917 entwickelt.",
+fr:"Développé par Lénine dans le contexte de la scission du parti en 1903 et de la révolution russe de 1917.",
+"zh-CN":"列宁在1903年党内分裂和1917年俄国革命的背景下发展了这一理论。",
+id:"Dikembangkan Lenin seputar perpecahan partai pada 1903 dan Revolusi Rusia 1917.",
+ka:"ლენინმა განავითარა 1903 წლის პარტიული განხეთქილებისა და 1917 წლის რუსეთის რევოლუციის კონტექსტში.",
+es:"Desarrollado por Lenin en torno a la escisión del partido de 1903 y la Revolución rusa de 1917.",
+ja:"1903年の党分裂と1917年のロシア革命を背景にレーニンが発展させた。",
+ko:"1903년 당 분열과 1917년 러시아 혁명을 전후하여 레닌이 발전시켰다."
+},
+"Arose in the 1920s as opposition to Stalin's rise; the Fourth International was founded in 1938.":{
+ru:"Возникло в 1920-х годах как оппозиция возвышению Сталина; Четвёртый интернационал был основан в 1938 году.",
+de:"Entstand in den 1920er Jahren als Opposition zu Stalins Aufstieg; die Vierte Internationale wurde 1938 gegründet.",
+fr:"Est apparu dans les années 1920 en opposition à l’ascension de Staline ; la IVe Internationale fut fondée en 1938.",
+"zh-CN":"20世纪20年代作为反对斯大林崛起的思潮出现；第四国际于1938年成立。",
+id:"Muncul pada 1920-an sebagai oposisi terhadap naiknya Stalin; Internasional Keempat didirikan pada 1938.",
+ka:"წარმოიშვა 1920-იან წლებში სტალინის აღზევების წინააღმდეგ; მეოთხე ინტერნაციონალი 1938 წელს დაარსდა.",
+es:"Surgió en la década de 1920 como oposición al ascenso de Stalin; la Cuarta Internacional se fundó en 1938.",
+ja:"スターリンの台頭への反対として1920年代に生まれ、第四インターナショナルは1938年に設立された。",
+ko:"스탈린의 부상에 반대하며 1920년대에 등장했고, 제4인터내셔널은 1938년에 창립되었다."
+},
+"Developed during the Chinese Revolution (1927–1949).":{
+ru:"Развивался в ходе Китайской революции 1927–1949 годов.",
+de:"Entwickelte sich während der Chinesischen Revolution von 1927 bis 1949.",
+fr:"S’est développé pendant la révolution chinoise de 1927 à 1949.",
+"zh-CN":"在1927至1949年的中国革命期间发展起来。",
+id:"Berkembang selama Revolusi Tiongkok (1927–1949).",
+ka:"განვითარდა ჩინეთის რევოლუციის პერიოდში (1927–1949).",
+es:"Se desarrolló durante la Revolución china (1927–1949).",
+ja:"1927～1949年の中国革命期に発展した。",
+ko:"1927~1949년 중국 혁명 시기에 발전했다."
+},
+"Formulated in the 1870s–80s by Kropotkin and others; major role in the Spanish Civil War.":{
+ru:"Сформулирован Кропоткиным и другими мыслителями в 1870–1880-х годах; сыграл заметную роль в гражданской войне в Испании.",
+de:"In den 1870er- und 1880er-Jahren von Kropotkin und anderen formuliert; spielte eine wichtige Rolle im Spanischen Bürgerkrieg.",
+fr:"Formulé dans les années 1870–1880 par Kropotkine et d’autres ; il a joué un rôle important dans la guerre civile espagnole.",
+"zh-CN":"由克ропоткин等人在19世纪70至80年代提出，并在西班牙内战中发挥重要作用。",
+id:"Dirumuskan Kropotkin dan tokoh lain pada 1870–1880-an; berperan penting dalam Perang Saudara Spanyol.",
+ka:"ჩამოაყალიბეს კროპოტკინმა და სხვებმა 1870–1880-იან წლებში; მნიშვნელოვანი როლი ითამაშა ესპანეთის სამოქალაქო ომში.",
+es:"Formulado por Kropotkin y otros en las décadas de 1870 y 1880; tuvo un papel importante en la Guerra Civil española.",
+ja:"1870～80年代にクロポトキンらが定式化し、スペイン内戦で重要な役割を果たした。",
+ko:"크로포트킨 등이 1870~1880년대에 정립했으며 스페인 내전에서 중요한 역할을 했다."
+},
+"Used historically for many projects; after 1990 associated with Giddens, Blair, Clinton and Schröder.":{
+ru:"Исторически применялось к разным политическим проектам; после 1990 года ассоциируется с Гидденсом, Блэром, Клинтоном и Шрёдером.",
+de:"Historisch für verschiedene politische Projekte verwendet; nach 1990 mit Giddens, Blair, Clinton und Schröder verbunden.",
+fr:"Historiquement utilisé pour divers projets ; après 1990, associé à Giddens, Blair, Clinton et Schröder.",
+"zh-CN":"历史上用于描述多种政治方案；1990年后与吉登斯、布莱尔、克林顿和施罗德相关。",
+id:"Secara historis digunakan untuk berbagai proyek; setelah 1990 dikaitkan dengan Giddens, Blair, Clinton, dan Schröder.",
+ka:"ისტორიულად სხვადასხვა პოლიტიკურ პროექტს აღნიშნავდა; 1990 წლის შემდეგ უკავშირდება გიდენსს, ბლერს, კლინტონსა და შრედერს.",
+es:"Se ha utilizado históricamente para distintos proyectos; después de 1990 se asoció con Giddens, Blair, Clinton y Schröder.",
+ja:"歴史的にさまざまな政治構想に用いられ、1990年以降はギデンズ、ブレア、クリントン、シュレーダーと結び付けられた。",
+ko:"역사적으로 여러 정치 프로젝트에 사용되었으며, 1990년 이후 기든스, 블레어, 클린턴, 슈뢰더와 연결되었다."
+},
+"Revived in the 1970s–80s through the Chicago and Austrian schools and the Thatcher and Reagan governments.":{
+ru:"Возродился в 1970–1980-х годах благодаря Чикагской и Австрийской школам, а также правительствам Тэтчер и Рейгана.",
+de:"Erlebte in den 1970er- und 1980er-Jahren durch die Chicagoer und Österreichische Schule sowie die Regierungen Thatcher und Reagan eine Wiederbelebung.",
+fr:"A été relancé dans les années 1970–1980 par les écoles de Chicago et autrichienne ainsi que par les gouvernements Thatcher et Reagan.",
+"zh-CN":"在20世纪70至80年代，通过芝加哥学派、奥地利学派以及撒切尔和里根政府重新兴起。",
+id:"Bangkit kembali pada 1970–1980-an melalui Mazhab Chicago dan Austria serta pemerintahan Thatcher dan Reagan.",
+ka:"აღორძინდა 1970–1980-იან წლებში ჩიკაგოსა და ავსტრიული სკოლებისა და ტეტჩერისა და რეიგანის მთავრობების მეშვეობით.",
+es:"Resurgió en las décadas de 1970 y 1980 gracias a las escuelas de Chicago y austriaca, y a los gobiernos de Thatcher y Reagan.",
+ja:"1970～80年代にシカゴ学派・オーストリア学派、およびサッチャー、レーガン政権を通じて復興した。",
+ko:"1970~1980년대 시카고학파와 오스트리아학파, 대처와 레이건 정부를 통해 부활했다."
+},
+"Modern term for centrism that rejects left–right framing, popularised from the 1990s.":{
+ru:"Современный термин для центризма, отвергающего деление на левых и правых; получил распространение с 1990-х годов.",
+de:"Moderner Begriff für einen Zentrismus, der die Links-rechts-Einteilung ablehnt; seit den 1990er Jahren verbreitet.",
+fr:"Terme moderne désignant un centrisme qui rejette le cadre gauche-droite, popularisé à partir des années 1990.",
+"zh-CN":"一种拒绝左右框架的现代中间主义术语，自20世纪90年代起逐渐流行。",
+id:"Istilah modern untuk sentrisme yang menolak kerangka kiri-kanan, populer sejak 1990-an.",
+ka:"თანამედროვე ტერმინი ისეთი ცენტრიზმისთვის, რომელიც მემარცხენე-მემარჯვენე ჩარჩოს უარყოფს; პოპულარული გახდა 1990-იანი წლებიდან.",
+es:"Término moderno para un centrismo que rechaza el marco izquierda-derecha, popularizado desde la década de 1990.",
+ja:"左右の枠組みを拒否する中道主義を指す現代用語で、1990年代から広まった。",
+ko:"좌우 구도를 거부하는 중도주의를 가리키는 현대 용어로, 1990년대부터 대중화되었다."
+},
+"Arose from John Maynard Keynes' General Theory (1936) amid the Great Depression.":{
+ru:"Возникла на основе «Общей теории занятости, процента и денег» Джона Мейнарда Кейнса (1936) во время Великой депрессии.",
+de:"Entstand während der Weltwirtschaftskrise aus John Maynard Keynes’ Allgemeiner Theorie der Beschäftigung, des Zinses und des Geldes (1936).",
+fr:"Est née pendant la Grande Dépression à partir de la Théorie générale de l’emploi, de l’intérêt et de la monnaie de John Maynard Keynes (1936).",
+"zh-CN":"在大萧条期间，源于约翰·梅纳德·凯恩斯1936年的《就业、利息和货币通论》。",
+id:"Muncul di tengah Depresi Besar dari karya John Maynard Keynes, General Theory (1936).",
+ka:"დიდი დეპრესიის დროს ჩამოყალიბდა ჯონ მეინარდ კეინსის „დასაქმების, პროცენტისა და ფულის ზოგადი თეორიის“ (1936) საფუძველზე.",
+es:"Surgió durante la Gran Depresión a partir de la Teoría general de John Maynard Keynes (1936).",
+ja:"大恐慌のさなかに、ジョン・メイナード・ケインズの『雇用・利子および貨幣の一般理論』（1936年）から生まれた。",
+ko:"대공황 시기에 존 메이너드 케인스의 『고용·이자 및 화폐의 일반이론』(1936)에서 비롯되었다."
+},
+"Developed in the early 20th century by Chesterton and Belloc from Rerum Novarum.":{
+ru:"Разработан в начале XX века Честертоном и Беллоком на основе энциклики «Rerum Novarum».",
+de:"Zu Beginn des 20. Jahrhunderts von Chesterton und Belloc auf Grundlage von Rerum Novarum entwickelt.",
+fr:"Développé au début du XXe siècle par Chesterton et Belloc à partir de Rerum Novarum.",
+"zh-CN":"20世纪初由切斯特顿和贝洛克基于《新事物通谕》发展起来。",
+id:"Dikembangkan pada awal abad ke-20 oleh Chesterton dan Belloc berdasarkan Rerum Novarum.",
+ka:"XX საუკუნის დასაწყისში ჩესტერტონმა და ბელოკმა „Rerum Novarum“-ის საფუძველზე განავითარეს.",
+es:"Desarrollado a principios del siglo XX por Chesterton y Belloc a partir de Rerum Novarum.",
+ja:"20世紀初頭にチェスタトンとベロックが回勅『レールム・ノヴァールム』を基に発展させた。",
+ko:"20세기 초 체스터턴과 벨록이 『새로운 사태』를 바탕으로 발전시켰다."
+},
+"Founded by Juan Perón in Argentina in the 1940s.":{
+ru:"Основано Хуаном Пероном в Аргентине в 1940-х годах.",
+de:"In den 1940er Jahren von Juan Perón in Argentinien gegründet.",
+fr:"Fondé par Juan Perón en Argentine dans les années 1940.",
+"zh-CN":"由胡安·庇隆于20世纪40年代在阿根廷创立。",
+id:"Didirikan Juan Perón di Argentina pada 1940-an.",
+ka:"დააარსა ხუან პერონმა არგენტინაში 1940-იან წლებში.",
+es:"Fundado por Juan Perón en Argentina en la década de 1940.",
+ja:"1940年代にフアン・ペロンがアルゼンチンで創設した。",
+ko:"1940년대 후안 페론이 아르헨티나에서 창시했다."
+},
+"Established by Mustafa Kemal Atatürk after 1923 as the Turkish republic's founding ideology.":{
+ru:"Утверждён Мустафой Кемалем Ататюрком после 1923 года как основополагающая идеология Турецкой Республики.",
+de:"Nach 1923 von Mustafa Kemal Atatürk als Gründungsideologie der türkischen Republik etabliert.",
+fr:"Établi par Mustafa Kemal Atatürk après 1923 comme idéologie fondatrice de la République turque.",
+"zh-CN":"1923年后由穆斯塔法·凯末尔·阿塔图尔克确立为土耳其共和国的建国意识形态。",
+id:"Ditetapkan Mustafa Kemal Atatürk setelah 1923 sebagai ideologi pendirian Republik Turki.",
+ka:"1923 წლის შემდეგ მუსტაფა ქემალ ათათურქმა თურქეთის რესპუბლიკის დამფუძნებელ იდეოლოგიად დაამკვიდრა.",
+es:"Establecido por Mustafa Kemal Atatürk después de 1923 como ideología fundacional de la República turca.",
+ja:"1923年以降、ムスタファ・ケマル・アタテュルクがトルコ共和国の建国理念として確立した。",
+ko:"1923년 이후 무스타파 케말 아타튀르크가 터키 공화국의 건국 이념으로 확립했다."
+},
+"Based on Henry George's Progress and Poverty (1879).":{
+ru:"Основан на книге Генри Джорджа «Прогресс и бедность» (1879).",
+de:"Basiert auf Henry Georges Fortschritt und Armut (1879).",
+fr:"Fondé sur Progrès et pauvreté (1879) d’Henry George.",
+"zh-CN":"以亨利·乔治1879年的《进步与贫困》为基础。",
+id:"Berdasarkan Progress and Poverty (1879) karya Henry George.",
+ka:"ეფუძნება ჰენრი ჯორჯის წიგნს „პროგრესი და სიღარიბე“ (1879).",
+es:"Basado en Progreso y pobreza (1879) de Henry George.",
+ja:"ヘンリー・ジョージの『進歩と貧困』（1879年）に基づく。",
+ko:"헨리 조지의 『진보와 빈곤』(1879)에 기반한다."
+},
+"Founded in 1884 in London; influenced the British Labour Party.":{
+ru:"Основано в Лондоне в 1884 году; оказало влияние на британскую Лейбористскую партию.",
+de:"1884 in London gegründet; beeinflusste die britische Labour Party.",
+fr:"Fondée à Londres en 1884 ; elle a influencé le Parti travailliste britannique.",
+"zh-CN":"1884年在伦敦成立，并对英国工党产生影响。",
+id:"Didirikan di London pada 1884; memengaruhi Partai Buruh Inggris.",
+ka:"დაარსდა ლონდონში 1884 წელს და გავლენა მოახდინა ბრიტანეთის ლეიბორისტულ პარტიაზე.",
+es:"Fundada en Londres en 1884; influyó en el Partido Laborista británico.",
+ja:"1884年にロンドンで設立され、イギリス労働党に影響を与えた。",
+ko:"1884년 런던에서 창립되었으며 영국 노동당에 영향을 미쳤다."
+}
+});
+
 export default rows;
