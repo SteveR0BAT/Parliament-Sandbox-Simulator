@@ -57,7 +57,55 @@ export function useLanguage() {
   return { language, setLanguage };
 }
 
-export function translateText(value: string, language: Language): string {
+const COMPOSITE_TRANSLATION_KEYS = [
+  "no rule configured",
+  "individual decision",
+  "random draw",
+  "fixed",
+  "via",
+  "adherence",
+  "P for",
+  "follows",
+  "breaks from",
+  "line",
+  "discipline",
+  "at least",
+  "more than",
+  "all seats",
+  "deputies present",
+  "valid votes (For + Against)",
+  "Vote:",
+  "Normalised:",
+] as const;
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\export function translateText(value: string, language: Language): string {
   if (language === "en") return value;
   return dictionary[language]?.[value] ?? runtimeTranslations[value]?.[language] ?? ideologyTextTranslations[value]?.[language] ?? value;
+}");
+}
+
+export function translateText(value: string, language: Language): string {
+  if (language === "en") return value;
+
+  const exact =
+    dictionary[language]?.[value] ??
+    runtimeTranslations[value]?.[language] ??
+    ideologyTextTranslations[value]?.[language];
+  if (exact !== undefined) return exact;
+
+  // Some vote explanations combine fixed English labels with names and values
+  // calculated at runtime. Translate those known fragments without altering
+  // deputy names, party names, percentages or other user-supplied content.
+  let translated = value;
+  for (const source of COMPOSITE_TRANSLATION_KEYS) {
+    const replacement = runtimeTranslations[source]?.[language];
+    if (!replacement) continue;
+    const pattern = new RegExp(
+      `(?<![\\\\p{L}\\\\p{N}_])${escapeRegExp(source)}(?![\\\\p{L}\\\\p{N}_])`,
+      "gu",
+    );
+    translated = translated.replace(pattern, replacement);
+  }
+  return translated;
 }
