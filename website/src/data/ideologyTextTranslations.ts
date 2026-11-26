@@ -470,4 +470,207 @@ ko:"국가를 거부하지만 경제적 입장 때문에 보통 경제적 우파
 }
 });
 
+
+Object.assign(rows, {
+// Profiles 30–44.
+"Advocates monarchy as head of state or sovereign; positions range from constitutional to absolutist.":{
+ru:"Выступает за монархию как форму главы государства или суверенной власти; варианты простираются от конституционной до абсолютной монархии.",
+de:"Befürwortet die Monarchie als Staatsoberhaupt oder souveräne Herrschaftsform; die Ausprägungen reichen von konstitutionell bis absolutistisch.",
+fr:"Prône la monarchie comme forme de chef de l’État ou de souveraineté ; ses positions vont de la monarchie constitutionnelle à l’absolutisme.",
+"zh-CN":"主张以君主作为国家元首或主权者；立场从君主立宪制到君主专制不等。",
+id:"Mendukung monarki sebagai kepala negara atau pemegang kedaulatan; bentuknya berkisar dari monarki konstitusional hingga absolut.",
+ka:"მხარს უჭერს მონარქიას, როგორც სახელმწიფოს მეთაურის ან სუვერენული ძალაუფლების ფორმას; პოზიციები კონსტიტუციურიდან აბსოლუტურ მონარქიამდე მერყეობს.",
+es:"Defiende la monarquía como jefatura del Estado o forma de soberanía; sus variantes van desde la monarquía constitucional hasta el absolutismo.",
+ja:"君主を国家元首または主権者とする体制を支持し、立場は立憲君主制から絶対君主制まで幅がある。",
+ko:"군주를 국가원수 또는 주권자로 하는 체제를 지지하며, 입장은 입헌군주제부터 절대군주제까지 다양하다."
+},
+"Defends strong executive authority and social order over pluralism, often in the name of stability and tradition.":{
+ru:"Ставит сильную исполнительную власть и общественный порядок выше политического плюрализма, часто апеллируя к стабильности и традиции.",
+de:"Stellt eine starke Exekutive und gesellschaftliche Ordnung über den Pluralismus, häufig im Namen von Stabilität und Tradition.",
+fr:"Privilégie une forte autorité exécutive et l’ordre social au détriment du pluralisme, souvent au nom de la stabilité et de la tradition.",
+"zh-CN":"将强有力的行政权和社会秩序置于多元主义之上，通常以稳定和传统为理由。",
+id:"Mengutamakan kekuasaan eksekutif yang kuat dan ketertiban sosial dibanding pluralisme, sering kali atas nama stabilitas dan tradisi.",
+ka:"პლურალიზმზე მაღლა აყენებს ძლიერ აღმასრულებელ ხელისუფლებასა და საზოგადოებრივ წესრიგს, ხშირად სტაბილურობისა და ტრადიციის სახელით.",
+es:"Prioriza una autoridad ejecutiva fuerte y el orden social frente al pluralismo, a menudo en nombre de la estabilidad y la tradición.",
+ja:"安定と伝統を掲げ、政治的多元主義よりも強い行政権と社会秩序を優先する。",
+ko:"안정과 전통을 명분으로 다원주의보다 강력한 행정부 권한과 사회질서를 우선시한다."
+},
+"Movements seeking to organise state and society along Islamic principles; strands range from democratic to militant.":{
+ru:"Движения, стремящиеся организовать государство и общество на основе исламских принципов; их направления варьируются от демократических до воинствующих.",
+de:"Bewegungen, die Staat und Gesellschaft nach islamischen Grundsätzen organisieren wollen; ihre Strömungen reichen von demokratisch bis militant.",
+fr:"Mouvements qui cherchent à organiser l’État et la société selon des principes islamiques ; leurs courants vont du démocratique au militant.",
+"zh-CN":"试图按照伊斯兰原则组织国家与社会的运动；其流派从民主主义到激进 militant 形式不等。",
+id:"Gerakan yang berupaya menata negara dan masyarakat berdasarkan prinsip Islam; alirannya berkisar dari demokratis hingga militan.",
+ka:"მოძრაობები, რომლებიც სახელმწიფოსა და საზოგადოების ისლამური პრინციპებით ორგანიზებას ცდილობენ; მათი მიმდინარეობები დემოკრატიულიდან მებრძოლამდე მერყეობს.",
+es:"Movimientos que buscan organizar el Estado y la sociedad según principios islámicos; sus corrientes van de las democráticas a las militantes.",
+ja:"イスラームの原則に沿って国家と社会を組織しようとする運動で、潮流は民主的なものから武装闘争的なものまで幅広い。",
+ko:"이슬람 원칙에 따라 국가와 사회를 조직하려는 운동으로, 그 흐름은 민주적인 것부터 무장투쟁적인 것까지 다양하다."
+},
+"Blends market-liberal economics and individual liberty with conservative attachment to institutions and moderate social change.":{
+ru:"Сочетает рыночно-либеральную экономику и индивидуальные свободы с приверженностью консервативным институтам и умеренным общественным изменениям.",
+de:"Verbindet marktwirtschaftlich-liberale Ökonomie und individuelle Freiheit mit konservativer Bindung an Institutionen und gemäßigtem gesellschaftlichem Wandel.",
+fr:"Associe une économie libérale de marché et les libertés individuelles à un attachement conservateur aux institutions et à une évolution sociale modérée.",
+"zh-CN":"将市场自由主义经济和个人自由与对传统制度的保守倾向及温和社会变革相结合。",
+id:"Memadukan ekonomi liberal pasar dan kebebasan individu dengan keterikatan konservatif pada lembaga serta perubahan sosial yang moderat.",
+ka:"აერთიანებს საბაზრო-ლიბერალურ ეკონომიკასა და ინდივიდუალურ თავისუფლებას ინსტიტუტებისადმი კონსერვატიულ ერთგულებასა და ზომიერ სოციალურ ცვლილებებთან.",
+es:"Combina una economía liberal de mercado y la libertad individual con el apego conservador a las instituciones y un cambio social moderado.",
+ja:"市場自由主義経済と個人の自由を、制度への保守的な愛着および穏健な社会変化と組み合わせる。",
+ko:"시장 자유주의 경제와 개인의 자유를 제도에 대한 보수적 애착 및 온건한 사회 변화와 결합한다."
+},
+"Paternalist conservatism stressing social cohesion, noblesse oblige and welfare to bridge class divides (Disraeli).":{
+ru:"Патерналистский консерватизм, подчёркивающий общественную сплочённость, благородное обязательство элит и социальную поддержку для преодоления классовых противоречий (Дизраэли).",
+de:"Paternalistischer Konservatismus, der gesellschaftlichen Zusammenhalt, noblesse oblige und Sozialleistungen zur Überbrückung von Klassengegensätzen betont (Disraeli).",
+fr:"Conservatisme paternaliste qui met l’accent sur la cohésion sociale, la noblesse oblige et la protection sociale pour réduire les divisions de classe (Disraeli).",
+"zh-CN":"强调社会凝聚力、贵族义务和福利政策以弥合阶级分歧的家长式保守主义（迪斯雷利）。",
+id:"Konservatisme paternalistik yang menekankan kohesi sosial, noblesse oblige, dan kesejahteraan untuk menjembatani kesenjangan kelas (Disraeli).",
+ka:"პატერნალისტური კონსერვატიზმი, რომელიც ხაზს უსვამს სოციალურ ერთიანობას, ელიტის კეთილშობილურ ვალდებულებასა და კლასობრივი განსხვავებების შესამცირებელ სოციალურ დახმარებას (დისრაელი).",
+es:"Conservadurismo paternalista que destaca la cohesión social, la noblesse oblige y el bienestar para salvar las divisiones de clase (Disraeli).",
+ja:"社会的結束、ノブレス・オブリージュ、階級間の隔たりを埋める福祉を重視する父権主義的保守主義（ディズレーリ）。",
+ko:"사회적 결속, 노블레스 오블리주, 계급 격차를 완화하기 위한 복지를 강조하는 온정주의적 보수주의(디즈레일리)."
+},
+"Applies Christian (esp. Catholic) social teaching: subsidiarity, solidarity, family and a social market economy.":{
+ru:"Применяет христианское, особенно католическое, социальное учение: субсидиарность, солидарность, ценность семьи и социальную рыночную экономику.",
+de:"Wendet die christliche, besonders katholische Soziallehre an: Subsidiarität, Solidarität, Familie und soziale Marktwirtschaft.",
+fr:"Applique la doctrine sociale chrétienne, notamment catholique : subsidiarité, solidarité, famille et économie sociale de marché.",
+"zh-CN":"将基督教（尤其是天主教）社会教义应用于政治，强调辅助性原则、团结、家庭和社会市场经济。",
+id:"Menerapkan ajaran sosial Kristen (terutama Katolik): subsidiaritas, solidaritas, keluarga, dan ekonomi pasar sosial.",
+ka:"იყენებს ქრისტიანულ, განსაკუთრებით კათოლიკურ, სოციალურ მოძღვრებას: სუბსიდიარობას, სოლიდარობას, ოჯახსა და სოციალურ საბაზრო ეკონომიკას.",
+es:"Aplica la doctrina social cristiana, especialmente la católica: subsidiariedad, solidaridad, familia y economía social de mercado.",
+ja:"キリスト教、特にカトリックの社会教説を適用し、補完性、連帯、家族、社会的市場経済を重視する。",
+ko:"기독교, 특히 가톨릭 사회교리를 적용하며 보조성, 연대, 가족, 사회적 시장경제를 강조한다."
+},
+"French tradition of national independence, a strong presidency, state-led economic planning and grandeur.":{
+ru:"Французская политическая традиция, подчёркивающая национальную независимость, сильную президентскую власть, государственное экономическое планирование и величие страны.",
+de:"Französische Tradition, die nationale Unabhängigkeit, eine starke Präsidentschaft, staatliche Wirtschaftsplanung und nationale Größe betont.",
+fr:"Tradition française qui met l’accent sur l’indépendance nationale, une présidence forte, la planification économique par l’État et la grandeur nationale.",
+"zh-CN":"法国政治传统，强调国家独立、强有力的总统制、国家主导的经济规划和国家荣光。",
+id:"Tradisi politik Prancis yang menekankan kemerdekaan nasional, presidensi yang kuat, perencanaan ekonomi oleh negara, dan kebesaran bangsa.",
+ka:"ფრანგული პოლიტიკური ტრადიცია, რომელიც ხაზს უსვამს ეროვნულ დამოუკიდებლობას, ძლიერ საპრეზიდენტო ხელისუფლებას, სახელმწიფოს მიერ ეკონომიკურ დაგეგმვასა და ქვეყნის დიდებას.",
+es:"Tradición francesa que destaca la independencia nacional, una presidencia fuerte, la planificación económica estatal y la grandeza nacional.",
+ja:"国家の独立、強力な大統領制、国家主導の経済計画、国の威信を重視するフランスの政治的伝統。",
+ko:"국가 독립, 강력한 대통령직, 국가 주도 경제계획, 국가적 위상을 강조하는 프랑스 정치 전통."
+},
+"Individual liberty, rule of law, limited government, free markets and free trade (Locke, Smith, Mill).":{
+ru:"Индивидуальная свобода, верховенство права, ограниченное государство, свободный рынок и свободная торговля (Локк, Смит, Милль).",
+de:"Individuelle Freiheit, Rechtsstaatlichkeit, begrenzte Regierung, freie Märkte und Freihandel (Locke, Smith, Mill).",
+fr:"Liberté individuelle, État de droit, gouvernement limité, marchés libres et libre-échange (Locke, Smith, Mill).",
+"zh-CN":"强调个人自由、法治、有限政府、自由市场和自由贸易（洛克、斯密、密尔）。",
+id:"Kebebasan individu, supremasi hukum, pemerintahan terbatas, pasar bebas, dan perdagangan bebas (Locke, Smith, Mill).",
+ka:"ინდივიდუალური თავისუფლება, კანონის უზენაესობა, შეზღუდული მთავრობა, თავისუფალი ბაზარი და თავისუფალი ვაჭრობა (ლოკი, სმითი, მილი).",
+es:"Libertad individual, Estado de derecho, gobierno limitado, mercados libres y libre comercio (Locke, Smith, Mill).",
+ja:"個人の自由、法の支配、限定政府、自由市場、自由貿易を重視する（ロック、スミス、ミル）。",
+ko:"개인의 자유, 법치, 제한된 정부, 자유시장, 자유무역을 강조한다(로크, 스미스, 밀)."
+},
+"Supports private property, competitive markets and limited state intervention.":{
+ru:"Поддерживает частную собственность, конкурентные рынки и ограниченное вмешательство государства.",
+de:"Befürwortet Privateigentum, Wettbewerbsmärkte und begrenzte staatliche Eingriffe.",
+fr:"Soutient la propriété privée, les marchés concurrentiels et une intervention limitée de l’État.",
+"zh-CN":"支持私有财产、竞争性市场和有限的国家干预。",
+id:"Mendukung kepemilikan pribadi, pasar kompetitif, dan campur tangan negara yang terbatas.",
+ka:"მხარს უჭერს კერძო საკუთრებას, კონკურენტულ ბაზრებსა და სახელმწიფოს შეზღუდულ ჩარევას.",
+es:"Defiende la propiedad privada, los mercados competitivos y una intervención estatal limitada.",
+ja:"私有財産、競争市場、限定的な国家介入を支持する。",
+ko:"사유재산, 경쟁시장, 제한적인 국가 개입을 지지한다."
+},
+"German school favouring strong rules ensuring competition, price stability and a state that guards the market order.":{
+ru:"Немецкая экономическая школа, выступающая за строгие правила, обеспечивающие конкуренцию и стабильность цен, а также за государство, охраняющее рыночный порядок.",
+de:"Deutsche Denkschule, die starke Regeln für Wettbewerb und Preisstabilität sowie einen Staat befürwortet, der die Marktordnung schützt.",
+fr:"École allemande qui défend des règles fortes garantissant la concurrence et la stabilité des prix, ainsi qu’un État gardien de l’ordre du marché.",
+"zh-CN":"德国经济学派，主张以严格规则保障竞争和价格稳定，并由国家维护市场秩序。",
+id:"Mazhab ekonomi Jerman yang mendukung aturan kuat untuk menjamin persaingan dan stabilitas harga, serta negara yang menjaga tatanan pasar.",
+ka:"გერმანული ეკონომიკური სკოლა, რომელიც მხარს უჭერს კონკურენციისა და ფასების სტაბილურობის მკაცრ წესებს და ბაზრის წესრიგის დამცველ სახელმწიფოს.",
+es:"Escuela alemana que defiende reglas firmes para garantizar la competencia y la estabilidad de precios, y un Estado que proteja el orden del mercado.",
+ja:"競争と物価安定を確保する強い規則、および市場秩序を守る国家を重視するドイツの学派。",
+ko:"경쟁과 물가 안정을 보장하는 강력한 규칙과 시장질서를 수호하는 국가를 지지하는 독일 학파."
+},
+"Free market combined with social insurance and fair-competition policy; foundation of post-war West Germany.":{
+ru:"Свободный рынок в сочетании с социальным страхованием и политикой честной конкуренции; основа послевоенной Западной Германии.",
+de:"Freier Markt in Verbindung mit Sozialversicherung und Wettbewerbspolitik; Grundlage des Nachkriegsdeutschlands.",
+fr:"Marché libre associé à l’assurance sociale et à une politique de concurrence équitable ; fondement de l’Allemagne occidentale d’après-guerre.",
+"zh-CN":"将自由市场与社会保险和公平竞争政策相结合，是战后西德经济制度的基础。",
+id:"Pasar bebas yang dipadukan dengan jaminan sosial dan kebijakan persaingan yang adil; menjadi dasar Jerman Barat pascaperang.",
+ka:"თავისუფალი ბაზრის შერწყმა სოციალურ დაზღვევასა და სამართლიანი კონკურენციის პოლიტიკასთან; ომისშემდგომი დასავლეთ გერმანიის საფუძველი.",
+es:"Mercado libre combinado con seguro social y políticas de competencia leal; fundamento de la Alemania occidental de posguerra.",
+ja:"自由市場に社会保険と公正競争政策を組み合わせたもので、戦後西ドイツの基盤となった。",
+ko:"자유시장에 사회보험과 공정경쟁 정책을 결합한 것으로, 전후 서독의 기반이 되었다."
+},
+"Conservatism using government and faith-based groups to address poverty and social problems.":{
+ru:"Консерватизм, использующий государственные институты и религиозные организации для решения проблем бедности и общества.",
+de:"Konservatismus, der staatliche Stellen und religiöse Organisationen zur Bekämpfung von Armut und sozialen Problemen einsetzt.",
+fr:"Conservatisme qui mobilise l’État et les organisations religieuses pour lutter contre la pauvreté et les problèmes sociaux.",
+"zh-CN":"通过政府和宗教团体应对贫困及社会问题的保守主义。",
+id:"Konservatisme yang menggunakan pemerintah dan kelompok berbasis agama untuk mengatasi kemiskinan serta masalah sosial.",
+ka:"კონსერვატიზმი, რომელიც სიღარიბისა და სოციალური პრობლემების მოსაგვარებლად მთავრობასა და რელიგიურ ჯგუფებს იყენებს.",
+es:"Conservadurismo que recurre al gobierno y a grupos religiosos para abordar la pobreza y los problemas sociales.",
+ja:"政府と信仰に基づく団体を活用して貧困や社会問題に対処する保守主義。",
+ko:"정부와 신앙 기반 단체를 활용해 빈곤과 사회문제를 해결하려는 보수주의."
+},
+"US synthesis of libertarian economics, traditional social values and anti-communism (Frank Meyer, National Review).":{
+ru:"Американский синтез либертарианской экономики, традиционных социальных ценностей и антикоммунизма (Фрэнк Мейер, National Review).",
+de:"US-amerikanische Verbindung libertärer Wirtschaftsvorstellungen, traditioneller gesellschaftlicher Werte und Antikommunismus (Frank Meyer, National Review).",
+fr:"Synthèse américaine de l’économie libertarienne, des valeurs sociales traditionnelles et de l’anticommunisme (Frank Meyer, National Review).",
+"zh-CN":"美国政治思想的综合流派，将自由意志主义经济、传统社会价值观和反共主义结合起来（弗兰克·迈耶、《国家评论》）。",
+id:"Sintesis Amerika yang memadukan ekonomi libertarian, nilai sosial tradisional, dan antikomunisme (Frank Meyer, National Review).",
+ka:"ამერიკული სინთეზი, რომელიც აერთიანებს ლიბერტარიანულ ეკონომიკას, ტრადიციულ სოციალურ ღირებულებებსა და ანტიკომუნიზმს (ფრენკ მაიერი, National Review).",
+es:"Síntesis estadounidense de economía libertaria, valores sociales tradicionales y anticomunismo (Frank Meyer, National Review).",
+ja:"リバタリアン経済、伝統的社会価値、反共主義を組み合わせたアメリカの思想的統合（フランク・マイヤー、National Review）。",
+ko:"자유지상주의 경제, 전통적 사회 가치, 반공주의를 결합한 미국의 사상적 종합(프랭크 마이어, 내셔널 리뷰)."
+},
+"National identity based on shared citizenship, institutions and values rather than ethnicity.":{
+ru:"Национальная идентичность, основанная на общем гражданстве, институтах и ценностях, а не на этническом происхождении.",
+de:"Nationale Identität, die auf gemeinsamer Staatsbürgerschaft, Institutionen und Werten statt auf ethnischer Zugehörigkeit beruht.",
+fr:"Identité nationale fondée sur une citoyenneté, des institutions et des valeurs communes plutôt que sur l’ethnicité.",
+"zh-CN":"以共同公民身份、制度和价值观而非族裔身份为基础的民族认同。",
+id:"Identitas nasional yang didasarkan pada kewarganegaraan, lembaga, dan nilai bersama, bukan etnisitas.",
+ka:"ეროვნული იდენტობა, რომელიც საერთო მოქალაქეობას, ინსტიტუტებსა და ღირებულებებს ეფუძნება და არა ეთნიკურ წარმოშობას.",
+es:"Identidad nacional basada en una ciudadanía, instituciones y valores compartidos, en lugar de la etnia.",
+ja:"民族性ではなく、共通の市民権、制度、価値観に基づく国家的アイデンティティ。",
+ko:"민족성이 아니라 공동 시민권, 제도, 가치에 기반한 국가 정체성."
+},
+"Protects nature through conservative lenses: stewardship, property rights, market tools and tradition.":{
+ru:"Защищает природу с консервативных позиций: через ответственное попечение, права собственности, рыночные инструменты и традицию.",
+de:"Schützt die Natur aus konservativer Perspektive: durch verantwortungsvolle Bewahrung, Eigentumsrechte, marktwirtschaftliche Instrumente und Tradition.",
+fr:"Protège la nature dans une perspective conservatrice : responsabilité de gestion, droits de propriété, outils de marché et tradition.",
+"zh-CN":"从保守主义视角保护自然，强调托管责任、财产权、市场工具和传统。",
+id:"Melindungi alam melalui sudut pandang konservatif: pengelolaan yang bertanggung jawab, hak milik, instrumen pasar, dan tradisi.",
+ka:"ბუნებას კონსერვატიული ხედვით იცავს: მზრუნველობის, საკუთრების უფლებების, საბაზრო ინსტრუმენტებისა და ტრადიციის მეშვეობით.",
+es:"Protege la naturaleza desde una perspectiva conservadora: responsabilidad de custodia, derechos de propiedad, instrumentos de mercado y tradición.",
+ja:"保全責任、所有権、市場手段、伝統を通じて、保守的な観点から自然を守る。",
+ko:"책임 있는 보전, 재산권, 시장 수단, 전통을 통해 보수적 관점에서 자연을 보호한다."
+},
+"Constitutional monarchism is compatible with many ideologies; classification here is approximate.":{
+ru:"Конституционная монархия совместима со многими идеологиями; приведённая здесь классификация приблизительна.",
+de:"Konstitutionelle Monarchie ist mit vielen Ideologien vereinbar; die Einordnung hier ist nur eine Annäherung.",
+fr:"La monarchie constitutionnelle est compatible avec de nombreuses idéologies ; le classement proposé ici est approximatif.",
+"zh-CN":"君主立宪制可以与许多意识形态兼容；此处分类仅为近似判断。",
+id:"Monarki konstitusional dapat selaras dengan banyak ideologi; klasifikasi di sini bersifat perkiraan.",
+ka:"კონსტიტუციური მონარქია მრავალ იდეოლოგიასთან თავსებადია; აქ მოცემული კლასიფიკაცია მიახლოებითია.",
+es:"La monarquía constitucional es compatible con muchas ideologías; la clasificación aquí es aproximada.",
+ja:"立憲君主制は多くのイデオロギーと両立するため、ここでの分類は概略的なものにすぎない。",
+ko:"입헌군주제는 여러 이념과 양립할 수 있으므로 여기의 분류는 대략적인 것이다."
+},
+"Classification is approximate: Islamism is a religious-political family, and strands range from far-right-like to reformist and even left-leaning.":{
+ru:"Классификация приблизительна: исламизм представляет собой религиозно-политическое семейство, направления которого варьируются от близких к крайне правым до реформистских и даже левых.",
+de:"Die Einordnung ist näherungsweise: Islamismus ist eine religiös-politische Strömung mit Ausprägungen von extrem rechtsähnlich bis reformorientiert und sogar linksgerichtet.",
+fr:"Le classement est approximatif : l’islamisme est une famille politico-religieuse dont les courants vont de tendances proches de l’extrême droite à des orientations réformistes, voire de gauche.",
+"zh-CN":"此分类为近似判断：伊斯兰主义是一个宗教政治思想家族，其流派从类似极右翼到改革主义，甚至偏左的方向都有。",
+id:"Klasifikasinya bersifat perkiraan: Islamisme merupakan keluarga politik-keagamaan dengan aliran dari yang menyerupai kanan ekstrem hingga reformis, bahkan berhaluan kiri.",
+ka:"კლასიფიკაცია მიახლოებითია: ისლამიზმი რელიგიურ-პოლიტიკური ოჯახია, რომლის მიმდინარეობები ულტრამემარჯვენესთან მიახლოებულიდან რეფორმისტულ და მემარცხენე მიმართულებებამდე მერყეობს.",
+es:"La clasificación es aproximada: el islamismo es una familia político-religiosa con corrientes que van desde posiciones cercanas a la extrema derecha hasta otras reformistas e incluso de izquierda.",
+ja:"分類は概略的である。イスラーム主義は宗教・政治思想の系統であり、極右に近い潮流から改革派、さらには左派寄りまで幅広い。",
+ko:"분류는 대략적이다. 이슬람주의는 종교·정치 사상 계열이며, 극우에 가까운 흐름부터 개혁주의, 심지어 좌파 성향까지 다양하다."
+},
+"Christian democratic parties often sit between centre-right and centre; placement varies by country.":{
+ru:"Христианско-демократические партии часто занимают промежуточное положение между правоцентристским центром и центром; их место зависит от страны.",
+de:"Christdemokratische Parteien liegen häufig zwischen Mitte-rechts und Mitte; ihre Einordnung variiert je nach Land.",
+fr:"Les partis démocrates-chrétiens se situent souvent entre le centre droit et le centre ; leur position varie selon les pays.",
+"zh-CN":"基督教民主主义政党通常处于中右与中间之间，其具体位置因国家而异。",
+id:"Partai demokrat Kristen sering berada di antara kanan-tengah dan tengah; posisinya berbeda menurut negara.",
+ka:"ქრისტიან-დემოკრატიული პარტიები ხშირად მემარჯვენე-ცენტრსა და ცენტრს შორის მდებარეობენ; მათი პოზიცია ქვეყანაზეა დამოკიდებული.",
+es:"Los partidos democristianos suelen situarse entre el centro-derecha y el centro; su ubicación varía según el país.",
+ja:"キリスト教民主主義政党は中道右派と中道の間に位置することが多く、その位置は国によって異なる。",
+ko:"기독교민주주의 정당은 중도우파와 중도 사이에 위치하는 경우가 많으며, 국별로 차이가 있다."
+},
+});
+
 export default rows;
