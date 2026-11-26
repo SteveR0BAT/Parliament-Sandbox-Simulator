@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { apportion } from "../src/lib/parliament";
-import { newIssue, normalizeProject, sampleProject } from "../src/lib/defaults";
+import { newIssue, normalizeProject, sampleProject, PROJECT_VERSION } from "../src/lib/defaults";
 import { BUILTIN_IDEOLOGIES, IDEOLOGY_FAMILIES } from "../src/data/ideologies";
 import { buildContext, evaluateThreshold, runVoteEngine, type Totals } from "../src/lib/voting";
 import type { Threshold } from "../src/lib/types";
@@ -88,7 +88,7 @@ test("version 1 project migration preserves custom ideology metadata and legacy 
     }],
   };
   const migrated = normalizeProject(raw);
-  assert.equal(migrated.version, 3);
+  assert.equal(migrated.version, PROJECT_VERSION);
   assert.equal(migrated.customIdeologies[0].family, "unclassified");
   assert.equal(migrated.customIdeologies[0].legacyCategory, "center-left");
   assert.equal(migrated.customIdeologies[0].positions.economic, -1);
@@ -163,7 +163,7 @@ test("version 2 family voting rules migrate to both branches of each split famil
       }
     }]
   });
-  assert.equal(migrated.version, 3);
+  assert.equal(migrated.version, PROJECT_VERSION);
   assert.equal(migrated.issues[0].groupPositions["socialist-communist"]?.pos, "for");
   assert.equal(migrated.issues[0].groupPositions["authoritarian-state-communist"]?.pos, "for");
   assert.equal(migrated.issues[0].groupPositions["nationalist-sovereigntist"]?.pos, "against");
