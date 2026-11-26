@@ -1057,4 +1057,185 @@ ko:"역사적으로 사회민주주의와 가까웠으며, 현대에는 민주�
 },
 });
 
+
+Object.assign(rows, {
+// Profiles 75–89: socialist, cooperative, ecological and feminist currents.
+"Broad family advocating social or collective ownership and democratic control of the economy.":{
+ru:"Широкое семейство идеологий, выступающее за общественную или коллективную собственность и демократический контроль над экономикой.",
+de:"Breites Spektrum von Ideologien, das gesellschaftliches oder kollektives Eigentum und demokratische Kontrolle der Wirtschaft befürwortet.",
+fr:"Large famille d’idéologies qui défend la propriété sociale ou collective et le contrôle démocratique de l’économie.",
+"zh-CN":"主张社会或集体所有制以及对经济实行民主控制的广泛思想家族。",
+id:"Keluarga ideologi luas yang mendukung kepemilikan sosial atau kolektif dan kendali demokratis atas ekonomi.",
+ka:"იდეოლოგიების ფართო ოჯახი, რომელიც მხარს უჭერს საზოგადოებრივ ან კოლექტიურ საკუთრებასა და ეკონომიკის დემოკრატიულ კონტროლს.",
+es:"Amplia familia ideológica que defiende la propiedad social o colectiva y el control democrático de la economía.",
+ja:"社会的・集団的所有と経済の民主的な管理を支持する幅広い思想の系統。",
+ko:"사회적 또는 집단적 소유와 경제에 대한 민주적 통제를 지지하는 폭넓은 이념 계열."
+},
+"Social or cooperative ownership of firms operating in market competition.":{
+ru:"Общественная или кооперативная собственность на предприятия, действующие в условиях рыночной конкуренции.",
+de:"Gesellschaftliches oder genossenschaftliches Eigentum an Unternehmen, die im Wettbewerb des Marktes tätig sind.",
+fr:"Propriété sociale ou coopérative d’entreprises opérant dans un cadre de concurrence de marché.",
+"zh-CN":"在市场竞争环境中经营的企业实行社会所有制或合作社所有制。",
+id:"Kepemilikan sosial atau koperasi atas perusahaan yang beroperasi dalam persaingan pasar.",
+ka:"საზოგადოებრივი ან კოოპერაციული საკუთრება იმ საწარმოებზე, რომლებიც საბაზრო კონკურენციის პირობებში მოქმედებენ.",
+es:"Propiedad social o cooperativa de empresas que operan en un entorno de competencia de mercado.",
+ja:"市場競争の中で活動する企業を、社会的または協同組合的に所有する考え方。",
+ko:"시장 경쟁 속에서 운영되는 기업을 사회적 또는 협동조합 방식으로 소유하는 체제."
+},
+"Opposes both capitalism and the authoritarian state; favours worker self-management and voluntary association.":{
+ru:"Выступает против как капитализма, так и авторитарного государства; поддерживает самоуправление работников и добровольные объединения.",
+de:"Lehnt sowohl den Kapitalismus als auch den autoritären Staat ab und befürwortet Selbstverwaltung der Arbeiter sowie freiwillige Zusammenschlüsse.",
+fr:"S’oppose à la fois au capitalisme et à l’État autoritaire ; privilégie l’autogestion des travailleurs et l’association volontaire.",
+"zh-CN":"同时反对资本主义和威权国家，主张工人自治和自愿联合。",
+id:"Menentang kapitalisme maupun negara otoriter; mendukung pengelolaan mandiri oleh pekerja dan perkumpulan sukarela.",
+ka:"ეწინააღმდეგება როგორც კაპიტალიზმს, ისე ავტორიტარულ სახელმწიფოს; მხარს უჭერს მუშათა თვითმმართველობასა და ნებაყოფლობით გაერთიანებებს.",
+es:"Se opone tanto al capitalismo como al Estado autoritario; favorece la autogestión obrera y la asociación voluntaria.",
+ja:"資本主義と権威主義国家の双方に反対し、労働者の自治と自発的な結社を支持する。",
+ko:"자본주의와 권위주의 국가 모두에 반대하며 노동자 자치와 자발적 결사를 지지한다."
+},
+"Merges socialist critique of capitalism with ecological limits and sustainability.":{
+ru:"Объединяет социалистическую критику капитализма с признанием экологических ограничений и необходимостью устойчивого развития.",
+de:"Verbindet die sozialistische Kritik am Kapitalismus mit ökologischen Grenzen und Nachhaltigkeit.",
+fr:"Associe la critique socialiste du capitalisme aux limites écologiques et à la durabilité.",
+"zh-CN":"将社会主义对资本主义的批判与生态限制和可持续发展结合起来。",
+id:"Menggabungkan kritik sosialis terhadap kapitalisme dengan batas-batas ekologis dan keberlanjutan.",
+ka:"აერთიანებს კაპიტალიზმის სოციალისტურ კრიტიკას ეკოლოგიურ შეზღუდვებსა და მდგრადობასთან.",
+es:"Combina la crítica socialista del capitalismo con los límites ecológicos y la sostenibilidad.",
+ja:"資本主義に対する社会主義的批判を、生態学的限界と持続可能性の視点と結び付ける。",
+ko:"자본주의에 대한 사회주의적 비판을 생태적 한계와 지속가능성에 결합한다."
+},
+"Draws on Christian teaching to argue for economic equality, cooperative and common ownership.":{
+ru:"Опирается на христианское учение, обосновывая экономическое равенство, кооперативную и общую собственность.",
+de:"Beruft sich auf christliche Lehren, um wirtschaftliche Gleichheit sowie genossenschaftliches und gemeinschaftliches Eigentum zu begründen.",
+fr:"S’appuie sur l’enseignement chrétien pour défendre l’égalité économique ainsi que la propriété coopérative et commune.",
+"zh-CN":"依据基督教教义，主张经济平等、合作社所有制和共有财产。",
+id:"Bersandar pada ajaran Kristen untuk membela kesetaraan ekonomi serta kepemilikan koperasi dan bersama.",
+ka:"ქრისტიანულ სწავლებას ეყრდნობა ეკონომიკური თანასწორობის, კოოპერაციული და საერთო საკუთრების დასასაბუთებლად.",
+es:"Se basa en la enseñanza cristiana para defender la igualdad económica y la propiedad cooperativa y común.",
+ja:"キリスト教の教えに基づき、経済的平等、協同組合所有、共有財産を主張する。",
+ko:"기독교 가르침을 바탕으로 경제적 평등, 협동조합 소유, 공동 소유를 주장한다."
+},
+"Interprets Islamic principles of justice and zakat as foundations for socialist economics.":{
+ru:"Рассматривает исламские принципы справедливости и закят как основу социалистической экономики.",
+de:"Interpretiert islamische Prinzipien der Gerechtigkeit und der Zakat als Grundlage einer sozialistischen Wirtschaftsordnung.",
+fr:"Interprète les principes islamiques de justice et de zakat comme fondements d’une économie socialiste.",
+"zh-CN":"将伊斯兰教的正义原则和天课制度视为社会主义经济的基础。",
+id:"Menafsirkan prinsip keadilan Islam dan zakat sebagai dasar bagi ekonomi sosialis.",
+ka:"ისლამური სამართლიანობის პრინციპებსა და ზაქათს სოციალისტური ეკონომიკის საფუძვლებად განიხილავს.",
+es:"Interpreta los principios islámicos de justicia y el zakat como fundamentos de una economía socialista.",
+ja:"イスラームの正義の原則と喜捨（ザカート）を社会主義経済の基盤として解釈する。",
+ko:"이슬람의 정의 원칙과 자카트를 사회주의 경제의 토대로 해석한다."
+},
+"Post-colonial socialisms (Nyerere, Senghor, Nkrumah) grounded in communal traditions and national development.":{
+ru:"Постколониальные формы социализма (Ньерере, Сенгор, Нкрума), основанные на общинных традициях и национальном развитии.",
+de:"Postkoloniale Sozialismen (Nyerere, Senghor, Nkrumah), die in gemeinschaftlichen Traditionen und nationaler Entwicklung verwurzelt sind.",
+fr:"Socialismes postcoloniaux (Nyerere, Senghor, Nkrumah) ancrés dans les traditions communautaires et le développement national.",
+"zh-CN":"以社群传统和国家发展为基础的后殖民社会主义（尼雷尔、桑戈尔、恩克鲁玛）。",
+id:"Sosialisme pascakolonial (Nyerere, Senghor, Nkrumah) yang berakar pada tradisi komunal dan pembangunan nasional.",
+ka:"პოსტკოლონიური სოციალიზმის ფორმები (ნიერერე, სენგორი, ნკრუმა), რომლებიც სათემო ტრადიციებსა და ეროვნულ განვითარებას ეფუძნება.",
+es:"Socialismos poscoloniales (Nyerere, Senghor, Nkrumah) arraigados en tradiciones comunitarias y en el desarrollo nacional.",
+ja:"共同体の伝統と国家開発に根差したポスト植民地主義的社会主義（ニエレレ、サンゴール、ンクルマ）。",
+ko:"공동체 전통과 국가 발전에 뿌리를 둔 탈식민 사회주의(니에레레, 상고르, 은크루마)."
+},
+"Promotes cooperatively owned enterprises and mutual aid as the basis of economy.":{
+ru:"Выступает за кооперативные предприятия и взаимопомощь как основу экономики.",
+de:"Fördert genossenschaftlich organisierte Unternehmen und gegenseitige Hilfe als Grundlage der Wirtschaft.",
+fr:"Prône les entreprises détenues collectivement sous forme de coopératives et l’entraide comme fondements de l’économie.",
+"zh-CN":"主张以合作社企业和互助作为经济基础。",
+id:"Mendorong usaha milik koperasi dan saling bantu sebagai dasar perekonomian.",
+ka:"ეკონომიკის საფუძვლად კოოპერაციულ საწარმოებსა და ურთიერთდახმარებას მიიჩნევს.",
+es:"Promueve las empresas de propiedad cooperativa y la ayuda mutua como base de la economía.",
+ja:"協同組合所有の企業と相互扶助を経済の基盤として推進する。",
+ko:"협동조합 소유 기업과 상호부조를 경제의 기반으로 장려한다."
+},
+"Proudhon's system of reciprocal exchange, mutual credit and worker-controlled production.":{
+ru:"Система Прудона, основанная на взаимном обмене, взаимном кредите и производстве под контролем работников.",
+de:"Proudhons System des gegenseitigen Austauschs, des Gegenseitigkeitskredits und der von Arbeitern kontrollierten Produktion.",
+fr:"Système de Proudhon fondé sur l’échange réciproque, le crédit mutuel et la production contrôlée par les travailleurs.",
+"zh-CN":"蒲鲁东提出的互惠交换、互助信贷和工人控制生产的体系。",
+id:"Sistem Proudhon yang didasarkan pada pertukaran timbal balik, kredit mutual, dan produksi yang dikendalikan pekerja.",
+ka:"პრუდონის სისტემა, რომელიც ურთიერთგაცვლას, ურთიერთკრედიტსა და მუშების მიერ კონტროლირებულ წარმოებას ეფუძნება.",
+es:"Sistema de Proudhon basado en el intercambio recíproco, el crédito mutuo y la producción controlada por los trabajadores.",
+ja:"相互交換、相互信用、労働者による生産管理を基礎とするプルードンの制度。",
+ko:"상호 교환, 상호 신용, 노동자 통제 생산에 기반한 프루동의 체계."
+},
+"British movement for workers' control through democratic industrial guilds within a pluralist state.":{
+ru:"Британское движение за контроль работников над производством через демократические промышленные гильдии в рамках плюралистического государства.",
+de:"Britische Bewegung für die Kontrolle der Arbeiter durch demokratische Industriegilden innerhalb eines pluralistischen Staates.",
+fr:"Mouvement britannique en faveur du contrôle ouvrier par des guildes industrielles démocratiques au sein d’un État pluraliste.",
+"zh-CN":"英国的一场运动，主张在多元主义国家框架内通过民主工业行会实现工人对生产的控制。",
+id:"Gerakan Inggris yang memperjuangkan kendali pekerja melalui serikat industri demokratis dalam negara pluralis.",
+ka:"ბრიტანული მოძრაობა, რომელიც პლურალისტური სახელმწიფოს ფარგლებში დემოკრატიული სამრეწველო გილდიების მეშვეობით მუშათა კონტროლს უჭერს მხარს.",
+es:"Movimiento británico que defiende el control obrero mediante gremios industriales democráticos dentro de un Estado pluralista.",
+ja:"多元主義国家の枠内で、民主的な産業ギルドを通じた労働者管理を目指すイギリスの運動。",
+ko:"다원주의 국가 안에서 민주적 산업 길드를 통해 노동자 통제를 추구하는 영국의 운동."
+},
+"Mobilises 'the people' against economic and political elites, combining redistribution with anti-establishment rhetoric.":{
+ru:"Мобилизует «народ» против экономических и политических элит, сочетая перераспределение с антиэстеблишментной риторикой.",
+de:"Mobilisiert „das Volk“ gegen wirtschaftliche und politische Eliten und verbindet Umverteilung mit anti-etablierter Rhetorik.",
+fr:"Mobilise « le peuple » contre les élites économiques et politiques, en associant redistribution et discours anti-establishment.",
+"zh-CN":"动员“人民”反对经济和政治精英，将再分配政策与反建制言论结合起来。",
+id:"Memobilisasi 'rakyat' melawan elite ekonomi dan politik, dengan menggabungkan redistribusi dan retorika anti-kemapanan.",
+ka:"„ხალხს“ ეკონომიკური და პოლიტიკური ელიტების წინააღმდეგ მობილიზებს და გადანაწილებას ანტიესტებლიშმენტურ რიტორიკასთან აერთიანებს.",
+es:"Moviliza al «pueblo» contra las élites económicas y políticas, combinando la redistribución con una retórica antiestablecimiento.",
+ja:"「人民」を経済的・政治的エリートに対抗して動員し、再分配政策と反既成秩序の言説を組み合わせる。",
+ko:"‘국민’을 경제·정치 엘리트에 맞서 동원하고 재분배와 반기득권 수사를 결합한다."
+},
+"Western European communist current that accepted pluralist democracy and rejected Soviet control.":{
+ru:"Западноевропейское коммунистическое течение, принявшее плюралистическую демократию и отвергнувшее контроль со стороны СССР.",
+de:"Westeuropäische kommunistische Strömung, die pluralistische Demokratie akzeptierte und sowjetische Kontrolle ablehnte.",
+fr:"Courant communiste d’Europe occidentale qui a accepté la démocratie pluraliste et rejeté le contrôle soviétique.",
+"zh-CN":"接受多元主义民主并拒绝苏联控制的西欧共产主义思潮。",
+id:"Arus komunis Eropa Barat yang menerima demokrasi pluralis dan menolak kendali Soviet.",
+ka:"დასავლეთევროპული კომუნისტური მიმდინარეობა, რომელმაც მიიღო პლურალისტური დემოკრატია და უარყო საბჭოთა კონტროლი.",
+es:"Corriente comunista de Europa occidental que aceptó la democracia pluralista y rechazó el control soviético.",
+ja:"多元主義的民主を受け入れ、ソ連の支配を拒否した西欧の共産主義潮流。",
+ko:"다원주의 민주주의를 수용하고 소련의 통제를 거부한 서유럽 공산주의 흐름."
+},
+"Latin American movement inspired by Simón Bolívar, combining socialism, anti-imperialism and popular participation.":{
+ru:"Латиноамериканское движение, вдохновлённое Симоном Боливаром и сочетающее социализм, антиимпериализм и народное участие.",
+de:"Von Simón Bolívar inspirierte lateinamerikanische Bewegung, die Sozialismus, Antiimperialismus und Volksbeteiligung verbindet.",
+fr:"Mouvement latino-américain inspiré par Simón Bolívar, associant socialisme, anti-impérialisme et participation populaire.",
+"zh-CN":"受西蒙·玻利瓦尔启发的拉丁美洲运动，将社会主义、反帝国主义和大众参与结合起来。",
+id:"Gerakan Amerika Latin yang terinspirasi Simón Bolívar, menggabungkan sosialisme, anti-imperialisme, dan partisipasi rakyat.",
+ka:"სიმონ ბოლივარით შთაგონებული ლათინოამერიკული მოძრაობა, რომელიც აერთიანებს სოციალიზმს, ანტიიმპერიალიზმსა და ხალხის მონაწილეობას.",
+es:"Movimiento latinoamericano inspirado por Simón Bolívar que combina socialismo, antiimperialismo y participación popular.",
+ja:"シモン・ボリバルに触発され、社会主義、反帝国主義、民衆参加を組み合わせたラテンアメリカの運動。",
+ko:"시몬 볼리바르에게서 영감을 받아 사회주의, 반제국주의, 대중 참여를 결합한 라틴아메리카 운동."
+},
+"Murray Bookchin's view that ecological crises stem from hierarchy; proposes confederated democratic municipalities.":{
+ru:"Взгляд Мюррея Букчина, согласно которому экологические кризисы порождены иерархией; предлагает конфедерацию демократических муниципалитетов.",
+de:"Murray Bookchins Auffassung, dass ökologische Krisen aus Hierarchien entstehen; er schlägt einen Verbund demokratischer Kommunen vor.",
+fr:"Selon Murray Bookchin, les crises écologiques découlent des hiérarchies ; il propose une confédération de municipalités démocratiques.",
+"zh-CN":"默里·布克钦认为生态危机源于等级制度，并提出建立民主市镇联合体。",
+id:"Pandangan Murray Bookchin bahwa krisis ekologis berasal dari hierarki; ia mengusulkan konfederasi munisipalitas demokratis.",
+ka:"მიურეი ბუკჩინის ხედვა, რომლის მიხედვითაც ეკოლოგიური კრიზისები იერარქიიდან წარმოიშობა; ის დემოკრატიული მუნიციპალიტეტების კონფედერაციას გვთავაზობს.",
+es:"La perspectiva de Murray Bookchin sostiene que las crisis ecológicas surgen de las jerarquías y propone una confederación de municipios democráticos.",
+ja:"マレイ・ブクチンの見解で、環境危機は階層制に起因するとし、民主的自治体の連合を提案する。",
+ko:"머레이 북친의 견해로, 생태 위기는 위계에서 비롯된다고 보고 민주적 지방자치단체 연합을 제안한다."
+},
+"Analyses women's oppression through both patriarchy and capitalism.":{
+ru:"Анализирует угнетение женщин через взаимосвязь патриархата и капитализма.",
+de:"Analysiert die Unterdrückung von Frauen anhand des Zusammenwirkens von Patriarchat und Kapitalismus.",
+fr:"Analyse l’oppression des femmes à travers le patriarcat et le capitalisme.",
+"zh-CN":"从父权制和资本主义两个方面分析女性所遭受的压迫。",
+id:"Menganalisis penindasan terhadap perempuan melalui patriarki dan kapitalisme.",
+ka:"ქალთა ჩაგვრას პატრიარქატისა და კაპიტალიზმის ურთიერთქმედების ჭრილში აანალიზებს.",
+es:"Analiza la opresión de las mujeres a través del patriarcado y el capitalismo.",
+ja:"家父長制と資本主義の双方を通じて女性の抑圧を分析する。",
+ko:"가부장제와 자본주의를 통해 여성 억압을 분석한다."
+},
+"Wikipedia places libertarian socialism between left and far-left; classification varies by strand.":{
+ru:"Википедия помещает либертарианский социализм между левыми и крайне левыми; классификация зависит от конкретного направления.",
+de:"Wikipedia ordnet den libertären Sozialismus zwischen links und ganz links ein; die Einordnung variiert je nach Strömung.",
+fr:"Wikipédia situe le socialisme libertaire entre la gauche et l’extrême gauche ; le classement varie selon les courants.",
+"zh-CN":"维基百科将自由意志社会主义置于左翼和极左翼之间；具体分类因流派而异。",
+id:"Wikipedia menempatkan sosialisme libertarian antara kiri dan kiri ekstrem; klasifikasinya berbeda menurut aliran.",
+ka:"ვიკიპედია ლიბერტარიანულ სოციალიზმს მემარცხენეობასა და ულტრამემარცხენეობას შორის ათავსებს; კლასიფიკაცია მიმდინარეობის მიხედვით იცვლება.",
+es:"Wikipedia sitúa el socialismo libertario entre la izquierda y la extrema izquierda; la clasificación varía según la corriente.",
+ja:"ウィキペディアでは自由主義的社会主義を左派と極左の間に位置付けているが、潮流によって分類は異なる。",
+ko:"위키백과는 자유지상주의 사회주의를 좌파와 극좌 사이에 두지만, 세부 흐름에 따라 분류가 다르다."
+}
+});
+
 export default rows;
