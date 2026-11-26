@@ -2176,4 +2176,69 @@ ru:"Основанная на сообществе",de:"Gemeinschaftsorientiert"
 ru:"Антикоррупционная",de:"Antikorruptiv",fr:"Anti-corruption","zh-CN":"反腐败",id:"Antikorupsi",ka:"ანტიკორუფციული",es:"Anticorrupción",ja:"反汚職",ko:"반부패"},
 });
 
+
+Object.assign(rows, {
+// Social-orientation descriptors: progressive, egalitarian and pluralist traditions.
+"Progressive, egalitarian":{
+ru:"Прогрессивная, эгалитарная",de:"Progressiv, egalitär",fr:"Progressiste, égalitaire","zh-CN":"进步、平等主义",id:"Progresif, egaliter",ka:"პროგრესული, ეგალიტარული",es:"Progresista e igualitaria",ja:"進歩的・平等主義的",ko:"진보적, 평등주의적"},
+"Liberal, pluralist":{
+ru:"Либеральная, плюралистическая",de:"Liberal, pluralistisch",fr:"Libéral, pluraliste","zh-CN":"自由主义、多元主义",id:"Liberal, pluralis",ka:"ლიბერალური, პლურალისტური",es:"Liberal y pluralista",ja:"自由主義的・多元主義的",ko:"자유주의적, 다원주의적"},
+"Socially liberal":{
+ru:"Социально-либеральная",de:"Gesellschaftlich liberal",fr:"Socialement libéral","zh-CN":"社会自由主义",id:"Liberal secara sosial",ka:"სოციალურად ლიბერალური",es:"Socialmente liberal",ja:"社会的にリベラル",ko:"사회적으로 자유주의적"},
+"Civil-rights liberal":{
+ru:"Либерализм гражданских прав",de:"Bürgerrechtsliberal",fr:"Libéral en matière de droits civiques","zh-CN":"公民权利自由主义",id:"Liberal hak sipil",ka:"სამოქალაქო უფლებების ლიბერალიზმი",es:"Liberal en derechos civiles",ja:"公民権を重視する自由主義",ko:"시민권 자유주의"},
+"Working-class solidarity":{
+ru:"Солидарность рабочего класса",de:"Arbeiterklassensolidarität",fr:"Solidarité de la classe ouvrière","zh-CN":"工人阶级团结",id:"Solidaritas kelas pekerja",ka:"მუშათა კლასის სოლიდარობა",es:"Solidaridad de la clase trabajadora",ja:"労働者階級の連帯",ko:"노동계급 연대"},
+"Reformist":{
+ru:"Реформистская",de:"Reformorientiert",fr:"Réformiste","zh-CN":"改革主义",id:"Reformis",ka:"რეფორმისტული",es:"Reformista",ja:"改革主義的",ko:"개혁주의적"},
+"Ecological, participatory":{
+ru:"Экологическая, основанная на участии",de:"Ökologisch, partizipativ",fr:"Écologique, participatif","zh-CN":"生态、参与式",id:"Ekologis, partisipatif",ka:"ეკოლოგიური, მონაწილეობითი",es:"Ecológica y participativa",ja:"環境重視・参加型",ko:"생태적, 참여형"},
+"Equal rights":{
+ru:"Равные права",de:"Gleiche Rechte",fr:"Égalité des droits","zh-CN":"平等权利",id:"Hak yang setara",ka:"თანაბარი უფლებები",es:"Igualdad de derechos",ja:"平等な権利",ko:"동등한 권리"},
+"Pluralist, minority rights":{
+ru:"Плюрализм, права меньшинств",de:"Pluralistisch, Minderheitenrechte",fr:"Pluraliste, droits des minorités","zh-CN":"多元主义、少数群体权利",id:"Pluralis, hak minoritas",ka:"პლურალისტური, უმცირესობების უფლებები",es:"Pluralista y favorable a los derechos de las minorías",ja:"多元主義・少数者の権利",ko:"다원주의, 소수자 권리"},
+"Liberal, egalitarian":{
+ru:"Либеральная, эгалитарная",de:"Liberal, egalitär",fr:"Libéral, égalitaire","zh-CN":"自由主义、平等主义",id:"Liberal, egaliter",ka:"ლიბერალური, ეგალიტარული",es:"Liberal e igualitaria",ja:"自由主義的・平等主義的",ko:"자유주의적, 평등주의적"},
+"Democratic":{
+ru:"Демократическая",de:"Demokratisch",fr:"Démocratique","zh-CN":"民主",id:"Demokratis",ka:"დემოკრატიული",es:"Democrática",ja:"民主的",ko:"민주적"},
+"Liberal-democratic":{
+ru:"Либерально-демократическая",de:"Liberaldemokratisch",fr:"Libéral-démocratique","zh-CN":"自由民主主义",id:"Liberal-demokratis",ka:"ლიბერალურ-დემოკრატიული",es:"Liberal-democrática",ja:"自由民主主義的",ko:"자유민주주의적"},
+"Faith-based progressive":{
+ru:"Прогрессивная, основанная на вере",de:"Glaubensbasiert-progressiv",fr:"Progressiste fondé sur la foi","zh-CN":"以信仰为基础的进步主义",id:"Progresif berbasis iman",ka:"რწმენაზე დაფუძნებული პროგრესული",es:"Progresista basada en la fe",ja:"信仰に基づく進歩主義",ko:"신앙 기반 진보주의"},
+"Democratic, egalitarian":{
+ru:"Демократическая, эгалитарная",de:"Demokratisch, egalitär",fr:"Démocratique, égalitaire","zh-CN":"民主、平等主义",id:"Demokratis, egaliter",ka:"დემოკრატიული, ეგალიტარული",es:"Democrática e igualitaria",ja:"民主的・平等主義的",ko:"민주적, 평등주의적"},
+"Egalitarian, solidarity":{
+ru:"Эгалитарная, солидаристская",de:"Egalitär, solidarisch",fr:"Égalitaire, solidaire","zh-CN":"平等主义、团结互助",id:"Egaliter, solidaritas",ka:"ეგალიტარული, სოლიდარული",es:"Igualitaria y solidaria",ja:"平等主義的・連帯重視",ko:"평등주의적, 연대 지향"},
+"Egalitarian":{
+ru:"Эгалитарная",de:"Egalitär",fr:"Égalitaire","zh-CN":"平等主义",id:"Egaliter",ka:"ეგალიტარული",es:"Igualitaria",ja:"平等主義的",ko:"평등주의적"},
+"Anti-authoritarian":{
+ru:"Антиавторитарная",de:"Antiautoritär",fr:"Antiautoritaire","zh-CN":"反威权主义",id:"Anti-otoriter",ka:"ანტიავტორიტარული",es:"Antiautoritaria",ja:"反権威主義的",ko:"반권위주의적"},
+"Ecological, egalitarian":{
+ru:"Экологическая, эгалитарная",de:"Ökologisch, egalitär",fr:"Écologique, égalitaire","zh-CN":"生态、平等主义",id:"Ekologis, egaliter",ka:"ეკოლოგიური, ეგალიტარული",es:"Ecológica e igualitaria",ja:"環境重視・平等主義的",ko:"생태적, 평등주의적"},
+"Faith-based egalitarian":{
+ru:"Эгалитарная, основанная на вере",de:"Glaubensbasiert-egalitär",fr:"Égalitaire fondé sur la foi","zh-CN":"以信仰为基础的平等主义",id:"Egaliter berbasis iman",ka:"რწმენაზე დაფუძნებული ეგალიტარული",es:"Igualitaria basada en la fe",ja:"信仰に基づく平等主義",ko:"신앙 기반 평등주의"},
+"Religious egalitarian":{
+ru:"Религиозная, эгалитарная",de:"Religiös, egalitär",fr:"Religieux, égalitaire","zh-CN":"宗教平等主义",id:"Religius, egaliter",ka:"რელიგიური, ეგალიტარული",es:"Religiosa e igualitaria",ja:"宗教的・平等主義的",ko:"종교적, 평등주의적"},
+"Communal, anti-colonial":{
+ru:"Общинная, антиколониальная",de:"Gemeinschaftlich, antikolonial",fr:"Communautaire, anticolonial","zh-CN":"社群主义、反殖民",id:"Komunal, antikolonial",ka:"სათემო, ანტიკოლონიური",es:"Comunitaria y anticolonial",ja:"共同体主義・反植民地主義",ko:"공동체적, 반식민주의적"},
+"Solidarity, participation":{
+ru:"Солидарность, участие",de:"Solidarität, Beteiligung",fr:"Solidarité, participation","zh-CN":"团结、参与",id:"Solidaritas, partisipasi",ka:"სოლიდარობა, მონაწილეობა",es:"Solidaridad y participación",ja:"連帯・参加",ko:"연대, 참여"},
+"Federalist, anti-state":{
+ru:"Федералистская, антигосударственная",de:"Föderalistisch, staatsfeindlich",fr:"Fédéraliste, anti-étatique","zh-CN":"联邦主义、反国家",id:"Federalis, anti-negara",ka:"ფედერალისტური, ანტისახელმწიფოებრივი",es:"Federalista y antiestatal",ja:"連邦主義的・反国家的",ko:"연방주의적, 반국가적"},
+"Inclusive-popular":{
+ru:"Инклюзивно-народная",de:"Inklusiv-volksnah",fr:"Inclusif et populaire","zh-CN":"包容性、人民导向",id:"Inklusif-populer",ka:"ინკლუზიური, სახალხო",es:"Inclusiva y popular",ja:"包摂的・民衆志向",ko:"포용적, 대중 지향"},
+"Democratic, pluralist":{
+ru:"Демократическая, плюралистическая",de:"Demokratisch, pluralistisch",fr:"Démocratique, pluraliste","zh-CN":"民主、多元主义",id:"Demokratis, pluralis",ka:"დემოკრატიული, პლურალისტური",es:"Democrática y pluralista",ja:"民主的・多元主義的",ko:"민주적, 다원주의적"},
+"Populist, anti-imperialist":{
+ru:"Популистская, антиимпериалистическая",de:"Populistisch, antiimperialistisch",fr:"Populiste, anti-impérialiste","zh-CN":"民粹主义、反帝国主义",id:"Populis, anti-imperialis",ka:"პოპულისტური, ანტიიმპერიალისტური",es:"Populista y antiimperialista",ja:"ポピュリズム的・反帝国主義的",ko:"포퓰리즘적, 반제국주의적"},
+"Directly democratic":{
+ru:"Прямая демократия",de:"Direktdemokratisch",fr:"Démocratique directe","zh-CN":"直接民主",id:"Demokrasi langsung",ka:"პირდაპირი დემოკრატია",es:"Democrática directa",ja:"直接民主主義的",ko:"직접민주주의적"},
+"Gender equality":{
+ru:"Гендерное равенство",de:"Geschlechtergleichheit",fr:"Égalité des genres","zh-CN":"性别平等",id:"Kesetaraan gender",ka:"გენდერული თანასწორობა",es:"Igualdad de género",ja:"ジェンダー平等",ko:"성평등"},
+"Secular nationalist":{
+ru:"Светский национализм",de:"Säkular-nationalistisch",fr:"Nationaliste laïque","zh-CN":"世俗民族主义",id:"Nasionalis sekuler",ka:"სეკულარული ნაციონალისტური",es:"Nacionalista secular",ja:"世俗ナショナリズム",ko:"세속 민족주의"},
+"Poor-centred, communitarian":{
+ru:"Ориентированная на бедных, общинная",de:"Armutsorientiert, gemeinschaftlich",fr:"Centrée sur les pauvres, communautaire","zh-CN":"以贫困群体为中心、共同体主义",id:"Berpusat pada kaum miskin, komunal",ka:"ღარიბებზე ორიენტირებული, სათემო",es:"Centrada en los pobres y comunitaria",ja:"貧困層重視・共同体主義的",ko:"빈곤층 중심, 공동체주의적"},
+});
+
 export default rows;
