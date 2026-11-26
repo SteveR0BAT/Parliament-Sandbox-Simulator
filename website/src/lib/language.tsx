@@ -1,6 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import dictionary from "@/data/translations";
+import runtimeTranslations from "@/data/runtimeTranslations";
 
 export const LANGUAGES = [
   { code: "en", label: "English" },
@@ -57,5 +58,5 @@ export function useLanguage() {
 
 export function translateText(value: string, language: Language): string {
   if (language === "en") return value;
-  return dictionary[language]?.[value] ?? value;
+  return dictionary[language]?.[value] ?? runtimeTranslations[language]?.[value] ?? value;
 }
