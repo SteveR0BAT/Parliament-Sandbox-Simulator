@@ -59,5 +59,5 @@ export function useLanguage() {
 
 export function translateText(value: string, language: Language): string {
   if (language === "en") return value;
-  return dictionary[language]?.[value] ?? runtimeTranslations[language]?.[value] ?? ideologyTextTranslations[language]?.[value] ?? value;
+  return dictionary[language]?.[value] ?? runtimeTranslations[value]?.[language] ?? ideologyTextTranslations[value]?.[language] ?? value;
 }
