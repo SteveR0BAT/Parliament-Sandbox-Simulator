@@ -645,5 +645,5 @@ Object.assign(rows, {
 "Voting behaviour": translateAllLocales("Поведение при голосовании","Abstimmungsverhalten","Comportement électoral","投票行为","Perilaku pemungutan suara","კენჭისყრის ქცევა","Comportamiento de voto","投票行動","투표 행동"),
 "Affiliation / notes": translateAllLocales("Принадлежность / примечания","Zugehörigkeit / Hinweise","Affiliation / notes","党派归属/备注","Afiliasi / catatan","კუთვნილება / შენიშვნები","Afiliación / notas","所属／メモ","소속 / 메모"),
 "e.g. Local list, ex-PDU": translateAllLocales("например, местный список, бывшая ПДЕ","z. B. lokale Liste, ehemals PDU","ex. : liste locale, ancien PDU","例如：地方名单、前人民民主联盟成员","mis. daftar lokal, mantan PDU","მაგ., ადგილობრივი სია, ყოფილი პდკ","p. ej., lista local, exmiembro del PDU","例：地域名簿、元PDU所属","예: 지역 명단, 전 PDU"),
-"Click to focus": translateAllLocales("Нажмите, чтобы выделить","Klicken, um hervorzuheben","Cliquez pour mettre en évidence","点击以聚焦","Klik untuk menyorot","დააწკაპუნეთ გამოსაკვეთად","Haga clic para resaltar","クリックして強調表示","클릭하여 강조 표시")
+
 });
