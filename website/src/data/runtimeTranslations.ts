@@ -460,7 +460,6 @@ ru:"Восстановить",de:"Wiederherstellen",fr:"Restaurer","zh-CN":"恢�
 ru:"Создать резервную копию",de:"Sicherung erstellen",fr:"Créer une sauvegarde","zh-CN":"创建备份",id:"Buat cadangan",ka:"სარეზერვო ასლის შექმნა",es:"Crear copia de seguridad",ja:"バックアップを作成",ko:"백업 만들기"},
 "Auto-saved in this browser. Status:":{
 ru:"Автоматически сохранено в этом браузере. Статус:",de:"In diesem Browser automatisch gespeichert. Status:",fr:"Enregistré automatiquement dans ce navigateur. État :","zh-CN":"已在此浏览器中自动保存。状态：",id:"Disimpan otomatis di browser ini. Status:",ka:"ავტომატურად შენახულია ამ ბრაუზერში. სტატუსი:",es:"Guardado automáticamente en este navegador. Estado:",ja:"このブラウザーに自動保存しました。状態:",ko:"이 브라우저에 자동 저장됨. 상태:"},
-"Why":{ru:"Причина:",de:"Begründung:",fr:"Pourquoi :","zh-CN":"原因：",id:"Alasan:",ka:"მიზეზი:",es:"Motivo:",ja:"理由:",ko:"이유:"},
 });
 
 
