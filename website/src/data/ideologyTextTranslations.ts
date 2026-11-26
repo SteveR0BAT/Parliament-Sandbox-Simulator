@@ -2085,4 +2085,95 @@ ko:"스스로 사회주의라고 규정하지만 권위주의적 민족주의 �
 }
 });
 
+
+Object.assign(rows, {
+// Social-orientation descriptors: conservative, nationalist and liberal currents (part 1).
+"Mixed":{
+ru:"Смешанная позиция",de:"Gemischte Position",fr:"Position mixte","zh-CN":"混合立场",id:"Campuran",ka:"შერეული",es:"Mixta",ja:"混合",ko:"혼합"},
+"Cultural-religious majoritarian":{
+ru:"Культурно-религиозный мажоритаризм",de:"Kulturell-religiöser Majoritarismus",fr:"Majoritarisme culturel et religieux","zh-CN":"文化宗教多数主义",id:"Mayoritarianisme budaya-keagamaan",ka:"კულტურულ-რელიგიური მაჟორიტარიზმი",es:"Mayoritarismo cultural y religioso",ja:"文化的・宗教的多数派主義",ko:"문화·종교적 다수주의"},
+"Restrictionist, exclusionary":{
+ru:"Ограничительный, исключающий",de:"Restriktiv, ausgrenzend",fr:"Restrictionniste, exclusif","zh-CN":"限制性、排他性",id:"Restriktif, eksklusif",ka:"შემზღუდველი, გამომრიცხავი",es:"Restrictiva y excluyente",ja:"制限的・排他的",ko:"제한적, 배타적"},
+"Tradition, order, community":{
+ru:"Традиция, порядок, сообщество",de:"Tradition, Ordnung, Gemeinschaft",fr:"Tradition, ordre, communauté","zh-CN":"传统、秩序、共同体",id:"Tradisi, ketertiban, komunitas",ka:"ტრადიცია, წესრიგი, საზოგადოება",es:"Tradición, orden y comunidad",ja:"伝統・秩序・共同体",ko:"전통, 질서, 공동체"},
+"Hierarchical, religious":{
+ru:"Иерархическая, религиозная",de:"Hierarchisch, religiös",fr:"Hiérarchique, religieux","zh-CN":"等级制、宗教性",id:"Hierarkis, religius",ka:"იერარქიული, რელიგიური",es:"Jerárquica y religiosa",ja:"階層的・宗教的",ko:"위계적, 종교적"},
+"Cultural traditionalist":{
+ru:"Культурный традиционализм",de:"Kulturtraditionalistisch",fr:"Traditionaliste culturel","zh-CN":"文化传统主义",id:"Tradisionalis budaya",ka:"კულტურული ტრადიციონალიზმი",es:"Tradicionalista cultural",ja:"文化的伝統主義",ko:"문화적 전통주의"},
+"Moral traditionalism, interventionism":{
+ru:"Моральный традиционализм, интервенционизм",de:"Moralischer Traditionalismus, Interventionismus",fr:"Traditionalisme moral, interventionnisme","zh-CN":"道德传统主义、干预主义",id:"Tradisionalisme moral, intervensionisme",ka:"ზნეობრივი ტრადიციონალიზმი, ინტერვენციონიზმი",es:"Tradicionalismo moral e intervencionismo",ja:"道徳的伝統主義・介入主義",ko:"도덕적 전통주의, 개입주의"},
+"Culturally traditional, sovereigntist":{
+ru:"Культурный традиционализм, суверенизм",de:"Kulturell traditionalistisch, souveränistisch",fr:"Traditionnel sur le plan culturel, souverainiste","zh-CN":"文化传统主义、主权主义",id:"Tradisionalis budaya, berdaulat",ka:"კულტურულად ტრადიციონალისტური, სუვერენისტული",es:"Culturalmente tradicionalista y soberanista",ja:"文化的伝統主義・主権主義",ko:"문화적 전통주의, 주권주의"},
+"Traditional morality":{
+ru:"Традиционная мораль",de:"Traditionelle Moral",fr:"Moralité traditionnelle","zh-CN":"传统道德",id:"Moral tradisional",ka:"ტრადიციული მორალი",es:"Moral tradicional",ja:"伝統的道徳",ko:"전통적 도덕"},
+"Religious-moral conservatism":{
+ru:"Религиозно-нравственный консерватизм",de:"Religiös-moralischer Konservatismus",fr:"Conservatisme religieux et moral","zh-CN":"宗教道德保守主义",id:"Konservatisme agama-moral",ka:"რელიგიურ-ზნეობრივი კონსერვატიზმი",es:"Conservadurismo religioso y moral",ja:"宗教的・道徳的保守主義",ko:"종교·도덕적 보수주의"},
+"Nativist, law-and-order":{
+ru:"Нативизм, закон и порядок",de:"Nativistisch, Recht und Ordnung",fr:"Nativiste, loi et ordre","zh-CN":"本土主义、法律与秩序",id:"Nativis, hukum dan ketertiban",ka:"ნატივიზმი, კანონი და წესრიგი",es:"Nativista y partidaria de la ley y el orden",ja:"自国民優先主義・法と秩序",ko:"자국민 우선주의, 법과 질서"},
+"Mostly neutral":{
+ru:"В основном нейтральная",de:"Überwiegend neutral",fr:"Plutôt neutre","zh-CN":"大体中立",id:"Sebagian besar netral",ka:"ძირითადად ნეიტრალური",es:"Mayormente neutral",ja:"概ね中立",ko:"대체로 중립"},
+"Moral conservative, nationalist":{
+ru:"Моральный консерватизм, национализм",de:"Moralisch konservativ, nationalistisch",fr:"Conservateur sur le plan moral, nationaliste","zh-CN":"道德保守主义、民族主义",id:"Konservatif secara moral, nasionalis",ka:"ზნეობრივად კონსერვატიული, ნაციონალისტური",es:"Conservadora en lo moral y nacionalista",ja:"道徳的保守主義・ナショナリズム",ko:"도덕적 보수주의, 민족주의"},
+"Civil-libertarian":{
+ru:"Гражданско-либертарианская",de:"Bürgerlich-libertär",fr:"Libertaire sur le plan des droits civiques","zh-CN":"公民自由主义",id:"Libertarian sipil",ka:"სამოქალაქო-ლიბერტარიანული",es:"Libertaria en materia civil",ja:"市民的自由主義",ko:"시민 자유주의"},
+"Individualist, stateless":{
+ru:"Индивидуалистическая, безгосударственная",de:"Individualistisch, staatslos",fr:"Individualiste, sans État","zh-CN":"个人主义、无国家",id:"Individualistis, tanpa negara",ka:"ინდივიდუალისტური, უსახელმწიფო",es:"Individualista y sin Estado",ja:"個人主義的・無国家",ko:"개인주의적, 무국가"},
+"Individualist, secular":{
+ru:"Индивидуалистическая, светская",de:"Individualistisch, säkular",fr:"Individualiste, laïque","zh-CN":"个人主义、世俗",id:"Individualistis, sekuler",ka:"ინდივიდუალისტური, სეკულარული",es:"Individualista y secular",ja:"個人主義的・世俗的",ko:"개인주의적, 세속적"},
+"Hierarchical, traditional":{
+ru:"Иерархическая, традиционная",de:"Hierarchisch, traditionell",fr:"Hiérarchique, traditionnel","zh-CN":"等级制、传统主义",id:"Hierarkis, tradisional",ka:"იერარქიული, ტრადიციული",es:"Jerárquica y tradicional",ja:"階層的・伝統的",ko:"위계적, 전통적"},
+"Order, hierarchy, limited pluralism":{
+ru:"Порядок, иерархия, ограниченный плюрализм",de:"Ordnung, Hierarchie, begrenzter Pluralismus",fr:"Ordre, hiérarchie, pluralisme limité","zh-CN":"秩序、等级、有限多元主义",id:"Ketertiban, hierarki, pluralisme terbatas",ka:"წესრიგი, იერარქია, შეზღუდული პლურალიზმი",es:"Orden, jerarquía y pluralismo limitado",ja:"秩序・階層・限定的多元主義",ko:"질서, 위계, 제한적 다원주의"},
+"Religious-conservative":{
+ru:"Религиозно-консервативная",de:"Religiös-konservativ",fr:"Religieux-conservateur","zh-CN":"宗教保守主义",id:"Religius-konservatif",ka:"რელიგიურ-კონსერვატიული",es:"Religiosa y conservadora",ja:"宗教的保守主義",ko:"종교적 보수주의"},
+"Moderately conservative":{
+ru:"Умеренно консервативная",de:"Mäßig konservativ",fr:"Modérément conservateur","zh-CN":"温和保守",id:"Cukup konservatif",ka:"ზომიერად კონსერვატიული",es:"Moderadamente conservadora",ja:"穏健保守",ko:"온건 보수적"},
+"Moderate traditional":{
+ru:"Умеренный традиционализм",de:"Gemäßigt traditionalistisch",fr:"Traditionnel modéré","zh-CN":"温和传统主义",id:"Tradisional moderat",ka:"ზომიერი ტრადიციონალიზმი",es:"Tradicionalista moderada",ja:"穏健な伝統主義",ko:"온건한 전통주의"},
+"Moderately conservative, pro-family":{
+ru:"Умеренно консервативная, семейные ценности",de:"Mäßig konservativ, familienorientiert",fr:"Modérément conservateur, favorable à la famille","zh-CN":"温和保守、重视家庭",id:"Cukup konservatif, pro-keluarga",ka:"ზომიერად კონსერვატიული, ოჯახზე ორიენტირებული",es:"Moderadamente conservadora y favorable a la familia",ja:"穏健保守・家族重視",ko:"온건 보수적, 가족 중시"},
+"National-conservative, republican":{
+ru:"Национал-консервативная, республиканская",de:"Nationalkonservativ, republikanisch",fr:"National-conservateur, républicain","zh-CN":"民族保守主义、共和主义",id:"Nasional-konservatif, republikan",ka:"ეროვნულ-კონსერვატიული, რესპუბლიკური",es:"Nacionalconservadora y republicana",ja:"国家保守主義・共和主義",ko:"국가 보수주의, 공화주의"},
+"Civil liberties, tolerance":{
+ru:"Гражданские свободы, терпимость",de:"Bürgerliche Freiheiten, Toleranz",fr:"Libertés civiles, tolérance","zh-CN":"公民自由、宽容",id:"Kebebasan sipil, toleransi",ka:"სამოქალაქო თავისუფლებები, შემწყნარებლობა",es:"Libertades civiles y tolerancia",ja:"市民的自由・寛容",ko:"시민적 자유, 관용"},
+"Liberal-conservative":{
+ru:"Либерально-консервативная",de:"Liberalkonservativ",fr:"Libéral-conservateur","zh-CN":"自由保守主义",id:"Liberal-konservatif",ka:"ლიბერალურ-კონსერვატიული",es:"Liberal-conservadora",ja:"自由保守主義",ko:"자유보수주의"},
+"Moderate":{
+ru:"Умеренная",de:"Gemäßigt",fr:"Modéré","zh-CN":"温和",id:"Moderat",ka:"ზომიერი",es:"Moderada",ja:"穏健",ko:"온건"},
+"Moderate-conservative, faith-friendly":{
+ru:"Умеренно консервативная, благосклонная к религии",de:"Gemäßigt konservativ, glaubensfreundlich",fr:"Modérément conservateur, favorable à la religion","zh-CN":"温和保守、支持宗教",id:"Moderat konservatif, ramah agama",ka:"ზომიერად კონსერვატიული, რელიგიის მხარდამჭერი",es:"Moderadamente conservadora y favorable a la religión",ja:"穏健保守・宗教に好意的",ko:"온건 보수적, 종교 친화적"},
+"Traditional values":{
+ru:"Традиционные ценности",de:"Traditionelle Werte",fr:"Valeurs traditionnelles","zh-CN":"传统价值观",id:"Nilai tradisional",ka:"ტრადიციული ღირებულებები",es:"Valores tradicionales",ja:"伝統的価値観",ko:"전통적 가치"},
+"Inclusive-patriotic":{
+ru:"Инклюзивный патриотизм",de:"Inklusiv-patriotisch",fr:"Patriotisme inclusif","zh-CN":"包容性爱国主义",id:"Patriotisme inklusif",ka:"ინკლუზიური პატრიოტიზმი",es:"Patriotismo inclusivo",ja:"包摂的な愛国主義",ko:"포용적 애국주의"},
+"Conservation, localism":{
+ru:"Охрана природы, локализм",de:"Naturschutz, Lokalismus",fr:"Conservation, localisme","zh-CN":"自然保护、地方主义",id:"Konservasi, lokalisme",ka:"გარემოს დაცვა, ლოკალიზმი",es:"Conservación y localismo",ja:"自然保全・地域主義",ko:"보전, 지역주의"},
+"Religiously conservative, pluralist-electoral":{
+ru:"Религиозно-консервативная, плюралистическая и электоральная",de:"Religiös-konservativ, pluralistisch-wahlorientiert",fr:"Religieusement conservateur, pluraliste et électoral","zh-CN":"宗教保守、多元与选举政治",id:"Religius-konservatif, pluralis-elektoral",ka:"რელიგიურ-კონსერვატიული, პლურალისტური და საარჩევნო",es:"Religiosamente conservadora, pluralista y electoral",ja:"宗教的保守・多元主義・選挙重視",ko:"종교적 보수, 다원주의·선거 중심"},
+"Pragmatic, reformist":{
+ru:"Прагматичная, реформистская",de:"Pragmatisch, reformorientiert",fr:"Pragmatique, réformiste","zh-CN":"务实、改革主义",id:"Pragmatis, reformis",ka:"პრაგმატული, რეფორმისტული",es:"Pragmática y reformista",ja:"実用主義的・改革志向",ko:"실용적, 개혁주의적"},
+"Liberty, tolerance":{
+ru:"Свобода, терпимость",de:"Freiheit, Toleranz",fr:"Liberté, tolérance","zh-CN":"自由、宽容",id:"Kebebasan, toleransi",ka:"თავისუფლება, შემწყნარებლობა",es:"Libertad y tolerancia",ja:"自由・寛容",ko:"자유, 관용"},
+"Civic participation":{
+ru:"Гражданское участие",de:"Bürgerschaftliche Beteiligung",fr:"Participation civique","zh-CN":"公民参与",id:"Partisipasi kewargaan",ka:"სამოქალაქო მონაწილეობა",es:"Participación cívica",ja:"市民参加",ko:"시민 참여"},
+"Rural, localist":{
+ru:"Сельская, локалистская",de:"Ländlich, lokalistisch",fr:"Rural, localiste","zh-CN":"乡村、地方主义",id:"Pedesaan, lokalis",ka:"სოფლური, ლოკალისტური",es:"Rural y localista",ja:"農村重視・地域主義",ko:"농촌 지향, 지역주의"},
+"Secular, rights-based":{
+ru:"Светская, основанная на правах",de:"Säkular, rechtebasiert",fr:"Laïque, fondé sur les droits","zh-CN":"世俗、以权利为基础",id:"Sekuler, berbasis hak",ka:"სეკულარული, უფლებებზე დაფუძნებული",es:"Secular y basada en derechos",ja:"世俗的・権利を基盤とする",ko:"세속적, 권리 기반"},
+"Universalist":{
+ru:"Универсалистская",de:"Universalistisch",fr:"Universaliste","zh-CN":"普遍主义",id:"Universalis",ka:"უნივერსალისტური",es:"Universalista",ja:"普遍主義",ko:"보편주의"},
+"Rights-promoting":{
+ru:"Поддержка прав человека и гражданских прав",de:"Rechte fördernd",fr:"Promotion des droits","zh-CN":"促进权利",id:"Mendorong hak",ka:"უფლებების ხელშეწყობა",es:"Promotora de derechos",ja:"権利の推進",ko:"권리 증진"},
+"Pluralist":{
+ru:"Плюралистическая",de:"Pluralistisch",fr:"Pluraliste","zh-CN":"多元主义",id:"Pluralis",ka:"პლურალისტური",es:"Pluralista",ja:"多元主義",ko:"다원주의"},
+"Rights and procedure":{
+ru:"Права и процедуры",de:"Rechte und Verfahren",fr:"Droits et procédures","zh-CN":"权利与程序",id:"Hak dan prosedur",ka:"უფლებები და პროცედურები",es:"Derechos y procedimientos",ja:"権利と手続き",ko:"권리와 절차"},
+"Local identity":{
+ru:"Местная идентичность",de:"Lokale Identität",fr:"Identité locale","zh-CN":"地方认同",id:"Identitas lokal",ka:"ადგილობრივი იდენტობა",es:"Identidad local",ja:"地域アイデンティティ",ko:"지역 정체성"},
+"Community-based":{
+ru:"Основанная на сообществе",de:"Gemeinschaftsorientiert",fr:"Fondé sur la communauté","zh-CN":"以共同体为基础",id:"Berbasis komunitas",ka:"საზოგადოებაზე დაფუძნებული",es:"Basada en la comunidad",ja:"共同体を基盤とする",ko:"공동체 기반"},
+"Anti-corruption":{
+ru:"Антикоррупционная",de:"Antikorruptiv",fr:"Anti-corruption","zh-CN":"反腐败",id:"Antikorupsi",ka:"ანტიკორუფციული",es:"Anticorrupción",ja:"反汚職",ko:"반부패"},
+});
+
 export default rows;
