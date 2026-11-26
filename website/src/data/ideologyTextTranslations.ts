@@ -2241,4 +2241,79 @@ ru:"Светский национализм",de:"Säkular-nationalistisch",fr:"N
 ru:"Ориентированная на бедных, общинная",de:"Armutsorientiert, gemeinschaftlich",fr:"Centrée sur les pauvres, communautaire","zh-CN":"以贫困群体为中心、共同体主义",id:"Berpusat pada kaum miskin, komunal",ka:"ღარიბებზე ორიენტირებული, სათემო",es:"Centrada en los pobres y comunitaria",ja:"貧困層重視・共同体主義的",ko:"빈곤층 중심, 공동체주의적"},
 });
 
+
+Object.assign(rows, {
+// Social-orientation descriptors: socialist, communist and anti-authoritarian traditions.
+"Anti-imperialist":{
+ru:"Антиимпериалистическая",de:"Antiimperialistisch",fr:"Anti-impérialiste","zh-CN":"反帝国主义",id:"Anti-imperialis",ka:"ანტიიმპერიალისტური",es:"Antiimperialista",ja:"反帝国主義的",ko:"반제국주의적"},
+"Anti-colonial, solidarity":{
+ru:"Антиколониальная, солидаристская",de:"Antikolonial, solidarisch",fr:"Anticolonial, solidaire","zh-CN":"反殖民、团结主义",id:"Antikolonial, solidaritas",ka:"ანტიკოლონიური, სოლიდარული",es:"Anticolonial y solidaria",ja:"反植民地主義・連帯",ko:"반식민주의적, 연대 지향"},
+"Egalitarian, collectivist":{
+ru:"Эгалитарная, коллективистская",de:"Egalitär, kollektivistisch",fr:"Égalitaire, collectiviste","zh-CN":"平等主义、集体主义",id:"Egaliter, kolektivis",ka:"ეგალიტარული, კოლექტივისტური",es:"Igualitaria y colectivista",ja:"平等主義的・集団主義的",ko:"평등주의적, 집단주의적"},
+"Class-based egalitarian":{
+ru:"Классовое равенство",de:"Klassenbezogen egalitär",fr:"Égalitaire sur le plan des classes","zh-CN":"阶级平等主义",id:"Egalitarian berbasis kelas",ka:"კლასობრივი თანასწორობა",es:"Igualitaria de base clasista",ja:"階級的平等主義",ko:"계급 기반 평등주의"},
+"Authoritarian-democratic-centralist":{
+ru:"Авторитарно-демократический централизм",de:"Autoritär-demokratisch-zentralistisch",fr:"Autoritaire, centralisme démocratique","zh-CN":"威权式民主集中制",id:"Otoriter-sentralisme demokratis",ka:"ავტორიტარული-დემოკრატიული ცენტრალიზმი",es:"Autoritaria y de centralismo democrático",ja:"権威主義的・民主集中制",ko:"권위주의적 민주집중제"},
+"One-party, authoritarian":{
+ru:"Однопартийная, авторитарная",de:"Einparteiisch, autoritär",fr:"À parti unique, autoritaire","zh-CN":"一党制、威权主义",id:"Satu partai, otoriter",ka:"ერთპარტიული, ავტორიტარული",es:"Unipartidista y autoritaria",ja:"一党制・権威主義的",ko:"일당제, 권위주의적"},
+"Totalitarian":{
+ru:"Тоталитарная",de:"Totalitär",fr:"Totalitaire","zh-CN":"极权主义",id:"Totaliter",ka:"ტოტალიტარული",es:"Totalitaria",ja:"全体主義的",ko:"전체주의적"},
+"Internationalist, revolutionary":{
+ru:"Интернационалистская, революционная",de:"Internationalistisch, revolutionär",fr:"Internationaliste, révolutionnaire","zh-CN":"国际主义、革命主义",id:"Internasionalis, revolusioner",ka:"ინტერნაციონალისტური, რევოლუციური",es:"Internacionalista y revolucionaria",ja:"国際主義的・革命的",ko:"국제주의적, 혁명적"},
+"Mass-line, authoritarian":{
+ru:"Массовая линия, авторитаризм",de:"Massenlinie, autoritär",fr:"Ligne de masse, autoritaire","zh-CN":"群众路线、威权主义",id:"Garis massa, otoriter",ka:"მასების ხაზი, ავტორიტარული",es:"Línea de masas y autoritaria",ja:"大衆路線・権威主義的",ko:"대중노선, 권위주의적"},
+"Authoritarian, atheist state":{
+ru:"Авторитарная, атеистическое государство",de:"Autoritär, atheistischer Staat",fr:"Autoritaire, État athée","zh-CN":"威权主义、无神论国家",id:"Otoriter, negara ateis",ka:"ავტორიტარული, ათეისტური სახელმწიფო",es:"Autoritaria y Estado ateo",ja:"権威主義的・無神論国家",ko:"권위주의적, 무신론 국가"},
+"Nationalist, personalist":{
+ru:"Националистическая, персоналистская",de:"Nationalistisch, personalistisch",fr:"Nationaliste, personnaliste","zh-CN":"民族主义、个人化统治",id:"Nasionalis, personalis",ka:"ნაციონალისტური, პერსონალისტური",es:"Nacionalista y personalista",ja:"ナショナリズム的・個人支配的",ko:"민족주의적, 개인주의적 통치"},
+"Democratic-revolutionary":{
+ru:"Демократическая, революционная",de:"Demokratisch-revolutionär",fr:"Démocratique et révolutionnaire","zh-CN":"民主革命主义",id:"Demokratis-revolusioner",ka:"დემოკრატიულ-რევოლუციური",es:"Democrática y revolucionaria",ja:"民主革命的",ko:"민주혁명적"},
+"Anti-vanguard, democratic":{
+ru:"Антиавангардная, демократическая",de:"Antivanguardistisch, demokratisch",fr:"Anti-avant-gardiste, démocratique","zh-CN":"反先锋主义、民主",id:"Anti-vanguard, demokratis",ka:"ანტიავანგარდული, დემოკრატიული",es:"Antivanguardista y democrática",ja:"反前衛主義・民主的",ko:"반전위주의적, 민주적"},
+"Internationalist, anti-parliamentary":{
+ru:"Интернационалистская, антипарламентская",de:"Internationalistisch, antiparlamentarisch",fr:"Internationaliste, antiparlementaire","zh-CN":"国际主义、反议会主义",id:"Internasionalis, anti-parlementer",ka:"ინტერნაციონალისტური, ანტიპარლამენტური",es:"Internacionalista y antiparlamentaria",ja:"国際主義的・反議会主義的",ko:"국제주의적, 반의회주의적"},
+"Movement-based, anti-authoritarian":{
+ru:"Основанная на движениях, антиавторитарная",de:"Bewegungsorientiert, antiautoritär",fr:"Fondé sur les mouvements, antiautoritaire","zh-CN":"运动导向、反威权主义",id:"Berbasis gerakan, anti-otoriter",ka:"მოძრაობაზე დაფუძნებული, ანტიავტორიტარული",es:"Basada en movimientos y antiautoritaria",ja:"運動を基盤とする・反権威主義的",ko:"운동 기반, 반권위주의적"},
+"Anti-state, egalitarian":{
+ru:"Антигосударственная, эгалитарная",de:"Staatsfeindlich, egalitär",fr:"Anti-étatique, égalitaire","zh-CN":"反国家、平等主义",id:"Anti-negara, egaliter",ka:"ანტისახელმწიფოებრივი, ეგალიტარული",es:"Antiestatal e igualitaria",ja:"反国家・平等主義的",ko:"반국가적, 평등주의적"},
+"Anti-state, federalist":{
+ru:"Антигосударственная, федералистская",de:"Staatsfeindlich, föderalistisch",fr:"Anti-étatique, fédéraliste","zh-CN":"反国家、联邦主义",id:"Anti-negara, federalis",ka:"ანტისახელმწიფოებრივი, ფედერალისტური",es:"Antiestatal y federalista",ja:"反国家・連邦主義的",ko:"반국가적, 연방주의적"},
+"Anti-organisational, direct action":{
+ru:"Антиорганизационная, прямое действие",de:"Antiorganisatorisch, direkte Aktion",fr:"Anti-organisationnel, action directe","zh-CN":"反组织、直接行动",id:"Anti-organisasi, aksi langsung",ka:"ანტიორგანიზაციული, პირდაპირი მოქმედება",es:"Antiorganizativa y de acción directa",ja:"反組織・直接行動",ko:"반조직적, 직접행동"},
+"Ecological, anti-hierarchical":{
+ru:"Экологическая, антииерархическая",de:"Ökologisch, antihierarchisch",fr:"Écologique, anti-hiérarchique","zh-CN":"生态、反等级",id:"Ekologis, anti-hierarkis",ka:"ეკოლოგიური, ანტიიერარქიული",es:"Ecológica y antihierárquica",ja:"環境重視・反階層主義",ko:"생태적, 반위계적"},
+"Class-based, revolutionary":{
+ru:"Классовая, революционная",de:"Klassenorientiert, revolutionär",fr:"Fondé sur les classes, révolutionnaire","zh-CN":"阶级基础、革命主义",id:"Berbasis kelas, revolusioner",ka:"კლასობრივ საფუძველზე, რევოლუციური",es:"Basada en clases y revolucionaria",ja:"階級基盤・革命的",ko:"계급 기반, 혁명적"},
+"Socially liberal, rights with responsibilities":{
+ru:"Социально-либеральная, права и ответственность",de:"Gesellschaftlich liberal, Rechte mit Verantwortung",fr:"Socialement libéral, droits et responsabilités","zh-CN":"社会自由主义、权利与责任",id:"Liberal sosial, hak disertai tanggung jawab",ka:"სოციალურად ლიბერალური, უფლებები პასუხისმგებლობით",es:"Socialmente liberal, derechos con responsabilidades",ja:"社会的にリベラル・権利と責任",ko:"사회적으로 자유주의적, 권리와 책임"},
+"Traditionalist-communitarian":{
+ru:"Традиционалистская, коммунитарная",de:"Traditionalistisch-kommunitär",fr:"Traditionaliste-communautariste","zh-CN":"传统主义、社群主义",id:"Tradisionalis-komunitarian",ka:"ტრადიციონალისტური-კომუნიტარიანული",es:"Tradicionalista-comunitarista",ja:"伝統主義・共同体主義",ko:"전통주의적 공동체주의"},
+"Hierarchical-organic":{
+ru:"Иерархическая, органическая",de:"Hierarchisch-organisch",fr:"Hiérarchique-organique","zh-CN":"等级制、有机整体",id:"Hierarkis-organik",ka:"იერარქიული-ორგანული",es:"Jerárquica y orgánica",ja:"階層的・有機体的",ko:"위계적·유기체적"},
+"Expert-led":{
+ru:"Под руководством экспертов",de:"Expertengeleitet",fr:"Dirigé par des experts","zh-CN":"专家主导",id:"Dipimpin pakar",ka:"ექსპერტების მიერ მართული",es:"Dirigida por expertos",ja:"専門家主導",ko:"전문가 주도"},
+"Community-oriented, often morally conservative":{
+ru:"Ориентированная на сообщество, часто морально консервативная",de:"Gemeinschaftsorientiert, oft moralisch konservativ",fr:"Axé sur la communauté, souvent moralement conservateur","zh-CN":"共同体导向，通常在道德上偏保守",id:"Berorientasi komunitas, sering konservatif secara moral",ka:"საზოგადოებაზე ორიენტირებული, ხშირად ზნეობრივად კონსერვატიული",es:"Orientada a la comunidad, a menudo moralmente conservadora",ja:"共同体重視・道徳的に保守的な場合が多い",ko:"공동체 지향, 대체로 도덕적 보수주의"},
+"Libertarian, transparency":{
+ru:"Либертарианская, прозрачность",de:"Libertär, transparent",fr:"Libertaire, transparence","zh-CN":"自由意志主义、透明",id:"Libertarian, transparansi",ka:"ლიბერტარიანული, გამჭვირვალობა",es:"Libertaria y transparente",ja:"自由主義的・透明性重視",ko:"자유지상주의적, 투명성"},
+"Anti-civilisation, anti-hierarchical":{
+ru:"Антицивилизационная, антииерархическая",de:"Antizivilisatorisch, antihierarchisch",fr:"Anti-civilisation, anti-hiérarchique","zh-CN":"反文明、反等级",id:"Anti-peradaban, anti-hierarkis",ka:"ანტიცივილიზაციური, ანტიიერარქიული",es:"Anticivilizatoria y antihierárquica",ja:"反文明・反階層主義",ko:"반문명적, 반위계적"},
+"Radical individual liberty":{
+ru:"Радикальная индивидуальная свобода",de:"Radikale individuelle Freiheit",fr:"Liberté individuelle radicale","zh-CN":"激进的个人自由",id:"Kebebasan individu radikal",ka:"რადიკალური ინდივიდუალური თავისუფლება",es:"Libertad individual radical",ja:"急進的な個人の自由",ko:"급진적 개인 자유"},
+"Morphological freedom":{
+ru:"Морфологическая свобода",de:"Morphologische Freiheit",fr:"Liberté morphologique","zh-CN":"形态自由",id:"Kebebasan morfologis",ka:"მორფოლოგიური თავისუფლება",es:"Libertad morfológica",ja:"形態的自由",ko:"형태적 자유"},
+"Populist":{
+ru:"Популистская",de:"Populistisch",fr:"Populiste","zh-CN":"民粹主义",id:"Populis",ka:"პოპულისტური",es:"Populista",ja:"ポピュリズム的",ko:"포퓰리즘적"},
+"Secular, nationalist, authoritarian":{
+ru:"Светская, националистическая, авторитарная",de:"Säkular, nationalistisch, autoritär",fr:"Laïque, nationaliste, autoritaire","zh-CN":"世俗、民族主义、威权主义",id:"Sekuler, nasionalis, otoriter",ka:"სეკულარული, ნაციონალისტური, ავტორიტარული",es:"Secular, nacionalista y autoritaria",ja:"世俗的・ナショナリズム的・権威主義的",ko:"세속적, 민족주의적, 권위주의적"},
+"Nationalist, populist":{
+ru:"Националистическая, популистская",de:"Nationalistisch, populistisch",fr:"Nationaliste, populiste","zh-CN":"民族主义、民粹主义",id:"Nasionalis, populis",ka:"ნაციონალისტური, პოპულისტური",es:"Nacionalista y populista",ja:"ナショナリズム的・ポピュリズム的",ko:"민족주의적, 포퓰리즘적"},
+"Secular, modernising, nationalist":{
+ru:"Светская, модернизаторская, националистическая",de:"Säkular, modernisierend, nationalistisch",fr:"Laïque, modernisateur, nationaliste","zh-CN":"世俗、现代化、民族主义",id:"Sekuler, modernis, nasionalis",ka:"სეკულარული, მოდერნიზატორული, ნაციონალისტური",es:"Secular, modernizadora y nacionalista",ja:"世俗的・近代化志向・ナショナリズム的",ko:"세속적, 근대화 지향, 민족주의적"},
+"Anti-establishment":{
+ru:"Антиэстеблишментная",de:"Anti-etabliert",fr:"Anti-establishment","zh-CN":"反建制",id:"Anti-kemapanan",ka:"ანტიესტებლიშმენტური",es:"Antiestablishment",ja:"反既成秩序",ko:"반기득권"},
+"Participatory, pluralist":{
+ru:"Участническая, плюралистическая",de:"Partizipativ, pluralistisch",fr:"Participatif, pluraliste","zh-CN":"参与式、多元主义",id:"Partisipatif, pluralis",ka:"მონაწილეობითი, პლურალისტური",es:"Participativa y pluralista",ja:"参加型・多元主義的",ko:"참여형, 다원주의적"}
+});
+
 export default rows;
