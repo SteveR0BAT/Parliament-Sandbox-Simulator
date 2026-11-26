@@ -52,7 +52,7 @@ test("random voting uses the configured seed", () => {
   assert.notDeepEqual(runVoteEngine(context, issue, 1).map((x) => x.vote), runVoteEngine(context, issue, 2).map((x) => x.vote));
 });
 
-test("all built-in ideologies have one of eight families and three valid coordinates", () => {
+test("all built-in ideologies have one of ten families and three valid coordinates", () => {
   assert.equal(IDEOLOGY_FAMILIES.length, 10);
   assert.equal(BUILTIN_IDEOLOGIES.length, 130);
   const valid = (n: unknown) => n === null || [-3,-2,-1,0,1,2,3].includes(Number(n));
