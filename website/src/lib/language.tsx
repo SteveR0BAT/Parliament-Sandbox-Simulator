@@ -79,10 +79,7 @@ const COMPOSITE_TRANSLATION_KEYS = [
 ] as const;
 
 function escapeRegExp(value: string): string {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\export function translateText(value: string, language: Language): string {
-  if (language === "en") return value;
-  return dictionary[language]?.[value] ?? runtimeTranslations[value]?.[language] ?? ideologyTextTranslations[value]?.[language] ?? value;
-}");
+  return value.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\$&");
 }
 
 export function translateText(value: string, language: Language): string {
@@ -94,9 +91,8 @@ export function translateText(value: string, language: Language): string {
     ideologyTextTranslations[value]?.[language];
   if (exact !== undefined) return exact;
 
-  // Some vote explanations combine fixed English labels with names and values
-  // calculated at runtime. Translate those known fragments without altering
-  // deputy names, party names, percentages or other user-supplied content.
+  // Translate known fragments in dynamically composed vote explanations while
+  // leaving names, percentages and other user-supplied content unchanged.
   let translated = value;
   for (const source of COMPOSITE_TRANSLATION_KEYS) {
     const replacement = runtimeTranslations[source]?.[language];
