@@ -436,7 +436,7 @@ ru:"Применяемая идеология:",de:"Wirksame Ideologie:",fr:"Id�
 "Swap with seat #":{
 ru:"Поменять местами с местом №",de:"Mit Sitz Nr. tauschen",fr:"Échanger avec le siège n°","zh-CN":"与席位编号互换",id:"Tukar dengan kursi nomor",ka:"გაცვლა ადგილის ნომერთან",es:"Intercambiar con el escaño n.º",ja:"座席番号と入れ替える",ko:"좌석 번호와 교환"},
 "Why:":{
-"Why":{ru:"Причина:",de:"Begründung:",fr:"Pourquoi :","zh-CN":"原因：",id:"Alasan:",ka:"მიზეზი:",es:"Motivo:",ja:"理由:",ko:"이유:"}
+ru:"Причина:",de:"Begründung:",fr:"Pourquoi :","zh-CN":"原因：",id:"Alasan:",ka:"მიზეზი:",es:"Motivo:",ja:"理由:",ko:"이უ:"},
 "Up to three recent recovery versions are retained for each project.":{
 ru:"Для каждого проекта сохраняются до трёх последних резервных версий.",
 de:"Für jedes Projekt werden bis zu drei aktuelle Wiederherstellungsversionen aufbewahrt.",
