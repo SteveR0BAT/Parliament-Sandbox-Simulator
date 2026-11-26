@@ -1,7 +1,7 @@
 "use client";
 import { useStore } from "@/lib/store";
 import { InfoDialog } from "./InfoDialog";
-import { LANGUAGES, useLanguage, type Language } from "@/lib/language";
+import { LANGUAGES, translateText, useLanguage, type Language } from "@/lib/language";
 import { IDEOLOGY_FAMILIES } from "@/data/ideologies";
 import { DEFAULT_BEHAVIOR, DEFAULT_PREFS, DEFAULT_SETTINGS } from "@/lib/defaults";
 import type { ChamberSettings, IdeologyFamilyId, DeputyNameStyle, VotingMode } from "@/lib/types";
@@ -164,7 +164,7 @@ export function SettingsPanel() {
         <button
           className="btn btn-sm btn-danger"
           onClick={() => {
-            if (!window.confirm("Reset ALL appearance, geometry and default settings of this project? Parties and votes are kept.")) return;
+            if (!window.confirm(translateText("Reset ALL appearance, geometry and default settings of this project? Parties and votes are kept.", language))) return;
             upd({ ...DEFAULT_SETTINGS, totalSeats: s.totalSeats });
             updPrefs((p) => Object.assign(p, structuredClone(DEFAULT_PREFS)));
             toast("All settings reset to defaults.", "ok");
