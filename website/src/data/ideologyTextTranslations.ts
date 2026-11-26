@@ -256,4 +256,218 @@ ru:"Антидемократический, иерархический",de:"Anti
 ru:"Конфессиональное государство, традиционализм",de:"Konfessionsstaat, traditionalistisch",fr:"État confessionnel, traditionaliste","zh-CN":"宗教国家、传统主义",id:"Negara konfesional, tradisionalis",ka:"კონფესიური სახელმწიფო, ტრადიციონალისტური",es:"Estado confesional, tradicionalista",ja:"宗派国家・伝統主義的",ko:"종교 국가, 전통주의적"
 }
 };
+
+// Conservative, liberal-conservative and market-liberal entries (continued).
+Object.assign(rows, {
+"Preference for established institutions, gradual change and social continuity, rooted in Edmund Burke's critique of the French Revolution.":{
+ru:"Предпочтение устоявшимся институтам, постепенным переменам и общественной преемственности; традиция восходит к критике Французской революции Эдмундом Бёрком.",
+de:"Bevorzugt etablierte Institutionen, schrittweisen Wandel und gesellschaftliche Kontinuität; geprägt durch Edmund Burkes Kritik an der Französischen Revolution.",
+fr:"Préférence pour les institutions établies, le changement progressif et la continuité sociale, issue de la critique de la Révolution française par Edmund Burke.",
+"zh-CN":"主张维护既有制度、渐进变革和社会延续性，其思想根源之一是埃德蒙·伯克对法国大革命的批评。",
+id:"Mengutamakan lembaga yang mapan, perubahan bertahap, dan kesinambungan sosial; berakar pada kritik Edmund Burke terhadap Revolusi Prancis.",
+ka:"უპირატესობას ანიჭებს დამკვიდრებულ ინსტიტუტებს, თანდათანობით ცვლილებებსა და საზოგადოებრივ უწყვეტობას; საფუძვლად უდევს ედმუნდ ბერკის მიერ საფრანგეთის რევოლუციის კრიტიკა.",
+es:"Prefiere las instituciones establecidas, el cambio gradual y la continuidad social; tiene sus raíces en la crítica de Edmund Burke a la Revolución francesa.",
+ja:"既存制度、漸進的変化、社会の継続性を重視し、エドマンド・バークによるフランス革命批判に思想的な源流を持つ。",
+ko:"기존 제도, 점진적 변화, 사회적 연속성을 중시하며 에드먼드 버크의 프랑스 혁명 비판에 뿌리를 둔다."
+},
+"Stresses natural law, hierarchy, religion and inherited customs as the basis of social order.":{
+ru:"Подчёркивает значение естественного права, иерархии, религии и унаследованных обычаев как основы общественного порядка.",
+de:"Betont Naturrecht, Hierarchie, Religion und überlieferte Bräuche als Grundlage der gesellschaftlichen Ordnung.",
+fr:"Met l’accent sur le droit naturel, la hiérarchie, la religion et les coutumes héritées comme fondements de l’ordre social.",
+"zh-CN":"强调自然法、等级秩序、宗教和传统习俗是社会秩序的基础。",
+id:"Menekankan hukum kodrat, hierarki, agama, dan adat warisan sebagai dasar tatanan sosial.",
+ka:"საზოგადოებრივი წესრიგის საფუძვლად მიიჩნევს ბუნებით სამართალს, იერარქიას, რელიგიასა და მემკვიდრეობით მიღებულ წეს-ჩვეულებებს.",
+es:"Destaca el derecho natural, la jerarquía, la religión y las costumbres heredadas como fundamentos del orden social.",
+ja:"自然法、階層、宗教、受け継がれた慣習を社会秩序の基盤として重視する。",
+ko:"자연법, 위계, 종교, 전통적 관습을 사회질서의 기반으로 강조한다."
+},
+"American conservatism prioritising tradition, nationalism, non-interventionism and scepticism of immigration and free trade.":{
+ru:"Направление американского консерватизма, отдающее приоритет традиции, национализму и невмешательству, скептически относящееся к иммиграции и свободной торговле.",
+de:"Strömung des amerikanischen Konservatismus, die Tradition, Nationalismus und Nichteinmischung priorisiert und Einwanderung sowie Freihandel skeptisch betrachtet.",
+fr:"Courant du conservatisme américain privilégiant la tradition, le nationalisme et le non-interventionnisme, sceptique à l’égard de l’immigration et du libre-échange.",
+"zh-CN":"美国保守主义的一种流派，优先强调传统、民族主义和不干涉主义，并对移民与自由贸易持怀疑态度。",
+id:"Aliran konservatisme Amerika yang mengutamakan tradisi, nasionalisme, non-intervensi, serta skeptis terhadap imigrasi dan perdagangan bebas.",
+ka:"ამერიკული კონსერვატიზმის მიმდინარეობა, რომელიც პრიორიტეტს ანიჭებს ტრადიციას, ნაციონალიზმსა და ჩაურევლობას და სკეპტიკურად უყურებს იმიგრაციასა და თავისუფალ ვაჭრობას.",
+es:"Corriente del conservadurismo estadounidense que prioriza la tradición, el nacionalismo y el no intervencionismo, y desconfía de la inmigración y el libre comercio.",
+ja:"伝統、ナショナリズム、不干渉主義を重視し、移民と自由貿易に懐疑的なアメリカ保守主義の潮流。",
+ko:"전통, 민족주의, 불간섭주의를 우선시하고 이민과 자유무역에 회의적인 미국 보수주의 흐름."
+},
+"Combines conservative social views with assertive foreign policy and democratic promotion abroad.":{
+ru:"Сочетает консервативные социальные взгляды с активной внешней политикой и продвижением демократии за рубежом.",
+de:"Verbindet konservative gesellschaftliche Ansichten mit einer offensiven Außenpolitik und der Förderung von Demokratie im Ausland.",
+fr:"Associe des positions sociales conservatrices à une politique étrangère affirmée et à la promotion de la démocratie à l’étranger.",
+"zh-CN":"将保守的社会观念与积极进取的外交政策以及在海外推动民主相结合。",
+id:"Menggabungkan pandangan sosial konservatif dengan kebijakan luar negeri yang tegas dan promosi demokrasi di luar negeri.",
+ka:"აერთიანებს კონსერვატიულ სოციალურ შეხედულებებს აქტიურ საგარეო პოლიტიკასა და საზღვარგარეთ დემოკრატიის ხელშეწყობასთან.",
+es:"Combina posiciones sociales conservadoras con una política exterior firme y la promoción de la democracia en el extranjero.",
+ja:"保守的な社会観と、積極的な外交政策および国外での民主主義の推進を組み合わせる。",
+ko:"보수적인 사회관과 적극적인 외교정책 및 해외 민주주의 촉진을 결합한다."
+},
+"Conservatism emphasising national sovereignty, cultural cohesion and a strong state serving the national community.":{
+ru:"Консерватизм, подчёркивающий национальный суверенитет, культурное единство и сильное государство, служащее национальному сообществу.",
+de:"Konservatismus, der nationale Souveränität, kulturellen Zusammenhalt und einen starken Staat im Dienst der nationalen Gemeinschaft betont.",
+fr:"Conservatisme qui met l’accent sur la souveraineté nationale, la cohésion culturelle et un État fort au service de la communauté nationale.",
+"zh-CN":"强调国家主权、文化凝聚力以及服务于民族共同体的强大国家的保守主义。",
+id:"Konservatisme yang menekankan kedaulatan nasional, kesatuan budaya, dan negara kuat yang melayani komunitas nasional.",
+ka:"კონსერვატიზმი, რომელიც ხაზს უსვამს ეროვნულ სუვერენიტეტს, კულტურულ ერთიანობასა და ეროვნული საზოგადოების სამსახურში მყოფ ძლიერ სახელმწიფოს.",
+es:"Conservadurismo que destaca la soberanía nacional, la cohesión cultural y un Estado fuerte al servicio de la comunidad nacional.",
+ja:"国家主権、文化的結束、国民共同体に奉仕する強い国家を重視する保守主義。",
+ko:"국가 주권, 문화적 결속, 국민 공동체에 봉사하는 강력한 국가를 강조하는 보수주의."
+},
+"Defends traditional family, religion and moral norms through public policy.":{
+ru:"Защищает традиционную семью, религию и нравственные нормы посредством государственной политики.",
+de:"Vertritt den Schutz traditioneller Familie, Religion und moralischer Normen durch staatliche Politik.",
+fr:"Défend la famille traditionnelle, la religion et les normes morales au moyen des politiques publiques.",
+"zh-CN":"通过公共政策维护传统家庭、宗教和道德规范。",
+id:"Membela keluarga tradisional, agama, dan norma moral melalui kebijakan publik.",
+ka:"საჯარო პოლიტიკის მეშვეობით იცავს ტრადიციულ ოჯახს, რელიგიასა და ზნეობრივ ნორმებს.",
+es:"Defiende la familia tradicional, la religión y las normas morales mediante políticas públicas.",
+ja:"公共政策を通じて伝統的な家族、宗教、道徳規範を守ろうとする。",
+ko:"공공정책을 통해 전통적 가족, 종교, 도덕 규범을 수호한다."
+},
+"Advocates low taxation, restrained public spending and balanced budgets.":{
+ru:"Выступает за низкие налоги, ограниченные государственные расходы и сбалансированный бюджет.",
+de:"Befürwortet niedrige Steuern, begrenzte öffentliche Ausgaben und ausgeglichene Haushalte.",
+fr:"Préconise une faible fiscalité, des dépenses publiques maîtrisées et des budgets équilibrés.",
+"zh-CN":"主张低税收、控制公共支出和保持预算平衡。",
+id:"Mendukung pajak rendah, belanja publik yang terkendali, dan anggaran berimbang.",
+ka:"მხარს უჭერს დაბალ გადასახადებს, შეზღუდულ სახელმწიფო ხარჯებსა და დაბალანსებულ ბიუჯეტს.",
+es:"Defiende impuestos bajos, gasto público contenido y presupuestos equilibrados.",
+ja:"低税率、抑制された公共支出、均衡財政を支持する。",
+ko:"낮은 세금, 절제된 공공지출, 균형재정을 지지한다."
+},
+"Movement applying conservative Christian values to politics, especially on family, education and bioethics.":{
+ru:"Движение, применяющее консервативные христианские ценности в политике, особенно в вопросах семьи, образования и биоэтики.",
+de:"Bewegung, die konservative christliche Werte auf die Politik anwendet, besonders in Familien-, Bildungs- und bioethischen Fragen.",
+fr:"Mouvement qui applique les valeurs chrétiennes conservatrices à la politique, notamment en matière de famille, d’éducation et de bioéthique.",
+"zh-CN":"将保守基督教价值观应用于政治的运动，尤其关注家庭、教育和生命伦理问题。",
+id:"Gerakan yang menerapkan nilai-nilai Kristen konservatif dalam politik, terutama mengenai keluarga, pendidikan, dan bioetika.",
+ka:"მოძრაობა, რომელიც პოლიტიკაში კონსერვატიულ ქრისტიანულ ღირებულებებს იყენებს, განსაკუთრებით ოჯახთან, განათლებასა და ბიოეთიკასთან დაკავშირებულ საკითხებში.",
+es:"Movimiento que aplica valores cristianos conservadores a la política, especialmente en familia, educación y bioética.",
+ja:"特に家族、教育、生命倫理の問題で、保守的なキリスト教価値観を政治に適用する運動。",
+ko:"특히 가족, 교육, 생명윤리 문제에서 보수적 기독교 가치를 정치에 적용하는 운동."
+},
+"Pits 'the people' against elites, combining nativism, authoritarianism and anti-establishment appeals.":{
+ru:"Противопоставляет «народ» элитам, сочетая нативизм, авторитаризм и антиэстеблишментную риторику.",
+de:"Stellt „das Volk“ den Eliten gegenüber und verbindet Nativismus, Autoritarismus und anti-etablierte Rhetorik.",
+fr:"Oppose « le peuple » aux élites, en associant nativisme, autoritarisme et discours anti-establishment.",
+"zh-CN":"将“人民”与精英对立起来，并结合本土主义、威权主义和反建制诉求。",
+id:"Mempertentangkan 'rakyat' dengan elite, dengan menggabungkan nativisme, otoritarianisme, dan seruan anti-kemapanan.",
+ka:"„ხალხს“ ელიტებს უპირისპირებს და აერთიანებს ნატივიზმს, ავტორიტარიზმსა და ანტიესტებლიშმენტურ მოწოდებებს.",
+es:"Enfrenta al «pueblo» con las élites y combina nativismo, autoritarismo y apelaciones contra el sistema establecido.",
+ja:"「人民」をエリートに対置し、自国民優先主義、権威主義、反既成秩序の訴えを組み合わせる。",
+ko:"‘국민’을 엘리트와 대립시키며 자국민 우선주의, 권위주의, 반기득권 호소를 결합한다."
+},
+"Promotes deregulation, privatisation, free trade and limited state economic intervention.":{
+ru:"Выступает за дерегулирование, приватизацию, свободную торговлю и ограниченное вмешательство государства в экономику.",
+de:"Befürwortet Deregulierung, Privatisierung, Freihandel und eine begrenzte staatliche Intervention in die Wirtschaft.",
+fr:"Prône la déréglementation, la privatisation, le libre-échange et une intervention limitée de l’État dans l’économie.",
+"zh-CN":"倡导放松管制、私有化、自由贸易以及有限的国家经济干预。",
+id:"Mendorong deregulasi, privatisasi, perdagangan bebas, dan terbatasnya campur tangan negara dalam perekonomian.",
+ka:"ემხრობა დერეგულაციას, პრივატიზაციას, თავისუფალ ვაჭრობასა და ეკონომიკაში სახელმწიფოს შეზღუდულ ჩარევას.",
+es:"Promueve la desregulación, la privatización, el libre comercio y una intervención estatal limitada en la economía.",
+ja:"規制緩和、民営化、自由貿易、経済への国家介入の縮小を推進する。",
+ko:"규제 완화, 민영화, 자유무역, 제한적인 국가 경제 개입을 추진한다."
+},
+"British conservative programme of Margaret Thatcher: monetarism, privatisation, trade-union limits and a strong state on order.":{
+ru:"Британская консервативная программа Маргарет Тэтчер: монетаризм, приватизация, ограничение профсоюзов и сильное государство в вопросах порядка.",
+de:"Das britische konservative Programm Margaret Thatchers: Monetarismus, Privatisierung, Einschränkung der Gewerkschaften und ein starker Staat bei der Aufrechterhaltung der Ordnung.",
+fr:"Programme conservateur britannique de Margaret Thatcher : monétarisme, privatisations, limitation des syndicats et État fort en matière d’ordre.",
+"zh-CN":"玛格丽特·撒切尔的英国保守主义纲领：货币主义、私有化、限制工会以及在维护秩序方面的强势国家。",
+id:"Program konservatif Inggris Margaret Thatcher: monetarisme, privatisasi, pembatasan serikat pekerja, dan negara kuat dalam menjaga ketertiban.",
+ka:"მარგარეტ ტეტჩერის ბრიტანული კონსერვატიული პროგრამა: მონეტარიზმი, პრივატიზაცია, პროფკავშირების შეზღუდვა და წესრიგის დაცვის ძლიერი სახელმწიფო.",
+es:"Programa conservador británico de Margaret Thatcher: monetarismo, privatizaciones, límites a los sindicatos y un Estado fuerte en materia de orden.",
+ja:"マーガレット・サッチャーのイギリス保守主義政策。マネタリズム、民営化、労働組合の制限、治安維持における強い国家を特徴とする。",
+ko:"마거릿 대처의 영국 보수주의 정책으로, 통화주의, 민영화, 노동조합 제한, 질서 유지를 위한 강력한 국가를 특징으로 한다."
+},
+"Combines strong individual liberty with robust private property and free-market capitalism.":{
+ru:"Сочетает широкие индивидуальные свободы с сильной защитой частной собственности и рыночным капитализмом.",
+de:"Verbindet weitreichende individuelle Freiheit mit starkem Privateigentumsschutz und marktwirtschaftlichem Kapitalismus.",
+fr:"Associe une forte liberté individuelle à une protection solide de la propriété privée et au capitalisme de marché.",
+"zh-CN":"将广泛的个人自由与强有力的私有财产保护和自由市场资本主义相结合。",
+id:"Menggabungkan kebebasan individu yang kuat dengan perlindungan hak milik pribadi dan kapitalisme pasar bebas.",
+ka:"აერთიანებს ფართო ინდივიდუალურ თავისუფლებას კერძო საკუთრების ძლიერ დაცვასა და თავისუფალი ბაზრის კაპიტალიზმთან.",
+es:"Combina una amplia libertad individual con una sólida protección de la propiedad privada y el capitalismo de libre mercado.",
+ja:"強い個人の自由を、確固とした私有財産権と自由市場資本主義と組み合わせる。",
+ko:"강력한 개인의 자유를 견고한 사유재산권 및 자유시장 자본주의와 결합한다."
+},
+"Limits the state to protecting rights, enforcing contracts and providing defence (Nozick's minimal state).":{
+ru:"Ограничивает функции государства защитой прав, обеспечением исполнения договоров и обороной (минимальное государство Роберта Нозика).",
+de:"Beschränkt den Staat auf den Schutz von Rechten, die Durchsetzung von Verträgen und die Verteidigung (Nozicks Minimalstaat).",
+fr:"Limite l’État à la protection des droits, à l’application des contrats et à la défense (l’État minimal de Nozick).",
+"zh-CN":"将国家职能限制在保护权利、执行契约和提供国防（诺齐克的最小国家）之内。",
+id:"Membatasi negara pada perlindungan hak, penegakan kontrak, dan pertahanan (negara minimal menurut Nozick).",
+ka:"სახელმწიფოს ფუნქციებს ზღუდავს უფლებების დაცვით, ხელშეკრულებების აღსრულებითა და თავდაცვით (ნოზიკის მინიმალური სახელმწიფო).",
+es:"Limita el Estado a proteger derechos, hacer cumplir contratos y proporcionar defensa (el Estado mínimo de Nozick).",
+ja:"国家の役割を権利保護、契約履行、国防に限定する（ノージックの最小国家）。",
+ko:"국가의 역할을 권리 보호, 계약 집행, 국방으로 제한한다(노직의 최소국가)."
+},
+"Rejects the state and proposes private provision of law and security in a fully voluntary market society.":{
+ru:"Отвергает государство и предлагает частное обеспечение правопорядка и безопасности в полностью добровольном рыночном обществе.",
+de:"Lehnt den Staat ab und schlägt in einer vollständig freiwilligen Marktgesellschaft private Rechts- und Sicherheitsdienste vor.",
+fr:"Rejette l’État et propose une fourniture privée du droit et de la sécurité dans une société de marché entièrement volontaire.",
+"zh-CN":"否定国家，主张在完全自愿的市场社会中由私人机构提供法律和安全服务。",
+id:"Menolak negara dan mengusulkan penyediaan hukum serta keamanan oleh pihak swasta dalam masyarakat pasar yang sepenuhnya sukarela.",
+ka:"უარყოფს სახელმწიფოს და სრულად ნებაყოფლობით საბაზრო საზოგადოებაში სამართლისა და უსაფრთხოების კერძო უზრუნველყოფას გვთავაზობს.",
+es:"Rechaza el Estado y propone la provisión privada de justicia y seguridad en una sociedad de mercado plenamente voluntaria.",
+ja:"国家を否定し、完全に自発的な市場社会において法と安全を民間が提供することを提案する。",
+ko:"국가를 거부하고 완전히 자발적인 시장사회에서 법과 치안을 민간이 제공할 것을 제안한다."
+},
+"Ayn Rand's philosophy of rational self-interest, individual rights and laissez-faire capitalism.":{
+ru:"Философия Айн Рэнд, основанная на рациональном эгоизме, индивидуальных правах и капитализме свободного рынка.",
+de:"Ayn Rands Philosophie des rationalen Eigeninteresses, der individuellen Rechte und des Laissez-faire-Kapitalismus.",
+fr:"Philosophie d’Ayn Rand fondée sur l’intérêt personnel rationnel, les droits individuels et le capitalisme de laissez-faire.",
+"zh-CN":"安·兰德的哲学，主张理性自利、个人权利和自由放任资本主义。",
+id:"Filsafat Ayn Rand yang menekankan kepentingan diri rasional, hak individu, dan kapitalisme laissez-faire.",
+ka:"აინ რენდის ფილოსოფია, რომელიც ეფუძნება რაციონალურ თვითინტერესს, ინდივიდუალურ უფლებებსა და ლაისე-ფერის კაპიტალიზმს.",
+es:"Filosofía de Ayn Rand basada en el interés propio racional, los derechos individuales y el capitalismo de laissez-faire.",
+ja:"合理的な利己心、個人の権利、自由放任資本主義を掲げるアイン・ランドの哲学。",
+ko:"합리적 자기이익, 개인의 권리, 자유방임 자본주의를 강조하는 에인 랜드의 철학."
+},
+"Some scholars place populist radical-right parties in the far right, others in the radical right inside democracy.":{
+ru:"Одни исследователи относят популистские радикально-правые партии к крайне правым, другие — к радикальным правым, действующим в рамках демократии.",
+de:"Einige Wissenschaftler ordnen populistische radikal rechte Parteien der extremen Rechten zu, andere der radikalen Rechten innerhalb der Demokratie.",
+fr:"Certains chercheurs classent les partis populistes de droite radicale à l’extrême droite, d’autres les situent dans une droite radicale opérant dans le cadre démocratique.",
+"zh-CN":"一些学者将民粹主义激进右翼政党归为极右翼，另一些则认为它们属于民主制度内部的激进右翼。",
+id:"Sebagian sarjana menempatkan partai populis kanan radikal di sayap kanan ekstrem, sementara yang lain menganggapnya sebagai kanan radikal yang beroperasi dalam demokrasi.",
+ka:"ზოგი მკვლევარი მემარჯვენე რადიკალურ პოპულისტურ პარტიებს ულტრამემარჯვენეებად მიიჩნევს, სხვები კი — დემოკრატიის ფარგლებში მოქმედ რადიკალურ მემარჯვენეებად.",
+es:"Algunos académicos sitúan a los partidos populistas de derecha radical en la extrema derecha; otros, en una derecha radical que actúa dentro de la democracia.",
+ja:"ポピュリスト急進右派政党を極右に分類する研究者もいれば、民主主義の枠内で活動する急進右派とみなす研究者もいる。",
+ko:"일부 학자는 포퓰리즘 급진우파 정당을 극우로 분류하지만, 다른 학자는 민주주의 내부에서 활동하는 급진우파로 본다."
+},
+"Often used as a critical label; self-described adherents usually say 'market liberal'.":{
+ru:"Часто используется как критический ярлык; сторонники обычно предпочитают называть себя рыночными либералами.",
+de:"Wird häufig als kritische Bezeichnung verwendet; Anhänger bezeichnen sich selbst meist als Marktliberale.",
+fr:"Souvent utilisé comme une étiquette critique ; ses partisans se décrivent généralement comme des libéraux de marché.",
+"zh-CN":"该词常被用作批评性标签；自我认同者通常称自己为市场自由主义者。",
+id:"Sering digunakan sebagai label kritis; para penganutnya biasanya menyebut diri mereka liberal pasar.",
+ka:"ხშირად კრიტიკული იარლიყის სახით გამოიყენება; მისი მიმდევრები საკუთარ თავს, ჩვეულებრივ, საბაზრო ლიბერალებს უწოდებენ.",
+es:"A menudo se utiliza como etiqueta crítica; sus partidarios suelen describirse como liberales de mercado.",
+ja:"批判的な呼称として使われることが多く、支持者自身は通常「市場自由主義者」と称する。",
+ko:"비판적인 명칭으로 자주 사용되며, 지지자들은 보통 스스로를 시장 자유주의자라고 부른다."
+},
+"Libertarianism's left–right placement is disputed; it is libertarian on social issues but right-wing on economics.":{
+ru:"Положение либертарианства на шкале «левые — правые» спорно: в социальных вопросах оно либертарианское, а в экономике — правое.",
+de:"Die Links-rechts-Einordnung des Libertarismus ist umstritten: gesellschaftspolitisch ist er libertär, wirtschaftspolitisch rechts.",
+fr:"Le positionnement gauche-droite du libertarianisme est débattu : il est libertaire sur les questions sociales, mais à droite sur le plan économique.",
+"zh-CN":"自由意志主义在左右光谱中的位置存在争议：社会议题上偏自由意志主义，经济议题上偏右翼。",
+id:"Posisi libertarianisme dalam spektrum kiri-kanan diperdebatkan; secara sosial bersifat libertarian, tetapi secara ekonomi cenderung kanan.",
+ka:"ლიბერტარიანიზმის მემარცხენე-მემარჯვენე პოზიცია სადავოა: სოციალურ საკითხებში ლიბერტარიანულია, ეკონომიკაში კი მემარჯვენე.",
+es:"La ubicación del libertarismo en el eje izquierda-derecha es discutida: es libertario en cuestiones sociales, pero de derecha en economía.",
+ja:"リバタリアニズムの左右の位置付けには議論がある。社会問題では自由主義的だが、経済面では右派に位置する。",
+ko:"자유지상주의의 좌우 위치는 논쟁적이다. 사회 문제에서는 자유지상주의적이지만 경제적으로는 우파 성향이다."
+},
+"Rejects the state yet is usually classed as right-wing by economics; some compasses label it far-right on the economic axis.":{
+ru:"Отвергает государство, но из-за экономических взглядов обычно относится к правым; некоторые политические компасы помещают его на крайнее правое место экономической оси.",
+de:"Lehnt den Staat ab, wird aufgrund seiner Wirtschaftsauffassung aber meist rechts eingeordnet; manche politische Kompasse verorten es auf der Wirtschaftsachse ganz rechts.",
+fr:"Rejette l’État, mais est généralement classé à droite sur le plan économique ; certains compas politiques le situent à l’extrême droite de l’axe économique.",
+"zh-CN":"虽然否定国家，但因其经济立场通常被归为右翼；一些政治光谱图甚至将其放在经济轴的极右翼端。",
+id:"Menolak negara, tetapi biasanya digolongkan sebagai kanan secara ekonomi; beberapa kompas politik menempatkannya di ujung paling kanan sumbu ekonomi.",
+ka:"უარყოფს სახელმწიფოს, თუმცა ეკონომიკური შეხედულებების გამო ჩვეულებრივ მემარჯვენედ კლასიფიცირდება; ზოგი პოლიტიკური კომპასი მას ეკონომიკური ღერძის უკიდურეს მარჯვენა მხარეს ათავსებს.",
+es:"Rechaza el Estado, pero suele clasificarse como de derecha en economía; algunos diagramas lo sitúan en el extremo derecho del eje económico.",
+ja:"国家を否定するが、経済思想から通常は右派に分類される。政治コンパスによっては経済軸の極右に置かれる。",
+ko:"국가를 거부하지만 경제적 입장 때문에 보통 경제적 우파로 분류된다. 일부 정치 나침반에서는 경제축의 극우 끝에 배치한다."
+}
+});
+
 export default rows;
