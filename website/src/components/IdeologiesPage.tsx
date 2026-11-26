@@ -1,5 +1,6 @@
 "use client";
 import { useMemo,useState } from "react";
+import { translateText, useLanguage } from "@/lib/language";
 import { IDEOLOGY_FAMILIES,IDEOLOGY_FAMILY_MAP,formatAxisPosition } from "@/data/ideologies";
 import { useStore } from "@/lib/store";
 import type { AxisValue,Ideology,IdeologyFamilyId } from "@/lib/types";
@@ -34,6 +35,7 @@ function AxisProfile({ideology}:{ideology:Ideology}){
 }
 
 export function IdeologiesPage(){
+ const { language } = useLanguage();
  const custom=useStore(s=>s.data.customIdeologies),prefs=useStore(s=>s.data.prefs.ideology),data=useStore(s=>s.data);
  const save=useStore(s=>s.saveCustomIdeology),del=useStore(s=>s.deleteCustomIdeology),toast=useStore(s=>s.toast);
  const [query,setQuery]=useState(""),[family,setFamily]=useState<IdeologyFamilyId|"all">("all"),[selected,setSelected]=useState("social-democracy"),[editing,setEditing]=useState<Ideology|null>(null);
@@ -77,7 +79,7 @@ export function IdeologiesPage(){
     <div className="flex gap-2"><button className="btn btn-primary" onClick={submit}>Save ideology</button><button className="btn" onClick={()=>setEditing(null)}>Cancel</button></div>
    </div>:current?<div className="panel anim-in space-y-4 p-5" key={current.id}>
     <div className="flex flex-wrap items-start justify-between gap-3"><div><h2 className="text-xl font-extrabold">{current.name}</h2>{current.aliases.length>0&&<div className="muted text-xs">Also: {current.aliases.join(" · ")}</div>}</div>
-     <div className="flex items-center gap-2"><FamilyBadge id={current.family}/>{current.custom&&<><button className="btn btn-sm" onClick={()=>setEditing({...current,positions:{...current.positions}})}>Edit</button><button className="btn btn-sm btn-danger" onClick={()=>{if(window.confirm(`Delete ${current.name}? It is used by ${usage(current.id)} party/faction/deputy entries, which will become unassigned.`)){del(current.id);setSelected("social-democracy");}}}>Delete</button></>}</div>
+     <div className="flex items-center gap-2"><FamilyBadge id={current.family}/>{current.custom&&<><button className="btn btn-sm" onClick={()=>setEditing({...current,positions:{...current.positions}})}>Edit</button><button className="btn btn-sm btn-danger" onClick={()=>{if(window.confirm(translateText(`Delete ${current.name}? It is used by ${usage(current.id)} party/faction/deputy entries, which will become unassigned.`, language))){del(current.id);setSelected("social-democracy");}}}>Delete</button></>}</div>
     </div>
     <p className="text-[14px] leading-relaxed">{current.description||<span className="muted">No description.</span>}</p>
     <div className="grid gap-3 md:grid-cols-2"><div className="card p-3"><div className="label">Ideological family</div><div className="text-sm font-semibold" style={{color:IDEOLOGY_FAMILY_MAP[current.family].color}}>{IDEOLOGY_FAMILY_MAP[current.family].label}</div><p className="muted text-xs">{IDEOLOGY_FAMILY_MAP[current.family].blurb}</p></div><div className="card p-3"><div className="label">Used in this parliament</div><div className="text-sm font-semibold">{usage(current.id)} assignment(s)</div></div></div>
