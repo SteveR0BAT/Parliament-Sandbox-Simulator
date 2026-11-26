@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useState } from "react";
 import dictionary from "@/data/translations";
 import runtimeTranslations from "@/data/runtimeTranslations";
+import ideologyTextTranslations from "@/data/ideologyTextTranslations";
 
 export const LANGUAGES = [
   { code: "en", label: "English" },
@@ -58,5 +59,5 @@ export function useLanguage() {
 
 export function translateText(value: string, language: Language): string {
   if (language === "en") return value;
-  return dictionary[language]?.[value] ?? runtimeTranslations[language]?.[value] ?? value;
+  return dictionary[language]?.[value] ?? runtimeTranslations[language]?.[value] ?? ideologyTextTranslations[language]?.[value] ?? value;
 }
