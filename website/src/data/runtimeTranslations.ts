@@ -157,7 +157,6 @@ const rows: Record<string, Record<string, string>> = {
   "Name": {ru:"Название",de:"Name",fr:"Nom","zh-CN":"名称",id:"Nama",ka:"სახელი",es:"Nombre",ja:"名前",ko:"이름"},
   "Value": {ru:"Значение",de:"Wert",fr:"Valeur","zh-CN":"值",id:"Nilai",ka:"მნიშვნელობა",es:"Valor",ja:"値",ko:"값"},
   "Remove field": {ru:"Удалить поле",de:"Feld entfernen",fr:"Supprimer le champ","zh-CN":"移除字段",id:"Hapus bidang",ka:"ველის წაშლა",es:"Eliminar campo",ja:"項目を削除",ko:"필드 삭제"},
-  "No faction": {ru:"Без фракции",de:"Keine Fraktion",fr:"Aucun groupe","zh-CN":"无派系",id:"Tanpa fraksi",ka:"ფრაქციის გარეშე",es:"Sin facción",ja:"会派なし",ko:"파벌 없음"},
   "Orientation": {ru:"Ориентация",de:"Ausrichtung",fr:"Orientation","zh-CN":"取向",id:"Orientasi",ka:"ორიენტაცია",es:"Orientación",ja:"方向性",ko:"성향"},
   "Specify this dimension": {ru:"Указать эту ось",de:"Diese Dimension festlegen",fr:"Préciser cette dimension","zh-CN":"指定此维度",id:"Tentukan dimensi ini",ka:"ამ განზომილების მითითება",es:"Especificar esta dimensión",ja:"この軸を指定する",ko:"이 차원 지정"},
   "Centre": {ru:"Центр",de:"Mitte",fr:"Centre","zh-CN":"中间",id:"Tengah",ka:"ცენტრი",es:"Centro",ja:"中央",ko:"중앙"},
@@ -166,7 +165,6 @@ const rows: Record<string, Record<string, string>> = {
   "Also:": {ru:"Также:",de:"Auch:",fr:"Aussi :","zh-CN":"别名：",id:"Juga:",ka:"ასევე:",es:"También:",ja:"別名：",ko:"다른 이름:"},
   "Sources & references": {ru:"Источники и литература",de:"Quellen und Literatur",fr:"Sources et références","zh-CN":"来源与参考资料",id:"Sumber dan referensi",ka:"წყაროები და მითითებები",es:"Fuentes y referencias",ja:"出典・参考文献",ko:"출처 및 참고문헌"},
   "The original ideology descriptions and historical metadata are preserved. Positions are broad reference classifications; political movements have varied across time and place.": {ru:"Исходные описания идеологий и исторические сведения сохранены. Позиции являются обобщёнными справочными классификациями; политические движения менялись в зависимости от времени и места.",de:"Die ursprünglichen Ideologiebeschreibungen und historischen Metadaten bleiben erhalten. Die Positionen sind grobe Referenzklassifikationen; politische Bewegungen unterschieden sich je nach Zeit und Ort.",fr:"Les descriptions originales des idéologies et les métadonnées historiques sont conservées. Les positions sont des classifications indicatives générales ; les mouvements politiques ont varié selon les époques et les lieux.","zh-CN":"原有意识形态描述和历史元数据均予以保留。立场属于概括性的参考分类；政治运动会随时代和地区而变化。",id:"Deskripsi ideologi asli dan metadata historis dipertahankan. Posisi merupakan klasifikasi referensi umum; gerakan politik berbeda menurut waktu dan tempat.",ka:"იდეოლოგიების თავდაპირველი აღწერები და ისტორიული მეტამონაცემები შენარჩუნებულია. პოზიციები ზოგადი საცნობარო კლასიფიკაციაა; პოლიტიკური მოძრაობები დროისა და ადგილის მიხედვით იცვლებოდა.",es:"Se conservan las descripciones originales de las ideologías y los metadatos históricos. Las posiciones son clasificaciones orientativas generales; los movimientos políticos han variado según la época y el lugar.",ja:"元のイデオロギー説明と歴史的メタデータは保持されています。各位置は大まかな参照分類であり、政治運動は時代や地域によって異なります。",ko:"이념의 원래 설명과 역사적 메타데이터는 보존됩니다. 입장은 대략적인 참고 분류이며 정치 운동은 시대와 지역에 따라 달라졌습니다."},
-  "No independent deputies.": {ru:"Нет независимых депутатов.",de:"Keine unabhängigen Abgeordneten.",fr:"Aucun député indépendant.","zh-CN":"没有独立议员。",id:"Tidak ada anggota parlemen independen.",ka:"დამოუკიდებელი დეპუტატები არ არის.",es:"No hay diputados independientes.",ja:"無所属議員はいません。",ko:"무소속 의원이 없습니다."},
   "About this simulator": {ru:"Об этом симуляторе",de:"Über diesen Simulator",fr:"À propos du simulateur","zh-CN":"关于本模拟器",id:"Tentang simulator ini",ka:"სიმულატორის შესახებ",es:"Acerca de este simulador",ja:"このシミュレーターについて",ko:"시뮬레이터 정보"},
   "Small councils to very large assemblies (up to 20,000).": {ru:"От небольших советов до крупных собраний (до 20 000 мест).",de:"Von kleinen Räten bis zu sehr großen Versammlungen (bis zu 20.000 Sitze).",fr:"Des petits conseils aux très grandes assemblées (jusqu’à 20 000 sièges).","zh-CN":"从小型委员会到大型议会（最多 20,000 个席位）。",id:"Dari dewan kecil hingga majelis besar (hingga 20.000 kursi).",ka:"პატარა საბჭოებიდან დიდ ასამბლეებამდე (20 000-მდე ადგილი).",es:"Desde pequeños consejos hasta grandes asambleas (hasta 20.000 escaños).",ja:"小規模な評議会から大規模な議会まで（最大20,000議席）。",ko:"소규모 위원회부터 대규모 의회까지(최대 20,000석)."},
   "None specified": {ru:"Не указано",de:"Nicht angegeben",fr:"Non spécifié","zh-CN":"未指定",id:"Tidak ditentukan",ka:"მითითებული არ არის",es:"No especificado",ja:"未指定",ko:"지정되지 않음"},
@@ -183,7 +181,6 @@ const rows: Record<string, Record<string, string>> = {
   "Designation": {ru:"Статус",de:"Bezeichnung",fr:"Désignation","zh-CN":"身份标记",id:"Penetapan",ka:"სტატუსი",es:"Designación",ja:"区分",ko:"지정"},
   "Own ideology": {ru:"Собственная идеология",de:"Eigene Ideologie",fr:"Propre idéologie","zh-CN":"自身意识形态",id:"Ideologi sendiri",ka:"საკუთარი იდეოლოგია",es:"Ideología propia",ja:"自身のイデオロギー",ko:"자체 이념"},
   "Affiliation / description": {ru:"Принадлежность / описание",de:"Zugehörigkeit / Beschreibung",fr:"Affiliation / description","zh-CN":"所属/描述",id:"Afiliasi / deskripsi",ka:"კუთვნილება / აღწერა",es:"Afiliación / descripción",ja:"所属／説明",ko:"소속 / 설명"},
-  "No independent deputies.": {ru:"Нет независимых депутатов.",de:"Keine unabhängigen Abgeordneten.",fr:"Aucun député indépendant.","zh-CN":"没有独立议员。",id:"Tidak ada anggota parlemen independen.",ka:"დამოუკიდებელი დეპუტატები არ არის.",es:"No hay diputados independientes.",ja:"無所属議員はいません。",ko:"무소속 의원이 없습니다."},
   "Search independents…": {ru:"Поиск независимых депутатов…",de:"Unabhängige Abgeordnete suchen …",fr:"Rechercher des indépendants…","zh-CN":"搜索独立议员…",id:"Cari anggota independen…",ka:"დამოუკიდებელი დეპუტატების ძიება…",es:"Buscar independientes…",ja:"無所属議員を検索…",ko:"무소속 의원 검색…"},
   "Highlight in chamber": {ru:"Выделить в парламенте",de:"Im Plenum hervorheben",fr:"Mettre en évidence dans l’assemblée","zh-CN":"在议会中突出显示",id:"Sorot di parlemen",ka:"პარლამენტში გამოკვეთა",es:"Resaltar en la cámara",ja:"議場で強調表示",ko:"의회에서 강조 표시"},
   "Search deputies…": {ru:"Поиск депутатов…",de:"Abgeordnete suchen …",fr:"Rechercher des députés…","zh-CN":"搜索议员…",id:"Cari anggota parlemen…",ka:"დეპუტატების ძიება…",es:"Buscar diputados…",ja:"議員を検索…",ko:"의원 검색…"},
@@ -355,8 +352,6 @@ ru:"Собственная идеология",de:"Eigene Ideologie",fr:"Propre 
 ru:"Принадлежность / описание",de:"Zugehörigkeit / Beschreibung",fr:"Affiliation / description","zh-CN":"派别/描述",id:"Afiliasi / deskripsi",ka:"კუთვნილება / აღწერა",es:"Afiliación / descripción",ja:"所属／説明",ko:"소속 / 설명"},
 "Search independents…":{
 ru:"Поиск независимых депутатов…",de:"Unabhängige suchen …",fr:"Rechercher les indépendants…","zh-CN":"搜索独立议员…",id:"Cari anggota independen…",ka:"დამოუკიდებელი დეპუტატების ძიება…",es:"Buscar independientes…",ja:"無所属議員を検索…",ko:"무소속 의원 검색…"},
-"No independent deputies.":{
-ru:"Нет независимых депутатов.",de:"Keine unabhängigen Abgeordneten.",fr:"Aucun député indépendant.","zh-CN":"没有独立议员。",id:"Tidak ada anggota independen.",ka:"დამოუკიდებელი დეპუტატები არ არიან.",es:"No hay diputados independientes.",ja:"無所属議員はいません。",ko:"무소속 의원이 없습니다."},
 "Find on chart":{
 ru:"Найти на схеме",de:"Im Diagramm finden",fr:"Trouver sur le graphique","zh-CN":"在图表中查找",id:"Temukan pada bagan",ka:"დიაგრამაზე პოვნა",es:"Buscar en el gráfico",ja:"図表上で探す",ko:"차트에서 찾기"},
 "Dashboard":{
@@ -422,8 +417,6 @@ ru:"Переназначение места переводит депутата 
 ru:"— Свободное место —",de:"— Freier Sitz —",fr:"— Siège vacant —","zh-CN":"— 空席 —",id:"— Kursi kosong —",ka:"— თავისუფალი ადგილი —",es:"— Escaño vacante —",ja:"— 空席 —",ko:"— 빈 좌석 —"},
 "Independent":{
 ru:"Независимый депутат",de:"Unabhängig",fr:"Indépendant","zh-CN":"独立议员",id:"Independen",ka:"დამოუკიდებელი",es:"Independiente",ja:"無所属",ko:"무소속"},
-"No faction":{
-ru:"Без фракции",de:"Keine Fraktion",fr:"Aucune faction","zh-CN":"无派系",id:"Tanpa faksi",ka:"ფრაქციის გარეშე",es:"Sin facción",ja:"派閥なし",ko:"파벌 없음"},
 "Individual ideology":{
 ru:"Индивидуальная идеология",de:"Individuelle Ideologie",fr:"Idéologie individuelle","zh-CN":"个人意识形态",id:"Ideologi individu",ka:"ინდივიდუალური იდეოლოგია",es:"Ideología individual",ja:"個人のイデオロギー",ko:"개인 이념"},
 "Overrides faction and party ideology in ideology-based voting (default priority).":{
