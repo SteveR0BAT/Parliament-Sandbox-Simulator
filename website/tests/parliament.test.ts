@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { apportion } from "../src/lib/parliament";
-import { simulateElection } from "../src/lib/elections";
+import { apportion, makeDeputy, newFaction } from "../src/lib/parliament";
+import { adaptElectionDeputies, simulateElection } from "../src/lib/elections";
 import { BUILTIN_MAP } from "../src/data/ideologies";
 import { newIssue, normalizeProject, sampleProject, PROJECT_VERSION } from "../src/lib/defaults";
 import { BUILTIN_IDEOLOGIES, IDEOLOGY_FAMILIES } from "../src/data/ideologies";
@@ -213,4 +213,72 @@ test("elections reject a chamber with no party-allocated seats", () => {
   const result = simulateElection(project, 5, null, 5, () => 0.5);
   assert.equal(result.ok, false);
   if (!result.ok) assert.match(result.error, /Allocate at least one seat/);
+});
+
+test("disabled faction adaptation leaves new deputies unaffiliated and preserves existing memberships", () => {
+  const project = sampleProject();
+  const party = project.parties[0];
+  const faction = project.factions.find((item) => item.partyId === party.id)!;
+  const existing = Object.values(project.deputies).find((item) => item.partyId === party.id)!;
+  existing.factionId = faction.id;
+  const newcomer = makeDeputy({ partyId: party.id });
+  project.deputies[newcomer.id] = newcomer;
+  adaptElectionDeputies(project, [newcomer.id], [party.id], false, () => 0.99);
+  assert.equal(newcomer.factionId, null);
+  assert.equal(existing.factionId, faction.id);
+});
+
+test("enabled faction adaptation reassigns every deputy in a gaining party", () => {
+  const project = sampleProject();
+  const party = project.parties[0];
+  const factions = project.factions.filter((item) => item.partyId === party.id);
+  const newcomer = makeDeputy({ partyId: party.id });
+  project.deputies[newcomer.id] = newcomer;
+  const members = Object.values(project.deputies).filter((item) => item.partyId === party.id);
+  adaptElectionDeputies(project, [newcomer.id], [party.id], true, () => 0.5);
+  for (const deputy of members) assert.ok(factions.some((faction) => faction.id === deputy.factionId));
+});
+
+test("new deputies may receive an individual ideology from their party's ideological family", () => {
+  const project = sampleProject();
+  const party = project.parties[0];
+  const partyFamily = BUILTIN_MAP[party.ideologyId!].family;
+  const newcomer = makeDeputy({ partyId: party.id });
+  project.deputies[newcomer.id] = newcomer;
+  const values = [0.01, 0.9, 0.1];
+  let index = 0;
+  adaptElectionDeputies(project, [newcomer.id], [party.id], false, () => values[index++] ?? 0.1);
+  const ideology = BUILTIN_MAP[newcomer.ideologyId!] ?? project.customIdeologies.find((item) => item.id === newcomer.ideologyId);
+  assert.equal(ideology?.family, partyFamily);
+});
+
+test("a related family can supply a new deputy's individual ideology", () => {
+  const project = sampleProject();
+  const party = project.parties[0];
+  const newcomer = makeDeputy({ partyId: party.id });
+  project.deputies[newcomer.id] = newcomer;
+  const values = [0.01, 0.01, 0.01, 0.1];
+  let index = 0;
+  adaptElectionDeputies(project, [newcomer.id], [party.id], false, () => values[index++] ?? 0.1);
+  const ideology = BUILTIN_MAP[newcomer.ideologyId!] ?? project.customIdeologies.find((item) => item.id === newcomer.ideologyId);
+  assert.ok(ideology);
+  assert.notEqual(ideology.family, BUILTIN_MAP[party.ideologyId!].family);
+});
+
+test("faction choice favours matching and related ideological families", () => {
+  const project = sampleProject();
+  const party = project.parties[0];
+  const conservative = BUILTIN_IDEOLOGIES.find((ideology) => ideology.family === "conservative-traditionalist")!;
+  const communist = BUILTIN_IDEOLOGIES.find((ideology) => ideology.family === "authoritarian-state-communist")!;
+  const religious = BUILTIN_IDEOLOGIES.find((ideology) => ideology.family === "religious-communitarian")!;
+  party.ideologyId = conservative.id;
+  const unrelatedFaction = newFaction(party.id, "#555555", { ideologyId: communist.id });
+  const relatedFaction = newFaction(party.id, "#aaaaaa", { ideologyId: religious.id });
+  project.parties = [party];
+  project.factions = [unrelatedFaction, relatedFaction];
+  const deputy = makeDeputy({ partyId: party.id, ideologyId: conservative.id });
+  project.deputies = { [deputy.id]: deputy };
+  project.seats = Array(project.settings.totalSeats).fill(null);
+  adaptElectionDeputies(project, [], [party.id], true, () => 0.5);
+  assert.equal(deputy.factionId, relatedFaction.id);
 });

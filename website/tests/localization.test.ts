@@ -127,6 +127,8 @@ test("known navigation, form, colour-picker and ideology-page controls are local
     "Hold election",
     "Election complete. Parliament's seat allocation has been updated.",
     "Allocate at least one seat to a party before holding an election.",
+    "Adapting Factions",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.",
   ];
   for (const locale of LOCALES) {
     for (const sourceText of required) {

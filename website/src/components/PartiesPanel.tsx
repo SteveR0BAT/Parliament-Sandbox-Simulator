@@ -106,6 +106,7 @@ export function PartiesPanel() {
   const [electionVolatility, setElectionVolatility] = useState(5);
   const [momentumFamily, setMomentumFamily] = useState<IdeologyFamilyId | "">("");
   const [momentumStrength, setMomentumStrength] = useState(5);
+  const [adaptingFactions, setAdaptingFactions] = useState(true);
 
   const total = data.settings.totalSeats;
   const free = freeSeats(data);
@@ -192,9 +193,17 @@ export function PartiesPanel() {
               <div className="flex items-center justify-between text-xs"><span className="muted">1 — Subtle</span><b className="tabular-nums">{momentumStrength} / 10</b><span className="muted">10 — Landslide</span></div>
               <input type="range" min={1} max={10} step={1} value={momentumStrength} onChange={(event) => setMomentumStrength(Number(event.target.value))} aria-label="Momentum strength" />
             </Field>}
+            <label className="flex items-start gap-2 text-xs">
+              <input type="checkbox" className="mt-0.5" checked={adaptingFactions}
+                onChange={(event) => setAdaptingFactions(event.target.checked)} />
+              <span className="min-w-0">
+                <span className="font-semibold">Adapting Factions</span>
+                <span className="muted mt-1 block">When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.</span>
+              </span>
+            </label>
             <div className="flex flex-wrap gap-2">
               <button className="btn btn-primary" disabled={partyAllocatedSeats < 1} onClick={() => {
-                const result = runElection(electionVolatility, momentumFamily || null, momentumStrength);
+                const result = runElection(electionVolatility, momentumFamily || null, momentumStrength, adaptingFactions);
                 if (result.ok) { setElectionOpen(false); toast("Election complete. Parliament's seat allocation has been updated.", "ok"); }
               }}>Hold election</button>
               <button className="btn" onClick={() => setElectionOpen(false)}>Cancel</button>

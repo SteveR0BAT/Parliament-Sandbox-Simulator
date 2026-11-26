@@ -1143,6 +1143,8 @@ const translations: Record<string, Record<string, string>> = {
     "Hold election": "Hold election",
     "Election complete. Parliament's seat allocation has been updated.": "Election complete. Parliament's seat allocation has been updated.",
     "Allocate at least one seat to a party before holding an election.": "Allocate at least one seat to a party before holding an election.",
+    "Adapting Factions": "Adapting Factions",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.": "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.",
   },
   "ru": {
     "Parliament": "Парламент",
@@ -2288,6 +2290,8 @@ const translations: Record<string, Record<string, string>> = {
     "Hold election": "Провести выборы",
     "Election complete. Parliament's seat allocation has been updated.": "Выборы завершены. Распределение мест в парламенте обновлено.",
     "Allocate at least one seat to a party before holding an election.": "Перед выборами распределите хотя бы одно место между партиями.",
+    "Adapting Factions": "Адаптация фракций",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.": "Если включено, все депутаты партий, получивших места, заново распределяются между фракциями этих партий. Если отключено, новые депутаты остаются вне фракций.",
   },
   "de": {
     "Parliament": "Parlament",
@@ -3433,6 +3437,8 @@ const translations: Record<string, Record<string, string>> = {
     "Hold election": "Wahl durchführen",
     "Election complete. Parliament's seat allocation has been updated.": "Die Wahl ist abgeschlossen. Die Sitzverteilung im Parlament wurde aktualisiert.",
     "Allocate at least one seat to a party before holding an election.": "Weisen Sie vor der Wahl mindestens einer Partei einen Sitz zu.",
+    "Adapting Factions": "Fraktionen anpassen",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.": "Wenn aktiviert, werden alle Abgeordneten von Parteien mit Sitzgewinnen neu auf deren Fraktionen verteilt. Wenn deaktiviert, bleiben neue Abgeordnete ohne Fraktion.",
   },
   "fr": {
     "Parliament": "Parlement",
@@ -4578,6 +4584,8 @@ const translations: Record<string, Record<string, string>> = {
     "Hold election": "Organiser les élections",
     "Election complete. Parliament's seat allocation has been updated.": "Les élections sont terminées. La répartition des sièges au Parlement a été mise à jour.",
     "Allocate at least one seat to a party before holding an election.": "Attribuez au moins un siège à un parti avant d’organiser des élections.",
+    "Adapting Factions": "Adaptation des factions",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.": "Lorsque cette option est activée, tous les députés des partis qui gagnent des sièges sont répartis à nouveau entre les factions de leur parti. Sinon, les nouveaux députés restent sans faction.",
   },
   "zh-CN": {
     "Parliament": "议会",
@@ -5723,6 +5731,8 @@ const translations: Record<string, Record<string, string>> = {
     "Hold election": "举行选举",
     "Election complete. Parliament's seat allocation has been updated.": "选举完成。议会席位分配已更新。",
     "Allocate at least one seat to a party before holding an election.": "举行选举前，请至少向一个政党分配席位。",
+    "Adapting Factions": "调整派系",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.": "启用后，获得席位的政党将把所有议员重新分配到本党派系中。关闭后，新议员将不加入任何派系。",
   },
   "id": {
     "Parliament": "Parlemen",
@@ -6868,6 +6878,8 @@ const translations: Record<string, Record<string, string>> = {
     "Hold election": "Adakan pemilu",
     "Election complete. Parliament's seat allocation has been updated.": "Pemilu selesai. Pembagian kursi parlemen telah diperbarui.",
     "Allocate at least one seat to a party before holding an election.": "Bagikan setidaknya satu kursi kepada partai sebelum mengadakan pemilu.",
+    "Adapting Factions": "Penyesuaian faksi",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.": "Jika diaktifkan, semua anggota parlemen dari partai yang memperoleh kursi akan dibagikan kembali ke faksi partainya. Jika dinonaktifkan, anggota baru tidak masuk faksi.",
   },
   "ka": {
     "Parliament": "პარლამენტი",
@@ -8013,6 +8025,8 @@ const translations: Record<string, Record<string, string>> = {
     "Hold election": "არჩევნების ჩატარება",
     "Election complete. Parliament's seat allocation has been updated.": "არჩევნები დასრულდა. პარლამენტში მანდატების განაწილება განახლდა.",
     "Allocate at least one seat to a party before holding an election.": "არჩევნების ჩატარებამდე მინიმუმ ერთი მანდატი მიანიჭეთ რომელიმე პარტიას.",
+    "Adapting Factions": "ფრაქციების ადაპტაცია",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.": "ჩართვის შემთხვევაში, მანდატების მომპოვებელი პარტიების ყველა დეპუტატი ხელახლა გადანაწილდება საკუთარი პარტიის ფრაქციებში. გამორთვისას ახალი დეპუტატები ფრაქციის გარეშე დარჩებიან.",
   },
   "es": {
     "Parliament": "Parlamento",
@@ -9158,6 +9172,8 @@ const translations: Record<string, Record<string, string>> = {
     "Hold election": "Celebrar elecciones",
     "Election complete. Parliament's seat allocation has been updated.": "Las elecciones han terminado. Se ha actualizado la distribución de escaños del Parlamento.",
     "Allocate at least one seat to a party before holding an election.": "Asigna al menos un escaño a un partido antes de celebrar elecciones.",
+    "Adapting Factions": "Adaptar facciones",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.": "Si se activa, todos los diputados de los partidos que ganen escaños se redistribuirán entre las facciones de su partido. Si se desactiva, los nuevos diputados quedarán sin facción.",
   },
   "ja": {
     "Parliament": "議会",
@@ -10303,6 +10319,8 @@ const translations: Record<string, Record<string, string>> = {
     "Hold election": "選挙を実施",
     "Election complete. Parliament's seat allocation has been updated.": "選挙が完了しました。議会の議席配分を更新しました。",
     "Allocate at least one seat to a party before holding an election.": "選挙を実施する前に、少なくとも1議席を政党に割り当ててください。",
+    "Adapting Factions": "派閥の調整",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.": "有効にすると、議席を増やした政党の全議員がその党の派閥に再配分されます。無効の場合、新しい議員は派閥に所属しません。",
   },
   "ko": {
     "Parliament": "의회",
@@ -11448,6 +11466,8 @@ const translations: Record<string, Record<string, string>> = {
     "Hold election": "선거 실시",
     "Election complete. Parliament's seat allocation has been updated.": "선거가 완료되었습니다. 의회 의석 배분이 갱신되었습니다.",
     "Allocate at least one seat to a party before holding an election.": "선거를 실시하기 전에 정당에 최소 한 석을 배정하세요.",
+    "Adapting Factions": "파벌 조정",
+    "When enabled, all deputies in parties that gain seats are reassigned among those parties’ factions. When disabled, new deputies remain without a faction.": "활성화하면 의석을 얻은 정당의 모든 의원이 해당 정당의 파벌에 다시 배정됩니다. 비활성화하면 새 의원은 파벌에 소속되지 않습니다。",
   }
 };
 export default translations;

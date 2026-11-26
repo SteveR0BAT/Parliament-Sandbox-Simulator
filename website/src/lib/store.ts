@@ -95,7 +95,7 @@ interface Store {
   moveParty: (id: string, dir: -1 | 1) => void;
   sortPartiesByIdeology: () => void;
   distribute: (weights: Record<string, number>) => Result;
-  runElection: (randomness: number, momentumFamily: IdeologyFamilyId | null, momentumStrength: number) => Result;
+  runElection: (randomness: number, momentumFamily: IdeologyFamilyId | null, momentumStrength: number, adaptingFactions: boolean) => Result;
   // deputies / seats
   addIndependents: (count: number, names: string, tpl: Partial<Deputy>) => Result;
   updateDeputy: (id: string, patch: Partial<Deputy>) => void;
@@ -270,7 +270,7 @@ export const useStore = create<Store>((set, get) => {
         syncSeats(d);
       }),
     distribute: (weights) => notify(run((d) => distributeByWeights(d, weights, true))),
-    runElection: (randomness, momentumFamily, momentumStrength) => notify(run((d) => simulateElection(d, randomness, momentumFamily, momentumStrength))),
+    runElection: (randomness, momentumFamily, momentumStrength, adaptingFactions) => notify(run((d) => simulateElection(d, randomness, momentumFamily, momentumStrength, Math.random, adaptingFactions))),
 
     addIndependents: (count, names, tpl) =>
       notify(
