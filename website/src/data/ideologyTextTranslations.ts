@@ -1945,4 +1945,73 @@ ru:"Коллективное развитие",de:"Kollektive Entwicklung",fr:"D
 ru:"Построст, достаточность",de:"Postwachstum, Suffizienz",fr:"Post-croissance, sobriété","zh-CN":"后增长、充足性",id:"Pascapertumbuhan, kecukupan",ka:"პოსტზრდა, საკმარისობა",es:"Poscrecimiento y suficiencia",ja:"脱成長・充足",ko:"탈성장, 충분성"},
 });
 
+
+Object.assign(rows, {
+// Economic descriptors: planned economies, commons, self-management and developmental models.
+"Common ownership, abolition of private property":{
+ru:"Общая собственность, отмена частной собственности",de:"Gemeineigentum, Abschaffung des Privateigentums",fr:"Propriété commune, abolition de la propriété privée","zh-CN":"共同所有制、废除私有财产",id:"Kepemilikan bersama, penghapusan hak milik pribadi",ka:"საერთო საკუთრება, კერძო საკუთრების გაუქმება",es:"Propiedad común y abolición de la propiedad privada",ja:"共有財産・私有財産の廃止",ko:"공동 소유, 사유재산 폐지"},
+"Abolish capitalism, socialise production":{
+ru:"Упразднение капитализма, обобществление производства",de:"Abschaffung des Kapitalismus, Vergesellschaftung der Produktion",fr:"Abolition du capitalisme, socialisation de la production","zh-CN":"废除资本主义、生产社会化",id:"Penghapusan kapitalisme, sosialisasi produksi",ka:"კაპიტალიზმის გაუქმება, წარმოების გასაზოგადოებრივება",es:"Abolición del capitalismo y socialización de la producción",ja:"資本主義の廃止・生産の社会化",ko:"자본주의 폐지, 생산의 사회화"},
+"State control of the economy":{
+ru:"Государственный контроль над экономикой",de:"Staatliche Kontrolle der Wirtschaft",fr:"Contrôle étatique de l’économie","zh-CN":"国家控制经济",id:"Kendali negara atas ekonomi",ka:"სახელმწიფოს კონტროლი ეკონომიკაზე",es:"Control estatal de la economía",ja:"国家による経済統制",ko:"국가의 경제 통제"},
+"Command economy":{
+ru:"Командная экономика",de:"Planwirtschaft",fr:"Économie dirigée","zh-CN":"指令性经济",id:"Ekonomi komando",ka:"გეგმიური ეკონომიკა",es:"Economía dirigida",ja:"計画経済",ko:"계획경제"},
+"Central planning, collectivisation":{
+ru:"Центральное планирование, коллективизация",de:"Zentralplanung, Kollektivierung",fr:"Planification centrale, collectivisation","zh-CN":"中央计划、集体化",id:"Perencanaan terpusat, kolektivisasi",ka:"ცენტრალური დაგეგმვა, კოლექტივიზაცია",es:"Planificación central y colectivización",ja:"中央計画・集団化",ko:"중앙계획, 집산화"},
+"Planned, workers' democracy":{
+ru:"Плановая экономика, рабочая демократия",de:"Planwirtschaft, Arbeiterdemokratie",fr:"Planification, démocratie ouvrière","zh-CN":"计划经济、工人民主",id:"Ekonomi terencana, demokrasi pekerja",ka:"დაგეგმილი ეკონომიკა, მუშათა დემოკრატია",es:"Economía planificada y democracia obrera",ja:"計画経済・労働者民主主義",ko:"계획경제, 노동자 민주주의"},
+"Collectivised rural-led economy":{
+ru:"Коллективизированная экономика с опорой на сельские районы",de:"Kollektivierte, ländlich geprägte Wirtschaft",fr:"Économie collectivisée à dominante rurale","zh-CN":"以农村为主导的集体化经济",id:"Ekonomi kolektif yang dipimpin pedesaan",ka:"კოლექტივიზებული, სოფლის მეურნეობაზე დაფუძნებული ეკონომიკა",es:"Economía colectivizada de base rural",ja:"農村主導の集団化経済",ko:"농촌 주도 집산경제"},
+"Strict central planning, autarky":{
+ru:"Строгое централизованное планирование, автаркия",de:"Strikte Zentralplanung, Autarkie",fr:"Planification centrale stricte, autarcie","zh-CN":"严格中央计划、自给自足",id:"Perencanaan pusat ketat, autarki",ka:"მკაცრი ცენტრალური დაგეგმვა, ავტარკია",es:"Planificación central estricta y autarquía",ja:"厳格な中央計画・自給自足",ko:"엄격한 중앙계획, 자급자족"},
+"Self-reliant state economy":{
+ru:"Самодостаточная государственная экономика",de:"Autarke Staatswirtschaft",fr:"Économie étatique autosuffisante","zh-CN":"自力更生的国家经济",id:"Ekonomi negara mandiri",ka:"თვითკმარი სახელმწიფო ეკონომიკა",es:"Economía estatal autosuficiente",ja:"自力更生型の国家経済",ko:"자립형 국가경제"},
+"Socialised production":{
+ru:"Обобществлённое производство",de:"Vergesellschaftete Produktion",fr:"Production socialisée","zh-CN":"生产社会化",id:"Produksi tersosialisasi",ka:"გასაზოგადოებრივებული წარმოება",es:"Producción socializada",ja:"社会化された生産",ko:"사회화된 생산"},
+"Worker-council control":{
+ru:"Контроль со стороны рабочих советов",de:"Kontrolle durch Arbeiterräte",fr:"Contrôle par les conseils ouvriers","zh-CN":"工人委员会控制",id:"Kendali dewan pekerja",ka:"მუშათა საბჭოების კონტროლი",es:"Control de los consejos obreros",ja:"労働者評議会による管理",ko:"노동자 평의회 통제"},
+"Abolition of wage labour":{
+ru:"Упразднение наёмного труда",de:"Abschaffung der Lohnarbeit",fr:"Abolition du travail salarié","zh-CN":"废除雇佣劳动",id:"Penghapusan kerja upahan",ka:"დაქირავებული შრომის გაუქმება",es:"Abolición del trabajo asalariado",ja:"賃労働の廃止",ko:"임금노동 폐지"},
+"Commons, anti-work tendencies":{
+ru:"Общие ресурсы, анти-трудовые тенденции",de:"Gemeingüter, arbeitskritische Tendenzen",fr:"Communs, tendances anti-travail","zh-CN":"公共资源、反工作倾向",id:"Kepemilikan bersama, kecenderungan anti-kerja",ka:"საერთო რესურსები, შრომის საწინააღმდეგო ტენდენციები",es:"Bienes comunes y tendencias contrarias al trabajo",ja:"共有財・反労働の傾向",ko:"공유재, 반노동 경향"},
+"Common ownership, free distribution":{
+ru:"Общая собственность, свободное распределение",de:"Gemeineigentum, freie Verteilung",fr:"Propriété commune, distribution libre","zh-CN":"共同所有、自由分配",id:"Kepemilikan bersama, distribusi bebas",ka:"საერთო საკუთრება, თავისუფალი განაწილება",es:"Propiedad común y distribución libre",ja:"共有財産・自由分配",ko:"공동 소유, 자유 분배"},
+"Union-run industry":{
+ru:"Промышленность под управлением профсоюзов",de:"Gewerkschaftlich verwaltete Industrie",fr:"Industrie gérée par les syndicats","zh-CN":"由工会管理的工业",id:"Industri yang dikelola serikat",ka:"პროფკავშირების მიერ მართული მრეწველობა",es:"Industria gestionada por sindicatos",ja:"労働組合が運営する産業",ko:"노동조합이 운영하는 산업"},
+"Anti-capitalist, gift/commons":{
+ru:"Антикапиталистическая, экономика дарения и общих ресурсов",de:"Antikapitalistisch, Geschenkökonomie und Gemeingüter",fr:"Anticapitaliste, économie du don et des communs","zh-CN":"反资本主义、礼物经济/公共资源",id:"Antikapitalis, ekonomi hadiah/barang bersama",ka:"ანტიკაპიტალისტური, საჩუქრის ეკონომიკა / საერთო რესურსები",es:"Anticapitalista, economía del don y bienes comunes",ja:"反資本主義・贈与経済／共有財",ko:"반자본주의, 선물경제/공유재"},
+"Small-scale, commons":{
+ru:"Мелкомасштабная экономика, общие ресурсы",de:"Kleinräumig, Gemeingüter",fr:"Petite échelle, communs","zh-CN":"小规模经济、公共资源",id:"Skala kecil, kepemilikan bersama",ka:"მცირე მასშტაბი, საერთო რესურსები",es:"Pequeña escala y bienes comunes",ja:"小規模・共有財",ko:"소규모, 공유재"},
+"Market economy plus investment in human capital":{
+ru:"Рыночная экономика и инвестиции в человеческий капитал",de:"Marktwirtschaft plus Investitionen in Humankapital",fr:"Économie de marché et investissement dans le capital humain","zh-CN":"市场经济并投资于人力资本",id:"Ekonomi pasar disertai investasi pada modal manusia",ka:"საბაზრო ეკონომიკა და ადამიანურ კაპიტალში ინვესტირება",es:"Economía de mercado e inversión en capital humano",ja:"市場経済と人的資本への投資",ko:"시장경제와 인적자본 투자"},
+"Broadly distributed small property, guilds":{
+ru:"Широко распределённая мелкая собственность, гильдии",de:"Breit gestreutes Kleineigentum, Gilden",fr:"Petite propriété largement répartie, guildes","zh-CN":"广泛分散的小业主财产、公会",id:"Kepemilikan kecil yang tersebar luas, serikat",ka:"ფართოდ განაწილებული მცირე საკუთრება, გილდიები",es:"Pequeña propiedad ampliamente distribuida y gremios",ja:"広く分散した小規模所有・ギルド",ko:"광범위하게 분산된 소규모 소유, 길드"},
+"Tripartite bargaining":{
+ru:"Трёхсторонние переговоры",de:"Dreigliedrige Verhandlungen",fr:"Négociation tripartite","zh-CN":"三方协商",id:"Perundingan tripartit",ka:"სამმხრივი მოლაპარაკება",es:"Negociación tripartita",ja:"三者協議",ko:"삼자 협상"},
+"Evidence-based management":{
+ru:"Управление на основе доказательств",de:"Evidenzbasierte Verwaltung",fr:"Gestion fondée sur les preuves","zh-CN":"循证管理",id:"Manajemen berbasis bukti",ka:"მტკიცებულებებზე დაფუძნებული მართვა",es:"Gestión basada en pruebas",ja:"証拠に基づく運営",ko:"증거 기반 관리"},
+"Mixed, community-minded":{
+ru:"Смешанная экономика, ориентированная на сообщество",de:"Gemischt, gemeinschaftsorientiert",fr:"Mixte, axée sur la communauté","zh-CN":"混合型、重视共同体",id:"Campuran, berorientasi komunitas",ka:"შერეული, სათემო ორიენტაციის",es:"Mixta y orientada a la comunidad",ja:"混合型・共同体重視",ko:"혼합형, 공동체 지향"},
+"Land-value tax, free markets elsewhere":{
+ru:"Налог на стоимость земли, свободные рынки в остальных секторах",de:"Bodenwertsteuer, ansonsten freie Märkte",fr:"Impôt sur la valeur foncière, marchés libres ailleurs","zh-CN":"土地价值税，其他领域实行自由市场",id:"Pajak nilai tanah, pasar bebas di sektor lain",ka:"მიწის ღირებულების გადასახადი, სხვა სფეროებში თავისუფალი ბაზარი",es:"Impuesto sobre el valor del suelo y mercados libres en otros sectores",ja:"地価税・その他の分野では自由市場",ko:"토지가치세, 다른 부문은 자유시장"},
+"Open knowledge, mixed":{
+ru:"Открытые знания, смешанная экономика",de:"Offenes Wissen, gemischt",fr:"Connaissances ouvertes, mixte","zh-CN":"知识开放、混合型",id:"Pengetahuan terbuka, campuran",ka:"ღია ცოდნა, შერეული",es:"Conocimiento abierto, mixta",ja:"知識の開放・混合型",ko:"지식 개방, 혼합형"},
+"Subsistence, gift economy":{
+ru:"Натуральное хозяйство, экономика дарения",de:"Subsistenzwirtschaft, Geschenkökonomie",fr:"Subsistance, économie du don","zh-CN":"自给经济、礼物经济",id:"Subsistensi, ekonomi hadiah",ka:"თვითუზრუნველყოფა, საჩუქრის ეკონომიკა",es:"Subsistencia y economía del don",ja:"自給経済・贈与経済",ko:"자급경제, 선물경제"},
+"Free exchange, possession":{
+ru:"Свободный обмен, владение",de:"Freier Austausch, Besitz",fr:"Échange libre, possession","zh-CN":"自由交换、占有",id:"Pertukaran bebas, kepemilikan",ka:"თავისუფალი გაცვლა, მფლობელობა",es:"Intercambio libre y posesión",ja:"自由交換・占有",ko:"자유 교환, 점유"},
+"Tech-driven growth, varies":{
+ru:"Технологически обусловленный рост; подходы различаются",de:"Technologiegetriebenes Wachstum, unterschiedlich",fr:"Croissance tirée par la technologie, variable","zh-CN":"技术驱动增长，具体情况不一",id:"Pertumbuhan berbasis teknologi; bervariasi",ka:"ტექნოლოგიაზე დაფუძნებული ზრდა; ცვალებადია",es:"Crecimiento impulsado por la tecnología, variable",ja:"技術主導の成長・形態は多様",ko:"기술 주도 성장, 형태는 다양"},
+"Monetary reform, national dividend":{
+ru:"Денежная реформа, национальный дивиденд",de:"Geldreform, Nationaldividende",fr:"Réforme monétaire, dividende national","zh-CN":"货币改革、国家红利",id:"Reformasi moneter, dividen nasional",ka:"მონეტარული რეფორმა, ეროვნული დივიდენდი",es:"Reforma monetaria y dividendo nacional",ja:"通貨改革・国民配当",ko:"통화개혁, 국민 배당"},
+"State-led, mixed":{
+ru:"Государственное руководство, смешанная модель",de:"Staatlich gelenkt, gemischt",fr:"Dirigée par l’État, mixte","zh-CN":"国家主导、混合型",id:"Dipimpin negara, campuran",ka:"სახელმწიფოს მიერ მართული, შერეული",es:"Dirigida por el Estado, mixta",ja:"国家主導・混合型",ko:"국가 주도, 혼합형"},
+"State-led, pro-labour with markets":{
+ru:"Государственное руководство, поддержка труда и рыночные механизмы",de:"Staatlich gelenkt, arbeitsfreundlich und marktorientiert",fr:"Dirigée par l’État, favorable au travail avec mécanismes de marché","zh-CN":"国家主导、支持劳工并保留市场机制",id:"Dipimpin negara, pro-buruh dengan mekanisme pasar",ka:"სახელმწიფოს მიერ მართული, შრომის მხარდამჭერი და საბაზრო მექანიზმებით",es:"Dirigida por el Estado, favorable al trabajo y con mercados",ja:"国家主導・労働者重視・市場メカニズム併用",ko:"국가 주도, 노동 친화적 시장경제"},
+"Statist developmentalism":{
+ru:"Государственный дирижизм и развитие",de:"Etatistischer Entwicklungsansatz",fr:"Développementalisme étatique","zh-CN":"国家主义发展模式",id:"Developmentalisme statis",ka:"ეტატისტური განვითარების პოლიტიკა",es:"Desarrollismo estatista",ja:"国家主導の開発主義",ko:"국가주의적 발전주의"},
+"Participatory":{
+ru:"Участие граждан",de:"Partizipativ",fr:"Participatif","zh-CN":"参与式",id:"Partisipatif",ka:"მონაწილეობითი",es:"Participativa",ja:"参加型",ko:"참여형"}
+});
+
 export default rows;
