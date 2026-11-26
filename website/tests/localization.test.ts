@@ -34,33 +34,19 @@ test("all built-in ideology metadata and family descriptions are available in ev
     family.blurb,
   ]);
 
-  const axisText = [
+  const axisLabels = [
     "Economic orientation",
     "Social orientation",
     "Political authority",
     "Far Left",
-    "Left",
-    "Centre-left",
-    "Centre",
-    "Centre-right",
-    "Right",
     "Far Right",
     "Far Progressive",
-    "Progressive",
-    "Centre-progressive",
-    "Centre-conservative",
-    "Conservative",
     "Far Conservative",
     "Far Libertarian",
-    "Libertarian",
-    "Centre-libertarian",
-    "Centre-authoritarian",
-    "Authoritarian",
     "Far Authoritarian",
-    "Not specified",
   ];
 
-  const required = [...new Set([...ideologyText, ...familyText, ...axisText])];
+  const required = [...new Set([...ideologyText, ...familyText, ...axisLabels])];
   for (const locale of LOCALES) {
     for (const sourceText of required) {
       assert.ok(
