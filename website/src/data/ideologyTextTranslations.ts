@@ -1238,4 +1238,174 @@ ko:"위키백과는 자유지상주의 사회주의를 좌파와 극좌 사이�
 }
 });
 
+
+Object.assign(rows, {
+// Profiles 90–104: Arab, anti-colonial and communist traditions.
+"Pan-Arab nationalist-socialist ideology of Gamal Abdel Nasser: state-led development, non-alignment.":{
+ru:"Панарабская национал-социалистическая идеология Гамаля Абдель Насера: развитие под руководством государства и неприсоединение.",
+de:"Panarabisch-nationalsozialistische Ideologie Gamal Abdel Nassers: staatlich gelenkte Entwicklung und Blockfreiheit.",
+fr:"Idéologie nationaliste et socialiste panarabe de Gamal Abdel Nasser : développement dirigé par l’État et non-alignement.",
+"zh-CN":"贾迈勒·阿卜杜勒·纳赛尔的泛阿拉伯民族主义社会主义意识形态：国家主导的发展和不结盟政策。",
+id:"Ideologi nasionalis-sosialis Pan-Arab Gamal Abdel Nasser: pembangunan yang dipimpin negara dan non-blok.",
+ka:"გამალ აბდელ ნასერის პანარაბული ნაციონალისტურ-სოციალისტური იდეოლოგია: სახელმწიფოს მიერ მართული განვითარება და მიუმხრობლობა.",
+es:"Ideología nacionalista-socialista panárabe de Gamal Abdel Nasser: desarrollo dirigido por el Estado y no alineamiento.",
+ja:"ガマール・アブドゥル＝ナーセルの汎アラブ民族主義・社会主義思想。国家主導の開発と非同盟を重視する。",
+ko:"가말 압델 나세르의 범아랍 민족주의·사회주의 이념으로, 국가 주도 개발과 비동맹을 특징으로 한다."
+},
+"Christian theology interpreting the Gospel through the struggle of the poor against structural injustice.":{
+ru:"Христианское богословие, толкующее Евангелие через борьбу бедных против структурной несправедливости.",
+de:"Christliche Theologie, die das Evangelium aus dem Kampf der Armen gegen strukturelle Ungerechtigkeit heraus interpretiert.",
+fr:"Théologie chrétienne qui interprète l’Évangile à travers la lutte des pauvres contre l’injustice structurelle.",
+"zh-CN":"通过穷人反抗结构性不公的斗争来阐释福音的基督教神学。",
+id:"Teologi Kristen yang menafsirkan Injil melalui perjuangan kaum miskin melawan ketidakadilan struktural.",
+ka:"ქრისტიანული თეოლოგია, რომელიც სახარებას ღარიბთა სტრუქტურული უსამართლობის წინააღმდეგ ბრძოლის ჭრილში განმარტავს.",
+es:"Teología cristiana que interpreta el Evangelio desde la lucha de los pobres contra la injusticia estructural.",
+ja:"構造的不正義に対する貧困層の闘争を通じて福音を解釈するキリスト教神学。",
+ko:"구조적 불의에 맞선 빈민의 투쟁을 통해 복음을 해석하는 기독교 신학."
+},
+"Nationalism of liberation and self-determination combined with social equality aims.":{
+ru:"Национализм освобождения и самоопределения, сочетающийся с целями социального равенства.",
+de:"Nationalismus der Befreiung und Selbstbestimmung, verbunden mit dem Ziel sozialer Gleichheit.",
+fr:"Nationalisme de libération et d’autodétermination associé à des objectifs d’égalité sociale.",
+"zh-CN":"将民族解放和自决与社会平等目标相结合的民族主义。",
+id:"Nasionalisme pembebasan dan penentuan nasib sendiri yang dipadukan dengan tujuan kesetaraan sosial.",
+ka:"განთავისუფლებისა და თვითგამორკვევის ნაციონალიზმი, რომელიც სოციალური თანასწორობის მიზნებს აერთიანებს.",
+es:"Nacionalismo de liberación y autodeterminación combinado con objetivos de igualdad social.",
+ja:"民族解放と自決を、社会的平等の目標と結び付けるナショナリズム。",
+ko:"민족 해방과 자결을 사회적 평등의 목표와 결합하는 민족주의."
+},
+"Movement for solidarity and political unity among Africans and the diaspora.":{
+ru:"Движение за солидарность и политическое единство африканцев и африканской диаспоры.",
+de:"Bewegung für Solidarität und politische Einheit zwischen Afrikanern und der afrikanischen Diaspora.",
+fr:"Mouvement en faveur de la solidarité et de l’unité politique entre les Africains et la diaspora africaine.",
+"zh-CN":"旨在促进非洲人及非洲侨民之间团结与政治统一的运动。",
+id:"Gerakan untuk solidaritas dan persatuan politik di antara masyarakat Afrika dan diaspora.",
+ka:"მოძრაობა აფრიკელებსა და დიასპორას შორის სოლიდარობისა და პოლიტიკური ერთიანობისთვის.",
+es:"Movimiento que busca la solidaridad y la unidad política entre los africanos y la diáspora africana.",
+ja:"アフリカの人々とディアスポラの連帯および政治的統一を目指す運動。",
+ko:"아프리카인과 디아스포라 사이의 연대와 정치적 통합을 위한 운동."
+},
+"Argues for planned reduction of production and consumption to stay within ecological limits while improving wellbeing.":{
+ru:"Выступает за плановое сокращение производства и потребления, чтобы оставаться в пределах экологических ограничений и одновременно повышать благополучие.",
+de:"Befürwortet eine geplante Verringerung von Produktion und Konsum, um ökologische Grenzen einzuhalten und zugleich das Wohlergehen zu verbessern.",
+fr:"Préconise une réduction planifiée de la production et de la consommation afin de respecter les limites écologiques tout en améliorant le bien-être.",
+"zh-CN":"主张有计划地减少生产和消费，在改善福祉的同时不超越生态承载极限。",
+id:"Mendukung pengurangan produksi dan konsumsi yang terencana agar tetap dalam batas ekologis sekaligus meningkatkan kesejahteraan.",
+ka:"მხარს უჭერს წარმოებისა და მოხმარების დაგეგმილ შემცირებას, რათა ეკოლოგიური ზღვარი არ დაირღვეს და კეთილდღეობა გაუმჯობესდეს.",
+es:"Defiende una reducción planificada de la producción y el consumo para respetar los límites ecológicos y mejorar el bienestar.",
+ja:"生態学的限界を守りながら幸福を向上させるため、生産と消費を計画的に縮小することを主張する。",
+ko:"생태적 한계를 지키면서 복지를 향상하기 위해 생산과 소비를 계획적으로 줄일 것을 주장한다."
+},
+"Aim of a classless, moneyless, stateless society based on common ownership of the means of production.":{
+ru:"Целью является бесклассовое, безденежное и безгосударственное общество, основанное на общей собственности на средства производства.",
+de:"Ziel ist eine klassenlose, geldlose und staatslose Gesellschaft auf Grundlage des Gemeineigentums an den Produktionsmitteln.",
+fr:"Vise une société sans classes, sans argent et sans État, fondée sur la propriété commune des moyens de production.",
+"zh-CN":"目标是建立一个无阶级、无货币、无国家的社会，其基础是生产资料公有制。",
+id:"Bertujuan membentuk masyarakat tanpa kelas, tanpa uang, dan tanpa negara berdasarkan kepemilikan bersama atas alat produksi.",
+ka:"მიზნად ისახავს უკლასო, უფულო და უსახელმწიფო საზოგადოებას, რომელიც წარმოების საშუალებების საერთო საკუთრებას ეფუძნება.",
+es:"Aspira a una sociedad sin clases, sin dinero y sin Estado, basada en la propiedad común de los medios de producción.",
+ja:"生産手段の共同所有に基づく、階級・貨幣・国家のない社会を目指す。",
+ko:"생산수단의 공동 소유에 기반한 계급·화폐·국가가 없는 사회를 목표로 한다."
+},
+"Karl Marx and Friedrich Engels' analysis of class struggle, historical materialism and capitalism's contradictions.":{
+ru:"Анализ Карла Маркса и Фридриха Энгельса, посвящённый классовой борьбе, историческому материализму и противоречиям капитализма.",
+de:"Karl Marx’ und Friedrich Engels’ Analyse des Klassenkampfs, des historischen Materialismus und der Widersprüche des Kapitalismus.",
+fr:"Analyse de Karl Marx et Friedrich Engels portant sur la lutte des classes, le matérialisme historique et les contradictions du capitalisme.",
+"zh-CN":"卡尔·马克思和弗里德里希·恩格斯对阶级斗争、历史唯物主义和资本主义矛盾的分析。",
+id:"Analisis Karl Marx dan Friedrich Engels tentang perjuangan kelas, materialisme historis, dan kontradiksi kapitalisme.",
+ka:"კარლ მარქსისა და ფრიდრიხ ენგელსის ანალიზი კლასობრივ ბრძოლაზე, ისტორიულ მატერიალიზმსა და კაპიტალიზმის წინააღმდეგობებზე.",
+es:"Análisis de Karl Marx y Friedrich Engels sobre la lucha de clases, el materialismo histórico y las contradicciones del capitalismo.",
+ja:"階級闘争、史的唯物論、資本主義の矛盾に関するカール・マルクスとフリードリヒ・エンゲルスの分析。",
+ko:"계급투쟁, 역사적 유물론, 자본주의의 모순에 관한 카를 마르크스와 프리드리히 엥겔스의 분석."
+},
+"Lenin's theory of a disciplined vanguard party leading proletarian revolution and a transitional state.":{
+ru:"Теория Ленина о дисциплинированной авангардной партии, ведущей пролетарскую революцию и создающей переходное государство.",
+de:"Lenins Theorie einer disziplinierten Avantgardepartei, die die proletarische Revolution und einen Übergangsstaat anführt.",
+fr:"Théorie de Lénine d’un parti d’avant-garde discipliné dirigeant la révolution prolétarienne et un État de transition.",
+"zh-CN":"列宁关于由纪律严明的先锋党领导无产阶级革命并建立过渡国家的理论。",
+id:"Teori Lenin tentang partai pelopor yang disiplin untuk memimpin revolusi proletar dan membentuk negara transisi.",
+ka:"ლენინის თეორია დისციპლინირებული ავანგარდული პარტიის შესახებ, რომელიც პროლეტარულ რევოლუციასა და გარდამავალ სახელმწიფოს ხელმძღვანელობს.",
+es:"Teoría de Lenin sobre un partido de vanguardia disciplinado que dirige la revolución proletaria y un Estado de transición.",
+ja:"規律ある前衛党がプロレタリア革命と過渡期国家を指導するというレーニンの理論。",
+ko:"규율 있는 전위당이 프롤레타리아 혁명과 과도기 국가를 이끈다는 레닌의 이론."
+},
+"Official ideology of 20th-century communist states: vanguard party, democratic centralism and central planning.":{
+ru:"Официальная идеология коммунистических государств XX века: авангардная партия, демократический централизм и централизованное планирование.",
+de:"Offizielle Ideologie kommunistischer Staaten des 20. Jahrhunderts: Avantgardepartei, demokratischer Zentralismus und zentrale Planung.",
+fr:"Idéologie officielle des États communistes du XXe siècle : parti d’avant-garde, centralisme démocratique et planification centrale.",
+"zh-CN":"20世纪共产主义国家的官方意识形态：先锋党、民主集中制和中央计划经济。",
+id:"Ideologi resmi negara-negara komunis abad ke-20: partai pelopor, sentralisme demokratis, dan perencanaan terpusat.",
+ka:"მე-20 საუკუნის კომუნისტური სახელმწიფოების ოფიციალური იდეოლოგია: ავანგარდული პარტია, დემოკრატიული ცენტრალიზმი და ცენტრალური დაგეგმვა.",
+es:"Ideología oficial de los Estados comunistas del siglo XX: partido de vanguardia, centralismo democrático y planificación central.",
+ja:"20世紀の共産主義国家の公式イデオロギーで、前衛党、民主集中制、中央計画経済を特徴とする。",
+ko:"20세기 공산주의 국가들의 공식 이념으로, 전위당, 민주집중제, 중앙계획경제를 특징으로 한다."
+},
+"Marxism–Leninism as practised under Stalin: socialism in one country, forced industrialisation and personalised party rule.":{
+ru:"Марксизм-ленинизм в сталинской практике: социализм в одной стране, принудительная индустриализация и персонализированное партийное правление.",
+de:"Marxismus-Leninismus in der Praxis Stalins: Sozialismus in einem Land, Zwangsindustrialisierung und personalisierte Parteiherrschaft.",
+fr:"Marxisme-léninisme tel qu’il fut pratiqué sous Staline : socialisme dans un seul pays, industrialisation forcée et pouvoir partisan personnalisé.",
+"zh-CN":"斯大林时期的马克思列宁主义实践：一国社会主义、强制工业化和个人化的党内统治。",
+id:"Marxisme-Leninisme sebagaimana dipraktikkan di bawah Stalin: sosialisme di satu negara, industrialisasi paksa, dan kekuasaan partai yang dipersonalisasi.",
+ka:"სტალინის პერიოდში პრაქტიკაში განხორციელებული მარქსიზმ-ლენინიზმი: სოციალიზმი ერთ ქვეყანაში, იძულებითი ინდუსტრიალიზაცია და პარტიის პერსონალიზებული მმართველობა.",
+es:"Marxismo-leninismo practicado bajo Stalin: socialismo en un solo país, industrialización forzosa y poder partidista personalizado.",
+ja:"スターリン体制下で実践されたマルクス＝レーニン主義。一国社会主義、強制工業化、個人に集中した党支配を特徴とする。",
+ko:"스탈린 치하에서 실천된 마르크스-레닌주의로, 일국사회주의, 강제 산업화, 개인화된 당 통치를 특징으로 한다."
+},
+"Marxist-Leninist tendency favouring international revolution and criticising bureaucratic degeneration in the USSR.":{
+ru:"Марксистско-ленинское течение, выступающее за международную революцию и критикующее бюрократическое перерождение СССР.",
+de:"Marxistisch-leninistische Strömung, die eine internationale Revolution befürwortet und die bürokratische Degeneration der UdSSR kritisiert.",
+fr:"Courant marxiste-léniniste favorable à la révolution internationale et critique de la dégénérescence bureaucratique de l’URSS.",
+"zh-CN":"支持国际革命并批评苏联官僚化蜕变的马克思列宁主义流派。",
+id:"Aliran Marxis-Leninis yang mendukung revolusi internasional dan mengkritik kemerosotan birokratis di Uni Soviet.",
+ka:"მარქსისტულ-ლენინური მიმდინარეობა, რომელიც საერთაშორისო რევოლუციას ემხრობა და სსრკ-ში ბიუროკრატიულ გადაგვარებას აკრიტიკებს.",
+es:"Corriente marxista-leninista favorable a la revolución internacional y crítica con la degeneración burocrática de la URSS.",
+ja:"国際革命を支持し、ソ連の官僚主義的退廃を批判するマルクス＝レーニン主義の潮流。",
+ko:"국제혁명을 지지하고 소련의 관료주의적 타락을 비판하는 마르크스-레닌주의 흐름."
+},
+"Marxism–Leninism adapted to China: peasant-based revolution, protracted people's war and continuous class struggle.":{
+ru:"Марксизм-ленинизм, адаптированный к Китаю: революция на основе крестьянства, затяжная народная война и непрерывная классовая борьба.",
+de:"An China angepasster Marxismus-Leninismus: bauernbasierte Revolution, langwieriger Volkskrieg und fortgesetzter Klassenkampf.",
+fr:"Marxisme-léninisme adapté à la Chine : révolution fondée sur la paysannerie, guerre populaire prolongée et lutte des classes continue.",
+"zh-CN":"适应中国国情的马克思列宁主义：以农民为基础的革命、持久人民战争和持续阶级斗争。",
+id:"Marxisme-Leninisme yang disesuaikan dengan Tiongkok: revolusi berbasis petani, perang rakyat berkepanjangan, dan perjuangan kelas berkelanjutan.",
+ka:"ჩინეთთან ადაპტირებული მარქსიზმ-ლენინიზმი: გლეხობაზე დაფუძნებული რევოლუცია, გაჭიანურებული სახალხო ომი და უწყვეტი კლასობრივი ბრძოლა.",
+es:"Marxismo-leninismo adaptado a China: revolución basada en el campesinado, guerra popular prolongada y lucha de clases continua.",
+ja:"中国に適応させたマルクス＝レーニン主義。農民を基盤とする革命、長期人民戦争、継続的な階級闘争を特徴とする。",
+ko:"중국에 맞게 변형된 마르크스-레닌주의로, 농민 기반 혁명, 장기 인민전쟁, 지속적인 계급투쟁을 특징으로 한다."
+},
+"Enver Hoxha's strictly Stalinist, anti-revisionist line rejecting Soviet reform and Maoism.":{
+ru:"Строго сталинистская и антиревизионистская линия Энвера Ходжи, отвергавшая советские реформы и маоизм.",
+de:"Enver Hoxhas streng stalinistische, antirevisionistische Linie, die sowjetische Reformen und den Maoismus ablehnte.",
+fr:"Ligne strictement stalinienne et antirévisionniste d’Enver Hoxha, rejetant les réformes soviétiques et le maoïsme.",
+"zh-CN":"恩维尔·霍查严格的斯大林主义、反修正主义路线，拒绝苏联改革和毛主义。",
+id:"Garis Enver Hoxha yang sangat Stalinis dan anti-revisionis, menolak reformasi Soviet dan Maoisme.",
+ka:"ენვერ ხოჯას მკაცრად სტალინური, ანტირევიზიონისტული ხაზი, რომელიც საბჭოთა რეფორმებსა და მაოიზმს უარყოფდა.",
+es:"Línea estrictamente estalinista y antirrevisionista de Enver Hoxha, que rechazaba las reformas soviéticas y el maoísmo.",
+ja:"ソ連の改革と毛沢東主義を拒否した、エンヴェル・ホッジャの厳格なスターリン主義・反修正主義路線。",
+ko:"소련의 개혁과 마오주의를 거부한 엔베르 호자의 엄격한 스탈린주의·반수정주의 노선."
+},
+"North Korean state ideology of self-reliance combining Marxist-Leninist forms with hereditary leadership and nationalism.":{
+ru:"Государственная идеология Северной Кореи, основанная на самостоятельности и сочетающая марксистско-ленинские формы с наследственным руководством и национализмом.",
+de:"Nordkoreanische Staatsideologie der Selbstständigkeit, die marxistisch-leninistische Formen mit erblicher Führung und Nationalismus verbindet.",
+fr:"Idéologie d’État nord-coréenne de l’autosuffisance, associant des formes marxistes-léninistes à une direction héréditaire et au nationalisme.",
+"zh-CN":"朝鲜的国家自主意识形态，将马克思列宁主义形式与世袭领导和民族主义结合起来。",
+id:"Ideologi negara Korea Utara tentang kemandirian yang menggabungkan bentuk Marxis-Leninis dengan kepemimpinan turun-temurun dan nasionalisme.",
+ka:"ჩრდილოეთ კორეის თვითკმარობის სახელმწიფო იდეოლოგია, რომელიც მარქსისტულ-ლენინურ ფორმებს მემკვიდრეობით ლიდერობასა და ნაციონალიზმს აერთიანებს.",
+es:"Ideología estatal norcoreana de autosuficiencia que combina formas marxistas-leninistas con liderazgo hereditario y nacionalismo.",
+ja:"マルクス＝レーニン主義的な形式に世襲的指導体制とナショナリズムを組み合わせた北朝鮮の自力更生の国家イデオロギー。",
+ko:"마르크스-레닌주의 형식에 세습 지도체제와 민족주의를 결합한 북한의 자력갱생 국가 이념."
+},
+"Revolutionary Marxism stressing mass spontaneity, democracy within socialism and opposition to bureaucratic vanguardism.":{
+ru:"Революционный марксизм, подчёркивающий массовую инициативу, демократию внутри социализма и противодействие бюрократическому авангардизму.",
+de:"Revolutionärer Marxismus, der die Spontaneität der Massen, Demokratie innerhalb des Sozialismus und Widerstand gegen bürokratischen Avantgardismus betont.",
+fr:"Marxisme révolutionnaire qui met l’accent sur la spontanéité des masses, la démocratie au sein du socialisme et l’opposition à l’avant-gardisme bureaucratique.",
+"zh-CN":"强调群众自发性、社会主义内部民主以及反对官僚先锋主义的革命马克思主义。",
+id:"Marxisme revolusioner yang menekankan spontanitas massa, demokrasi dalam sosialisme, dan penentangan terhadap vanguardisme birokratis.",
+ka:"რევოლუციური მარქსიზმი, რომელიც ხაზს უსვამს მასების სპონტანურობას, სოციალიზმის შიდა დემოკრატიასა და ბიუროკრატიული ავანგარდიზმის წინააღმდეგობას.",
+es:"Marxismo revolucionario que destaca la espontaneidad de las masas, la democracia dentro del socialismo y la oposición al vanguardismo burocrático.",
+ja:"大衆の自発性、社会主義内部の民主主義、官僚的前衛主義への反対を重視する革命的マルクス主義。",
+ko:"대중의 자발성, 사회주의 내부의 민주주의, 관료적 전위주의 반대를 강조하는 혁명적 마르크스주의."
+},
+});
+
 export default rows;
