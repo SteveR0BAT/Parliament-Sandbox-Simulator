@@ -4,7 +4,7 @@
 //  - an Independent is a Deputy with partyId === null
 
 export type LegacyCategoryId = "far-right" | "right" | "center-right" | "center" | "center-left" | "left" | "far-left" | "third-way" | "unclassified";
-export type IdeologyFamilyId = "liberal-libertarian" | "conservative-traditionalist" | "social-democratic-reformist" | "socialist-communist" | "anarchist-anti-authoritarian" | "nationalist-sovereigntist" | "religious-communitarian" | "civic-ecological-crosscutting" | "unclassified";
+export type IdeologyFamilyId = "liberal-libertarian" | "conservative-traditionalist" | "social-democratic-reformist" | "socialist-communist" | "authoritarian-state-communist" | "anarchist-anti-authoritarian" | "nationalist-sovereigntist" | "fascist-ultranationalist" | "religious-communitarian" | "civic-ecological-crosscutting" | "unclassified";
 export type AxisValue = -3 | -2 | -1 | 0 | 1 | 2 | 3;
 export interface IdeologyPositions { economic: AxisValue | null; social: AxisValue | null; authority: AxisValue | null; }
 
