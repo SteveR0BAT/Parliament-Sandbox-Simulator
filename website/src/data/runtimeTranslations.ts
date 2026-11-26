@@ -369,4 +369,106 @@ ru:"Статусы правительства",de:"Regierungsfunktionen",fr:"Fon
 ru:"Независимые депутаты",de:"Unabhängige Abgeordnete",fr:"Députés indépendants","zh-CN":"独立议员",id:"Anggota independen",ka:"დამოუკიდებელი დეპუტატები",es:"Diputados independientes",ja:"無所属議員",ko:"무소속 의원"},
 });
 
+
+Object.assign(rows, {
+// Party editor, project manager, backups and deputy inspector.
+"Party name":{
+ru:"Название партии",de:"Parteienname",fr:"Nom du parti","zh-CN":"政党名称",id:"Nama partai",ka:"პარტიის სახელი",es:"Nombre del partido",ja:"政党名",ko:"정당 이름"},
+"Party leader":{
+ru:"Лидер партии",de:"Parteivorsitz",fr:"Chef du parti","zh-CN":"政党领袖",id:"Pemimpin partai",ka:"პარტიის ლიდერი",es:"Líder del partido",ja:"党首",ko:"정당 대표"},
+"Government designation":{
+ru:"Статус в правительстве",de:"Regierungsstatus",fr:"Statut au gouvernement","zh-CN":"政府定位",id:"Status pemerintahan",ka:"მთავრობის სტატუსი",es:"Designación gubernamental",ja:"政府での立場",ko:"정부 지위"},
+"Logo / symbol":{
+ru:"Логотип / символ",de:"Logo / Symbol",fr:"Logo / symbole","zh-CN":"标志/符号",id:"Logo / simbol",ka:"ლოგო / სიმბოლო",es:"Logotipo / símbolo",ja:"ロゴ／シンボル",ko:"로고 / 상징"},
+"Additional metadata":{
+ru:"Дополнительные сведения",de:"Zusätzliche Metadaten",fr:"Métadonnées supplémentaires","zh-CN":"附加元数据",id:"Metadata tambahan",ka:"დამატებითი მეტამონაცემები",es:"Metadatos adicionales",ja:"追加メタデータ",ko:"추가 메타데이터"},
+"Give the party a name.":{
+ru:"Укажите название партии.",de:"Geben Sie der Partei einen Namen.",fr:"Donnez un nom au parti.","zh-CN":"请为政党命名。",id:"Beri nama untuk partai.",ka:"მიანიჭეთ პარტიას სახელი.",es:"Asigne un nombre al partido.",ja:"政党名を入力してください。",ko:"정당 이름을 입력하세요."},
+"Seat allocation":{
+ru:"Распределение мест",de:"Sitzverteilung",fr:"Répartition des sièges","zh-CN":"席位分配",id:"Alokasi kursi",ka:"ადგილების განაწილება",es:"Asignación de escaños",ja:"議席配分",ko:"의석 배분"},
+"Seats distributed evenly.":{
+ru:"Места распределены поровну.",de:"Die Sitze wurden gleichmäßig verteilt.",fr:"Les sièges sont répartis équitablement.","zh-CN":"席位已平均分配。",id:"Kursi dibagikan secara merata.",ka:"ადგილები თანაბრად განაწილდა.",es:"Los escaños se han distribuido equitativamente.",ja:"議席は均等に配分されました。",ko:"의석이 균등하게 배분되었습니다."},
+"New party":{
+ru:"Новая партия",de:"Neue Partei",fr:"Nouveau parti","zh-CN":"新政党",id:"Partai baru",ka:"ახალი პარტია",es:"Nuevo partido",ja:"新しい政党",ko:"새 정당"},
+"No parties yet.":{
+ru:"Пока нет партий.",de:"Noch keine Parteien vorhanden.",fr:"Aucun parti pour le moment.","zh-CN":"目前还没有政党。",id:"Belum ada partai.",ka:"პარტიები ჯერ არ არის.",es:"Todavía no hay partidos.",ja:"政党はまだありません。",ko:"아직 정당이 없습니다."},
+"Highlight this party in the chamber":{
+ru:"Выделить эту партию в зале заседаний",de:"Diese Partei im Plenarsaal hervorheben",fr:"Mettre ce parti en évidence dans l’hémicycle","zh-CN":"在议事厅中突出显示该政党",id:"Sorot partai ini di ruang sidang",ka:"ამ პარტიის გამოკვეთა დარბაზში",es:"Resaltar este partido en la cámara",ja:"議場でこの政党を強調表示",ko:"의사당에서 이 정당 강조 표시"},
+"Faction name":{
+ru:"Название фракции",de:"Fraktionsname",fr:"Nom de la faction","zh-CN":"派系名称",id:"Nama faksi",ka:"ფრაქციის სახელი",es:"Nombre de la facción",ja:"派閥名",ko:"파벌 이름"},
+"Faction colour":{
+ru:"Цвет фракции",de:"Fraktionsfarbe",fr:"Couleur de la faction","zh-CN":"派系颜色",id:"Warna faksi",ka:"ფრაქციის ფერი",es:"Color de la facción",ja:"派閥カラー",ko:"파벌 색상"},
+"Faction leader":{
+ru:"Лидер фракции",de:"Fraktionsvorsitz",fr:"Chef de faction","zh-CN":"派系领袖",id:"Pemimpin faksi",ka:"ფრაქციის ლიდერი",es:"Líder de la facción",ja:"派閥リーダー",ko:"파벌 지도자"},
+"New faction":{
+ru:"Новая фракция",de:"Neue Fraktion",fr:"Nouvelle faction","zh-CN":"新派系",id:"Faksi baru",ka:"ახალი ფრაქცია",es:"Nueva facción",ja:"新しい派閥",ko:"새 파벌"},
+"No factions yet.":{
+ru:"Пока нет фракций.",de:"Noch keine Fraktionen vorhanden.",fr:"Aucune faction pour le moment.","zh-CN":"目前还没有派系。",id:"Belum ada faksi.",ka:"ფრაქციები ჯერ არ არის.",es:"Todavía no hay facciones.",ja:"派閥はまだありません。",ko:"아직 파벌이 없습니다."},
+"Coalition name":{
+ru:"Название коалиции",de:"Koalitionsname",fr:"Nom de la coalition","zh-CN":"联盟名称",id:"Nama koalisi",ka:"კოალიციის სახელი",es:"Nombre de la coalición",ja:"連合名",ko:"연합 이름"},
+"Coalition leader":{
+ru:"Лидер коалиции",de:"Koalitionsvorsitz",fr:"Chef de la coalition","zh-CN":"联盟领袖",id:"Pemimpin koalisi",ka:"კოალიციის ლიდერი",es:"Líder de la coalición",ja:"連合代表",ko:"연합 지도자"},
+"New coalition":{
+ru:"Новая коалиция",de:"Neue Koalition",fr:"Nouvelle coalition","zh-CN":"新联盟",id:"Koalisi baru",ka:"ახალი კოალიცია",es:"Nueva coalición",ja:"新しい連合",ko:"새 연합"},
+"No coalitions yet.":{
+ru:"Пока нет коалиций.",de:"Noch keine Koalitionen vorhanden.",fr:"Aucune coalition pour le moment.","zh-CN":"目前还没有联盟。",id:"Belum ada koalisi.",ka:"კოალიციები ჯერ არ არის.",es:"Todavía no hay coaliciones.",ja:"連合はまだありません。",ko:"아직 연합이 없습니다."},
+"Deputy name":{
+ru:"Имя депутата",de:"Name des Abgeordneten",fr:"Nom du député","zh-CN":"议员姓名",id:"Nama anggota parlemen",ka:"დეპუტატის სახელი",es:"Nombre del diputado",ja:"議員名",ko:"의원 이름"},
+"Political affiliation":{
+ru:"Политическая принадлежность",de:"Politische Zugehörigkeit",fr:"Affiliation politique","zh-CN":"政治归属",id:"Afiliasi politik",ka:"პოლიტიკური კუთვნილება",es:"Afiliación política",ja:"政治的所属",ko:"정치적 소속"},
+"Reassigning a seat switches the deputy to manual seating.":{
+ru:"Переназначение места переводит депутата на ручную рассадку.",de:"Eine Neuzuweisung des Sitzes aktiviert die manuelle Sitzordnung.",fr:"La réaffectation d’un siège active le placement manuel des députés.","zh-CN":"重新分配席位会切换为手动排座。",id:"Mengubah penempatan kursi akan mengaktifkan pengaturan kursi manual.",ka:"ადგილის ხელახლა მინიჭება დეპუტატს ხელით განლაგებაზე გადაიყვანს.",es:"Reasignar un escaño cambia la disposición a modo manual.",ja:"議席を再割り当てすると、手動座席配置に切り替わります。",ko:"좌석을 재배정하면 수동 좌석 배치로 전환됩니다."},
+"— Vacant seat —":{
+ru:"— Свободное место —",de:"— Freier Sitz —",fr:"— Siège vacant —","zh-CN":"— 空席 —",id:"— Kursi kosong —",ka:"— თავისუფალი ადგილი —",es:"— Escaño vacante —",ja:"— 空席 —",ko:"— 빈 좌석 —"},
+"Independent":{
+ru:"Независимый депутат",de:"Unabhängig",fr:"Indépendant","zh-CN":"独立议员",id:"Independen",ka:"დამოუკიდებელი",es:"Independiente",ja:"無所属",ko:"무소속"},
+"No faction":{
+ru:"Без фракции",de:"Keine Fraktion",fr:"Aucune faction","zh-CN":"无派系",id:"Tanpa faksi",ka:"ფრაქციის გარეშე",es:"Sin facción",ja:"派閥なし",ko:"파벌 없음"},
+"Individual ideology":{
+ru:"Индивидуальная идеология",de:"Individuelle Ideologie",fr:"Idéologie individuelle","zh-CN":"个人意识形态",id:"Ideologi individu",ka:"ინდივიდუალური იდეოლოგია",es:"Ideología individual",ja:"個人のイデオロギー",ko:"개인 이념"},
+"Overrides faction and party ideology in ideology-based voting (default priority).":{
+ru:"В голосовании по идеологии имеет приоритет над идеологиями фракции и партии (по умолчанию).",
+de:"Hat bei ideologiebasierter Abstimmung Vorrang vor der Ideologie von Fraktion und Partei (Standardpriorität).",
+fr:"Prévaut sur l’idéologie de la faction et du parti lors d’un vote fondé sur l’idéologie (priorité par défaut).",
+"zh-CN":"在基于意识形态的投票中优先于派系和政党的意识形态（默认优先级）。",
+id:"Mengungguli ideologi faksi dan partai dalam pemungutan suara berbasis ideologi (prioritas bawaan).",
+ka:"იდეოლოგიაზე დაფუძნებული კენჭისყრისას უპირატესობა ენიჭება ფრაქციისა და პარტიის იდეოლოგიასთან შედარებით (ნაგულისხმევი პრიორიტეტი).",
+es:"Tiene prioridad sobre la ideología de la facción y del partido en las votaciones basadas en ideología (prioridad predeterminada).",
+ja:"イデオロギーに基づく投票では、派閥や政党のイデオロギーより優先されます（既定の優先順位）。",
+ko:"이념 기반 투표에서 파벌 및 정당 이념보다 우선합니다(기본 우선순위)."},
+"Inherit from faction / party":{
+ru:"Наследовать от фракции / партии",de:"Von Fraktion / Partei übernehmen",fr:"Hériter de la faction / du parti","zh-CN":"继承派系/政党设置",id:"Ikuti faksi / partai",ka:"ფრაქციიდან / პარტიიდან მემკვიდრეობით მიღება",es:"Heredar de la facción / el partido",ja:"派閥／政党から継承",ko:"파벌 / 정당에서 상속"},
+"Effective ideology:":{
+ru:"Применяемая идеология:",de:"Wirksame Ideologie:",fr:"Idéologie effective :","zh-CN":"当前生效的意识形态：",id:"Ideologi yang berlaku:",ka:"მოქმედი იდეოლოგია:",es:"Ideología efectiva:",ja:"有効なイデオロギー:",ko:"적용되는 이념:"},
+"Swap with seat #":{
+ru:"Поменять местами с местом №",de:"Mit Sitz Nr. tauschen",fr:"Échanger avec le siège n°","zh-CN":"与席位编号互换",id:"Tukar dengan kursi nomor",ka:"გაცვლა ადგილის ნომერთან",es:"Intercambiar con el escaño n.º",ja:"座席番号と入れ替える",ko:"좌석 번호와 교환"},
+"Why:":{
+ru:"Причина:",de:"Begründung:",fr:"Pourquoi :","zh-CN":"原因：",id:"Alasan:",ka:"მიზეზი:",es:"Motivo:",ja:"理由:",ko:"이유:"},
+"Up to three recent recovery versions are retained for each project.":{
+ru:"Для каждого проекта сохраняются до трёх последних резервных версий.",
+de:"Für jedes Projekt werden bis zu drei aktuelle Wiederherstellungsversionen aufbewahrt.",
+fr:"Jusqu’à trois versions de récupération récentes sont conservées pour chaque projet.",
+"zh-CN":"每个项目最多保留三个最近的恢复版本。",
+id:"Hingga tiga versi pemulihan terbaru disimpan untuk setiap proyek.",
+ka:"თითოეული პროექტისთვის ინახება აღდგენის მაქსიმუმ სამი უახლესი ვერსია.",
+es:"Se conservan hasta tres versiones de recuperación recientes por proyecto.",
+ja:"各プロジェクトにつき、直近3件までの復元バージョンを保持します。",
+ko:"각 프로젝트마다 최근 복구 버전을 최대 3개까지 보관합니다."
+},
+"No recovery snapshots are available.":{
+ru:"Резервные версии восстановления отсутствуют.",de:"Keine Wiederherstellungsversionen verfügbar.",fr:"Aucun instantané de récupération disponible.","zh-CN":"没有可用的恢复快照。",id:"Tidak ada snapshot pemulihan yang tersedia.",ka:"აღდგენის ასლები ხელმისაწვდომი არ არის.",es:"No hay instantáneas de recuperación disponibles.",ja:"利用可能な復元スナップショットはありません。",ko:"사용 가능한 복구 스냅샷이 없습니다."},
+"Recovery snapshots":{
+ru:"Резервные копии восстановления",de:"Wiederherstellungsversionen",fr:"Versions de récupération","zh-CN":"恢复快照",id:"Snapshot pemulihan",ka:"აღდგენის ასლები",es:"Instantáneas de recuperación",ja:"復元スナップショット",ko:"복구 스냅샷"},
+"Backups":{
+ru:"Резервные копии",de:"Sicherungen",fr:"Sauvegardes","zh-CN":"备份",id:"Cadangan",ka:"სარეზერვო ასლები",es:"Copias de seguridad",ja:"バックアップ",ko:"백업"},
+"Restore":{
+ru:"Восстановить",de:"Wiederherstellen",fr:"Restaurer","zh-CN":"恢复",id:"Pulihkan",ka:"აღდგენა",es:"Restaurar",ja:"復元",ko:"복원"},
+"Create backup":{
+ru:"Создать резервную копию",de:"Sicherung erstellen",fr:"Créer une sauvegarde","zh-CN":"创建备份",id:"Buat cadangan",ka:"სარეზერვო ასლის შექმნა",es:"Crear copia de seguridad",ja:"バックアップを作成",ko:"백업 만들기"},
+"Auto-saved in this browser. Status:":{
+ru:"Автоматически сохранено в этом браузере. Статус:",de:"In diesem Browser automatisch gespeichert. Status:",fr:"Enregistré automatiquement dans ce navigateur. État :","zh-CN":"已在此浏览器中自动保存。状态：",id:"Disimpan otomatis di browser ini. Status:",ka:"ავტომატურად შენახულია ამ ბრაუზერში. სტატუსი:",es:"Guardado automáticamente en este navegador. Estado:",ja:"このブラウザーに自動保存しました。状態:",ko:"이 브라우저에 자동 저장됨. 상태:"},
+"Why:":{
+ru:"Причина:",de:"Begründung:",fr:"Pourquoi :","zh-CN":"原因：",id:"Alasan:",ka:"მიზეზი:",es:"Motivo:",ja:"理由:",ko:"이유:"}
+});
+
 export default rows;
