@@ -1578,4 +1578,207 @@ ko:"온라인 시민적 자유, 저작권·특허 개혁, 개인정보 보호, �
 },
 });
 
+
+Object.assign(rows, {
+// Profiles 120–129 and the two earlier omitted nationalist entries.
+"Hindu nationalist ideology defining Indian identity through Hindu culture and heritage.":{
+ru:"Индийская националистическая идеология, определяющая индийскую идентичность через индуистскую культуру и наследие.",
+de:"Hindu-nationalistische Ideologie, die die indische Identität durch hinduistische Kultur und Tradition definiert.",
+fr:"Idéologie nationaliste hindoue qui définit l’identité indienne à travers la culture et l’héritage hindous.",
+"zh-CN":"以印度教文化和传统来界定印度身份的印度教民族主义意识形态。",
+id:"Ideologi nasionalis Hindu yang mendefinisikan identitas India melalui budaya dan warisan Hindu.",
+ka:"ინდუისტური ნაციონალისტური იდეოლოგია, რომელიც ინდურ იდენტობას ინდუისტური კულტურისა და მემკვიდრეობის მეშვეობით განსაზღვრავს.",
+es:"Ideología nacionalista hindú que define la identidad india a través de la cultura y el patrimonio hindúes.",
+ja:"ヒンドゥー文化と遺産を通じてインドのアイデンティティを定義するヒンドゥー・ナショナリズムの思想。",
+ko:"힌두 문화와 유산을 통해 인도 정체성을 규정하는 힌두 민족주의 이념."
+},
+"Policy stance favouring the interests of established inhabitants over immigrants; a core far-right element per Cas Mudde.":{
+ru:"Политическая позиция, отдающая предпочтение интересам давно проживающего населения перед интересами иммигрантов; по Касу Мудде, это один из ключевых элементов крайне правых.",
+de:"Politische Haltung, die die Interessen der ansässigen Bevölkerung über die von Einwanderern stellt; nach Cas Mudde ein Kernelement der extremen Rechten.",
+fr:"Position politique qui privilégie les intérêts des habitants établis par rapport à ceux des immigrés ; selon Cas Mudde, il s’agit d’un élément central de l’extrême droite.",
+"zh-CN":"优先考虑既有居民而非移民利益的政治立场；卡斯·穆德认为这是极右翼的核心要素之一。",
+id:"Sikap politik yang mengutamakan kepentingan penduduk lama dibanding imigran; menurut Cas Mudde, ini merupakan unsur inti sayap kanan ekstrem.",
+ka:"პოლიტიკური პოზიცია, რომელიც დამკვიდრებული მცხოვრებლების ინტერესებს იმიგრანტების ინტერესებზე მაღლა აყენებს; კას მუდეს მიხედვით, ეს ულტრამემარჯვენეობის ძირითადი ელემენტია.",
+es:"Posición política que prioriza los intereses de los residentes establecidos frente a los inmigrantes; según Cas Mudde, es un elemento central de la extrema derecha.",
+ja:"移民よりも既存住民の利益を優先する政治的立場。カス・ムッデによれば極右の中核的要素の一つである。",
+ko:"이민자보다 기존 거주자의 이익을 우선하는 정치적 입장으로, 카스 무더에 따르면 극우의 핵심 요소이다."
+},
+"Policy stance favouring the interests of established inhabitants over immigrants; a core far-right element per Cas Mudde.":{
+ru:"Политическая позиция, отдающая предпочтение интересам давно проживающего населения перед интересами иммигрантов; по Касу Мудде, это один из ключевых элементов крайне правых.",
+de:"Politische Haltung, die die Interessen der ansässigen Bevölkerung über die von Einwanderern stellt; nach Cas Mudde ein Kernelement der extremen Rechten.",
+fr:"Position politique qui privilégie les intérêts des habitants établis par rapport à ceux des immigrés ; selon Cas Mudde, il s’agit d’un élément central de l’extrême droite.",
+"zh-CN":"优先考虑既有居民而非移民利益的政治立场；卡斯·穆德认为这是极右翼的核心要素之一。",
+id:"Sikap politik yang mengutamakan kepentingan penduduk lama dibanding imigran; menurut Cas Mudde, ini merupakan unsur inti sayap kanan ekstrem.",
+ka:"პოლიტიკური პოზიცია, რომელიც დამკვიდრებული მცხოვრებლების ინტერესებს იმიგრანტების ინტერესებზე მაღლა აყენებს; კას მუდეს მიხედვით, ეს ულტრამემარჯვენეობის ძირითადი ელემენტია.",
+es:"Posición política que prioriza los intereses de los residentes establecidos frente a los inmigrantes; según Cas Mudde, es un elemento central de la extrema derecha.",
+ja:"移民よりも既存住民の利益を優先する政治的立場。カス・ムッデによれば極右の中核的要素の一つである。",
+ko:"이민자보다 기존 거주자의 이익을 우선하는 정치적 입장으로, 카스 무더에 따르면 극우의 핵심 요소이다."
+},
+"Critique of civilisation and technology; advocates return to non-industrial, foraging life.":{
+ru:"Критика цивилизации и технологий, выступающая за возвращение к доиндустриальному образу жизни, основанному на собирательстве и охоте.",
+de:"Kritik an Zivilisation und Technologie, die eine Rückkehr zu einer nichtindustriellen Lebensweise mit Jagen und Sammeln befürwortet.",
+fr:"Critique de la civilisation et de la technologie qui préconise un retour à un mode de vie non industriel fondé sur la chasse et la cueillette.",
+"zh-CN":"对文明和技术的批判，主张回归非工业化的狩猎采集生活方式。",
+id:"Kritik terhadap peradaban dan teknologi; menganjurkan kembali ke kehidupan non-industri berburu dan meramu.",
+ka:"ცივილიზაციისა და ტექნოლოგიის კრიტიკა, რომელიც არაინდუსტრიულ, ნადირობასა და შეგროვებაზე დაფუძნებულ ცხოვრებასთან დაბრუნებას ემხრობა.",
+es:"Crítica de la civilización y la tecnología que propone volver a una vida no industrial basada en la caza y la recolección.",
+ja:"文明と技術を批判し、非産業的な狩猟採集生活への回帰を主張する。",
+ko:"문명과 기술을 비판하며 비산업적 수렵채집 생활로 돌아갈 것을 주장한다."
+},
+"Anarchist currents emphasising individual sovereignty, voluntary exchange and rejection of authority.":{
+ru:"Анархистские течения, подчёркивающие индивидуальный суверенитет, добровольный обмен и отрицание власти.",
+de:"Anarchistische Strömungen, die individuelle Selbstbestimmung, freiwilligen Austausch und die Ablehnung von Herrschaft betonen.",
+fr:"Courants anarchistes qui mettent l’accent sur la souveraineté individuelle, l’échange volontaire et le rejet de l’autorité.",
+"zh-CN":"强调个人自主、自由交换和拒绝权威的无政府主义流派。",
+id:"Aliran anarkis yang menekankan kedaulatan individu, pertukaran sukarela, dan penolakan terhadap otoritas.",
+ka:"ანარქისტული მიმდინარეობები, რომლებიც ხაზს უსვამენ ინდივიდუალურ სუვერენიტეტს, ნებაყოფლობით გაცვლასა და ძალაუფლების უარყოფას.",
+es:"Corrientes anarquistas que destacan la soberanía individual, el intercambio voluntario y el rechazo de la autoridad.",
+ja:"個人の主権、自発的な交換、権威の拒否を重視するアナキズムの潮流。",
+ko:"개인의 주권, 자발적 교환, 권위 거부를 강조하는 아나키즘 흐름."
+},
+"Political advocacy for using technology to enhance human capacities and extend life.":{
+ru:"Политическое движение, выступающее за использование технологий для расширения человеческих возможностей и продления жизни.",
+de:"Politische Strömung, die den Einsatz von Technologie zur Erweiterung menschlicher Fähigkeiten und zur Verlängerung des Lebens befürwortet.",
+fr:"Courant politique qui défend l’utilisation des technologies pour accroître les capacités humaines et prolonger la vie.",
+"zh-CN":"主张利用技术增强人类能力并延长寿命的政治运动。",
+id:"Advokasi politik yang mendukung penggunaan teknologi untuk meningkatkan kemampuan manusia dan memperpanjang usia.",
+ka:"პოლიტიკური მიმართულება, რომელიც ტექნოლოგიების გამოყენებით ადამიანური შესაძლებლობების გაფართოებასა და სიცოცხლის გახანგრძლივებას უჭერს მხარს.",
+es:"Corriente política que defiende el uso de la tecnología para mejorar las capacidades humanas y prolongar la vida.",
+ja:"技術を用いて人間の能力を高め、寿命を延ばすことを主張する政治運動。",
+ko:"기술을 활용해 인간의 능력을 향상하고 수명을 연장하는 것을 지지하는 정치적 운동."
+},
+"Economic doctrine by C. H. Douglas proposing dividends and price adjustments to distribute purchasing power.":{
+ru:"Экономическое учение К. Х. Дугласа, предлагающее дивиденды и корректировку цен для распределения покупательной способности.",
+de:"Wirtschaftslehre von C. H. Douglas, die Dividenden und Preisanpassungen zur Verteilung der Kaufkraft vorschlägt.",
+fr:"Doctrine économique de C. H. Douglas proposant des dividendes et des ajustements de prix pour répartir le pouvoir d’achat.",
+"zh-CN":"C. H. 道格拉斯提出的经济学说，主张通过分红和价格调整来分配购买力。",
+id:"Doktrin ekonomi C. H. Douglas yang mengusulkan dividen dan penyesuaian harga untuk mendistribusikan daya beli.",
+ka:"ს. ჰ. დუგლასის ეკონომიკური დოქტრინა, რომელიც მსყიდველობითი უნარის გასანაწილებლად დივიდენდებსა და ფასების კორექტირებას გვთავაზობს.",
+es:"Doctrina económica de C. H. Douglas que propone dividendos y ajustes de precios para distribuir el poder adquisitivo.",
+ja:"購買力を分配するために配当と価格調整を提案する、C・H・ダグラスの経済学説。",
+ko:"구매력을 분배하기 위해 배당과 가격 조정을 제안한 C. H. 더글러스의 경제 교리."
+},
+"Pan-Arab secular nationalist movement mixing Arab unity, socialism and one-party rule.":{
+ru:"Панарабское светское националистическое движение, сочетающее арабское единство, социализм и однопартийное правление.",
+de:"Panarabische säkulare nationalistische Bewegung, die arabische Einheit, Sozialismus und Einparteienherrschaft verbindet.",
+fr:"Mouvement nationaliste laïque panarabe associant unité arabe, socialisme et régime à parti unique.",
+"zh-CN":"将阿拉伯团结、社会主义和一党统治结合起来的泛阿拉伯世俗民族主义运动。",
+id:"Gerakan nasionalis sekuler Pan-Arab yang memadukan persatuan Arab, sosialisme, dan pemerintahan satu partai.",
+ka:"პანარაბული სეკულარული ნაციონალისტური მოძრაობა, რომელიც აერთიანებს არაბულ ერთობას, სოციალიზმსა და ერთპარტიულ მმართველობას.",
+es:"Movimiento nacionalista laico panárabe que combina unidad árabe, socialismo y gobierno de partido único.",
+ja:"アラブ統一、社会主義、一党支配を組み合わせた汎アラブ世俗ナショナリズム運動。",
+ko:"아랍 통합, 사회주의, 일당 통치를 결합한 범아랍 세속 민족주의 운동."
+},
+"Argentine movement of Juan Perón: national sovereignty, social justice and labour-state alliance.":{
+ru:"Аргентинское движение Хуана Перона, сочетающее национальный суверенитет, социальную справедливость и союз труда с государством.",
+de:"Argentinische Bewegung Juan Peróns, die nationale Souveränität, soziale Gerechtigkeit und ein Bündnis zwischen Arbeiterschaft und Staat verbindet.",
+fr:"Mouvement argentin de Juan Perón associant souveraineté nationale, justice sociale et alliance entre le mouvement ouvrier et l’État.",
+"zh-CN":"胡安·庇隆在阿根廷创立的运动，结合国家主权、社会正义以及劳工与国家的联盟。",
+id:"Gerakan Juan Perón di Argentina yang memadukan kedaulatan nasional, keadilan sosial, dan aliansi buruh-negara.",
+ka:"ხუან პერონის არგენტინული მოძრაობა, რომელიც აერთიანებს ეროვნულ სუვერენიტეტს, სოციალურ სამართლიანობასა და შრომასა და სახელმწიფოს კავშირს.",
+es:"Movimiento argentino de Juan Perón que combina soberanía nacional, justicia social y alianza entre el trabajo y el Estado.",
+ja:"国家主権、社会正義、労働者と国家の同盟を組み合わせたフアン・ペロンのアルゼンチンの運動。",
+ko:"국가 주권, 사회정의, 노동과 국가의 동맹을 결합한 후안 페론의 아르헨티나 정치운동."
+},
+"Founding ideology of Turkey: republicanism, secularism, nationalism, populism, statism and reformism.":{
+ru:"Основополагающая идеология Турецкой Республики: республиканизм, секуляризм, национализм, популизм, этатизм и реформизм.",
+de:"Gründungsideologie der Türkei: Republikanismus, Säkularismus, Nationalismus, Populismus, Etatismus und Reformismus.",
+fr:"Idéologie fondatrice de la Turquie : républicanisme, laïcité, nationalisme, populisme, étatisme et réformisme.",
+"zh-CN":"土耳其的建国意识形态：共和主义、世俗主义、民族主义、民粹主义、国家主义和改革主义。",
+id:"Ideologi pendirian Turki: republikanisme, sekularisme, nasionalisme, populisme, statisme, dan reformisme.",
+ka:"თურქეთის დამფუძნებელი იდეოლოგია: რესპუბლიკანიზმი, სეკულარიზმი, ნაციონალიზმი, პოპულიზმი, ეტატიზმი და რეფორმიზმი.",
+es:"Ideología fundacional de Turquía: republicanismo, secularismo, nacionalismo, populismo, estatismo y reformismo.",
+ja:"トルコの建国理念。共和主義、世俗主義、ナショナリズム、ポピュリズム、国家主義、改革主義から成る。",
+ko:"터키의 건국 이념으로 공화주의, 세속주의, 민족주의, 포퓰리즘, 국가주의, 개혁주의를 포함한다."
+},
+"Thin-centred ideology dividing society into 'the pure people' versus 'the corrupt elite' (Mudde); attaches to left, right or centre.":{
+ru:"Идеология с тонким ядром, разделяющая общество на «чистый народ» и «коррумпированную элиту» (Мудде); может сочетаться с левыми, правыми или центристскими взглядами.",
+de:"Dünne Ideologie, die die Gesellschaft in „das reine Volk“ und „die korrupte Elite“ teilt (Mudde); sie kann sich mit linken, rechten oder zentristischen Positionen verbinden.",
+fr:"Idéologie à noyau mince qui divise la société entre « le peuple pur » et « l’élite corrompue » (Mudde) ; elle peut s’associer à la gauche, à la droite ou au centre.",
+"zh-CN":"一种薄中心意识形态，将社会划分为“纯洁人民”和“腐败精英”（穆德）；可与左翼、右翼或中间派立场结合。",
+id:"Ideologi berinti tipis yang membagi masyarakat menjadi 'rakyat murni' dan 'elite korup' (Mudde); dapat melekat pada posisi kiri, kanan, atau tengah.",
+ka:"„თხელი ბირთვის“ იდეოლოგია, რომელიც საზოგადოებას „სუფთა ხალხად“ და „კორუმპირებულ ელიტად“ ყოფს (მუდე); შეიძლება მემარცხენე, მემარჯვენე ან ცენტრისტულ პოზიციებს შეერწყას.",
+es:"Ideología de núcleo delgado que divide la sociedad entre «el pueblo puro» y «la élite corrupta» (Mudde); puede asociarse a la izquierda, la derecha o el centro.",
+ja:"社会を「純粋な人民」と「腐敗したエリート」に分ける薄い中核を持つ思想（ムッデ）。左派、右派、中道のいずれとも結び付き得る。",
+ko:"사회를 ‘순수한 국민’과 ‘부패한 엘리트’로 나누는 얇은 핵심 이념(무더)으로, 좌파·우파·중도 어느 쪽과도 결합할 수 있다."
+},
+"Positions that deliberately mix elements from across the left–right spectrum.":{
+ru:"Позиции, намеренно сочетающие элементы из разных частей шкалы «левые — правые».",
+de:"Positionen, die bewusst Elemente aus verschiedenen Bereichen des Links-rechts-Spektrums verbinden.",
+fr:"Positions qui mélangent délibérément des éléments provenant de différents points du spectre gauche-droite.",
+"zh-CN":"有意混合左右政治光谱不同部分元素的政治立场。",
+id:"Posisi yang secara sengaja mencampurkan unsur dari berbagai bagian spektrum kiri-kanan.",
+ka:"პოზიციები, რომლებიც განზრახ აერთიანებს მემარცხენე-მემარჯვენე სპექტრის სხვადასხვა ნაწილის ელემენტებს.",
+es:"Posiciones que mezclan deliberadamente elementos de distintas partes del espectro izquierda-derecha.",
+ja:"左右の政治スペクトルのさまざまな要素を意図的に組み合わせる立場。",
+ko:"좌우 정치 스펙트럼의 여러 요소를 의도적으로 혼합하는 입장."
+},
+"Deepens democracy through participation, deliberation and citizens' assemblies beyond electoral representation.":{
+ru:"Углубляет демократию посредством участия, обсуждения и гражданских собраний, выходя за рамки избирательного представительства.",
+de:"Vertieft Demokratie durch Beteiligung, Beratung und Bürgerversammlungen über die reine Wahlrepräsentation hinaus.",
+fr:"Approfondit la démocratie par la participation, la délibération et les assemblées citoyennes au-delà de la représentation électorale.",
+"zh-CN":"通过参与、审议和公民大会深化民主，超越单纯的选举代表制。",
+id:"Memperdalam demokrasi melalui partisipasi, deliberasi, dan majelis warga di luar perwakilan elektoral.",
+ka:"არჩევნითი წარმომადგენლობის ფარგლებს სცდება და დემოკრატიას მონაწილეობით, განხილვითა და მოქალაქეთა ასამბლეებით აღრმავებს.",
+es:"Profundiza la democracia mediante la participación, la deliberación y las asambleas ciudadanas más allá de la representación electoral.",
+ja:"選挙による代表制を超え、参加、熟議、市民会議を通じて民主主義を深化させる。",
+ko:"선거 대표제를 넘어 참여, 숙의, 시민의회를 통해 민주주의를 심화한다."
+},
+"Anarcho-primitivism is anti-state but defies left–right axes; sometimes classed far-left.":{
+ru:"Анархо-примитивизм выступает против государства, но не укладывается в шкалу «левые — правые»; иногда его относят к крайне левым.",
+de:"Der Anarcho-Primitivismus ist staatsfeindlich, entzieht sich aber der Links-rechts-Achse und wird mitunter ganz links eingeordnet.",
+fr:"L’anarcho-primitivisme est anti-étatique mais échappe à l’axe gauche-droite ; il est parfois classé à l’extrême gauche.",
+"zh-CN":"无政府原始主义反对国家，但难以用左右光谱界定；有时被归为极左翼。",
+id:"Anarko-primitivisme menentang negara, tetapi tidak mudah ditempatkan pada sumbu kiri-kanan; kadang digolongkan sebagai kiri ekstrem.",
+ka:"ანარქო-პრიმიტივიზმი სახელმწიფოს ეწინააღმდეგება, თუმცა მემარცხენე-მემარჯვენე ღერძში არ თავსდება; ზოგჯერ ულტრამემარცხენედ კლასიფიცირდება.",
+es:"El anarco-primitivismo es ant estatal, pero no encaja en el eje izquierda-derecha; a veces se clasifica como extrema izquierda.",
+ja:"アナルコ・プリミティヴィズムは反国家的だが左右軸に当てはめにくく、極左に分類されることもある。",
+ko:"아나코 원시주의는 반국가적이지만 좌우 축에 맞지 않으며, 때로는 극좌로 분류되기도 한다."
+},
+"Includes both left-leaning (Tucker, Stirner) and market-oriented strands.":{
+ru:"Включает как левые течения (Таккер, Штирнер), так и направления, ориентированные на рынок.",
+de:"Umfasst sowohl linksgerichtete Strömungen (Tucker, Stirner) als auch marktorientierte Varianten.",
+fr:"Comprend des courants de gauche (Tucker, Stirner) comme des courants orientés vers le marché.",
+"zh-CN":"既包括偏左的流派（塔克、施蒂纳），也包括面向市场的流派。",
+id:"Mencakup aliran berhaluan kiri (Tucker, Stirner) maupun aliran yang berorientasi pasar.",
+ka:"მოიცავს როგორც მემარცხენე მიმართულებებს (ტაკერი, შტირნერი), ისე საბაზრო ორიენტაციის მიმდინარეობებს.",
+es:"Incluye corrientes de izquierda (Tucker, Stirner) y otras orientadas al mercado.",
+ja:"左派寄りの潮流（タッカー、シュティルナー）と市場志向の潮流の両方を含む。",
+ko:"좌파 성향의 흐름(터커, 슈티르너)과 시장 지향적 흐름을 모두 포함한다."
+},
+"Officially socialist but widely described as ultranationalist; its far-left label is disputed.":{
+ru:"Официально считается социалистической, но широко характеризуется как ультранационалистическая; её отнесение к крайне левым оспаривается.",
+de:"Offiziell sozialistisch, wird aber weithin als ultranationalistisch beschrieben; ihre Einordnung als ganz links ist umstritten.",
+fr:"Officiellement socialiste, mais largement décrite comme ultranationaliste ; son classement à l’extrême gauche est contesté.",
+"zh-CN":"官方自称社会主义，但广泛被描述为极端民族主义；将其归为极左翼存在争议。",
+id:"Secara resmi sosialis, tetapi secara luas digambarkan sebagai ultranasionalis; label kiri ekstremnya diperdebatkan.",
+ka:"ოფიციალურად სოციალისტურია, თუმცა ფართოდ ულტრანაციონალისტურად აღიწერება; მისი ულტრამემარცხენედ კლასიფიკაცია სადავოა.",
+es:"Oficialmente socialista, pero ampliamente descrita como ultranacionalista; su etiqueta de extrema izquierda es discutida.",
+ja:"公式には社会主義を掲げるが、広く超国家主義的と評され、極左という分類には議論がある。",
+ko:"공식적으로는 사회주의를 표방하지만 널리 초국가주의로 묘사되며 극좌라는 분류는 논쟁적이다."
+},
+"Peronism hosts left and right wings; it self-defines as a 'third position'.":{
+ru:"В перонизме существуют как левые, так и правые течения; само движение определяет себя как «третью позицию».",
+de:"Der Peronismus umfasst linke und rechte Flügel; er selbst bezeichnet sich als „dritte Position“.",
+fr:"Le péronisme comprend des courants de gauche et de droite ; il se définit lui-même comme une « troisième position ».",
+"zh-CN":"庇隆主义内部既有左翼也有右翼派别；其自我定位为“第三种立场”。",
+id:"Peronisme memiliki sayap kiri dan kanan; gerakan ini mendefinisikan dirinya sebagai 'posisi ketiga'.",
+ka:"პერონიზმში მემარცხენე და მემარჯვენე ფრთებიც არსებობს; თავად მოძრაობა თავს „მესამე პოზიციად“ განსაზღვრავს.",
+es:"El peronismo alberga alas de izquierda y de derecha; se autodefine como una «tercera posición».",
+ja:"ペロニズムには左派と右派の双方が存在し、自らを「第三の立場」と位置付ける。",
+ko:"페론주의에는 좌파와 우파가 모두 존재하며, 스스로를 ‘제3의 입장’으로 규정한다."
+},
+"Scholars treat populism as a thin ideology that attaches to others, not a left–right position.":{
+ru:"Исследователи рассматривают популизм как идеологию с тонким ядром, которая присоединяется к другим идеологиям, а не занимает самостоятельное место на шкале «левые — правые».",
+de:"Wissenschaftler betrachten Populismus als eine Ideologie mit dünnem Kern, die sich mit anderen Ideologien verbindet, statt eine eigene Links-rechts-Position einzunehmen.",
+fr:"Les chercheurs considèrent le populisme comme une idéologie à noyau mince qui se rattache à d’autres idéologies plutôt que comme une position sur l’axe gauche-droite.",
+"zh-CN":"学者将民粹主义视为一种薄中心意识形态，它依附于其他意识形态，而非占据独立的左右位置。",
+id:"Para sarjana memandang populisme sebagai ideologi berinti tipis yang melekat pada ideologi lain, bukan sebagai posisi kiri-kanan tersendiri.",
+ka:"მკვლევრები პოპულიზმს „თხელი ბირთვის“ იდეოლოგიად მიიჩნევენ, რომელიც სხვა იდეოლოგიებს ერწყმის და არა დამოუკიდებელ მემარცხენე-მემარჯვენე პოზიციას იკავებს.",
+es:"Los académicos consideran el populismo una ideología de núcleo delgado que se adhiere a otras, no una posición propia en el eje izquierda-derecha.",
+ja:"研究者はポピュリズムを、独自の左右位置を持つ思想ではなく、他の思想に付随する薄い中核のイデオロギーとみなす。",
+ko:"학자들은 포퓰리즘을 독자적인 좌우 입장이 아니라 다른 이념에 결합하는 얇은 핵심 이념으로 본다."
+}
+});
+
 export default rows;
