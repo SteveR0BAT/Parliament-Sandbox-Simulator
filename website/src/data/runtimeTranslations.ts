@@ -910,3 +910,21 @@ Object.assign(rows, {
 "Could not load the project list.": translateAllLocales("Не удалось загрузить список проектов.","Die Projektliste konnte nicht geladen werden.","Impossible de charger la liste des projets.","无法加载项目列表。","Tidak dapat memuat daftar proyek.","პროექტების სიის ჩატვირთვა ვერ მოხერხდა.","No se pudo cargar la lista de proyectos.","プロジェクト一覧を読み込めませんでした。","프로젝트 목록을 불러올 수 없습니다."),
 "Operation failed.": translateAllLocales("Операция не выполнена.","Der Vorgang ist fehlgeschlagen.","L’opération a échoué.","操作失败。","Operasi gagal.","ოპერაცია ვერ შესრულდა.","La operación ha fallado.","操作に失敗しました。","작업에 실패했습니다。")
 });
+
+
+Object.assign(rows, {
+// Short components used in dynamic vote explanations and computed labels.
+"Vote:": translateAllLocales("Голос:","Stimme:","Vote :","投票：","Suara:","ხმა:","Voto:","投票:","투표:"),
+"no rule configured": translateAllLocales("правило не задано","keine Regel festgelegt","aucune règle configurée","未配置规则","tidak ada aturan yang ditetapkan","წესი მითითებული არ არის","no se ha configurado ninguna regla","ルール未設定","규칙이 설정되지 않음"),
+"individual decision": translateAllLocales("индивидуальное решение","individuelle Entscheidung","décision individuelle","个人决定","keputusan individu","ინდივიდუალური გადაწყვეტილება","decisión individual","個別の決定","개별 결정"),
+"random draw": translateAllLocales("случайный выбор","Zufallsentscheidung","tirage aléatoire","随机抽取","hasil acak","შემთხვევითი არჩევანი","sorteo aleatorio","ランダム抽選","무작위 추첨"),
+"fixed": translateAllLocales("фиксированное решение","festgelegt","fixé","固定决定","tetap","ფიქსირებული","fijo","固定","고정"),
+"via": translateAllLocales("через","über","via","通过","melalui","მეშვეობით","mediante","経由","경유"),
+"adherence": translateAllLocales("следование","Bindung","adhésion","遵循度","kepatuhan","ერთგულება","adhesión","準拠度","준수도"),
+"P for": translateAllLocales("вероятность «за»","Wahrscheinlichkeit für Dafür","probabilité de vote pour","赞成概率","probabilitas Setuju","მომხრე ხმის ალბათობა","probabilidad de votar a favor","賛成確率","찬성 확률"),
+"follows": translateAllLocales("следует","folgt","suit","遵循","mengikuti","მიჰყვება","sigue","従う","따름"),
+"breaks from": translateAllLocales("отступает от","weicht ab von","s’écarte de","偏离","menyimpang dari","გადაუხვევს","se aparta de","離反する","이탈함"),
+"line": translateAllLocales("линию","Linie","ligne","立场","garis","ხაზი","línea","方針","노선"),
+"discipline": translateAllLocales("дисциплина","Disziplin","discipline","纪律","disiplin","დისციპლინა","disciplina","規律","규율"),
+"Normalised:": translateAllLocales("Нормализовано:","Normalisiert:","Normalisé :","归一化后：","Dinormalisasi:","ნორმალიზებული:","Normalizado:","正規化後:","정규화됨:")
+});
