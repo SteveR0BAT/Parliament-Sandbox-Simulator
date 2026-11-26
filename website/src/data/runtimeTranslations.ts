@@ -1006,3 +1006,14 @@ Object.assign(rows, {
 "Saved.": translateAllLocales("Сохранено.","Gespeichert.","Enregistré.","已保存。","Tersimpan.","შენახულია.","Guardado.","保存しました。","저장되었습니다."),
 "Save failed.": translateAllLocales("Не удалось сохранить.","Speichern fehlgeschlagen.","Échec de l’enregistrement.","保存失败。","Gagal menyimpan.","შენახვა ვერ მოხერხდა.","No se pudo guardar.","保存に失敗しました。","저장에 실패했습니다."),
 });
+
+
+Object.assign(rows, {
+// Dynamic deletion prompts retain the user-supplied names and counts.
+"Delete coalition ": translateAllLocales("Удалить коалицию ","Koalition löschen ","Supprimer la coalition ","删除联盟","Hapus koalisi ","წავშალოთ კოალიცია ","Eliminar la coalición ","連合を削除 ","연합 삭제 "),
+"? Its member parties are kept.": translateAllLocales("? Входящие в неё партии сохранятся.","? Die Mitgliedsparteien bleiben erhalten."," ? Ses partis membres seront conservés.","？其成员政党将保留。","? Partai anggotanya akan tetap ada.","? მისი წევრი პარტიები შენარჩუნდება.","? Sus partidos miembros se conservarán.","? 構成政党は保持されます。","? 소속 정당은 유지됩니다."),
+"Delete faction ": translateAllLocales("Удалить фракцию ","Fraktion löschen ","Supprimer la faction ","删除派系","Hapus faksi ","წავშალოთ ფრაქცია ","Eliminar la facción ","派閥を削除 ","파벌 삭제 "),
+"? Its deputies stay in the party.": translateAllLocales("? Её депутаты останутся в партии.","? Die Abgeordneten bleiben in der Partei."," ? Ses députés resteront dans le parti.","？其议员仍保留在该政党中。","? Anggotanya tetap berada di partai.","? მისი დეპუტატები პარტიაში დარჩებიან.","? Sus diputados permanecerán en el partido.","? 所属議員は政党に残ります。","? 해당 의원은 정당에 남습니다."),
+"? It is used by ": translateAllLocales("? Она используется в ","? Sie wird verwendet von ","? Elle est utilisée par ","？它正被以下项目使用：","? Digunakan oleh ","? მას იყენებს ","? Se utiliza en ","? 使用先：","? 사용 중인 항목: "),
+" party/faction/deputy entries, which will become unassigned.": translateAllLocales(" записях партий, фракций и депутатов; после удаления связи будут сброшены."," Partei-, Fraktions- und Abgeordneteneinträgen; diese Zuordnungen werden danach aufgehoben."," entrées de partis, de factions et de députés, qui ne seront alors plus classées.","个政党/派系/议员条目；删除后这些条目将变为未分配状态。"," entri partai/faksi/anggota parlemen; setelah dihapus, afiliasinya akan dikosongkan."," პარტიის/ფრაქციის/დეპუტატის ჩანაწერი; წაშლის შემდეგ მათი კავშირი გაუქმდება."," entradas de partidos, facciones y diputados, que quedarán sin asignar.","件の政党・派閥・議員データで使用されています。削除すると所属が解除されます。","개의 정당/파벌/의원 항목에서 사용 중이며, 삭제하면 소속이 해제됩니다.")
+});
