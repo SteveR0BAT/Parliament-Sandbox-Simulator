@@ -580,3 +580,70 @@ ru:"Нет подходящих депутатов.",de:"Keine passenden Abgeord
 });
 
 export default rows;
+
+
+const translateAllLocales = (
+  ru: string, de: string, fr: string, zh: string, id: string, ka: string, es: string, ja: string, ko: string
+): Record<string, string> => ({ ru, de, fr, "zh-CN": zh, id, ka, es, ja, ko });
+
+Object.assign(rows, {
+// Navigation, chamber legend, project, party, faction and deputy screens.
+"Coalitions": translateAllLocales("Коалиции","Koalitionen","Coalitions","联盟","Koalisi","კოალიციები","Coaliciones","連合","연합"),
+"Factions": translateAllLocales("Фракции","Fraktionen","Factions","派系","Faksi","ფრაქციები","Facciones","派閥","파벌"),
+"Ideologies": translateAllLocales("Идеологии","Ideologien","Idéologies","意识形态","Ideologi","იდეოლოგიები","Ideologías","イデオロギー","이념"),
+"Statistics": translateAllLocales("Статистика","Statistiken","Statistiques","统计","Statistik","სტატისტიკა","Estadísticas","統計","통계"),
+"Settings": translateAllLocales("Настройки","Einstellungen","Paramètres","设置","Pengaturan","პარამეტრები","Configuración","設定","설정"),
+"Loading parliament…": translateAllLocales("Загрузка парламента…","Parlament wird geladen…","Chargement du parlement…","正在加载议会…","Memuat parlemen…","პარლამენტი იტვირთება…","Cargando el parlamento…","議会を読み込み中…","의회 불러오는 중…"),
+"Parliament overview": translateAllLocales("Обзор парламента","Parlamentsübersicht","Vue d’ensemble du parlement","议会概览","Ikhtisar parlemen","პარლამენტის მიმოხილვა","Resumen del parlamento","議会の概要","의회 개요"),
+"Political parties": translateAllLocales("Политические партии","Politische Parteien","Partis politiques","政党","Partai politik","პოლიტიკური პარტიები","Partidos políticos","政党","정당"),
+"Internal factions": translateAllLocales("Внутренние фракции","Interne Fraktionen","Factions internes","内部派系","Faksi internal","შიდა ფრაქციები","Facciones internas","内部派閥","내부 파벌"),
+"Collapse panel": translateAllLocales("Свернуть панель","Panel einklappen","Réduire le panneau","折叠面板","Ciutkan panel","პანელის ჩაკეცვა","Contraer el panel","パネルを折りたたむ","패널 접기"),
+"Expand panel": translateAllLocales("Развернуть панель","Panel ausklappen","Développer le panneau","展开面板","Perluas panel","პანელის გაშლა","Expandir el panel","パネルを展開する","패널 펼치기"),
+"Sections": translateAllLocales("Разделы","Bereiche","Sections","分区","Bagian","სექციები","Secciones","セクション","섹션"),
+"Layer": translateAllLocales("Слой","Ebene","Calque","图层","Lapisan","ფენა","Capa","レイヤー","레이어"),
+"Standard": translateAllLocales("Стандартный","Standard","Standard","标准","Standar","სტანდარტული","Estándar","標準","표준"),
+"Coalition colours": translateAllLocales("Цвета коалиций","Koalitionsfarben","Couleurs des coalitions","联盟颜色","Warna koalisi","კოალიციის ფერები","Colores de las coaliciones","連合の色","연합 색상"),
+"Detailed": translateAllLocales("Подробно","Detailliert","Détaillé","详细","Terperinci","დეტალურად","Detallado","詳細","상세"),
+"Parliament seating chart": translateAllLocales("Схема рассадки парламента","Sitzplan des Parlaments","Plan des sièges du parlement","议会席位图","Bagan susunan kursi parlemen","პარლამენტის ადგილების სქემა","Plano de escaños del parlamento","議会の座席図","의회 좌석 배치도"),
+"Votes:": translateAllLocales("Голоса:","Stimmen:","Voix :","票数：","Suara:","ხმები:","Votos:","票数:","표:"),
+"Click to focus": translateAllLocales("Нажмите, чтобы выделить","Klicken, um hervorzuheben","Cliquez pour mettre en évidence","点击以聚焦","Klik untuk menyorot","დააწკაპუნეთ გამოსაკვეთად","Haga clic para resaltar","クリックして強調表示","클릭하여 강조 표시"),
+"Fill = coalition colour (small dot = party) · parties outside coalitions keep their own colour.": translateAllLocales("Заливка = цвет коалиции (маленькая точка = партия) · партии вне коалиций сохраняют собственный цвет.","Füllung = Koalitionsfarbe (kleiner Punkt = Partei) · Parteien außerhalb von Koalitionen behalten ihre eigene Farbe.","Remplissage = couleur de la coalition (petit point = parti) · les partis hors coalition gardent leur propre couleur.","填充色 = 联盟颜色（小圆点 = 政党）；不属于联盟的政党保留自身颜色。","Isian = warna koalisi (titik kecil = partai) · partai di luar koalisi mempertahankan warnanya sendiri.","შევსება = კოალიციის ფერი (პატარა წერტილი = პარტია) · კოალიციის გარეთ მყოფი პარტიები საკუთარ ფერს ინარჩუნებენ.","Relleno = color de la coalición (punto pequeño = partido) · los partidos fuera de coaliciones conservan su propio color.","塗りつぶし＝連合カラー（小さな点＝政党）・連合に属さない政党は独自の色を維持します。","채우기 = 연합 색상(작은 점 = 정당) · 연합에 속하지 않은 정당은 자체 색상을 유지합니다。"),
+"Fill = faction · inner ring = party · outer ring = coalition.": translateAllLocales("Заливка = фракция · внутреннее кольцо = партия · внешнее кольцо = коалиция.","Füllung = Fraktion · innerer Ring = Partei · äußerer Ring = Koalition.","Remplissage = faction · anneau intérieur = parti · anneau extérieur = coalition.","填充色 = 派系 · 内环 = 政党 · 外环 = 联盟。","Isian = faksi · cincin dalam = partai · cincin luar = koalisi.","შევსება = ფრაქცია · შიდა რგოლი = პარტია · გარე რგოლი = კოალიცია.","Relleno = facción · anillo interior = partido · anillo exterior = coalición.","塗りつぶし＝派閥・内側のリング＝政党・外側のリング＝連合。","채우기 = 파벌 · 안쪽 링 = 정당 · 바깥쪽 링 = 연합。"),
+"Coalition created — add member parties below.": translateAllLocales("Коалиция создана — добавьте партии-участницы ниже.","Koalition erstellt – fügen Sie unten die Mitgliedsparteien hinzu.","Coalition créée — ajoutez les partis membres ci-dessous.","联盟已创建——请在下方添加成员政党。","Koalisi dibuat — tambahkan partai anggota di bawah.","კოალიცია შეიქმნა — ქვემოთ დაამატეთ წევრი პარტიები.","Coalición creada: añada los partidos miembros a continuación.","連合を作成しました。下に構成政党を追加してください。","연합이 생성되었습니다. 아래에서 회원 정당을 추가하세요."),
+"Member parties": translateAllLocales("Партии-участницы","Mitgliedsparteien","Partis membres","成员政党","Partai anggota","წევრი პარტიები","Partidos miembros","構成政党","회원 정당"),
+"Coalition leader (optional)": translateAllLocales("Лидер коалиции (необязательно)","Koalitionsvorsitz (optional)","Chef de coalition (facultatif)","联盟领袖（可选）","Pemimpin koalisi (opsional)","კოალიციის ლიდერი (არასავალდებულო)","Líder de la coalición (opcional)","連合代表（任意）","연합 대표(선택 사항)"),
+"Create a party first — factions live inside parties.": translateAllLocales("Сначала создайте партию — фракции существуют внутри партий.","Erstellen Sie zuerst eine Partei – Fraktionen gehören zu Parteien.","Créez d’abord un parti : les factions font partie des partis.","请先创建政党——派系隶属于政党。","Buat partai terlebih dahulu — faksi berada di dalam partai.","ჯერ შექმენით პარტია — ფრაქციები პარტიების შიგნით იქმნება.","Primero cree un partido: las facciones forman parte de los partidos.","先に政党を作成してください。派閥は政党の内部に属します。","먼저 정당을 만드세요. 파벌은 정당 내부에 속합니다."),
+"Parent party": translateAllLocales("Родительская партия","Übergeordnete Partei","Parti parent","所属政党","Partai induk","ძირითადი პარტია","Partido matriz","所属政党","상위 정당"),
+"Deputies": translateAllLocales("Депутаты","Abgeordnete","Députés","议员","Anggota parlemen","დეპუტატები","Diputados","議員","의원"),
+"Give the faction a name.": translateAllLocales("Укажите название фракции.","Geben Sie der Fraktion einen Namen.","Donnez un nom à la faction.","请为派系命名。","Beri nama untuk faksi.","მიანიჭეთ ფრაქციას სახელი.","Asigne un nombre a la facción.","派閥名を入力してください。","파벌 이름을 입력하세요."),
+"Faction created.": translateAllLocales("Фракция создана.","Fraktion erstellt.","Faction créée.","派系已创建。","Faksi berhasil dibuat.","ფრაქცია შეიქმნა.","Facción creada.","派閥を作成しました。","파벌이 생성되었습니다."),
+"no leader": translateAllLocales("нет лидера","keine Führung","sans dirigeant","无领袖","tanpa pemimpin","ლიდერის გარეშე","sin líder","リーダーなし","지도자 없음"),
+"Parliament Sandbox": translateAllLocales("Parliament Sandbox","Parliament Sandbox","Parliament Sandbox","Parliament Sandbox","Parliament Sandbox","Parliament Sandbox","Parliament Sandbox","Parliament Sandbox","Parliament Sandbox"),
+"Parliament Sandbox Simulator": translateAllLocales("Симулятор парламента","Parlamentssimulator","Simulateur parlementaire","议会模拟器","Simulator Parlemen","პარლამენტის სიმულატორი","Simulador parlamentario","議会シミュレーター","의회 시뮬레이터"),
+"Build Parties, Factions & Voting Systems": translateAllLocales("Создавайте партии, фракции и системы голосования","Parteien, Fraktionen und Abstimmungssysteme gestalten","Créez des partis, des factions et des systèmes de vote","创建政党、派系与投票制度","Bangun partai, faksi, dan sistem pemungutan suara","შექმენით პარტიები, ფრაქციები და კენჭისყრის სისტემები","Cree partidos, facciones y sistemas de votación","政党・派閥・投票制度を構築","정당·파벌·투표 시스템 만들기"),
+"Close": translateAllLocales("Закрыть","Schließen","Fermer","关闭","Tutup","დახურვა","Cerrar","閉じる","닫기"),
+"Total seats": translateAllLocales("Всего мест","Sitze insgesamt","Total des sièges","席位总数","Jumlah kursi","ადგილების საერთო რაოდენობა","Escaños totales","総議席数","전체 의석 수"),
+"Allocated": translateAllLocales("Распределено","Zugewiesen","Attribués","已分配","Dialokasikan","განაწილებული","Asignados","配分済み","배정됨"),
+"Unallocated": translateAllLocales("Не распределено","Nicht zugewiesen","Non attribués","未分配","Belum dialokasikan","გაუნაწილებელი","Sin asignar","未配分","미배정"),
+"Independents": translateAllLocales("Независимые депутаты","Unabhängige","Indépendants","独立议员","Independen","დამოუკიდებლები","Independientes","無所属議員","무소속 의원"),
+"Majority line": translateAllLocales("Линия большинства","Mehrheitslinie","Seuil de majorité","多数线","Garis mayoritas","უმრავლესობის ხაზი","Línea de mayoría","過半数ライン","과반선"),
+"more than half of seats": translateAllLocales("более половины мест","mehr als die Hälfte der Sitze","plus de la moitié des sièges","超过半数席位","lebih dari setengah kursi","ადგილების ნახევარზე მეტი","más de la mitad de los escaños","議席の過半数超","의석 과반 초과"),
+"Majority status": translateAllLocales("Статус большинства","Mehrheitsstatus","Statut de la majorité","多数状态","Status mayoritas","უმრავლესობის სტატუსი","Situación de la mayoría","多数派の状況","과반 상태"),
+"Government": translateAllLocales("Правительство","Regierung","Gouvernement","政府","Pemerintah","მთავრობა","Gobierno","政府","정부"),
+"Support": translateAllLocales("Поддержка","Unterstützung","Soutien","支持","Dukungan","მხარდაჭერა","Apoyo","支持","지지"),
+"Neutral": translateAllLocales("Нейтральные","Neutral","Neutres","中立","Netral","ნეიტრალური","Neutrales","中立","중립"),
+"Opposition": translateAllLocales("Оппозиция","Opposition","Opposition","反对派","Oposisi","ოპოზიცია","Oposición","野党","야당"),
+"Composition": translateAllLocales("Состав","Zusammensetzung","Composition","构成","Komposisi","შემადგენლობა","Composición","構成","구성"),
+"If shrinking below allocated seats": translateAllLocales("При уменьшении числа мест ниже уже распределенного количества","Wenn die Sitzzahl unter die bereits zugewiesenen Sitze sinkt","Si le nombre de sièges devient inférieur au nombre déjà attribué","当席位总数低于已分配席位时","Jika jumlah kursi dikurangi hingga di bawah kursi yang telah dialokasikan","თუ ადგილების რაოდენობა უკვე განაწილებულ ადგილებზე ნაკლები გახდება","Si se reduce el número de escaños por debajo de los ya asignados","議席数が配分済みの議席数を下回る場合","의석 수가 이미 배정된 의석보다 적어질 경우"),
+"Parliament projects": translateAllLocales("Проекты парламента","Parlamentsprojekte","Projets parlementaires","议会项目","Proyek parlemen","პარლამენტის პროექტები","Proyectos parlamentarios","議会プロジェクト","의회 프로젝트"),
+"No saved projects.": translateAllLocales("Нет сохранённых проектов.","Keine gespeicherten Projekte.","Aucun projet enregistré.","没有已保存的项目。","Tidak ada proyek tersimpan.","შენახული პროექტები არ არის.","No hay proyectos guardados.","保存されたプロジェクトはありません。","저장된 프로젝트가 없습니다."),
+"New parliament": translateAllLocales("Новый парламент","Neues Parlament","Nouveau parlement","新建议会","Parlemen baru","ახალი პარლამენტი","Nuevo parlamento","新しい議会","새 의회"),
+"Seats (blank project)": translateAllLocales("Количество мест (пустой проект)","Sitze (leeres Projekt)","Sièges (projet vierge)","席位数（空白项目）","Jumlah kursi (proyek kosong)","ადგილები (ცარიელი პროექტი)","Escaños (proyecto vacío)","議席数（空のプロジェクト）","의석 수(빈 프로젝트)"),
+"Current project": translateAllLocales("Текущий проект","Aktuelles Projekt","Projet actuel","当前项目","Proyek saat ini","მიმდინარე პროექტი","Proyecto actual","現在のプロジェクト","현재 프로젝트"),
+"Import": translateAllLocales("Импортировать","Importieren","Importer","导入","Impor","იმპორტი","Importar","インポート","가져오기"),
+"Faction": translateAllLocales("Фракция","Fraktion","Faction","派系","Faksi","ფრაქცია","Facción","派閥","파벌"),
+"Voting behaviour": translateAllLocales("Поведение при голосовании","Abstimmungsverhalten","Comportement électoral","投票行为","Perilaku pemungutan suara","კენჭისყრის ქცევა","Comportamiento de voto","投票行動","투표 행동"),
+"Affiliation / notes": translateAllLocales("Принадлежность / примечания","Zugehörigkeit / Hinweise","Affiliation / notes","党派归属/备注","Afiliasi / catatan","კუთვნილება / შენიშვნები","Afiliación / notas","所属／メモ","소속 / 메모"),
+"e.g. Local list, ex-PDU": translateAllLocales("например, местный список, бывшая ПДЕ","z. B. lokale Liste, ehemals PDU","ex. : liste locale, ancien PDU","例如：地方名单、前人民民主联盟成员","mis. daftar lokal, mantan PDU","მაგ., ადგილობრივი სია, ყოფილი პდკ","p. ej., lista local, exmiembro del PDU","例：地域名簿、元PDU所属","예: 지역 명단, 전 PDU"),
+"Click to focus": translateAllLocales("Нажмите, чтобы выделить","Klicken, um hervorzuheben","Cliquez pour mettre en évidence","点击以聚焦","Klik untuk menyorot","დააწკაპუნეთ გამოსაკვეთად","Haga clic para resaltar","クリックして強調表示","클릭하여 강조 표시")
+});
