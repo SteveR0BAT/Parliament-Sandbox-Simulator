@@ -876,4 +876,185 @@ ko:"농업 정당은 중도부터 중도우파까지 다양하며, 역사적으�
 }
 });
 
+
+Object.assign(rows, {
+// Profiles 60–74: reformist, social-liberal and democratic-socialist traditions.
+"Pursues social justice within a capitalist democracy through a welfare state, unions and regulation.":{
+ru:"Стремится к социальной справедливости в рамках капиталистической демократии посредством государства всеобщего благосостояния, профсоюзов и регулирования.",
+de:"Strebt soziale Gerechtigkeit innerhalb einer kapitalistischen Demokratie durch Wohlfahrtsstaat, Gewerkschaften und Regulierung an.",
+fr:"Recherche la justice sociale dans le cadre d’une démocratie capitaliste au moyen de l’État-providence, des syndicats et de la régulation.",
+"zh-CN":"通过福利国家、工会和监管，在资本主义民主制度内追求社会正义。",
+id:"Mengupayakan keadilan sosial dalam demokrasi kapitalis melalui negara kesejahteraan, serikat pekerja, dan regulasi.",
+ka:"კაპიტალისტური დემოკრატიის ფარგლებში სოციალური სამართლიანობის მიღწევას ესწრაფვის კეთილდღეობის სახელმწიფოს, პროფკავშირებისა და რეგულირების მეშვეობით.",
+es:"Persigue la justicia social dentro de una democracia capitalista mediante el Estado del bienestar, los sindicatos y la regulación.",
+ja:"福祉国家、労働組合、規制を通じて、資本主義民主制の枠内で社会正義を追求する。",
+ko:"복지국가, 노동조합, 규제를 통해 자본주의 민주주의 안에서 사회정의를 추구한다."
+},
+"Liberalism supporting state action to expand real freedom through education, health and social protection.":{
+ru:"Либерализм, поддерживающий действия государства по расширению реальной свободы посредством образования, здравоохранения и социальной защиты.",
+de:"Liberalismus, der staatliches Handeln unterstützt, um tatsächliche Freiheit durch Bildung, Gesundheit und sozialen Schutz zu erweitern.",
+fr:"Libéralisme qui soutient l’action de l’État pour élargir les libertés réelles grâce à l’éducation, à la santé et à la protection sociale.",
+"zh-CN":"支持国家通过教育、医疗和社会保障扩大实质自由的自由主义。",
+id:"Liberalisme yang mendukung tindakan negara untuk memperluas kebebasan nyata melalui pendidikan, kesehatan, dan perlindungan sosial.",
+ka:"ლიბერალიზმი, რომელიც მხარს უჭერს სახელმწიფოს მოქმედებას განათლების, ჯანდაცვისა და სოციალური დაცვის გზით რეალური თავისუფლების გასაფართოებლად.",
+es:"Liberalismo que apoya la acción del Estado para ampliar la libertad real mediante la educación, la sanidad y la protección social.",
+ja:"教育、医療、社会保障を通じて実質的な自由を拡大する国家の取り組みを支持する自由主義。",
+ko:"교육, 보건, 사회보장을 통해 실질적 자유를 확대하는 국가의 역할을 지지하는 자유주의."
+},
+"Advocates reform and social progress through government, science and expanded rights.":{
+ru:"Выступает за реформы и общественный прогресс посредством государственной политики, науки и расширения прав.",
+de:"Setzt sich für Reformen und gesellschaftlichen Fortschritt durch staatliches Handeln, Wissenschaft und erweiterte Rechte ein.",
+fr:"Préconise la réforme et le progrès social par l’action publique, la science et l’élargissement des droits.",
+"zh-CN":"主张通过政府政策、科学和扩大权利来推动改革与社会进步。",
+id:"Mendorong reformasi dan kemajuan sosial melalui pemerintah, ilmu pengetahuan, dan perluasan hak.",
+ka:"მხარს უჭერს რეფორმებსა და სოციალურ პროგრესს სახელმწიფო პოლიტიკის, მეცნიერებისა და უფლებების გაფართოების გზით.",
+es:"Promueve la reforma y el progreso social mediante la acción gubernamental, la ciencia y la ampliación de derechos.",
+ja:"政府、科学、権利の拡大を通じて改革と社会の進歩を推進する。",
+ko:"정부, 과학, 권리 확대를 통해 개혁과 사회 발전을 추구한다."
+},
+"US liberalism combining civil rights, regulated capitalism and a social safety net.":{
+ru:"Американский либерализм, сочетающий гражданские права, регулируемый капитализм и систему социальной защиты.",
+de:"US-amerikanischer Liberalismus, der Bürgerrechte, regulierten Kapitalismus und ein soziales Sicherungssystem verbindet.",
+fr:"Libéralisme américain qui associe droits civiques, capitalisme réglementé et protection sociale.",
+"zh-CN":"将公民权利、受监管的资本主义和社会保障体系相结合的美国自由主义。",
+id:"Liberalisme Amerika Serikat yang menggabungkan hak-hak sipil, kapitalisme teregulasi, dan jaring pengaman sosial.",
+ka:"ამერიკული ლიბერალიზმი, რომელიც აერთიანებს სამოქალაქო უფლებებს, რეგულირებულ კაპიტალიზმსა და სოციალურ დაცვის სისტემას.",
+es:"Liberalismo estadounidense que combina derechos civiles, capitalismo regulado y una red de protección social.",
+ja:"公民権、規制された資本主義、社会的セーフティネットを組み合わせたアメリカの自由主義。",
+ko:"시민권, 규제된 자본주의, 사회안전망을 결합한 미국식 자유주의."
+},
+"Politics of the trade-union-based labour movement seeking workers' representation within parliament.":{
+ru:"Политика рабочего движения, основанного на профсоюзах и добивающегося представительства работников в парламенте.",
+de:"Politik der gewerkschaftlich getragenen Arbeiterbewegung, die eine Vertretung der Beschäftigten im Parlament anstrebt.",
+fr:"Politique du mouvement ouvrier syndicaliste qui cherche à assurer la représentation des travailleurs au parlement.",
+"zh-CN":"以工会为基础的劳工运动所主张的政治路线，旨在使工人获得议会代表权。",
+id:"Politik gerakan buruh berbasis serikat yang memperjuangkan keterwakilan pekerja di parlemen.",
+ka:"პროფკავშირებზე დაფუძნებული მუშათა მოძრაობის პოლიტიკა, რომელიც პარლამენტში დასაქმებულთა წარმომადგენლობას ესწრაფვის.",
+es:"Política del movimiento obrero sindicalista que busca la representación de los trabajadores en el parlamento.",
+ja:"労働組合を基盤とする労働運動が、議会における労働者の代表を求める政治路線。",
+ko:"노동조합 기반 노동운동의 정치 노선으로, 의회에서 노동자 대표성을 확보하려 한다."
+},
+"Gradualist British socialism pursuing reform through research, education and parliamentary politics.":{
+ru:"Британский эволюционный социализм, добивающийся реформ посредством исследований, образования и парламентской политики.",
+de:"Britischer gradueller Sozialismus, der Reformen durch Forschung, Bildung und parlamentarische Politik anstrebt.",
+fr:"Socialisme britannique gradualiste qui poursuit la réforme par la recherche, l’éducation et l’action parlementaire.",
+"zh-CN":"英国渐进主义社会主义，主张通过研究、教育和议会政治实现改革。",
+id:"Sosialisme Inggris bertahap yang mengupayakan reformasi melalui penelitian, pendidikan, dan politik parlementer.",
+ka:"ბრიტანული თანდათანობითი სოციალიზმი, რომელიც რეფორმებს კვლევის, განათლებისა და საპარლამენტო პოლიტიკის გზით ესწრაფვის.",
+es:"Socialismo británico gradualista que persigue la reforma mediante la investigación, la educación y la política parlamentaria.",
+ja:"研究、教育、議会政治を通じて改革を進めようとするイギリスの漸進主義的社会主義。",
+ko:"연구, 교육, 의회정치를 통해 개혁을 추구하는 영국의 점진주의 사회주의."
+},
+"Macroeconomic school supporting active government demand management to stabilise the economy.":{
+ru:"Макроэкономическая школа, поддерживающая активное управление совокупным спросом со стороны государства для стабилизации экономики.",
+de:"Makroökonomische Schule, die ein aktives staatliches Nachfragemanagement zur Stabilisierung der Wirtschaft befürwortet.",
+fr:"École macroéconomique qui soutient une gestion active de la demande par l’État afin de stabiliser l’économie.",
+"zh-CN":"支持政府积极管理总需求以稳定经济的宏观经济学派。",
+id:"Mazhab makroekonomi yang mendukung pengelolaan permintaan secara aktif oleh pemerintah untuk menstabilkan ekonomi.",
+ka:"მაკროეკონომიკური სკოლა, რომელიც ეკონომიკის სტაბილიზაციისთვის სახელმწიფოს მიერ მოთხოვნის აქტიურ მართვას ემხრობა.",
+es:"Escuela macroeconómica que apoya una gestión activa de la demanda por parte del gobierno para estabilizar la economía.",
+ja:"経済安定のために政府が需要を積極的に管理することを支持するマクロ経済学派。",
+ko:"경제 안정을 위해 정부의 적극적인 총수요 관리를 지지하는 거시경제학파."
+},
+"Prioritises protection of the natural environment and sustainability within policy-making.":{
+ru:"Ставит защиту природной среды и устойчивое развитие в число главных приоритетов государственной политики.",
+de:"Räumt dem Schutz der natürlichen Umwelt und der Nachhaltigkeit in der Politikgestaltung Vorrang ein.",
+fr:"Accorde la priorité à la protection de l’environnement naturel et à la durabilité dans l’élaboration des politiques.",
+"zh-CN":"在政策制定中优先考虑自然环境保护和可持续发展。",
+id:"Memprioritaskan perlindungan lingkungan alam dan keberlanjutan dalam perumusan kebijakan.",
+ka:"პოლიტიკის შემუშავებისას პრიორიტეტს ანიჭებს ბუნებრივი გარემოს დაცვასა და მდგრადობას.",
+es:"Prioriza la protección del medio ambiente natural y la sostenibilidad en la formulación de políticas.",
+ja:"政策決定において自然環境の保護と持続可能性を最優先する。",
+ko:"정책 결정에서 자연환경 보호와 지속가능성을 우선시한다."
+},
+"Seeks gender equality through legal and political reform within liberal democracy.":{
+ru:"Добивается гендерного равенства посредством правовых и политических реформ в рамках либеральной демократии.",
+de:"Strebt Geschlechtergleichheit durch rechtliche und politische Reformen innerhalb der liberalen Demokratie an.",
+fr:"Recherche l’égalité de genre par des réformes juridiques et politiques dans le cadre de la démocratie libérale.",
+"zh-CN":"在自由民主制度内通过法律和政治改革争取性别平等。",
+id:"Mengupayakan kesetaraan gender melalui reformasi hukum dan politik dalam demokrasi liberal.",
+ka:"ლიბერალური დემოკრატიის ფარგლებში სამართლებრივი და პოლიტიკური რეფორმებით გენდერულ თანასწორობას ესწრაფვის.",
+es:"Busca la igualdad de género mediante reformas legales y políticas dentro de la democracia liberal.",
+ja:"自由民主主義の枠内で、法的・政治的改革を通じてジェンダー平等を目指す。",
+ko:"자유민주주의 안에서 법률 및 정치 개혁을 통해 성평등을 추구한다."
+},
+"Promotes the recognition and accommodation of diverse cultural and ethnic groups in one society.":{
+ru:"Выступает за признание и уважение разнообразных культурных и этнических групп в рамках единого общества.",
+de:"Fördert die Anerkennung und Berücksichtigung vielfältiger kultureller und ethnischer Gruppen innerhalb einer Gesellschaft.",
+fr:"Favorise la reconnaissance et la prise en compte de groupes culturels et ethniques divers au sein d’une même société.",
+"zh-CN":"促进在同一社会中承认并包容不同文化和族裔群体。",
+id:"Mendorong pengakuan dan akomodasi berbagai kelompok budaya dan etnis dalam satu masyarakat.",
+ka:"ხელს უწყობს ერთ საზოგადოებაში განსხვავებული კულტურული და ეთნიკური ჯგუფების აღიარებასა და გათვალისწინებას.",
+es:"Promueve el reconocimiento y la integración de diversos grupos culturales y étnicos en una misma sociedad.",
+ja:"一つの社会において、多様な文化的・民族的集団を認め、受け入れることを推進する。",
+ko:"하나의 사회 안에서 다양한 문화·민족 집단을 인정하고 수용하는 것을 촉진한다."
+},
+"Justice as fairness: equal basic liberties and inequalities only if they benefit the least advantaged (John Rawls).":{
+ru:"Справедливость как честность: равные основные свободы и допустимость неравенства лишь в том случае, если оно приносит пользу наименее обеспеченным (Джон Ролз).",
+de:"Gerechtigkeit als Fairness: gleiche Grundfreiheiten und Ungleichheiten nur dann, wenn sie den am wenigsten Begünstigten zugutekommen (John Rawls).",
+fr:"La justice comme équité : libertés fondamentales égales et inégalités admises seulement si elles profitent aux moins avantagés (John Rawls).",
+"zh-CN":"将正义理解为公平：人人享有平等的基本自由，只有在不平等有利于最弱势者时才可接受（约翰·罗尔斯）。",
+id:"Keadilan sebagai fairness: kebebasan dasar yang setara dan ketimpangan hanya dibenarkan bila menguntungkan mereka yang paling tidak beruntung (John Rawls).",
+ka:"სამართლიანობა, როგორც სამართლიანობა: თანაბარი ძირითადი თავისუფლებები და უთანასწორობა მხოლოდ მაშინ არის დასაშვები, თუ ის ყველაზე ნაკლებად უზრუნველყოფილებს სარგებელს აძლევს (ჯონ როულზი).",
+es:"Justicia como equidad: libertades básicas iguales y desigualdades solo si benefician a los menos aventajados (John Rawls).",
+ja:"公正としての正義。基本的自由の平等を保障し、不平等は最も不遇な人々の利益になる場合にのみ認める（ジョン・ロールズ）。",
+ko:"공정으로서의 정의: 동등한 기본적 자유를 보장하고, 불평등은 최소 수혜자에게 이익이 될 때만 허용한다(존 롤스)."
+},
+"Eduard Bernstein's reformist revision of Marxism: socialism through democratic evolution, not revolution.":{
+ru:"Реформистский пересмотр марксизма Эдуардом Бернштейном: социализм через демократическую эволюцию, а не революцию.",
+de:"Eduard Bernsteins reformistische Revision des Marxismus: Sozialismus durch demokratische Entwicklung statt Revolution.",
+fr:"Révision réformiste du marxisme par Eduard Bernstein : le socialisme par l’évolution démocratique plutôt que par la révolution.",
+"zh-CN":"爱德华·伯恩施坦对马克思主义的改良主义修正：通过民主进化而非革命实现社会主义。",
+id:"Revisi Marxisme yang reformis oleh Eduard Bernstein: sosialisme melalui evolusi demokratis, bukan revolusi.",
+ka:"ედუარდ ბერნშტაინის მიერ მარქსიზმის რეფორმისტული გადახედვა: სოციალიზმი დემოკრატიული ევოლუციის გზით და არა რევოლუციით.",
+es:"Revisión reformista del marxismo de Eduard Bernstein: socialismo mediante evolución democrática, no revolución.",
+ja:"エドゥアルト・ベルンシュタインによるマルクス主義の修正主義的再解釈で、革命ではなく民主的な発展を通じて社会主義を実現しようとする。",
+ko:"에두아르트 베른슈타인의 개혁주의적 마르크스주의 수정으로, 혁명이 아닌 민주적 진화를 통해 사회주의를 추구한다."
+},
+"Seeks to combine liberal rights and market elements with socialist equality aims.":{
+ru:"Стремится сочетать либеральные права и элементы рыночной экономики с социалистическими целями равенства.",
+de:"Versucht, liberale Rechte und Marktelemente mit sozialistischen Gleichheitszielen zu verbinden.",
+fr:"Cherche à associer les droits libéraux et certains mécanismes de marché aux objectifs socialistes d’égalité.",
+"zh-CN":"试图将自由主义权利和市场因素与社会主义平等目标结合起来。",
+id:"Berupaya menggabungkan hak-hak liberal dan unsur pasar dengan tujuan kesetaraan sosialis.",
+ka:"ცდილობს ლიბერალური უფლებებისა და საბაზრო ელემენტების სოციალისტურ თანასწორობის მიზნებთან გაერთიანებას.",
+es:"Busca combinar los derechos liberales y elementos de mercado con objetivos socialistas de igualdad.",
+ja:"自由主義的権利と市場要素を、社会主義的な平等の目標と組み合わせようとする。",
+ko:"자유주의적 권리와 시장 요소를 사회주의적 평등 목표와 결합하려 한다."
+},
+"Applies Christian ethics to justice, poverty and peace, leaning toward egalitarian and welfare policy.":{
+ru:"Применяет христианскую этику к вопросам справедливости, бедности и мира, выступая за равенство и социальную поддержку.",
+de:"Überträgt christliche Ethik auf Gerechtigkeit, Armut und Frieden und neigt zu egalitärer Politik und Sozialleistungen.",
+fr:"Applique l’éthique chrétienne aux questions de justice, de pauvreté et de paix, en privilégiant l’égalité et les politiques sociales.",
+"zh-CN":"将基督教伦理应用于正义、贫困与和平问题，倾向于平等主义和福利政策。",
+id:"Menerapkan etika Kristen pada keadilan, kemiskinan, dan perdamaian, dengan kecenderungan pada kebijakan egaliter dan kesejahteraan.",
+ka:"ქრისტიანულ ეთიკას იყენებს სამართლიანობის, სიღარიბისა და მშვიდობის საკითხებში და ემხრობა თანასწორობასა და სოციალურ პოლიტიკას.",
+es:"Aplica la ética cristiana a la justicia, la pobreza y la paz, con una orientación igualitaria y favorable a las políticas de bienestar.",
+ja:"正義、貧困、平和の問題にキリスト教倫理を適用し、平等主義と福祉政策を重視する。",
+ko:"정의, 빈곤, 평화에 기독교 윤리를 적용하며 평등주의와 복지정책을 지향한다."
+},
+"Seeks to replace capitalism with social ownership, achieved democratically rather than by revolution.":{
+ru:"Стремится заменить капитализм общественной собственностью на средства производства, добиваясь этого демократическим, а не революционным путём.",
+de:"Will den Kapitalismus durch gesellschaftliches Eigentum ersetzen, und zwar auf demokratischem statt revolutionärem Weg.",
+fr:"Cherche à remplacer le capitalisme par la propriété sociale, en procédant par la voie démocratique plutôt que par la révolution.",
+"zh-CN":"寻求以社会所有制取代资本主义，并通过民主而非革命的方式实现。",
+id:"Berupaya menggantikan kapitalisme dengan kepemilikan sosial melalui cara demokratis, bukan revolusi.",
+ka:"ცდილობს კაპიტალიზმის საზოგადოებრივი საკუთრებით ჩანაცვლებას დემოკრატიული და არა რევოლუციური გზით.",
+es:"Busca sustituir el capitalismo por la propiedad social mediante vías democráticas y no revolucionarias.",
+ja:"革命ではなく民主的な手段によって、資本主義を社会的所有に置き換えることを目指す。",
+ko:"혁명이 아닌 민주적 방식을 통해 자본주의를 사회적 소유로 대체하려 한다."
+},
+"Historically close to social democracy; modern usage often means radical-left within democracy, so placement between centre-left and left is approximate.":{
+ru:"Исторически близок к социал-демократии; в современном употреблении часто означает радикально-левую позицию в рамках демократии, поэтому размещение между левоцентристами и левыми приблизительно.",
+de:"Historisch der Sozialdemokratie nahestehend; heute bezeichnet der Begriff oft eine radikale Linke innerhalb der Demokratie, weshalb die Einordnung zwischen Mitte-links und links nur näherungsweise ist.",
+fr:"Historiquement proche de la social-démocratie ; aujourd’hui, le terme désigne souvent une gauche radicale démocratique, d’où un classement approximatif entre centre gauche et gauche.",
+"zh-CN":"历史上与社会民主主义接近；现代用法通常指民主制度内的激进左翼，因此将其置于中左与左翼之间仅为近似判断。",
+id:"Secara historis dekat dengan sosial demokrasi; penggunaan modern sering merujuk pada kiri radikal dalam demokrasi, sehingga penempatan antara kiri-tengah dan kiri bersifat perkiraan.",
+ka:"ისტორიულად ახლოს დგას სოციალურ დემოკრატიასთან; თანამედროვე გამოყენებაში ხშირად დემოკრატიის ფარგლებში მოქმედ რადიკალურ მემარცხენეობას ნიშნავს, ამიტომ ცენტრსა და მემარცხენეობას შორის განთავსება მიახლოებითია.",
+es:"Históricamente cercana a la socialdemocracia; hoy suele aludir a una izquierda radical dentro de la democracia, por lo que su ubicación entre centroizquierda e izquierda es aproximada.",
+ja:"歴史的には社会民主主義に近い。現代では民主主義の枠内にある急進左派を指すことが多く、中道左派と左派の間という位置付けは概略的である。",
+ko:"역사적으로 사회민주주의와 가까웠으며, 현대에는 민주주의 안의 급진좌파를 뜻하는 경우가 많아 중도좌파와 좌파 사이의 배치는 대략적이다."
+},
+});
+
 export default rows;
