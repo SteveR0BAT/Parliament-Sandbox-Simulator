@@ -192,7 +192,7 @@ export function sampleProject(): ProjectData {
         "authoritarian-state-communist": { pos: "mostlyFor" },
         "anarchist-anti-authoritarian": { pos: "for" },
         "nationalist-sovereigntist": { pos: "against" },
-        "fascist-ultranationalist": { pos: "for" },
+        "fascist-ultranationalist": { pos: "against" },
         "religious-communitarian": { pos: "neutral" },
         "civic-ecological-crosscutting": { pos: "mostlyFor" },
       },
