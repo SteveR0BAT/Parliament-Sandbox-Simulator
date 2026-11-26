@@ -2014,4 +2014,75 @@ ru:"Государственный дирижизм и развитие",de:"Eta
 ru:"Участие граждан",de:"Partizipativ",fr:"Participatif","zh-CN":"参与式",id:"Partisipatif",ka:"მონაწილეობითი",es:"Participativa",ja:"参加型",ko:"참여형"}
 });
 
+
+Object.assign(rows, {
+// Remaining debated classification notes.
+"Placed between right-wing and far-right by different scholars depending on the movement considered.":{
+ru:"Разные исследователи помещают это течение между правыми и крайне правыми в зависимости от рассматриваемого движения.",
+de:"Je nach betrachteter Bewegung ordnen verschiedene Wissenschaftler diese Strömung zwischen rechts und extrem rechts ein.",
+fr:"Selon le mouvement étudié, certains chercheurs situent ce courant entre la droite et l’extrême droite.",
+"zh-CN":"不同学者会根据具体运动，将其置于右翼和极右翼之间。",
+id:"Bergantung pada gerakannya, para sarjana menempatkannya antara kanan dan kanan ekstrem.",
+ka:"განხილული მოძრაობის მიხედვით, სხვადასხვა მკვლევარი მას მემარჯვენეობასა და ულტრამემარჯვენეობას შორის ათავსებს.",
+es:"Según el movimiento considerado, distintos académicos la sitúan entre la derecha y la extrema derecha.",
+ja:"対象となる運動によって、研究者はこの潮流を右派と極右の間に位置付ける。",
+ko:"검토하는 운동에 따라 학자들은 이를 우파와 극우 사이에 배치한다."
+},
+"Nativism is also a feature of some radical-right populist parties that stay within democratic norms.":{
+ru:"Нативизм также характерен для некоторых популистских радикально-правых партий, остающихся в рамках демократических норм.",
+de:"Nativismus findet sich auch bei einigen rechtspopulistischen Parteien, die innerhalb demokratischer Normen agieren.",
+fr:"Le nativisme caractérise également certains partis populistes de droite radicale qui respectent les normes démocratiques.",
+"zh-CN":"一些仍遵守民主规范的激进右翼民粹主义政党也具有本土主义特征。",
+id:"Nativisme juga menjadi ciri beberapa partai populis kanan radikal yang tetap berada dalam norma demokratis.",
+ka:"ნატივიზმი ასევე ახასიათებს ზოგიერთ მემარჯვენე რადიკალურ პოპულისტურ პარტიას, რომელიც დემოკრატიულ ნორმებს იცავს.",
+es:"El nativismo también caracteriza a algunos partidos populistas de derecha radical que se mantienen dentro de las normas democráticas.",
+ja:"民主的規範の範囲内で活動する一部の急進右派ポピュリスト政党にも、自国民優先主義が見られる。",
+ko:"민주적 규범을 지키는 일부 급진우파 포퓰리즘 정당도 자국민 우선주의를 특징으로 한다."
+},
+"Sometimes classified as a third-way/ecologist position outside left–right.":{
+ru:"Иногда классифицируется как позиция третьего пути или экологизма, находящаяся вне шкалы «левые — правые».",
+de:"Wird gelegentlich als Position des Dritten Weges oder der Ökologie außerhalb der Links-rechts-Achse eingeordnet.",
+fr:"Parfois classé comme une position de troisième voie ou écologiste, en dehors de l’axe gauche-droite.",
+"zh-CN":"有时被归类为处于左右光谱之外的第三条道路或生态主义立场。",
+id:"Terkadang digolongkan sebagai posisi jalan ketiga atau ekologis di luar spektrum kiri-kanan.",
+ka:"ზოგჯერ კლასიფიცირდება როგორც მესამე გზის ან ეკოლოგიური პოზიცია, რომელიც მემარცხენე-მემარჯვენე ღერძს მიღმაა.",
+es:"A veces se clasifica como una posición de tercera vía o ecologista, fuera del eje izquierda-derecha.",
+ja:"左右軸の外側にある第三の道、または環境主義的な立場と分類されることがある。",
+ko:"때로는 좌우 축 바깥의 제3의 길 또는 생태주의적 입장으로 분류된다."
+},
+"Britannica notes it can be read as modernised social democracy or as 'beyond left and right'; it is also described as centre-left or centrist.":{
+ru:"Британника отмечает, что это течение можно понимать как модернизированную социал-демократию или как позицию «за пределами левых и правых»; его также описывают как левоцентристское или центристское.",
+de:"Britannica weist darauf hin, dass es als modernisierte Sozialdemokratie oder als „jenseits von links und rechts“ verstanden werden kann; es wird auch als mitte-links oder zentristisch beschrieben.",
+fr:"Selon Britannica, ce courant peut être interprété comme une social-démocratie modernisée ou comme une position « au-delà de la gauche et de la droite » ; il est également décrit comme centre gauche ou centriste.",
+"zh-CN":"《大英百科全书》指出，它既可被视为现代化的社会民主主义，也可被理解为“超越左右”；它也被描述为中左或中间派。",
+id:"Britannica mencatat bahwa aliran ini dapat dipahami sebagai sosial demokrasi modern atau sebagai posisi 'melampaui kiri dan kanan'; aliran ini juga disebut kiri-tengah atau sentris.",
+ka:"Britannica აღნიშნავს, რომ ეს მიმდინარეობა შეიძლება განიმარტოს როგორც მოდერნიზებული სოციალური დემოკრატია ან როგორც „მემარცხენეობისა და მემარჯვენეობის მიღმა“ მდგომი პოზიცია; მას ასევე ცენტრისტულ-მემარცხენედ ან ცენტრისტულად აღწერენ.",
+es:"Britannica señala que puede entenderse como una socialdemocracia modernizada o como una posición «más allá de la izquierda y la derecha»; también se describe como centroizquierda o centrista.",
+ja:"ブリタニカは、これを近代化された社会民主主義、または「左右を超えた」立場と解釈できると指摘する。また中道左派または中道とも説明される。",
+ko:"브리태니커는 이를 현대화된 사회민주주의 또는 ‘좌우를 넘어선’ 입장으로 해석할 수 있다고 설명하며, 중도좌파 또는 중도 성향으로도 묘사한다."
+},
+"Appears in fascist, authoritarian and democratic (neo-corporatist) forms, hence placed outside the spectrum.":{
+ru:"Существует в фашистской, авторитарной и демократической (неокорпоративистской) формах, поэтому отнесено за пределы обычного спектра.",
+de:"Kommt in faschistischen, autoritären und demokratischen (neokorporatistischen) Formen vor und wird deshalb außerhalb des Spektrums eingeordnet.",
+fr:"Existe sous des formes fascistes, autoritaires et démocratiques (néocorporatistes), d’où son classement en dehors du spectre.",
+"zh-CN":"它既有法西斯、威权形式，也有民主（新社团主义）形式，因此被置于传统光谱之外。",
+id:"Muncul dalam bentuk fasis, otoriter, maupun demokratis (neo-korporatis), sehingga ditempatkan di luar spektrum.",
+ka:"არსებობს ფაშისტური, ავტორიტარული და დემოკრატიული (ნეოკორპორატისტული) ფორმებით, ამიტომ სპექტრის მიღმაა მოთავსებული.",
+es:"Aparece en formas fascistas, autoritarias y democráticas (neocorporativistas), por lo que se sitúa fuera del espectro.",
+ja:"ファシズム的、権威主義的、民主的（新コーポラティズム的）な形態があるため、通常のスペクトルの外に置かれる。",
+ko:"파시즘적, 권위주의적, 민주주의적(신조합주의적) 형태로 나타나므로 일반적인 스펙트럼 바깥에 배치된다."
+},
+"Self-described as socialist but authoritarian-nationalist; often treated as syncretic.":{
+ru:"Самоопределяется как социалистическое, но является авторитарно-националистическим; часто рассматривается как синкретическое.",
+de:"Bezeichnet sich selbst als sozialistisch, ist aber autoritär-nationalistisch und wird häufig als synkretistisch betrachtet.",
+fr:"Se définit comme socialiste, mais relève de l’autoritarisme nationaliste ; il est souvent considéré comme syncrétique.",
+"zh-CN":"该思潮自称社会主义，但具有威权民族主义特征，常被视为融合型意识形态。",
+id:"Menyebut dirinya sosialis tetapi bercorak otoriter-nasionalis; sering dianggap sinkretis.",
+ka:"საკუთარ თავს სოციალისტურად აღწერს, თუმცა ავტორიტარულ-ნაციონალისტურია და ხშირად სინკრეტულად განიხილება.",
+es:"Se autodefine como socialista, pero es autoritario-nacionalista y suele considerarse sincrético.",
+ja:"自らを社会主義と称するが、権威主義的ナショナリズムの性格を持ち、しばしば混淆的とみなされる。",
+ko:"스스로 사회주의라고 규정하지만 권위주의적 민족주의 성격을 띠며, 혼합주의적으로 취급되는 경우가 많다."
+}
+});
+
 export default rows;
