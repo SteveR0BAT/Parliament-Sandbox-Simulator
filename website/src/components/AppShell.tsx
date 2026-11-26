@@ -5,6 +5,7 @@ import { sampleProject } from "@/lib/defaults";
 import { Toasts } from "./ui";
 import { Chamber } from "./Chamber";
 import { ParliamentPanel } from "./ParliamentPanel";
+import { GovernmentPanel } from "./GovernmentPanel";
 import { PartiesPanel } from "./PartiesPanel";
 import { CoalitionsPanel } from "./CoalitionsPanel";
 import { FactionsPanel } from "./FactionsPanel";
@@ -18,6 +19,7 @@ import { LanguageBridge } from "./LanguageBridge";
 
 const TABS: { id: Tab; label: string; icon: string }[] = [
   { id: "parliament", label: "Parliament", icon: "🏛" },
+  { id: "government", label: "Government", icon: "🏛️" },
   { id: "parties", label: "Parties", icon: "🎨" },
   { id: "coalitions", label: "Coalitions", icon: "🤝" },
   { id: "factions", label: "Factions", icon: "🧩" },
@@ -29,6 +31,7 @@ const TABS: { id: Tab; label: string; icon: string }[] = [
 
 const SIDE_TITLES: Partial<Record<Tab, string>> = {
   parliament: "Parliament overview",
+  government: "Government",
   parties: "Political parties",
   coalitions: "Coalitions",
   factions: "Internal factions",
@@ -167,6 +170,7 @@ export function AppShell() {
           <div className="flex h-full flex-col gap-3 overflow-y-auto p-3 lg:flex-row lg:overflow-hidden">
             <SidePanel tab={tab}>
               {tab === "parliament" && <ParliamentPanel />}
+              {tab === "government" && <GovernmentPanel />}
               {tab === "parties" && <PartiesPanel />}
               {tab === "coalitions" && <CoalitionsPanel />}
               {tab === "factions" && <FactionsPanel />}

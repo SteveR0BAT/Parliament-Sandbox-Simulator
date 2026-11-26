@@ -37,7 +37,7 @@ import { newIssue, normalizeProject, sampleProject } from "./defaults";
 import { createRecord, lookupIdeology } from "./voting";
 import { compareIdeologies } from "@/data/ideologies";
 
-export type Tab = "parliament" | "parties" | "coalitions" | "factions" | "ideologies" | "voting" | "statistics" | "settings";
+export type Tab = "parliament" | "government" | "parties" | "coalitions" | "factions" | "ideologies" | "voting" | "statistics" | "settings";
 export type Focus = { type: "party" | "faction" | "coalition" | "independents"; id: string } | null;
 export type SaveState = "saved" | "dirty" | "saving" | "error";
 

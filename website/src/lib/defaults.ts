@@ -10,12 +10,42 @@ import type {
   Threshold,
   IdeologyFamilyId,
   LegacyCategoryId,
+  GovernmentPosition,
 } from "./types";
 import { BUILTIN_NAME_MAP, IDEOLOGY_FAMILY_MAP } from "@/data/ideologies";
 import { addPartyDeputies, deputyList, makeDeputy, newFaction, setFactionCount, syncSeats, uid } from "./parliament";
 import { suggestShades } from "./color";
 
-export const PROJECT_VERSION = 3;
+export const PROJECT_VERSION = 4;
+
+// A project starts with a practical cabinet template, but every office remains editable
+// and users can add or remove positions to model any constitutional system.
+export function defaultGovernmentPositions(): GovernmentPosition[] {
+  const templates: [string, string][] = [
+    ["President", "Head of state."],
+    ["Prime Minister", "Head of government and coordinator of the cabinet."],
+    ["Ministry of Education", "Responsible for education policy, schools and universities."],
+    ["Ministry of Economy", "Responsible for economic policy, industry and business."],
+    ["Ministry of Healthcare", "Responsible for public health and healthcare services."],
+    ["Ministry of Defence", "Responsible for national defence and the armed forces."],
+    ["Ministry of Foreign Affairs", "Responsible for diplomacy and foreign relations."],
+    ["Ministry of Finance", "Responsible for public finances, taxation and the budget."],
+    ["Ministry of Justice", "Responsible for justice policy and the legal system."],
+    ["Ministry of Interior", "Responsible for internal security and civil administration."],
+    ["Ministry of Infrastructure & Transport", "Responsible for infrastructure and transport policy."],
+    ["Ministry of Environment & Energy", "Responsible for environmental and energy policy."],
+    ["Ministry of Agriculture", "Responsible for agriculture and rural development."],
+    ["Ministry of Culture", "Responsible for culture, heritage and the arts."],
+    ["Ministry of Labour & Social Affairs", "Responsible for labour policy and social protection."],
+  ];
+  return templates.map(([title, description]) => ({
+    id: uid("office"),
+    title,
+    description,
+    deputyId: null,
+    externalName: "",
+  }));
+}
 
 export const DEFAULT_SETTINGS: ChamberSettings = {
   genericDeputyNames: "multicultural",
@@ -122,6 +152,7 @@ export function blankProject(totalSeats = 100): ProjectData {
     issues: [],
     history: [],
     governingCoalitionId: null,
+    governmentPositions: defaultGovernmentPositions(),
   };
 }
 
@@ -245,7 +276,7 @@ function migrateHistory(raw:unknown,splitFormerFamilies=false):ProjectData["hist
  return{...(r as unknown as ProjectData["history"][number]),issue:migrateIssue(r.issue,splitFormerFamilies),snapshot:{...s,deputies} as unknown as ProjectData["history"][number]["snapshot"]};
 }
 export function normalizeProject(raw:unknown):ProjectData{
- const src=(isObj(raw)?raw:{}) as Record<string,unknown>,base=blankProject(100),splitFormerFamilies=Number(src.version??1)<PROJECT_VERSION,rawPrefs=isObj(src.prefs)?src.prefs:{},rawIP=isObj(rawPrefs.ideology)?rawPrefs.ideology:{};
+ const src=(isObj(raw)?raw:{}) as Record<string,unknown>,base=blankProject(100),splitFormerFamilies=Number(src.version??1)<3,rawPrefs=isObj(src.prefs)?src.prefs:{},rawIP=isObj(rawPrefs.ideology)?rawPrefs.ideology:{};
  const d:ProjectData={...base,settings:deepMerge(DEFAULT_SETTINGS,src.settings),
  prefs:deepMerge(DEFAULT_PREFS,{...rawPrefs,ideology:{...rawIP,hiddenFamilies:Array.isArray(rawIP.hiddenFamilies)?rawIP.hiddenFamilies:[]}}),
  parties:Array.isArray(src.parties)?(src.parties as Party[]).map(p=>Object.assign({symbol:"",meta:[],role:"neutral",description:"",leader:"",ideologyId:null} as Partial<Party>,p) as Party):[],
@@ -254,7 +285,15 @@ export function normalizeProject(raw:unknown):ProjectData{
  deputies:{},seats:Array.isArray(src.seats)?(src.seats as (string|null)[]):[],seatingLocked:!!src.seatingLocked,
  customIdeologies:Array.isArray(src.customIdeologies)?src.customIdeologies.map(migrateCustomIdeology):[],
  issues:Array.isArray(src.issues)?src.issues.map(i=>deepMerge(newIssue(base.prefs),migrateIssue(i,splitFormerFamilies))):[],
- history:Array.isArray(src.history)?src.history.map(i=>migrateHistory(i,splitFormerFamilies)):[],governingCoalitionId:typeof src.governingCoalitionId==="string"?src.governingCoalitionId:null,version:PROJECT_VERSION};
+ history:Array.isArray(src.history)?src.history.map(i=>migrateHistory(i,splitFormerFamilies)):[],governingCoalitionId:typeof src.governingCoalitionId==="string"?src.governingCoalitionId:null,
+ governmentPositions:Array.isArray(src.governmentPositions)?src.governmentPositions.filter(isObj).map((p,index)=>({
+  id:typeof p.id==="string"&&p.id?p.id:uid("office"),
+  title:typeof p.title==="string"?p.title:`Office ${index+1}`,
+  description:typeof p.description==="string"?p.description:"",
+  deputyId:typeof p.deputyId==="string"?p.deputyId:null,
+  externalName:typeof p.externalName==="string"?p.externalName:"",
+  custom:typeof p.custom==="boolean"?p.custom:undefined,
+ })):base.governmentPositions,version:PROJECT_VERSION};
  d.settings.totalSeats=Math.max(1,Math.min(20000,Math.floor(Number(d.settings.totalSeats))||100));
  if(isObj(src.deputies))for(const[id,dep]of Object.entries(src.deputies))if(isObj(dep))d.deputies[id]={...makeDeputy({},d.settings.genericDeputyNames),...(dep as object),id} as ProjectData["deputies"][string];
  const ids=new Set(d.parties.map(p=>p.id));d.factions=d.factions.filter(f=>ids.has(f.partyId));const byId=new Map(d.factions.map(f=>[f.id,f]));

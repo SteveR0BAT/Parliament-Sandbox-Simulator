@@ -283,6 +283,17 @@ export interface Prefs {
   };
 }
 
+export interface GovernmentPosition {
+  id: string;
+  title: string;
+  description: string;
+  /** A sitting deputy may be appointed only when their party is designated Government. */
+  deputyId: string | null;
+  /** Allows external appointees and non-deputy officeholders for roleplay scenarios. */
+  externalName: string;
+  custom?: boolean;
+}
+
 export interface ProjectData {
   version: number;
   settings: ChamberSettings;
@@ -297,6 +308,7 @@ export interface ProjectData {
   issues: Issue[];
   history: VoteRecord[];
   governingCoalitionId: string | null;
+  governmentPositions: GovernmentPosition[];
 }
 
 export type Layer = "standard" | "coalition" | "detailed";
