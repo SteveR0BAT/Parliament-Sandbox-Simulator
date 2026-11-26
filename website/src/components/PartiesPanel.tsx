@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { translateText, useLanguage } from "@/lib/language";
 import { useStore, roleLabels } from "@/lib/store";
 import type { MetaEntry, Party, Role } from "@/lib/types";
 import { ColorPicker } from "./ColorPicker";
@@ -76,6 +77,7 @@ function PartySymbol({ p }: { p: Party }) {
 }
 
 export function PartiesPanel() {
+  const { language } = useLanguage();
   const data = useStore((s) => s.data);
   const focus = useStore((s) => s.ui.focus);
   const patchUI = useStore((s) => s.patchUI);
@@ -216,7 +218,7 @@ export function PartiesPanel() {
               className="btn btn-sm btn-primary"
               disabled={!mergeTarget || !mergeSrc.length}
               onClick={() => {
-                if (!window.confirm("Merge the selected parties into the target? This cannot be undone.")) return;
+                if (!window.confirm(translateText("Merge the selected parties into the target? This cannot be undone.", language))) return;
                 const r = mergeParties(mergeSrc, mergeTarget);
                 if (r.ok) {
                   setMergeOpen(false);
@@ -292,7 +294,7 @@ export function PartiesPanel() {
                     <button
                       className="btn btn-sm btn-danger"
                       onClick={() => {
-                        if (window.confirm(`Delete ${p.name}? Its ${seats} deputies and factions will be removed and seats become unallocated.`)) deleteParty(p.id);
+                        if (window.confirm(translateText(`Delete ${p.name}? Its ${seats} deputies and factions will be removed and seats become unallocated.`, language))) deleteParty(p.id);
                       }}
                     >
                       Delete

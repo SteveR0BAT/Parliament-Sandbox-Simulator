@@ -1,5 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
+import { translateText, useLanguage } from "@/lib/language";
 import { useStore } from "@/lib/store";
 import type { Issue, IdeologySource, Threshold, ThresholdBasis, ThresholdType, VotingMode } from "@/lib/types";
 import { Empty, Field, NumInput, Section, Seg, SliderField, Swatch } from "./ui";
@@ -373,7 +374,7 @@ function History() {
               <button className="btn btn-sm" onClick={() => downloadFile(`${safeName(r.issue.name)}_vote.json`, JSON.stringify(r, null, 2), "application/json")}>
                 JSON
               </button>
-              <button className="btn btn-sm btn-danger" onClick={() => window.confirm("Delete this vote from history?") && del(r.id)}>
+              <button className="btn btn-sm btn-danger" onClick={() => window.confirm(translateText("Delete this vote from history?", language)) && del(r.id)}>
                 Delete
               </button>
             </div>
@@ -436,6 +437,7 @@ function History() {
 }
 
 export function VotingPanel() {
+  const { language } = useLanguage();
   const data = useStore((s) => s.data);
   const ui = useStore((s) => s.ui);
   const patch = useStore((s) => s.patchUI);
@@ -506,7 +508,7 @@ export function VotingPanel() {
                 <button className="btn btn-sm" onClick={() => dupIssue(i.id)}>
                   Duplicate
                 </button>
-                <button className="btn btn-sm btn-danger" onClick={() => window.confirm(`Delete issue “${i.name}”? Past votes stay in the history.`) && delIssue(i.id)}>
+                <button className="btn btn-sm btn-danger" onClick={() => window.confirm(translateText(`Delete issue “${i.name}”? Past votes stay in the history.`, language)) && delIssue(i.id)}>
                   ✕
                 </button>
               </div>

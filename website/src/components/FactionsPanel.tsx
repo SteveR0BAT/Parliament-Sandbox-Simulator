@@ -1,5 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
+import { translateText, useLanguage } from "@/lib/language";
 import { useStore } from "@/lib/store";
 import type { Faction } from "@/lib/types";
 import { ColorPicker } from "./ColorPicker";
@@ -36,6 +37,7 @@ function FactionForm({ f, partyColor, onChange }: { f: Partial<Faction>; partyCo
 }
 
 export function FactionsPanel() {
+  const { language } = useLanguage();
   const data = useStore((s) => s.data);
   const focus = useStore((s) => s.ui.focus);
   const patchUI = useStore((s) => s.patchUI);
@@ -172,7 +174,7 @@ export function FactionsPanel() {
                       <button
                         className="btn btn-sm btn-danger"
                         onClick={() => {
-                          if (window.confirm(`Delete faction ${f.name}? Its deputies stay in the party.`)) deleteFaction(f.id);
+                          if (window.confirm(translateText(`Delete faction ${f.name}? Its deputies stay in the party.`, language))) deleteFaction(f.id);
                         }}
                       >
                         Delete faction

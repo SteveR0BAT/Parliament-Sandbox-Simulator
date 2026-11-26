@@ -1,5 +1,6 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { translateText, useLanguage } from "@/lib/language";
 import { projectsApi, saveNow, useStore, type ProjectSummary } from "@/lib/store";
 import type { ProjectBackup } from "@/lib/projectStorage";
 import { blankProject, sampleProject } from "@/lib/defaults";
@@ -17,6 +18,7 @@ export async function openProject(id: string) {
 }
 
 export function ProjectsModal() {
+  const { language } = useLanguage();
   const ui = useStore((s) => s.ui);
   const meta = useStore((s) => s.meta);
   const data = useStore((s) => s.data);
@@ -84,7 +86,7 @@ export function ProjectsModal() {
                     <div className="muted text-[11px]">{new Date(backup.createdAt).toLocaleString()}</div>
                   </div>
                   <button className="btn btn-sm btn-primary" disabled={busy} onClick={() => guard(async () => {
-                    if (!window.confirm("Restore this snapshot? The current project will first be saved as a recovery snapshot.")) return;
+                    if (!window.confirm(translateText("Restore this snapshot? The current project will first be saved as a recovery snapshot.", language))) return;
                     await projectsApi.restoreBackup(backupProjectId, backup.id);
                     await openProject(backupProjectId);
                     setBackups(await projectsApi.listBackups(backupProjectId));
@@ -177,7 +179,7 @@ export function ProjectsModal() {
                     disabled={busy}
                     onClick={() =>
                       guard(async () => {
-                        if (!window.confirm(`Delete project “${p.name}” permanently?`)) return;
+                        if (!window.confirm(translateText(`Delete project “${p.name}” permanently?`, language))) return;
                         await projectsApi.remove(p.id);
                         const rest = (await projectsApi.list()).filter((x) => x.id !== p.id);
                         if (current) {
