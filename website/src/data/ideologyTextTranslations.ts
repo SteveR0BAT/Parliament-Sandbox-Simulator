@@ -1408,4 +1408,174 @@ ko:"대중의 자발성, 사회주의 내부의 민주주의, 관료적 전위�
 },
 });
 
+
+Object.assign(rows, {
+// Profiles 105–119: council communism, anarchism, cross-cutting and religious-economic ideas.
+"Libertarian Marxist current in which workers' councils, not parties or states, run society.":{
+ru:"Либертарное марксистское течение, в котором обществом управляют рабочие советы, а не партии или государство.",
+de:"Libertär-marxistische Strömung, in der Arbeiterräte statt Parteien oder Staat die Gesellschaft organisieren.",
+fr:"Courant marxiste libertaire dans lequel la société est dirigée par des conseils ouvriers plutôt que par des partis ou l’État.",
+"zh-CN":"一种自由意志主义马克思主义思潮，主张由工人委员会而非政党或国家管理社会。",
+id:"Aliran Marxis libertarian yang menempatkan dewan pekerja, bukan partai atau negara, sebagai pengelola masyarakat.",
+ka:"ლიბერტარიანული მარქსისტული მიმდინარეობა, რომლის მიხედვითაც საზოგადოებას მუშათა საბჭოები მართავენ და არა პარტიები ან სახელმწიფო.",
+es:"Corriente marxista libertaria en la que los consejos obreros, y no los partidos o el Estado, dirigen la sociedad.",
+ja:"政党や国家ではなく労働者評議会が社会を運営する、自由主義的マルクス主義の潮流。",
+ko:"정당이나 국가가 아니라 노동자 평의회가 사회를 운영하는 자유지상주의적 마르크스주의 흐름."
+},
+"Communist left critical of Bolshevik party-state practice, parliamentarism and unions.":{
+ru:"Течение коммунистических левых, критикующее большевистскую партийно-государственную практику, парламентаризм и профсоюзы.",
+de:"Kommunistische Linke, die die bolschewistische Partei-Staat-Praxis, den Parlamentarismus und die Gewerkschaften kritisiert.",
+fr:"Gauche communiste critique des pratiques bolcheviques de parti-État, du parlementarisme et des syndicats.",
+"zh-CN":"批评布尔什维克党国实践、议会主义和工会的共产主义左翼。",
+id:"Kiri komunis yang mengkritik praktik negara-partai Bolshevik, parlementarisme, dan serikat pekerja.",
+ka:"კომუნისტური მემარცხენე მიმდინარეობა, რომელიც აკრიტიკებს ბოლშევიკურ პარტიულ-სახელმწიფოებრივ პრაქტიკას, პარლამენტარიზმსა და პროფკავშირებს.",
+es:"Izquierda comunista crítica con la práctica bolchevique de partido-Estado, el parlamentarismo y los sindicatos.",
+ja:"ボリシェヴィキの党国家体制、議会主義、労働組合を批判する共産主義左派。",
+ko:"볼셰비키 당-국가 체제, 의회주의, 노동조합을 비판하는 공산주의 좌파."
+},
+"Marxist current emphasising workers' self-organisation outside parties and unions.":{
+ru:"Марксистское течение, подчёркивающее самоорганизацию работников вне партий и профсоюзов.",
+de:"Marxistische Strömung, die die Selbstorganisation der Arbeiter außerhalb von Parteien und Gewerkschaften betont.",
+fr:"Courant marxiste qui met l’accent sur l’auto-organisation des travailleurs en dehors des partis et des syndicats.",
+"zh-CN":"强调工人脱离政党和工会自主组织起来的马克思主义思潮。",
+id:"Aliran Marxis yang menekankan pengorganisasian mandiri pekerja di luar partai dan serikat.",
+ka:"მარქსისტული მიმდინარეობა, რომელიც ხაზს უსვამს მუშათა თვითორგანიზებას პარტიებისა და პროფკავშირების გარეთ.",
+es:"Corriente marxista que destaca la autoorganización de los trabajadores al margen de partidos y sindicatos.",
+ja:"政党や労働組合の外で労働者が自ら組織することを重視するマルクス主義の潮流。",
+ko:"정당과 노동조합 바깥에서 노동자들의 자율적 조직화를 강조하는 마르크스주의 흐름."
+},
+"Abolition of state, private property and capitalism in favour of voluntary communes and 'from each according to ability, to each according to need' (Kropotkin).":{
+ru:"Отмена государства, частной собственности и капитализма в пользу добровольных коммун и принципа «от каждого по способностям, каждому по потребностям» (Кропоткин).",
+de:"Abschaffung von Staat, Privateigentum und Kapitalismus zugunsten freiwilliger Kommunen und des Prinzips „Jeder nach seinen Fähigkeiten, jedem nach seinen Bedürfnissen“ (Kropotkin).",
+fr:"Abolition de l’État, de la propriété privée et du capitalisme au profit de communes volontaires et du principe « de chacun selon ses capacités, à chacun selon ses besoins » (Kropotkine).",
+"zh-CN":"主张废除国家、私有财产和资本主义，以自愿公社取而代之，并遵循“各尽所能，按需分配”的原则（克ропоткин）。",
+id:"Penghapusan negara, hak milik pribadi, dan kapitalisme demi komune sukarela serta prinsip 'dari tiap orang menurut kemampuannya, bagi tiap orang menurut kebutuhannya' (Kropotkin).",
+ka:"სახელმწიფოს, კერძო საკუთრებისა და კაპიტალიზმის გაუქმება ნებაყოფლობითი კომუნებისა და პრინციპის „თითოეულისგან უნარის მიხედვით, თითოეულს საჭიროების მიხედვით“ სასარგებლოდ (კროპოტკინი).",
+es:"Abolición del Estado, la propiedad privada y el capitalismo en favor de comunas voluntarias y del principio «de cada cual según su capacidad, a cada cual según su necesidad» (Kropotkin).",
+ja:"国家、私有財産、資本主義を廃止し、自発的な共同体と「能力に応じて働き、必要に応じて受け取る」という原則を支持する（クロポトキン）。",
+ko:"국가, 사유재산, 자본주의를 폐지하고 자발적 공동체와 ‘능력에 따라 일하고 필요에 따라 분배받는다’는 원칙을 지향한다(크로포트킨)."
+},
+"Organises revolutionary trade unions to abolish capitalism and the state via general strike.":{
+ru:"Организует революционные профсоюзы, стремящиеся упразднить капитализм и государство посредством всеобщей забастовки.",
+de:"Organisiert revolutionäre Gewerkschaften, die Kapitalismus und Staat durch einen Generalstreik abschaffen wollen.",
+fr:"Organise des syndicats révolutionnaires visant à abolir le capitalisme et l’État par la grève générale.",
+"zh-CN":"组织革命工会，旨在通过总罢工废除资本主义和国家。",
+id:"Mengorganisasi serikat buruh revolusioner untuk menghapus kapitalisme dan negara melalui pemogokan umum.",
+ka:"ორგანიზებას უწევს რევოლუციურ პროფკავშირებს, რომლებიც საყოველთაო გაფიცვით კაპიტალიზმისა და სახელმწიფოს გაუქმებას ესწრაფვიან.",
+es:"Organiza sindicatos revolucionarios para abolir el capitalismo y el Estado mediante la huelga general.",
+ja:"ゼネラル・ストライキを通じて資本主義と国家の廃止を目指す革命的労働組合を組織する。",
+ko:"총파업을 통해 자본주의와 국가를 폐지하기 위한 혁명적 노동조합을 조직한다."
+},
+"Emphasises permanent informal direct action and attack against state and capital rather than mass organisation.":{
+ru:"Подчёркивает постоянное неформальное прямое действие и борьбу против государства и капитала вместо массовой организации.",
+de:"Betont dauerhafte informelle direkte Aktionen und Angriffe auf Staat und Kapital statt Massenorganisation.",
+fr:"Met l’accent sur l’action directe informelle et permanente contre l’État et le capital plutôt que sur l’organisation de masse.",
+"zh-CN":"强调持续、非正式的直接行动和对国家与资本的攻击，而非群众组织。",
+id:"Menekankan aksi langsung informal yang berkelanjutan dan perlawanan terhadap negara serta kapital, bukan organisasi massa.",
+ka:"მასობრივი ორგანიზების ნაცვლად ხაზს უსვამს მუდმივ არაფორმალურ პირდაპირ მოქმედებასა და სახელმწიფოსა და კაპიტალის წინააღმდეგ ბრძოლას.",
+es:"Destaca la acción directa informal y permanente contra el Estado y el capital, en lugar de la organización de masas.",
+ja:"大衆組織よりも、国家と資本に対する継続的で非公式な直接行動を重視する。",
+ko:"대중조직보다 국가와 자본에 대한 지속적이고 비공식적인 직접행동을 강조한다."
+},
+"Anarchism focused on ecological problems, decentralisation and ending human domination of nature.":{
+ru:"Анархизм, сосредоточенный на экологических проблемах, децентрализации и прекращении господства человека над природой.",
+de:"Anarchismus mit Schwerpunkt auf ökologischen Problemen, Dezentralisierung und der Beendigung menschlicher Herrschaft über die Natur.",
+fr:"Anarchisme centré sur les problèmes écologiques, la décentralisation et la fin de la domination humaine sur la nature.",
+"zh-CN":"关注生态问题、权力下放以及终结人类对自然支配的无政府主义。",
+id:"Anarkisme yang berfokus pada masalah ekologi, desentralisasi, dan penghentian dominasi manusia atas alam.",
+ka:"ანარქიზმი, რომელიც ეკოლოგიურ პრობლემებზე, დეცენტრალიზაციასა და ბუნებაზე ადამიანის ბატონობის დასრულებაზეა ორიენტირებული.",
+es:"Anarquismo centrado en los problemas ecológicos, la descentralización y el fin de la dominación humana sobre la naturaleza.",
+ja:"環境問題、分権化、人間による自然支配の終結に焦点を当てたアナキズム。",
+ko:"생태 문제, 분권화, 자연에 대한 인간의 지배 종식을 중시하는 아나키즘."
+},
+"Holds that socialism requires the overthrow of the capitalist state rather than reform.":{
+ru:"Утверждает, что социализм требует свержения капиталистического государства, а не проведения реформ.",
+de:"Vertritt die Auffassung, dass Sozialismus den Sturz des kapitalistischen Staates statt Reformen voraussetzt.",
+fr:"Soutient que le socialisme exige le renversement de l’État capitaliste plutôt que sa réforme.",
+"zh-CN":"认为社会主义需要推翻资本主义国家，而非通过改革实现。",
+id:"Berpendapat bahwa sosialisme memerlukan penggulingan negara kapitalis, bukan reformasi.",
+ka:"მიიჩნევს, რომ სოციალიზმი კაპიტალისტური სახელმწიფოს დამხობას მოითხოვს და არა რეფორმას.",
+es:"Sostiene que el socialismo exige derrocar el Estado capitalista en lugar de reformarlo.",
+ja:"社会主義は改革ではなく、資本主義国家の打倒を必要とすると主張する。",
+ko:"사회주의는 개혁이 아니라 자본주의 국가의 전복을 필요로 한다고 본다."
+},
+"1990s centrist project (Giddens, Blair, Clinton, Schröder) combining market economics with social-democratic goals: equal opportunity, responsibility and public–private partnership.":{
+ru:"Центристский проект 1990-х годов (Гидденс, Блэр, Клинтон, Шрёдер), сочетавший рыночную экономику с социал-демократическими целями: равенством возможностей, ответственностью и государственно-частным партнёрством.",
+de:"Zentristisches Projekt der 1990er Jahre (Giddens, Blair, Clinton, Schröder), das Marktwirtschaft mit sozialdemokratischen Zielen wie Chancengleichheit, Verantwortung und öffentlich-privater Partnerschaft verband.",
+fr:"Projet centriste des années 1990 (Giddens, Blair, Clinton, Schröder) associant économie de marché et objectifs sociaux-démocrates : égalité des chances, responsabilité et partenariat public-privé.",
+"zh-CN":"20世纪90年代的中间派政治方案（吉登斯、布莱尔、克林顿、施罗德），将市场经济与社会民主主义目标结合起来，包括机会平等、责任和公私合作伙伴关系。",
+id:"Proyek sentris tahun 1990-an (Giddens, Blair, Clinton, Schröder) yang memadukan ekonomi pasar dengan tujuan sosial-demokratis: kesempatan setara, tanggung jawab, dan kemitraan publik-swasta.",
+ka:"1990-იანი წლების ცენტრისტული პროექტი (გიდენსი, ბლერი, კლინტონი, შრედერი), რომელიც საბაზრო ეკონომიკას სოციალურ-დემოკრატიულ მიზნებთან აერთიანებდა: თანაბარ შესაძლებლობებთან, პასუხისმგებლობასა და საჯარო-კერძო პარტნიორობასთან.",
+es:"Proyecto centrista de los años noventa (Giddens, Blair, Clinton, Schröder) que combinaba economía de mercado con objetivos socialdemócratas: igualdad de oportunidades, responsabilidad y colaboración público-privada.",
+ja:"1990年代の中道政治プロジェクト（ギデンズ、ブレア、クリントン、シュレーダー）。市場経済と機会均等、責任、公民連携などの社会民主主義的目標を組み合わせた。",
+ko:"기든스, 블레어, 클린턴, 슈뢰더 등과 관련된 1990년대 중도 정치 프로젝트로, 시장경제와 기회균등·책임·공공-민간 협력이라는 사회민주주의 목표를 결합했다."
+},
+"Economic doctrine from Catholic social teaching (Chesterton, Belloc) favouring widespread ownership of productive property, neither capitalism nor socialism.":{
+ru:"Экономическое учение, выросшее из католической социальной доктрины (Честертон, Беллок) и выступающее за широкое распространение собственности на средства производства, вне капитализма и социализма.",
+de:"Wirtschaftslehre aus der katholischen Soziallehre (Chesterton, Belloc), die eine breite Verteilung produktiven Eigentums befürwortet und weder Kapitalismus noch Sozialismus vertritt.",
+fr:"Doctrine économique issue de la doctrine sociale catholique (Chesterton, Belloc), favorable à une large répartition de la propriété productive, en dehors du capitalisme comme du socialisme.",
+"zh-CN":"源自天主教社会教义（切斯特顿、贝洛克）的经济学说，主张广泛分散生产性财产所有权，既不走资本主义也不走社会主义道路。",
+id:"Doktrin ekonomi dari ajaran sosial Katolik (Chesterton, Belloc) yang mendukung penyebaran luas kepemilikan aset produktif, bukan kapitalisme maupun sosialisme.",
+ka:"კათოლიკური სოციალური მოძღვრებიდან (ჩესტერტონი, ბელოკი) წარმოშობილი ეკონომიკური დოქტრინა, რომელიც პროდუქტიულ საკუთრებაზე ფართო წვდომას ემხრობა და არც კაპიტალიზმს და არც სოციალიზმს არ ეკუთვნის.",
+es:"Doctrina económica derivada de la enseñanza social católica (Chesterton, Belloc) que favorece una amplia distribución de la propiedad productiva, sin ser capitalismo ni socialismo.",
+ja:"カトリック社会教説（チェスタトン、ベロック）に由来し、生産資産の広範な所有を支持する、資本主義でも社会主義でもない経済思想。",
+ko:"가톨릭 사회교리(체스터턴, 벨록)에서 나온 경제 교리로, 자본주의나 사회주의가 아닌 생산적 재산의 광범위한 소유를 지지한다."
+},
+"Organises society through representative functional groups (labour, business, professions) that negotiate under state supervision.":{
+ru:"Организует общество через представительные функциональные группы (труд, бизнес, профессии), ведущие переговоры под надзором государства.",
+de:"Organisiert die Gesellschaft durch repräsentative Funktionsgruppen (Arbeit, Wirtschaft, Berufe), die unter staatlicher Aufsicht verhandeln.",
+fr:"Organise la société au moyen de groupes fonctionnels représentatifs (travail, entreprises, professions) qui négocient sous la supervision de l’État.",
+"zh-CN":"通过代表性的职能团体（劳工、企业、专业人士）组织社会，并由国家监督其协商。",
+id:"Mengatur masyarakat melalui kelompok fungsional yang representatif (buruh, bisnis, profesi) yang berunding di bawah pengawasan negara.",
+ka:"საზოგადოებას აწყობს წარმომადგენლობითი ფუნქციური ჯგუფების (შრომა, ბიზნესი, პროფესიები) მეშვეობით, რომლებიც სახელმწიფოს ზედამხედველობით აწარმოებენ მოლაპარაკებებს.",
+es:"Organiza la sociedad mediante grupos funcionales representativos (trabajo, empresas, profesiones) que negocian bajo supervisión estatal.",
+ja:"労働、企業、専門職などの代表機能集団が国家の監督下で交渉する形で社会を組織する。",
+ko:"노동, 기업, 전문직 등 대표 기능 집단이 국가 감독 아래 협상하는 방식으로 사회를 조직한다."
+},
+"Policy and government led by technical experts rather than elected generalists or ideology.":{
+ru:"Политика и управление, осуществляемые техническими экспертами, а не избранными универсальными политиками или идеологическими лидерами.",
+de:"Politik und Regierung werden von technischen Fachleuten statt von gewählten Generalisten oder ideologischen Akteuren geführt.",
+fr:"Politique et gouvernement dirigés par des experts techniques plutôt que par des généralistes élus ou une idéologie.",
+"zh-CN":"由技术专家而非民选通才或意识形态主导者领导政策和政府。",
+id:"Kebijakan dan pemerintahan yang dipimpin oleh pakar teknis, bukan generalis terpilih atau ideologi.",
+ka:"პოლიტიკა და მმართველობა, რომელსაც ტექნიკური ექსპერტები წარმართავენ და არა არჩეული ზოგადი პროფილის პოლიტიკოსები ან იდეოლოგია.",
+es:"Política y gobierno dirigidos por expertos técnicos en lugar de generalistas elegidos o de una ideología.",
+ja:"選挙で選ばれた一般政治家やイデオロギーではなく、技術専門家が政策と政府を主導する考え方。",
+ko:"선출된 일반 정치인이나 이념이 아니라 기술 전문가가 정책과 정부를 주도하는 체제."
+},
+"Emphasises community, shared values and social obligations as counterweights to pure individualism.":{
+ru:"Подчёркивает значение сообщества, общих ценностей и социальных обязательств как противовеса чистому индивидуализму.",
+de:"Betont Gemeinschaft, gemeinsame Werte und soziale Pflichten als Gegengewicht zum reinen Individualismus.",
+fr:"Met l’accent sur la communauté, les valeurs partagées et les obligations sociales comme contrepoids à l’individualisme pur.",
+"zh-CN":"强调共同体、共同价值和社会义务，以此制衡纯粹的个人主义。",
+id:"Menekankan komunitas, nilai bersama, dan kewajiban sosial sebagai penyeimbang individualisme murni.",
+ka:"საზოგადოებას, საერთო ღირებულებებსა და სოციალურ ვალდებულებებს წმინდა ინდივიდუალიზმის საპირწონედ მიიჩნევს.",
+es:"Destaca la comunidad, los valores compartidos y las obligaciones sociales como contrapeso al individualismo puro.",
+ja:"純粋な個人主義への対抗軸として、共同体、共有された価値、社会的義務を重視する。",
+ko:"순수한 개인주의에 대한 균형추로 공동체, 공유 가치, 사회적 의무를 강조한다."
+},
+"Henry George's doctrine that land value belongs equally to all, funded by a land-value tax.":{
+ru:"Учение Генри Джорджа о том, что стоимость земли в равной мере принадлежит всем и должна финансироваться за счёт земельного налога.",
+de:"Henry Georges Lehre, dass der Bodenwert allen gleichermaßen gehört und durch eine Bodenwertsteuer abgeschöpft werden soll.",
+fr:"Doctrine d’Henry George selon laquelle la valeur foncière appartient également à tous et doit être captée par un impôt sur la valeur du terrain.",
+"zh-CN":"亨利·乔治提出的学说，认为土地价值平等地属于所有人，并应通过土地价值税筹资。",
+id:"Doktrin Henry George bahwa nilai tanah menjadi milik semua orang secara setara dan dibiayai melalui pajak nilai tanah.",
+ka:"ჰენრი ჯორჯის მოძღვრება, რომლის მიხედვითაც მიწის ღირებულება ყველას თანაბრად ეკუთვნის და მიწის ღირებულების გადასახადით უნდა ფინანსდებოდეს.",
+es:"Doctrina de Henry George según la cual el valor del suelo pertenece por igual a todos y se financia mediante un impuesto sobre el valor de la tierra.",
+ja:"土地の価値は万人に等しく帰属し、地価税によって公共財源を得るべきだとするヘンリー・ジョージの教説。",
+ko:"토지 가치는 모든 사람에게 동등하게 귀속되며 토지가치세로 공공재정을 마련해야 한다는 헨리 조지의 교리."
+},
+"Focuses on civil liberties online, copyright and patent reform, privacy and direct democracy.":{
+ru:"Сосредоточена на гражданских свободах в интернете, реформе авторского и патентного права, приватности и прямой демократии.",
+de:"Konzentriert sich auf Bürgerrechte im Internet, Reformen von Urheber- und Patentrecht, Privatsphäre und direkte Demokratie.",
+fr:"Se concentre sur les libertés civiles en ligne, la réforme du droit d’auteur et des brevets, la vie privée et la démocratie directe.",
+"zh-CN":"关注网络公民自由、版权和专利改革、隐私保护及直接民主。",
+id:"Berfokus pada kebebasan sipil daring, reformasi hak cipta dan paten, privasi, serta demokrasi langsung.",
+ka:"ფოკუსირებულია ონლაინ სამოქალაქო თავისუფლებებზე, საავტორო და საპატენტო სამართლის რეფორმაზე, პირად ცხოვრებასა და პირდაპირ დემოკრატიაზე.",
+es:"Se centra en las libertades civiles en línea, la reforma de los derechos de autor y patentes, la privacidad y la democracia directa.",
+ja:"オンライン上の市民的自由、著作権・特許制度の改革、プライバシー、直接民主主義に焦点を当てる。",
+ko:"온라인 시민적 자유, 저작권·특허 개혁, 개인정보 보호, 직접민주주의에 초점을 둔다."
+},
+});
+
 export default rows;
