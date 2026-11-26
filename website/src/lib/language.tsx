@@ -58,8 +58,24 @@ export function useLanguage() {
 }
 
 const COMPOSITE_TRANSLATION_KEYS = [
+  "Delete project “",
+  "” permanently?",
+  "Delete issue “",
+  "”? Past votes stay in the history.",
   "no faction decision → party line",
   "no faction → party line",
+  " deputies and factions will be removed and seats become unallocated.",
+  "Could not create voting issue:",
+  "Could not load browser project storage:",
+  "Created ",
+  "Imported “",
+  "”.",
+  "? Its ",
+  "Delete ",
+  "Merge the selected parties into the target? This cannot be undone.",
+  "Restore this snapshot? The current project will first be saved as a recovery snapshot.",
+  "Delete this vote from history?",
+  "Reset ALL appearance, geometry and default settings of this project? Parties and votes are kept.",
   "no rule configured",
   "has no configured position",
   "no ideology assigned",
@@ -115,7 +131,7 @@ const COMPOSITE_TRANSLATION_KEYS = [
   "Absent",
   "Vote:",
   "Normalised:",
-] as const;;
+] as const;;;
 
 function escapeRegExp(value: string): string {
   const special = new Set([".", "*", "+", "?", "^", "$", "{", "}", "(", ")", "|", "[", "]", "\\"]);
