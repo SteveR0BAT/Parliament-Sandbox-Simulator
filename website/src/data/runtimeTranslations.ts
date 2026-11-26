@@ -195,4 +195,112 @@ const rows: Record<string, Record<string, string>> = {
   "Authoritarian & State-Communist Traditions": {ru:"Авторитарные и государственно-коммунистические традиции",de:"Autoritäre und staatskommunistische Traditionen",fr:"Traditions autoritaires et communistes étatiques","zh-CN":"威权主义与国家共产主义传统",id:"Tradisi otoriter dan komunis negara",ka:"ავტორიტარული და სახელმწიფო-კომუნისტური ტრადიციები",es:"Tradiciones autoritarias y del comunismo de Estado",ja:"権威主義的・国家共産主義の伝統",ko:"권위주의 및 국가공산주의 전통"},
   "Fascist & Ultranationalist Traditions": {ru:"Фашистские и ультранационалистические традиции",de:"Faschistische und ultranationalistische Traditionen",fr:"Traditions fascistes et ultranationalistes","zh-CN":"法西斯主义与极端民族主义传统",id:"Tradisi fasis dan ultranasionalis",ka:"ფაშისტური და ულტრანაციონალისტური ტრადიციები",es:"Tradiciones fascistas y ultranacionalistas",ja:"ファシズム・超国家主義の伝統",ko:"파시즘 및 초국가주의 전통"}
 };
+
+Object.assign(rows, {
+// Navigation, panels, chamber controls and party/deputy forms.
+"Parliament":{
+ru:"Парламент",de:"Parlament",fr:"Parlement","zh-CN":"议会",id:"Parlemen",ka:"პარლამენტი",es:"Parlamento",ja:"議会",ko:"의회"},
+"Overview":{
+ru:"Обзор",de:"Übersicht",fr:"Aperçu","zh-CN":"概览",id:"Ikhtisar",ka:"მიმოხილვა",es:"Resumen",ja:"概要",ko:"개요"},
+"Voting simulator":{
+ru:"Симулятор голосования",de:"Abstimmungssimulator",fr:"Simulateur de vote","zh-CN":"投票模拟器",id:"Simulator pemungutan suara",ka:"კენჭისყრის სიმულატორი",es:"Simulador de votaciones",ja:"投票シミュレーター",ko:"투표 시뮬레이터"},
+"Manage projects":{
+ru:"Управление проектами",de:"Projekte verwalten",fr:"Gérer les projets","zh-CN":"管理项目",id:"Kelola proyek",ka:"პროექტების მართვა",es:"Administrar proyectos",ja:"プロジェクト管理",ko:"프로젝트 관리"},
+"Collapse side panel":{
+ru:"Свернуть боковую панель",de:"Seitenleiste einklappen",fr:"Réduire le panneau latéral","zh-CN":"折叠侧边栏",id:"Ciutkan panel samping",ka:"გვერდითი პანელის ჩაკეცვა",es:"Contraer el panel lateral",ja:"サイドパネルを折りたたむ",ko:"사이드 패널 접기"},
+"Expand side panel":{
+ru:"Развернуть боковую панель",de:"Seitenleiste ausklappen",fr:"Développer le panneau latéral","zh-CN":"展开侧边栏",id:"Perluas panel samping",ka:"გვერდითი პანელის გაშლა",es:"Expandir el panel lateral",ja:"サイドパネルを展開する",ko:"사이드 패널 펼치기"},
+"Toggle side panel":{
+ru:"Показать или скрыть боковую панель",de:"Seitenleiste umschalten",fr:"Afficher ou masquer le panneau latéral","zh-CN":"切换侧边栏",id:"Tampilkan/sembunyikan panel samping",ka:"გვერდითი პანელის ჩვენება/დამალვა",es:"Mostrar u ocultar el panel lateral",ja:"サイドパネルの表示を切り替える",ko:"사이드 패널 표시 전환"},
+"Toggle dark / light mode":{
+ru:"Переключить тёмную / светлую тему",de:"Dunkel-/Hellmodus umschalten",fr:"Basculer entre le mode sombre et clair","zh-CN":"切换深色/浅色模式",id:"Ganti mode gelap/terang",ka:"მუქი / ნათელი რეჟიმის გადართვა",es:"Cambiar entre modo oscuro y claro",ja:"ダーク／ライトモードを切り替える",ko:"다크/라이트 모드 전환"},
+"Toggle theme":{
+ru:"Сменить тему",de:"Design umschalten",fr:"Changer de thème","zh-CN":"切换主题",id:"Ganti tema",ka:"თემის გადართვა",es:"Cambiar tema",ja:"テーマを切り替える",ko:"테마 전환"},
+"Parties with coalition rings":{
+ru:"Партии с кольцами коалиций",de:"Parteien mit Koalitionsringen",fr:"Partis avec anneaux de coalition","zh-CN":"显示带有联盟环的政党",id:"Partai dengan cincin koalisi",ka:"პარტიები კოალიციის რგოლებით",es:"Partidos con anillos de coalición",ja:"連立リング付きの政党",ko:"연정 링이 있는 정당"},
+"Factions, parties and coalitions":{
+ru:"Фракции, партии и коалиции",de:"Fraktionen, Parteien und Koalitionen",fr:"Factions, partis et coalitions","zh-CN":"派系、政党与联盟",id:"Faksi, partai, dan koalisi",ka:"ფრაქციები, პარტიები და კოალიციები",es:"Facciones, partidos y coaliciones",ja:"派閥・政党・連合",ko:"파벌, 정당, 연합"},
+"Toggle the vote result overlay":{
+ru:"Показать или скрыть результаты голосования",de:"Abstimmungsergebnis ein-/ausblenden",fr:"Afficher ou masquer le résultat du vote","zh-CN":"切换投票结果覆盖层",id:"Tampilkan/sembunyikan hasil pemungutan suara",ka:"კენჭისყრის შედეგების ფენის ჩვენება/დამალვა",es:"Mostrar u ocultar la capa de resultados",ja:"投票結果の表示を切り替える",ko:"투표 결과 오버레이 전환"},
+"Manual seating is locked. Use Auto-arrange in the Parliament tab to restore party blocks.":{
+ru:"Ручная рассадка заблокирована. Используйте «Автоматическое размещение» на вкладке «Парламент», чтобы восстановить блоки партий.",
+de:"Die manuelle Sitzordnung ist gesperrt. Verwenden Sie „Automatisch anordnen“ im Reiter Parlament, um die Parteiblöcke wiederherzustellen.",
+fr:"Le placement manuel est verrouillé. Utilisez « Disposition automatique » dans l’onglet Parlement pour rétablir les blocs des partis.",
+"zh-CN":"手动排座已锁定。请在“议会”选项卡中使用“自动排列”以恢复政党区块。",
+id:"Penataan kursi manual terkunci. Gunakan Atur otomatis pada tab Parlemen untuk memulihkan blok partai.",
+ka:"ხელით განლაგება დაბლოკილია. პარტიების ბლოკების აღსადგენად გამოიყენეთ „ავტომატური განლაგება“ პარლამენტის ჩანართში.",
+es:"La disposición manual está bloqueada. Use «Organizar automáticamente» en la pestaña Parlamento para restaurar los bloques de partidos.",
+ja:"手動座席配置はロックされています。政党ごとの配置に戻すには「議会」タブの「自動配置」を使用してください。",
+ko:"수동 좌석 배치가 잠겨 있습니다. 정당별 블록을 복원하려면 의회 탭에서 자동 정렬을 사용하세요."
+},
+"· seat outline = party colour":{
+ru:"· контур места = цвет партии",de:"· Sitzumrandung = Parteifarbe",fr:"· contour du siège = couleur du parti","zh-CN":"· 席位边框 = 政党颜色",id:"· garis kursi = warna partai",ka:"· ადგილის კონტური = პარტიის ფერი",es:"· contorno del escaño = color del partido",ja:"· 座席の輪郭 = 政党カラー",ko:"· 좌석 윤곽 = 정당 색상"},
+"vacant":{
+ru:"Свободно",de:"Frei",fr:"Vacant","zh-CN":"空缺",id:"Kosong",ka:"თავისუფალი",es:"Vacante",ja:"空席",ko:"공석"},
+"No deputies yet — create parties in the Parties tab.":{
+ru:"Пока нет депутатов — создайте партии на вкладке «Партии».",
+de:"Noch keine Abgeordneten – erstellen Sie Parteien im Reiter Parteien.",
+fr:"Aucun député pour le moment — créez des partis dans l’onglet Partis.",
+"zh-CN":"目前还没有议员——请在“政党”选项卡中创建政党。",
+id:"Belum ada anggota parlemen — buat partai pada tab Partai.",
+ka:"დეპუტატები ჯერ არ არიან — შექმენით პარტიები „პარტიების“ ჩანართში.",
+es:"Todavía no hay diputados: cree partidos en la pestaña Partidos.",
+ja:"議員がまだいません。「政党」タブで政党を作成してください。",
+ko:"아직 의원이 없습니다. 정당 탭에서 정당을 만드세요."
+},
+"Coalition colour (ring)":{
+ru:"Цвет коалиции (кольцо)",de:"Koalitionsfarbe (Ring)",fr:"Couleur de la coalition (anneau)","zh-CN":"联盟颜色（环）",id:"Warna koalisi (cincin)",ka:"კოალიციის ფერი (რგოლი)",es:"Color de la coalición (anillo)",ja:"連合カラー（リング）",ko:"연합 색상(링)"},
+"Create parties first.":{
+ru:"Сначала создайте партии.",de:"Erstellen Sie zuerst Parteien.",fr:"Créez d’abord des partis.","zh-CN":"请先创建政党。",id:"Buat partai terlebih dahulu.",ka:"ჯერ შექმენით პარტიები.",es:"Primero cree partidos.",ja:"先に政党を作成してください。",ko:"먼저 정당을 만드세요."},
+"Orientation (optional)":{
+ru:"Ориентация (необязательно)",de:"Ausrichtung (optional)",fr:"Orientation (facultative)","zh-CN":"政治取向（可选）",id:"Orientasi (opsional)",ka:"ორიენტაცია (არასავალდებულო)",es:"Orientación (opcional)",ja:"方向性（任意）",ko:"성향(선택 사항)"},
+"Ideology (optional)":{
+ru:"Идеология (необязательно)",de:"Ideologie (optional)",fr:"Idéologie (facultatif)","zh-CN":"意识形态（可选）",id:"Ideologi (opsional)",ka:"იდეოლოგია (არასავალდებულო)",es:"Ideología (opcional)",ja:"イデオロギー（任意）",ko:"이념(선택 사항)"},
+"Visual colour picker":{
+ru:"Визуальный выбор цвета",de:"Visuelle Farbauswahl",fr:"Sélecteur visuel de couleur","zh-CN":"可视化颜色选择器",id:"Pemilih warna visual",ka:"ფერის ვიზუალური არჩევა",es:"Selector visual de color",ja:"ビジュアルカラーピッカー",ko:"시각적 색상 선택기"},
+"HEX colour":{
+ru:"Цвет HEX",de:"HEX-Farbe",fr:"Couleur HEX","zh-CN":"HEX 颜色",id:"Warna HEX",ka:"HEX ფერი",es:"Color HEX",ja:"HEXカラー",ko:"HEX 색상"},
+"Type any format":{
+ru:"Введите значение в любом формате",de:"Beliebiges Format eingeben",fr:"Saisissez n’importe quel format","zh-CN":"输入任意格式",id:"Ketik format apa pun",ka:"შეიყვანეთ ნებისმიერი ფორმატით",es:"Escriba en cualquier formato",ja:"任意の形式で入力",ko:"아무 형식으로 입력"},
+"Suggested:":{
+ru:"Предлагается:",de:"Vorgeschlagen:",fr:"Suggestion :","zh-CN":"建议：",id:"Disarankan:",ka:"შემოთავაზებულია:",es:"Sugerido:",ja:"おすすめ:",ko:"추천:"},
+"Progressive Faction":{
+ru:"Прогрессивная фракция",de:"Progressive Fraktion",fr:"Faction progressiste","zh-CN":"进步派系",id:"Faksi progresif",ka:"პროგრესული ფრაქცია",es:"Facción progresista",ja:"進歩派閥",ko:"진보 파벌"},
+"Abbr. (optional)":{
+ru:"Сокращение (необязательно)",de:"Abkürzung (optional)",fr:"Abrév. (facultatif)","zh-CN":"缩写（可选）",id:"Singkatan (opsional)",ka:"აბრევიატურა (არასავალდებულო)",es:"Abrev. (opcional)",ja:"略称（任意）",ko:"약칭(선택 사항)"},
+"Suggested shades are derived from the party colour; you can pick anything.":{
+ru:"Предлагаемые оттенки рассчитаны на основе цвета партии; вы можете выбрать любой цвет.",
+de:"Die vorgeschlagenen Farbtöne leiten sich von der Parteifarbe ab; Sie können beliebige Farben wählen.",
+fr:"Les nuances proposées sont dérivées de la couleur du parti ; vous pouvez choisir n’importe quelle couleur.",
+"zh-CN":"建议色调根据政党颜色生成；您也可以自由选择任何颜色。",
+id:"Nuansa yang disarankan berasal dari warna partai; Anda bebas memilih warna apa pun.",
+ka:"შემოთავაზებული ტონები პარტიის ფერზეა დაფუძნებული; შეგიძლიათ ნებისმიერი ფერი აირჩიოთ.",
+es:"Los tonos sugeridos se derivan del color del partido; puede elegir cualquier otro.",
+ja:"推奨色は政党カラーを基にしていますが、自由に選択できます。",
+ko:"추천 색조는 정당 색상에서 파생되지만 원하는 색상을 선택할 수 있습니다."
+},
+"Ideology (optional — independent of the party's ideology)":{
+ru:"Идеология (необязательно — не зависит от идеологии партии)",de:"Ideologie (optional – unabhängig von der Parte ideologie)",fr:"Idéologie (facultative — indépendante de celle du parti)","zh-CN":"意识形态（可选——独立于政党的意识形态）",id:"Ideologi (opsional — terpisah dari ideologi partai)",ka:"იდეოლოგია (არასავალდებულო — პარტიის იდეოლოგიისგან დამოუკიდებელი)",es:"Ideología (opcional: independiente de la del partido)",ja:"イデオロギー（任意。政党のイデオロギーとは独立）",ko:"이념(선택 사항 — 정당 이념과 별개)"},
+"None — assign later":{
+ru:"Нет — назначить позже",de:"Keine – später zuweisen",fr:"Aucune — attribuer plus tard","zh-CN":"无——稍后分配",id:"Tidak ada — tetapkan nanti",ka:"არცერთი — მოგვიანებით მიენიჭოს",es:"Ninguna: asignar más tarde",ja:"なし — 後で割り当て",ko:"없음 — 나중에 지정"},
+"Faction leader (optional)":{
+ru:"Лидер фракции (необязательно)",de:"Fraktionsvorsitz (optional)",fr:"Chef de faction (facultatif)","zh-CN":"派系领袖（可选）",id:"Pemimpin faksi (opsional)",ka:"ფრაქციის ლიდერი (არასავალდებულო)",es:"Líder de la facción (opcional)",ja:"派閥リーダー（任意）",ko:"파벌 지도자(선택 사항)"},
+"not in a faction":{
+ru:"вне фракции",de:"keiner Fraktion zugehörig",fr:"sans faction","zh-CN":"不属于任何派系",id:"bukan anggota faksi",ka:"ფრაქციის გარეშე",es:"sin facción",ja:"派閥なし",ko:"파벌 없음"},
+"Assign deputies":{
+ru:"Назначить депутатов",de:"Abgeordnete zuweisen",fr:"Attribuer des députés","zh-CN":"分配议员",id:"Tetapkan anggota parlemen",ka:"დეპუტატების მინიჭება",es:"Asignar diputados",ja:"議員を割り当てる",ko:"의원 배정"},
+"Search deputies of this party…":{
+ru:"Поиск депутатов этой партии…",de:"Abgeordnete dieser Partei suchen …",fr:"Rechercher les députés de ce parti…","zh-CN":"搜索该政党的议员…",id:"Cari anggota parlemen partai ini…",ka:"ამ პარტიის დეპუტატების ძიება…",es:"Buscar diputados de este partido…",ja:"この政党の議員を検索…",ko:"이 정당의 의원 검색…"},
+"Specify this dimension":{
+ru:"Указать это измерение",de:"Diese Dimension festlegen",fr:"Préciser cette dimension","zh-CN":"指定此维度",id:"Tentukan dimensi ini",ka:"ამ განზომილების მითითება",es:"Especificar esta dimensión",ja:"この次元を指定",ko:"이 차원 지정"},
+"Unclassified custom ideologies":{
+ru:"Неклассифицированные пользовательские идеологии",de:"Nicht klassifizierte benutzerdefinierte Ideologien",fr:"Idéologies personnalisées non classées","zh-CN":"未分类的自定义意识形态",id:"Ideologi kustom yang belum diklasifikasikan",ka:"არაკლასიფიცირებული მორგებული იდეოლოგიები",es:"Ideologías personalizadas sin clasificar",ja:"未分類のカスタムイデオロギー",ko:"분류되지 않은 사용자 정의 이념"},
+"No ideologies match":{
+ru:"Нет подходящих идеологий",de:"Keine passenden Ideologien",fr:"Aucune idéologie correspondante","zh-CN":"没有匹配的意识形态",id:"Tidak ada ideologi yang cocok",ka:"შესაბამისი იდეოლოგია ვერ მოიძებნა",es:"No hay ideologías coincidentes",ja:"一致するイデオロギーがありません",ko:"일치하는 이념이 없습니다"},
+"Also:":{
+ru:"Также:",de:"Auch:",fr:"Aussi :","zh-CN":"亦称：",id:"Juga:",ka:"ასევე:",es:"También:",ja:"別名:",ko:"다른 이름:"},
+"Sources & references":{
+ru:"Источники и литература",de:"Quellen und Literatur",fr:"Sources et références","zh-CN":"来源与参考资料",id:"Sumber dan referensi",ka:"წყაროები და ლიტერატურა",es:"Fuentes y referencias",ja:"出典・参考文献",ko:"출처 및 참고문헌"},
+});
+
 export default rows;
