@@ -988,3 +988,21 @@ Object.assign(rows, {
 "Delete this vote from history?": translateAllLocales("Удалить это голосование из истории?","Diese Abstimmung aus dem Verlauf löschen?","Supprimer ce vote de l’historique ?","从历史记录中删除这次投票？","Hapus pemungutan suara ini dari riwayat?","წავშალოთ ეს კენჭისყრა ისტორიიდან?","¿Eliminar esta votación del historial?","この投票を履歴から削除しますか？","이 투표를 기록에서 삭제할까요?"),
 
 });
+
+
+Object.assign(rows, {
+// Dynamic confirmations and toast prefixes/suffixes; variable names remain intact.
+"Delete project “": translateAllLocales("Удалить проект «","Projekt „","Supprimer le projet «","删除项目“","Hapus proyek “","წავშალოთ პროექტი „","Eliminar el proyecto «","プロジェクト「","프로젝트 “"),
+"” permanently?": translateAllLocales("» навсегда?","“ dauerhaft?","» définitivement ?","”吗？","” secara permanen?","“ სამუდამოდ?","» permanentemente?","」を完全に削除しますか？","” 영구 삭제할까요?"),
+"Delete issue “": translateAllLocales("Удалить вопрос «","Vorlage „","Supprimer le texte «","删除议题“","Hapus isu “","წავშალოთ საკითხი „","Eliminar el asunto «","議題「","안건 “"),
+"”? Past votes stay in the history.": translateAllLocales("»? Предыдущие голосования останутся в истории.","“? Frühere Abstimmungen bleiben im Verlauf erhalten.","» ? Les votes précédents resteront dans l’historique.","”吗？此前的投票记录仍会保留。","”? Pemungutan suara sebelumnya tetap ada dalam riwayat.","“? წინა კენჭისყრები ისტორიაში დარჩება.","»? Las votaciones anteriores permanecerán en el historial.","」を削除しますか？過去の投票記録は履歴に残ります。","” 삭제할까요? 이전 투표 기록은 기록에 유지됩니다."),
+"Delete ": translateAllLocales("Удалить ","Löschen ","Supprimer ","删除","Hapus ","წაშლა ","Eliminar ","削除","삭제 "),
+"? Its ": translateAllLocales("? У него ","? Dadurch werden "," ? Ses ","？其","? Semua ","? მისი ","? Se eliminarán ","? これにより","? 이 항목의 "),
+" deputies and factions will be removed and seats become unallocated.": translateAllLocales(" депутатов и фракции будут удалены, а места станут нераспределёнными."," Abgeordnete und Fraktionen werden entfernt und die Sitze werden wieder frei."," députés et les factions seront supprimés, et les sièges seront libérés.","名议员和派系将被移除，席位将变为未分配。"," anggota dan faksi akan dihapus, dan kursi menjadi belum dialokasikan."," დეპუტატი და ფრაქცია წაიშლება, ადგილები კი გაუნაწილებელი გახდება."," diputados y facciones serán eliminados y los escaños quedarán sin asignar.","人の議員と派閥が削除され、議席は未配分になります。","명의 의원과 파벌이 제거되고 의석은 미배정 상태가 됩니다."),
+"Created ": translateAllLocales("Создано: ","Erstellt: ","Créé : ","已创建：","Dibuat: ","შეიქმნა: ","Creado: ","作成：","생성됨: "),
+"Imported “": translateAllLocales("Импортировано «","Importiert „","Importé «","已导入“","Diimpor “","იმპორტირებულია „","Importado «","インポート済み「","가져옴 “"),
+"”.": translateAllLocales("».","“。","».","”。","”。","“.","».","」。","”。"),
+"Could not create voting issue:": translateAllLocales("Не удалось создать вопрос для голосования:","Die Abstimmungsvorlage konnte nicht erstellt werden:","Impossible de créer le texte soumis au vote :","无法创建投票议题：","Tidak dapat membuat isu pemungutan suara:","კენჭისყრის საკითხის შექმნა ვერ მოხერხდა:","No se pudo crear el asunto de votación:","投票議題を作成できませんでした:","투표 안건을 만들 수 없습니다:"),
+"Saved.": translateAllLocales("Сохранено.","Gespeichert.","Enregistré.","已保存。","Tersimpan.","შენახულია.","Guardado.","保存しました。","저장되었습니다."),
+"Save failed.": translateAllLocales("Не удалось сохранить.","Speichern fehlgeschlagen.","Échec de l’enregistrement.","保存失败。","Gagal menyimpan.","შენახვა ვერ მოხერხდა.","No se pudo guardar.","保存に失敗しました。","저장에 실패했습니다."),
+});
