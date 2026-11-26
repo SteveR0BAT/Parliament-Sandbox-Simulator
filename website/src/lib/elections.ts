@@ -53,7 +53,7 @@ export function simulateElection(data: ProjectData, randomness: number, momentum
     return weight;
   });
   const minimums = current.map((seats) => (randomness <= 5 && seats > 0 ? 1 : 0));
-  const floorTotal = minimums.reduce((sum, seats) => sum + seats, 0);
+  const floorTotal = minimums.reduce<number>((sum, seats) => sum + seats, 0);
   const apportioned = apportion(weights, partySeats - floorTotal);
   const targets: Record<string, number> = {};
   data.parties.forEach((party, index) => (targets[party.id] = minimums[index] + apportioned[index]));
