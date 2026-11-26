@@ -7,6 +7,8 @@ import { IdeologySelect } from "./IdeologyPicker";
 import { Bar, Empty, Field, NumInput, Swatch } from "./ui";
 import { PALETTE } from "@/lib/color";
 import { freeSeats, partyDeputies } from "@/lib/parliament";
+import { IDEOLOGY_FAMILIES } from "@/data/ideologies";
+import type { IdeologyFamilyId } from "@/lib/types";
 
 export function PartyForm({ value, onChange }: { value: Partial<Party>; onChange: (p: Partial<Party>) => void }) {
   const meta = value.meta ?? [];
@@ -88,6 +90,7 @@ export function PartiesPanel() {
   const distribute = useStore((s) => s.distribute);
   const sortByIdeology = useStore((s) => s.sortPartiesByIdeology);
   const mergeParties = useStore((s) => s.mergeParties);
+  const runElection = useStore((s) => s.runElection);
   const toast = useStore((s) => s.toast);
 
   const [creating, setCreating] = useState(false);
@@ -99,10 +102,15 @@ export function PartiesPanel() {
   const [mergeOpen, setMergeOpen] = useState(false);
   const [mergeTarget, setMergeTarget] = useState("");
   const [mergeSrc, setMergeSrc] = useState<string[]>([]);
+  const [electionOpen, setElectionOpen] = useState(false);
+  const [electionVolatility, setElectionVolatility] = useState(5);
+  const [momentumFamily, setMomentumFamily] = useState<IdeologyFamilyId | "">("");
+  const [momentumStrength, setMomentumStrength] = useState(5);
 
   const total = data.settings.totalSeats;
   const free = freeSeats(data);
   const allocated = total - free;
+  const partyAllocatedSeats = data.parties.reduce((sum, party) => sum + partyDeputies(data, party.id).length, 0);
 
   const startCreate = () => {
     setDraft({ name: "", abbr: "", color: PALETTE[data.parties.length % PALETTE.length], leader: "", ideologyId: null, role: "neutral", meta: [] });
@@ -163,7 +171,36 @@ export function PartiesPanel() {
           <button className="btn btn-sm" onClick={() => setMergeOpen(!mergeOpen)} disabled={data.parties.length < 2}>
             Merge…
           </button>
+          <button className="btn btn-sm btn-primary" onClick={() => setElectionOpen(!electionOpen)} disabled={!data.parties.length || partyAllocatedSeats < 1}>
+            Elections…
+          </button>
         </div>
+        {electionOpen && (
+          <div className="anim-in mt-3 space-y-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+            <div><h3 className="text-sm font-bold">Election options</h3><p className="muted mt-1 text-xs">Configure the scale of seat changes and any optional ideological preference.</p></div>
+            <Field label="Election volatility" hint="Choose how strongly election results may shift party seat allocations.">
+              <div className="flex items-center justify-between text-xs"><span className="muted">1 — Gentle</span><b className="tabular-nums">{electionVolatility} / 10</b><span className="muted">10 — Dramatic</span></div>
+              <input type="range" min={1} max={10} step={1} value={electionVolatility} onChange={(event) => setElectionVolatility(Number(event.target.value))} aria-label="Election volatility" />
+            </Field>
+            <Field label="Electoral momentum" hint="Optional preference for parties belonging to one ideological family.">
+              <select className="select" value={momentumFamily} onChange={(event) => setMomentumFamily(event.target.value as IdeologyFamilyId | "")}>
+                <option value="">Not specified</option>
+                {IDEOLOGY_FAMILIES.map((family) => <option key={family.id} value={family.id}>{family.label}</option>)}
+              </select>
+            </Field>
+            {momentumFamily && <Field label="Momentum strength" hint="Higher settings give the selected family a stronger advantage in the election.">
+              <div className="flex items-center justify-between text-xs"><span className="muted">1 — Subtle</span><b className="tabular-nums">{momentumStrength} / 10</b><span className="muted">10 — Landslide</span></div>
+              <input type="range" min={1} max={10} step={1} value={momentumStrength} onChange={(event) => setMomentumStrength(Number(event.target.value))} aria-label="Momentum strength" />
+            </Field>}
+            <div className="flex flex-wrap gap-2">
+              <button className="btn btn-primary" disabled={partyAllocatedSeats < 1} onClick={() => {
+                const result = runElection(electionVolatility, momentumFamily || null, momentumStrength);
+                if (result.ok) { setElectionOpen(false); toast("Election complete. Parliament's seat allocation has been updated.", "ok"); }
+              }}>Hold election</button>
+              <button className="btn" onClick={() => setElectionOpen(false)}>Cancel</button>
+            </div>
+          </div>
+        )}
         {pctMode && (
           <div className="anim-in mt-3 space-y-1.5 border-t pt-3" style={{ borderColor: "var(--border)" }}>
             <p className="muted text-xs">Enter vote shares; seats are apportioned among parties with the largest-remainder method (independents keep their seats).</p>

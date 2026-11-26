@@ -111,6 +111,22 @@ test("known navigation, form, colour-picker and ideology-page controls are local
     "Appointments by party",
     "Appointments by ideological family",
     "No deputy appointments yet.",
+    "Elections…",
+    "Election options",
+    "Configure the scale of seat changes and any optional ideological preference.",
+    "Election volatility",
+    "Choose how strongly election results may shift party seat allocations.",
+    "1 — Gentle",
+    "10 — Dramatic",
+    "Electoral momentum",
+    "Optional preference for parties belonging to one ideological family.",
+    "Momentum strength",
+    "Higher settings give the selected family a stronger advantage in the election.",
+    "1 — Subtle",
+    "10 — Landslide",
+    "Hold election",
+    "Election complete. Parliament's seat allocation has been updated.",
+    "Allocate at least one seat to a party before holding an election.",
   ];
   for (const locale of LOCALES) {
     for (const sourceText of required) {

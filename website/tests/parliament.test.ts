@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { apportion } from "../src/lib/parliament";
+import { simulateElection } from "../src/lib/elections";
+import { BUILTIN_MAP } from "../src/data/ideologies";
 import { newIssue, normalizeProject, sampleProject, PROJECT_VERSION } from "../src/lib/defaults";
 import { BUILTIN_IDEOLOGIES, IDEOLOGY_FAMILIES } from "../src/data/ideologies";
 import { buildContext, evaluateThreshold, runVoteEngine, type Totals } from "../src/lib/voting";
@@ -168,4 +170,47 @@ test("version 2 family voting rules migrate to both branches of each split famil
   assert.equal(migrated.issues[0].groupPositions["authoritarian-state-communist"]?.pos, "for");
   assert.equal(migrated.issues[0].groupPositions["nationalist-sovereigntist"]?.pos, "against");
   assert.equal(migrated.issues[0].groupPositions["fascist-ultranationalist"]?.pos, "against");
+});
+
+test("elections redistribute party seats while preserving independent seats and chamber totals", () => {
+  const project = sampleProject();
+  const initialTotal = Object.keys(project.deputies).length;
+  const initialIndependents = Object.values(project.deputies).filter((deputy) => !deputy.partyId).length;
+  const initialPartySeats = initialTotal - initialIndependents;
+  const result = simulateElection(project, 8, null, 5, () => 0.37);
+  assert.equal(result.ok, true);
+  const finalIndependents = Object.values(project.deputies).filter((deputy) => !deputy.partyId).length;
+  const finalPartySeats = project.parties.reduce((sum, party) => sum + Object.values(project.deputies).filter((deputy) => deputy.partyId === party.id).length, 0);
+  assert.equal(finalIndependents, initialIndependents);
+  assert.equal(finalPartySeats, initialPartySeats);
+  assert.equal(Object.keys(project.deputies).length, initialTotal);
+  assert.equal(project.seatingLocked, false);
+});
+test("low election volatility keeps every currently represented party in the chamber", () => {
+  const project = sampleProject();
+  const represented = project.parties.filter((party) => Object.values(project.deputies).some((deputy) => deputy.partyId === party.id));
+  const result = simulateElection(project, 1, null, 5, () => 0.5);
+  assert.equal(result.ok, true);
+  for (const party of represented) assert.ok(Object.values(project.deputies).some((deputy) => deputy.partyId === party.id), `Party ${party.abbr} unexpectedly lost all seats`);
+});
+test("strong electoral momentum increases the selected ideological family's seat share", () => {
+  const source = sampleProject();
+  const family = BUILTIN_MAP[source.parties[0].ideologyId!].family;
+  const low = structuredClone(source), high = structuredClone(source);
+  assert.equal(simulateElection(low, 4, family, 1, () => 0.5).ok, true);
+  assert.equal(simulateElection(high, 4, family, 10, () => 0.5).ok, true);
+  const countFamilySeats = (project: typeof source) => Object.values(project.deputies).filter((deputy) => {
+    if (!deputy.partyId) return false;
+    const party = project.parties.find((item) => item.id === deputy.partyId);
+    const ideology = party?.ideologyId ? BUILTIN_MAP[party.ideologyId] ?? project.customIdeologies.find((item) => item.id === party.ideologyId) : undefined;
+    return ideology?.family === family;
+  }).length;
+  assert.ok(countFamilySeats(high) > countFamilySeats(low));
+});
+test("elections reject a chamber with no party-allocated seats", () => {
+  const project = sampleProject();
+  for (const deputy of Object.values(project.deputies)) if (deputy.partyId) delete project.deputies[deputy.id];
+  const result = simulateElection(project, 5, null, 5, () => 0.5);
+  assert.equal(result.ok, false);
+  if (!result.ok) assert.match(result.error, /Allocate at least one seat/);
 });

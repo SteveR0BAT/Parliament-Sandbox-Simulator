@@ -6,6 +6,7 @@ import type {
   Deputy,
   Faction,
   Ideology,
+  IdeologyFamilyId,
   Issue,
   Layer,
   Party,
@@ -36,6 +37,7 @@ import {
 import { newIssue, normalizeProject, sampleProject } from "./defaults";
 import { createRecord, lookupIdeology } from "./voting";
 import { compareIdeologies } from "@/data/ideologies";
+import { simulateElection } from "./elections";
 
 export type Tab = "parliament" | "government" | "parties" | "coalitions" | "factions" | "ideologies" | "voting" | "statistics" | "settings";
 export type Focus = { type: "party" | "faction" | "coalition" | "independents"; id: string } | null;
@@ -93,6 +95,7 @@ interface Store {
   moveParty: (id: string, dir: -1 | 1) => void;
   sortPartiesByIdeology: () => void;
   distribute: (weights: Record<string, number>) => Result;
+  runElection: (randomness: number, momentumFamily: IdeologyFamilyId | null, momentumStrength: number) => Result;
   // deputies / seats
   addIndependents: (count: number, names: string, tpl: Partial<Deputy>) => Result;
   updateDeputy: (id: string, patch: Partial<Deputy>) => void;
@@ -267,6 +270,7 @@ export const useStore = create<Store>((set, get) => {
         syncSeats(d);
       }),
     distribute: (weights) => notify(run((d) => distributeByWeights(d, weights, true))),
+    runElection: (randomness, momentumFamily, momentumStrength) => notify(run((d) => simulateElection(d, randomness, momentumFamily, momentumStrength))),
 
     addIndependents: (count, names, tpl) =>
       notify(
