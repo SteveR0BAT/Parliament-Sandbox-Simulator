@@ -53,7 +53,7 @@ test("random voting uses the configured seed", () => {
 });
 
 test("all built-in ideologies have one of eight families and three valid coordinates", () => {
-  assert.equal(IDEOLOGY_FAMILIES.length, 8);
+  assert.equal(IDEOLOGY_FAMILIES.length, 10);
   assert.equal(BUILTIN_IDEOLOGIES.length, 130);
   const valid = (n: unknown) => n === null || [-3,-2,-1,0,1,2,3].includes(Number(n));
   for (const ideology of BUILTIN_IDEOLOGIES) {
@@ -88,7 +88,7 @@ test("version 1 project migration preserves custom ideology metadata and legacy 
     }],
   };
   const migrated = normalizeProject(raw);
-  assert.equal(migrated.version, 2);
+  assert.equal(migrated.version, 3);
   assert.equal(migrated.customIdeologies[0].family, "unclassified");
   assert.equal(migrated.customIdeologies[0].legacyCategory, "center-left");
   assert.equal(migrated.customIdeologies[0].positions.economic, -1);
@@ -99,4 +99,73 @@ test("version 1 project migration preserves custom ideology metadata and legacy 
   assert.equal(migrated.issues[0].legacyGroupPositions?.["far-left"]?.pos, "for");
   assert.equal(migrated.issues[0].legacyGroupPositions?.right?.pos, "against");
   assert.deepEqual(migrated.issues[0].groupPositions, {});
+});
+
+test("socialist and nationalist traditions are split into distinct voting families", () => {
+  const familyOf = (id: string) => BUILTIN_IDEOLOGIES.find((i) => i.id === id)?.family;
+  assert.equal(familyOf("liberal-socialism"), "socialist-communist");
+  assert.equal(familyOf("eco-socialism"), "socialist-communist");
+  assert.equal(familyOf("maoism"), "authoritarian-state-communist");
+  assert.equal(familyOf("stalinism"), "authoritarian-state-communist");
+  assert.equal(familyOf("hoxhaism"), "authoritarian-state-communist");
+  assert.equal(familyOf("fascism"), "fascist-ultranationalist");
+  assert.equal(familyOf("nazism"), "fascist-ultranationalist");
+  assert.equal(familyOf("francoism"), "fascist-ultranationalist");
+  assert.equal(familyOf("falangism"), "fascist-ultranationalist");
+  assert.equal(familyOf("gaullism"), "nationalist-sovereigntist");
+  assert.equal(familyOf("civic-nationalism"), "nationalist-sovereigntist");
+});
+
+test("separated ideology families can receive opposing voting instructions", () => {
+  const project = sampleProject();
+  project.parties = [];
+  project.factions = [];
+  const ideologyIds = ["liberal-socialism", "maoism", "gaullism", "fascism"];
+  project.deputies = Object.fromEntries(ideologyIds.map((ideologyId, index) => {
+    const id = `test-deputy-${index}`;
+    return [id, {
+      id, name: ideologyId, partyId: null, factionId: null, ideologyId,
+      color: null, description: "", affiliation: "", role: "neutral" as const,
+      behavior: "ideology" as const
+    }];
+  }));
+  const context = buildContext(project);
+  const issue = newIssue(project.prefs, {
+    mode: "ideology",
+    behavior: {
+      ...project.prefs.defaults.behavior,
+      priority: ["individual"],
+      ideologicalAdherence: 100,
+      randomness: 0,
+      absentProb: 0,
+      abstainProb: 0
+    },
+    groupPositions: {
+      "socialist-communist": { pos: "custom", pFor: 100, pAgainst: 0, pAbstain: 0 },
+      "authoritarian-state-communist": { pos: "custom", pFor: 0, pAgainst: 100, pAbstain: 0 },
+      "nationalist-sovereigntist": { pos: "custom", pFor: 100, pAgainst: 0, pAbstain: 0 },
+      "fascist-ultranationalist": { pos: "custom", pFor: 0, pAgainst: 100, pAbstain: 0 }
+    }
+  });
+  assert.deepEqual(runVoteEngine(context, issue, 42).map((outcome) => outcome.vote), ["for", "against", "for", "against"]);
+});
+
+test("version 2 family voting rules migrate to both branches of each split family", () => {
+  const old = sampleProject();
+  const migrated = normalizeProject({
+    ...old,
+    version: 2,
+    issues: [{
+      ...old.issues[0],
+      groupPositions: {
+        "socialist-communist": { pos: "for" },
+        "nationalist-sovereigntist": { pos: "against" }
+      }
+    }]
+  });
+  assert.equal(migrated.version, 3);
+  assert.equal(migrated.issues[0].groupPositions["socialist-communist"]?.pos, "for");
+  assert.equal(migrated.issues[0].groupPositions["authoritarian-state-communist"]?.pos, "for");
+  assert.equal(migrated.issues[0].groupPositions["nationalist-sovereigntist"]?.pos, "against");
+  assert.equal(migrated.issues[0].groupPositions["fascist-ultranationalist"]?.pos, "against");
 });

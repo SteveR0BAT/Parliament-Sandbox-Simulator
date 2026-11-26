@@ -15,7 +15,7 @@ import { BUILTIN_NAME_MAP, IDEOLOGY_FAMILY_MAP } from "@/data/ideologies";
 import { addPartyDeputies, deputyList, makeDeputy, newFaction, setFactionCount, syncSeats, uid } from "./parliament";
 import { suggestShades } from "./color";
 
-export const PROJECT_VERSION = 2;
+export const PROJECT_VERSION = 3;
 
 export const DEFAULT_SETTINGS: ChamberSettings = {
   genericDeputyNames: "multicultural",
@@ -189,8 +189,10 @@ export function sampleProject(): ProjectData {
         "conservative-traditionalist": { pos: "against" },
         "social-democratic-reformist": { pos: "mostlyFor" },
         "socialist-communist": { pos: "for" },
+        "authoritarian-state-communist": { pos: "mostlyFor" },
         "anarchist-anti-authoritarian": { pos: "for" },
         "nationalist-sovereigntist": { pos: "against" },
+        "fascist-ultranationalist": { pos: "for" },
         "religious-communitarian": { pos: "neutral" },
         "civic-ecological-crosscutting": { pos: "mostlyFor" },
       },
@@ -222,22 +224,28 @@ function migrateCustomIdeology(raw:unknown):ProjectData["customIdeologies"][numb
  const axisValue=(v:unknown): -3|-2|-1|0|1|2|3|null => typeof v==="number" && Number.isInteger(v) && v>=-3 && v<=3 ? v as -3|-2|-1|0|1|2|3 : null;
  return{...(i as unknown as ProjectData["customIdeologies"][number]),family,positions:{economic:axisValue(positions.economic),social:axisValue(positions.social),authority:axisValue(positions.authority)},legacyCategory:LEGACY_CATEGORY_IDS.has(legacy)?legacy as LegacyCategoryId:"unclassified"};
 }
-function migrateIssue(raw:unknown):Issue{
+function migrateIssue(raw:unknown,splitFormerFamilies=false):Issue{
  const i=(isObj(raw)?raw:{}) as Record<string,unknown>,old=isObj(i.groupPositions)?i.groupPositions:{},groupPositions:Record<string,unknown>={},legacyGroupPositions:Record<string,unknown>=isObj(i.legacyGroupPositions)?{...i.legacyGroupPositions}:{};
- for(const[key,value]of Object.entries(old)){if(FAMILY_IDS.has(key))groupPositions[key]=value;else if(LEGACY_CATEGORY_IDS.has(key))legacyGroupPositions[key]=value;}
+ for(const[key,value]of Object.entries(old)){
+  if(FAMILY_IDS.has(key)){
+   groupPositions[key]=value;
+   if(splitFormerFamilies&&key==="socialist-communist")groupPositions["authoritarian-state-communist"]??=value;
+   if(splitFormerFamilies&&key==="nationalist-sovereigntist")groupPositions["fascist-ultranationalist"]??=value;
+  }else if(LEGACY_CATEGORY_IDS.has(key))legacyGroupPositions[key]=value;
+ }
  return{...i,groupPositions,legacyGroupPositions,ideologyPositions:isObj(i.ideologyPositions)?i.ideologyPositions:{}} as unknown as Issue;
 }
-function migrateHistory(raw:unknown):ProjectData["history"][number]{
+function migrateHistory(raw:unknown,splitFormerFamilies=false):ProjectData["history"][number]{
  const r=(isObj(raw)?raw:{}) as Record<string,unknown>,s=(isObj(r.snapshot)?r.snapshot:{}) as Record<string,unknown>;
  const deputies=Array.isArray(s.deputies)?s.deputies.map(rawDep=>{
   const d=(isObj(rawDep)?rawDep:{}) as Record<string,unknown>,old=typeof d.legacyCategory==="string"?d.legacyCategory:typeof d.category==="string"?d.category:null;
   const found=typeof d.ideology==="string"?BUILTIN_NAME_MAP[d.ideology.toLowerCase()]:undefined;
-  return{...d,family:typeof d.family==="string"?d.family:found?.family??"unclassified",legacyCategory:old&&LEGACY_CATEGORY_IDS.has(old)?old:found?.legacyCategory??null,positions:isObj(d.positions)?d.positions:found?.positions??null};
+  return{...d,family:found?.family??(typeof d.family==="string"&&FAMILY_IDS.has(d.family)?d.family as IdeologyFamilyId:"unclassified"),legacyCategory:old&&LEGACY_CATEGORY_IDS.has(old)?old:found?.legacyCategory??null,positions:isObj(d.positions)?d.positions:found?.positions??null};
  }):[];
- return{...(r as unknown as ProjectData["history"][number]),issue:migrateIssue(r.issue),snapshot:{...s,deputies} as unknown as ProjectData["history"][number]["snapshot"]};
+ return{...(r as unknown as ProjectData["history"][number]),issue:migrateIssue(r.issue,splitFormerFamilies),snapshot:{...s,deputies} as unknown as ProjectData["history"][number]["snapshot"]};
 }
 export function normalizeProject(raw:unknown):ProjectData{
- const src=(isObj(raw)?raw:{}) as Record<string,unknown>,base=blankProject(100),rawPrefs=isObj(src.prefs)?src.prefs:{},rawIP=isObj(rawPrefs.ideology)?rawPrefs.ideology:{};
+ const src=(isObj(raw)?raw:{}) as Record<string,unknown>,base=blankProject(100),splitFormerFamilies=Number(src.version??1)<PROJECT_VERSION,rawPrefs=isObj(src.prefs)?src.prefs:{},rawIP=isObj(rawPrefs.ideology)?rawPrefs.ideology:{};
  const d:ProjectData={...base,settings:deepMerge(DEFAULT_SETTINGS,src.settings),
  prefs:deepMerge(DEFAULT_PREFS,{...rawPrefs,ideology:{...rawIP,hiddenFamilies:Array.isArray(rawIP.hiddenFamilies)?rawIP.hiddenFamilies:[]}}),
  parties:Array.isArray(src.parties)?(src.parties as Party[]).map(p=>Object.assign({symbol:"",meta:[],role:"neutral",description:"",leader:"",ideologyId:null} as Partial<Party>,p) as Party):[],
@@ -245,8 +253,8 @@ export function normalizeProject(raw:unknown):ProjectData{
  coalitions:Array.isArray(src.coalitions)?(src.coalitions as Coalition[]).map(c=>Object.assign({description:"",leader:"",orientation:"",ideologyId:null,partyIds:[]} as Partial<Coalition>,c) as Coalition):[],
  deputies:{},seats:Array.isArray(src.seats)?(src.seats as (string|null)[]):[],seatingLocked:!!src.seatingLocked,
  customIdeologies:Array.isArray(src.customIdeologies)?src.customIdeologies.map(migrateCustomIdeology):[],
- issues:Array.isArray(src.issues)?src.issues.map(i=>deepMerge(newIssue(base.prefs),migrateIssue(i))):[],
- history:Array.isArray(src.history)?src.history.map(migrateHistory):[],governingCoalitionId:typeof src.governingCoalitionId==="string"?src.governingCoalitionId:null,version:PROJECT_VERSION};
+ issues:Array.isArray(src.issues)?src.issues.map(i=>deepMerge(newIssue(base.prefs),migrateIssue(i,splitFormerFamilies))):[],
+ history:Array.isArray(src.history)?src.history.map(i=>migrateHistory(i,splitFormerFamilies)):[],governingCoalitionId:typeof src.governingCoalitionId==="string"?src.governingCoalitionId:null,version:PROJECT_VERSION};
  d.settings.totalSeats=Math.max(1,Math.min(20000,Math.floor(Number(d.settings.totalSeats))||100));
  if(isObj(src.deputies))for(const[id,dep]of Object.entries(src.deputies))if(isObj(dep))d.deputies[id]={...makeDeputy({},d.settings.genericDeputyNames),...(dep as object),id} as ProjectData["deputies"][string];
  const ids=new Set(d.parties.map(p=>p.id));d.factions=d.factions.filter(f=>ids.has(f.partyId));const byId=new Map(d.factions.map(f=>[f.id,f]));
