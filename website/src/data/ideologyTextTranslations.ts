@@ -1603,17 +1603,7 @@ es:"Posición política que prioriza los intereses de los residentes establecido
 ja:"移民よりも既存住民の利益を優先する政治的立場。カス・ムッデによれば極右の中核的要素の一つである。",
 ko:"이민자보다 기존 거주자의 이익을 우선하는 정치적 입장으로, 카스 무더에 따르면 극우의 핵심 요소이다."
 },
-"Policy stance favouring the interests of established inhabitants over immigrants; a core far-right element per Cas Mudde.":{
-ru:"Политическая позиция, отдающая предпочтение интересам давно проживающего населения перед интересами иммигрантов; по Касу Мудде, это один из ключевых элементов крайне правых.",
-de:"Politische Haltung, die die Interessen der ansässigen Bevölkerung über die von Einwanderern stellt; nach Cas Mudde ein Kernelement der extremen Rechten.",
-fr:"Position politique qui privilégie les intérêts des habitants établis par rapport à ceux des immigrés ; selon Cas Mudde, il s’agit d’un élément central de l’extrême droite.",
-"zh-CN":"优先考虑既有居民而非移民利益的政治立场；卡斯·穆德认为这是极右翼的核心要素之一。",
-id:"Sikap politik yang mengutamakan kepentingan penduduk lama dibanding imigran; menurut Cas Mudde, ini merupakan unsur inti sayap kanan ekstrem.",
-ka:"პოლიტიკური პოზიცია, რომელიც დამკვიდრებული მცხოვრებლების ინტერესებს იმიგრანტების ინტერესებზე მაღლა აყენებს; კას მუდეს მიხედვით, ეს ულტრამემარჯვენეობის ძირითადი ელემენტია.",
-es:"Posición política que prioriza los intereses de los residentes establecidos frente a los inmigrantes; según Cas Mudde, es un elemento central de la extrema derecha.",
-ja:"移民よりも既存住民の利益を優先する政治的立場。カス・ムッデによれば極右の中核的要素の一つである。",
-ko:"이민자보다 기존 거주자의 이익을 우선하는 정치적 입장으로, 카스 무더에 따르면 극우의 핵심 요소이다."
-},
+
 "Critique of civilisation and technology; advocates return to non-industrial, foraging life.":{
 ru:"Критика цивилизации и технологий, выступающая за возвращение к доиндустриальному образу жизни, основанному на собирательстве и охоте.",
 de:"Kritik an Zivilisation und Technologie, die eine Rückkehr zu einer nichtindustriellen Lebensweise mit Jagen und Sammeln befürwortet.",
@@ -1731,7 +1721,7 @@ fr:"L’anarcho-primitivisme est anti-étatique mais échappe à l’axe gauche-
 "zh-CN":"无政府原始主义反对国家，但难以用左右光谱界定；有时被归为极左翼。",
 id:"Anarko-primitivisme menentang negara, tetapi tidak mudah ditempatkan pada sumbu kiri-kanan; kadang digolongkan sebagai kiri ekstrem.",
 ka:"ანარქო-პრიმიტივიზმი სახელმწიფოს ეწინააღმდეგება, თუმცა მემარცხენე-მემარჯვენე ღერძში არ თავსდება; ზოგჯერ ულტრამემარცხენედ კლასიფიცირდება.",
-es:"El anarco-primitivismo es ant estatal, pero no encaja en el eje izquierda-derecha; a veces se clasifica como extrema izquierda.",
+es:"El anarco-primitivismo es antiestatal, pero no encaja en el eje izquierda-derecha; a veces se clasifica como extrema izquierda.",
 ja:"アナルコ・プリミティヴィズムは反国家的だが左右軸に当てはめにくく、極左に分類されることもある。",
 ko:"아나코 원시주의는 반국가적이지만 좌우 축에 맞지 않으며, 때로는 극좌로 분류되기도 한다."
 },
@@ -1813,7 +1803,7 @@ ru:"Монетаризм, приватизация",de:"Monetaristisch, privatis
 "Laissez-faire":{
 ru:"Политика невмешательства",de:"Laissez-faire",fr:"Laissez-faire","zh-CN":"自由放任",id:"Laissez-faire",ka:"ლაისე-ფერი (ჩაურევლობა)",es:"Laissez-faire",ja:"自由放任",ko:"자유방임"},
 "Pure market, private property":{
-ru:"Чистый рынок, частная собственность",de:"Reiner Markt, Privateigentum",fr:"Marché pur, propriété privée","zh-CN":"纯粹ный市场、私有财产",id:"Pasar murni, kepemilikan pribadi",ka:"სუფთა ბაზარი, კერძო საკუთრება",es:"Mercado puro y propiedad privada",ja:"純粋な市場・私有財産",ko:"순수 시장, 사유재산"},
+ru:"Чистый рынок, частная собственность",de:"Reiner Markt, Privateigentum",fr:"Marché pur, propriété privée","zh-CN":"纯粹市场、私有财产",id:"Pasar murni, kepemilikan pribadi",ka:"სუფთა ბაზარი, კერძო საკუთრება",es:"Mercado puro y propiedad privada",ja:"純粋な市場・私有財産",ko:"순수 시장, 사유재산"},
 "Pro-business, state-aligned":{
 ru:"В поддержку бизнеса, лояльная государству",de:"Unternehmensfreundlich, staatsnah",fr:"Pro-entreprises, alignée sur l’État","zh-CN":"亲商、与国家立场一致",id:"Pro-bisnis, selaras dengan negara",ka:"ბიზნესის მხარდამჭერი, სახელმწიფოსთან დაახლოებული",es:"Favorable a las empresas y alineada con el Estado",ja:"企業寄り・国家協調型",ko:"친기업적, 국가와 협력"},
 "Mixed; often market-friendly with zakat/welfare":{
