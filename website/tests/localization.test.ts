@@ -3,8 +3,7 @@ import test from "node:test";
 import translations from "../src/data/translations";
 import {
   BUILTIN_IDEOLOGIES,
-  IDEOLOGY_FAMILY_MAP,
-  formatAxisPosition,
+  IDEOLOGY_FAMILIES,
 } from "../src/data/ideologies";
 
 const LOCALES = ["en", "ru", "de", "fr", "zh-CN", "id", "ka", "es", "ja", "ko"] as const;
@@ -20,7 +19,7 @@ test("every locale contains the same complete translation-key set", () => {
   }
 });
 
-test("all built-in ideology metadata is available in every locale", () => {
+test("all built-in ideology metadata and family descriptions are available in every locale", () => {
   const ideologyText = BUILTIN_IDEOLOGIES.flatMap((ideology) => [
     ideology.name,
     ideology.description,
@@ -30,41 +29,81 @@ test("all built-in ideology metadata is available in every locale", () => {
     ideology.history,
   ]).filter((value): value is string => Boolean(value));
 
-  const familyText = Object.values(IDEOLOGY_FAMILY_MAP).flatMap((family) => [
+  const familyText = IDEOLOGY_FAMILIES.flatMap((family) => [
     family.label,
     family.blurb,
   ]);
 
-  const axisText = (["economic", "social", "authority"] as const).flatMap((axis) => [
-    ...([-3, -2, -1, 0, 1, 2, 3] as const).map((value) => formatAxisPosition(axis, value)),
-    formatAxisPosition(axis, null),
-  ]);
+  const axisText = [
+    "Economic orientation",
+    "Social orientation",
+    "Political authority",
+    "Far Left",
+    "Left",
+    "Centre-left",
+    "Centre",
+    "Centre-right",
+    "Right",
+    "Far Right",
+    "Far Progressive",
+    "Progressive",
+    "Centre-progressive",
+    "Centre-conservative",
+    "Conservative",
+    "Far Conservative",
+    "Far Libertarian",
+    "Libertarian",
+    "Centre-libertarian",
+    "Centre-authoritarian",
+    "Authoritarian",
+    "Far Authoritarian",
+    "Not specified",
+  ];
 
   const required = [...new Set([...ideologyText, ...familyText, ...axisText])];
   for (const locale of LOCALES) {
     for (const sourceText of required) {
       assert.ok(
-        Object.hasOwn(translations[locale], sourceText),
+        Object.prototype.hasOwnProperty.call(translations[locale], sourceText),
         `Locale ${locale} is missing ideology text: ${sourceText}`,
       );
     }
   }
 });
 
-test("previously untranslated controls have entries in every locale", () => {
+test("known navigation, form, colour-picker and ideology-page controls are localised", () => {
   const required = [
     "Voting",
-    "Classification note",
+    "Add",
+    "Clear",
+    "Remove",
+    "Classification note:",
+    "Sources & references",
     "Type any format",
     "Suggested:",
     "Visual colour picker",
     "HEX colour",
-    "▶ Run vote",
+    "The original ideology descriptions and historical metadata are preserved. Positions are broad reference classifications; political movements have varied across time and place.",
+    "Unclassified custom ideologies",
+    "No description.",
+    "Used in this parliament",
+    "assignment(s)",
+    "Three-dimensional political profile",
+    "An ideology needs a name.",
+    "An ideology with this name already exists.",
+    "Custom ideology saved.",
+    "No ideologies match “",
+    "”.",
+    "Also: ",
+    "Save ideology",
+    "Cancel",
+    "Edit custom ideology",
+    "Create custom ideology",
   ];
   for (const locale of LOCALES) {
     for (const sourceText of required) {
       assert.ok(
-        Object.hasOwn(translations[locale], sourceText),
+        Object.prototype.hasOwnProperty.call(translations[locale], sourceText),
         `Locale ${locale} is missing UI text: ${sourceText}`,
       );
     }
