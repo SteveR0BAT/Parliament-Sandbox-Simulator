@@ -673,4 +673,207 @@ ko:"기독교민주주의 정당은 중도우파와 중도 사이에 위치하�
 },
 });
 
+
+Object.assign(rows, {
+// Profiles 45–59.
+"Muslim-identity parties operating within democratic politics, analogous to Christian democracy.":{
+ru:"Партии, основанные на мусульманской идентичности и действующие в рамках демократической политики; функционально сопоставимы с христианско-демократическими партиями.",
+de:"Parteien mit muslimischer Identität, die innerhalb demokratischer Politik agieren und der Christdemokratie vergleichbar sind.",
+fr:"Partis fondés sur une identité musulmane qui opèrent dans le cadre de la politique démocratique, à l’image de la démocratie chrétienne.",
+"zh-CN":"以穆斯林身份认同为基础、在民主政治框架内活动的政党，类似于基督教民主主义。",
+id:"Partai beridentitas Muslim yang beroperasi dalam politik demokratis, sebanding dengan demokrasi Kristen.",
+ka:"მუსლიმურ იდენტობაზე დაფუძნებული პარტიები, რომლებიც დემოკრატიული პოლიტიკის ფარგლებში მოქმედებენ და ქრისტიან-დემოკრატიას ჰგვანან.",
+es:"Partidos de identidad musulmana que actúan dentro de la política democrática, de forma análoga a la democracia cristiana.",
+ja:"イスラーム教徒としてのアイデンティティを基盤とし、キリスト教民主主義に類似して民主政治の枠内で活動する政党。",
+ko:"기독교민주주의와 유사하게 민주정치 안에서 활동하는 무슬림 정체성 기반 정당."
+},
+"Range of moderate positions between left and right, favouring incremental reform and pragmatic compromise.":{
+ru:"Совокупность умеренных позиций между левыми и правыми, выступающая за постепенные реформы и прагматичный компромисс.",
+de:"Spektrum gemäßigter Positionen zwischen links und rechts, das schrittweise Reformen und pragmatische Kompromisse bevorzugt.",
+fr:"Ensemble de positions modérées entre la gauche et la droite, privilégiant les réformes progressives et le compromis pragmatique.",
+"zh-CN":"介于左翼与右翼之间的一系列温和立场，倾向于渐进改革和务实妥协。",
+id:"Rentang posisi moderat antara kiri dan kanan yang mengutamakan reformasi bertahap dan kompromi pragmatis.",
+ka:"მემარცხენეობასა და მემარჯვენეობას შორის ზომიერი პოზიციების სპექტრი, რომელიც მხარს უჭერს თანდათანობით რეფორმებსა და პრაგმატულ კომპრომისს.",
+es:"Conjunto de posiciones moderadas entre la izquierda y la derecha que favorecen reformas graduales y compromisos pragmáticos.",
+ja:"左派と右派の間にある穏健な立場の総体で、段階的改革と現実的な妥協を重視する。",
+ko:"좌파와 우파 사이의 온건한 입장 범위로, 점진적 개혁과 실용적 타협을 선호한다."
+},
+"Rejects the left–right dichotomy and ideology in favour of innovative, evidence-based reform from the centre.":{
+ru:"Отвергает деление на левых и правых и идеологическую догму в пользу инновационных, основанных на доказательствах реформ с центристских позиций.",
+de:"Lehnt die Links-rechts-Dichotomie und ideologische Festlegungen zugunsten innovativer, evidenzbasierter Reformen aus der Mitte ab.",
+fr:"Rejette la dichotomie gauche-droite et les idéologies au profit de réformes innovantes et fondées sur les preuves depuis le centre.",
+"zh-CN":"反对左右二分法和意识形态教条，主张从中间立场推动创新且基于证据的改革。",
+id:"Menolak dikotomi kiri-kanan dan ideologi kaku, dengan mendukung reformasi inovatif berbasis bukti dari posisi tengah.",
+ka:"უარყოფს მემარცხენე-მემარჯვენე დაყოფასა და იდეოლოგიურ დოგმას და ცენტრიდან ინოვაციურ, მტკიცებულებებზე დაფუძნებულ რეფორმებს ემხრობა.",
+es:"Rechaza la dicotomía izquierda-derecha y la ideología rígida en favor de reformas innovadoras y basadas en pruebas desde el centro.",
+ja:"左右の二分法や固定的なイデオロギーを退け、中道からの革新的で証拠に基づく改革を支持する。",
+ko:"좌우 이분법과 이념적 경직성을 거부하고 중도에서 혁신적이며 증거에 기반한 개혁을 추구한다."
+},
+"Broad tradition defending individual rights, consent of the governed, pluralism and the rule of law.":{
+ru:"Широкая политическая традиция, защищающая индивидуальные права, согласие управляемых, плюрализм и верховенство права.",
+de:"Breite politische Tradition, die individuelle Rechte, Zustimmung der Regierten, Pluralismus und Rechtsstaatlichkeit verteidigt.",
+fr:"Large tradition politique qui défend les droits individuels, le consentement des gouvernés, le pluralisme et l’État de droit.",
+"zh-CN":"捍卫个人权利、被统治者同意、多元主义和法治的广泛政治传统。",
+id:"Tradisi politik luas yang membela hak individu, persetujuan pihak yang diperintah, pluralisme, dan supremasi hukum.",
+ka:"ფართო პოლიტიკური ტრადიცია, რომელიც იცავს ინდივიდუალურ უფლებებს, მართულთა თანხმობას, პლურალიზმსა და კანონის უზენაესობას.",
+es:"Amplia tradición política que defiende los derechos individuales, el consentimiento de los gobernados, el pluralismo y el Estado de derecho.",
+ja:"個人の権利、被治者の同意、多元主義、法の支配を擁護する幅広い政治思想の伝統。",
+ko:"개인의 권리, 피통치자의 동의, 다원주의, 법치를 옹호하는 폭넓은 정치 전통."
+},
+"Freedom as non-domination and civic virtue; stresses active citizenship, anti-corruption and mixed constitution.":{
+ru:"Понимает свободу как отсутствие господства и гражданскую добродетель; подчёркивает активное гражданство, борьбу с коррупцией и смешанное правление.",
+de:"Versteht Freiheit als Nichtbeherrschung und bürgerliche Tugend; betont aktive Bürgerschaft, Korruptionsbekämpfung und eine gemischte Verfassung.",
+fr:"Conçoit la liberté comme absence de domination et vertu civique ; insiste sur la citoyenneté active, la lutte contre la corruption et la constitution mixte.",
+"zh-CN":"将自由理解为免受支配和公民德性；强调积极公民参与、反腐败和混合政体。",
+id:"Memahami kebebasan sebagai ketiadaan dominasi dan kebajikan kewargaan; menekankan partisipasi warga, antikorupsi, dan konstitusi campuran.",
+ka:"თავისუფლებას განიხილავს, როგორც ბატონობისგან თავისუფლებასა და სამოქალაქო ღირსებას; ხაზს უსვამს აქტიურ მოქალაქეობას, ანტიკორუფციასა და შერეულ კონსტიტუციას.",
+es:"Entiende la libertad como ausencia de dominación y virtud cívica; destaca la ciudadanía activa, la lucha contra la corrupción y la constitución mixta.",
+ja:"自由を支配されないことと市民的徳として捉え、積極的市民参加、汚職防止、混合政体を重視する。",
+ko:"자유를 지배받지 않는 상태와 시민적 덕성으로 이해하며, 적극적 시민성, 반부패, 혼합정체를 강조한다."
+},
+"Values rural society, small farmers and land-based life; parties often centrist or centre-right.":{
+ru:"Ценит сельское общество, мелких фермеров и уклад, связанный с землёй; аграрные партии часто занимают центристские или правоцентристские позиции.",
+de:"Schätzt das ländliche Gemeinwesen, Kleinbauern und ein auf Landbesitz beruhendes Leben; Agrarparteien sind häufig zentristisch oder mitte-rechts.",
+fr:"Valorise la société rurale, les petits agriculteurs et un mode de vie lié à la terre ; les partis agraires sont souvent centristes ou de centre droit.",
+"zh-CN":"重视乡村社会、小农和土地生活方式；农民政党通常处于中间或中右位置。",
+id:"Menghargai masyarakat pedesaan, petani kecil, dan kehidupan yang bertumpu pada tanah; partai agraris sering berhaluan tengah atau kanan-tengah.",
+ka:"აფასებს სოფლის საზოგადოებას, მცირე ფერმერებსა და მიწასთან დაკავშირებულ ცხოვრებას; აგრარული პარტიები ხშირად ცენტრისტული ან მემარჯვენე-ცენტრისტულია.",
+es:"Valora la sociedad rural, los pequeños agricultores y la vida vinculada a la tierra; los partidos agrarios suelen ser centristas o de centro-derecha.",
+ja:"農村社会、小規模農家、土地に根差した生活を重視する。農民党は中道または中道右派であることが多い。",
+ko:"농촌사회, 소농, 토지 기반의 삶을 중시하며, 농업 정당은 대체로 중도 또는 중도우파 성향이다."
+},
+"Ethics grounded in reason and human welfare without religious authority; supports secular government.":{
+ru:"Этика, основанная на разуме и благополучии человека, а не религиозном авторитете; поддерживает светское государство.",
+de:"Ethik, die auf Vernunft und menschlichem Wohlergehen statt auf religiöser Autorität beruht; befürwortet einen säkularen Staat.",
+fr:"Éthique fondée sur la raison et le bien-être humain plutôt que sur l’autorité religieuse ; soutient un État laïque.",
+"zh-CN":"以理性和人类福祉而非宗教权威为基础的伦理观；支持世俗国家。",
+id:"Etika yang berlandaskan akal dan kesejahteraan manusia tanpa otoritas agama; mendukung pemerintahan sekuler.",
+ka:"ეთიკა, რომელიც რელიგიური ავტორიტეტის ნაცვლად გონებასა და ადამიანთა კეთილდღეობას ეფუძნება; მხარს უჭერს სეკულარულ სახელმწიფოს.",
+es:"Ética basada en la razón y el bienestar humano, no en la autoridad religiosa; apoya un Estado laico.",
+ja:"宗教的権威ではなく理性と人間の幸福に基づく倫理であり、世俗国家を支持する。",
+ko:"종교적 권위가 아닌 이성과 인간의 복지에 근거한 윤리이며 세속국가를 지지한다."
+},
+"Holds that all people belong to a single moral community, supporting international law and open borders of ideas.":{
+ru:"Исходит из принадлежности всех людей к единому моральному сообществу; поддерживает международное право и свободный обмен идеями.",
+de:"Geht davon aus, dass alle Menschen einer einzigen moralischen Gemeinschaft angehören, und unterstützt Völkerrecht sowie offene Grenzen für Ideen.",
+fr:"Considère que tous les êtres humains appartiennent à une seule communauté morale et soutient le droit international ainsi que la libre circulation des idées.",
+"zh-CN":"认为所有人都属于同一个道德共同体，支持国际法和思想交流的开放边界。",
+id:"Berpandangan bahwa semua manusia termasuk dalam satu komunitas moral, serta mendukung hukum internasional dan keterbukaan pertukaran gagasan.",
+ka:"მიიჩნევს, რომ ყველა ადამიანი ერთიან მორალურ საზოგადოებას ეკუთვნის; მხარს უჭერს საერთაშორისო სამართალსა და იდეების თავისუფალ გაცვლას.",
+es:"Sostiene que todas las personas pertenecen a una sola comunidad moral y apoya el derecho internacional y la circulación abierta de ideas.",
+ja:"すべての人々が単一の道徳共同体に属すると考え、国際法と思想の開かれた交流を支持する。",
+ko:"모든 사람이 하나의 도덕 공동체에 속한다고 보고 국제법과 사상의 자유로운 교류를 지지한다."
+},
+"Advocates international institutions, collective security, trade and human rights to keep peace.":{
+ru:"Поддерживает международные институты, коллективную безопасность, торговлю и права человека как средства сохранения мира.",
+de:"Befürwortet internationale Institutionen, kollektive Sicherheit, Handel und Menschenrechte zur Friedenssicherung.",
+fr:"Préconise les institutions internationales, la sécurité collective, le commerce et les droits humains pour préserver la paix.",
+"zh-CN":"倡导通过国际机构、集体安全、贸易和人权来维护和平。",
+id:"Mendukung lembaga internasional, keamanan kolektif, perdagangan, dan hak asasi manusia untuk menjaga perdamaian.",
+ka:"მხარს უჭერს საერთაშორისო ინსტიტუტებს, კოლექტიურ უსაფრთხოებას, ვაჭრობასა და ადამიანის უფლებებს მშვიდობის შესანარჩუნებლად.",
+es:"Promueve las instituciones internacionales, la seguridad colectiva, el comercio y los derechos humanos para mantener la paz.",
+ja:"平和を維持するため、国際機関、集団安全保障、貿易、人権を推進する。",
+ko:"평화를 유지하기 위해 국제기구, 집단안보, 무역, 인권을 지지한다."
+},
+"Favours dividing sovereignty between central and regional authorities, or pooling it supranationally.":{
+ru:"Выступает за разделение суверенных полномочий между центральными и региональными властями либо за их совместное осуществление на наднациональном уровне.",
+de:"Befürwortet die Aufteilung staatlicher Souveränität zwischen zentralen und regionalen Behörden oder ihre supranationale Bündelung.",
+fr:"Prône le partage de la souveraineté entre autorités centrales et régionales, ou sa mise en commun à un niveau supranational.",
+"zh-CN":"主张在中央与地区当局之间分配主权，或在超国家层面共同分享主权。",
+id:"Mendukung pembagian kedaulatan antara otoritas pusat dan daerah, atau penggabungannya pada tingkat supranasional.",
+ka:"მხარს უჭერს სუვერენიტეტის ცენტრალურ და რეგიონულ ხელისუფლებებს შორის განაწილებას ან მის ზენაციონალურ დონეზე გაერთიანებას.",
+es:"Defiende repartir la soberanía entre las autoridades centrales y regionales, o ponerla en común a escala supranacional.",
+ja:"中央当局と地域当局の間で主権を分割すること、または超国家的に共有することを支持する。",
+ko:"중앙정부와 지역정부 사이의 주권 분할 또는 초국가적 차원의 주권 공동 행사를 선호한다."
+},
+"Policy judged by practical results rather than ideology; evidence-based governance.":{
+ru:"Оценивает политику по практическим результатам, а не идеологическим установкам; выступает за управление на основе доказательств.",
+de:"Beurteilt Politik nach praktischen Ergebnissen statt nach Ideologie und befürwortet evidenzbasierte Regierungsführung.",
+fr:"Évalue les politiques selon leurs résultats pratiques plutôt que leur idéologie ; privilégie une gouvernance fondée sur les preuves.",
+"zh-CN":"根据实际结果而非意识形态评判政策；主张循证治理。",
+id:"Menilai kebijakan berdasarkan hasil praktis, bukan ideologi; mendukung tata kelola berbasis bukti.",
+ka:"პოლიტიკას პრაქტიკული შედეგებით აფასებს და არა იდეოლოგიით; მხარს უჭერს მტკიცებულებებზე დაფუძნებულ მმართველობას.",
+es:"Juzga las políticas por sus resultados prácticos y no por la ideología; defiende una gobernanza basada en pruebas.",
+ja:"政策をイデオロギーではなく実際の成果で評価し、証拠に基づく統治を支持する。",
+ko:"정책을 이념이 아니라 실제 결과로 평가하며 증거 기반 통치를 지지한다."
+},
+"Government bound by constitutional limits, separation of powers and protected rights.":{
+ru:"Государственная власть ограничена конституцией, разделением властей и защищёнными правами.",
+de:"Die Regierung ist durch verfassungsmäßige Grenzen, Gewaltenteilung und geschützte Rechte gebunden.",
+fr:"Le gouvernement est soumis aux limites constitutionnelles, à la séparation des pouvoirs et aux droits protégés.",
+"zh-CN":"政府必须受到宪法限制、权力分立和受保护权利的约束。",
+id:"Pemerintah dibatasi oleh ketentuan konstitusi, pemisahan kekuasaan, dan hak-hak yang dilindungi.",
+ka:"მთავრობა შეზღუდულია კონსტიტუციური ნორმებით, ხელისუფლების დანაწილებითა და დაცული უფლებებით.",
+es:"El gobierno está sujeto a límites constitucionales, separación de poderes y derechos protegidos.",
+ja:"政府を憲法上の制約、権力分立、保障された権利によって拘束する。",
+ko:"정부는 헌법적 제한, 권력분립, 보호되는 권리에 구속된다."
+},
+"Seeks greater autonomy or recognition for a region without necessarily demanding independence.":{
+ru:"Добивается большей автономии или признания региона, не обязательно требуя независимости.",
+de:"Strebt mehr Autonomie oder Anerkennung für eine Region an, ohne zwingend Unabhängigkeit zu fordern.",
+fr:"Recherche une plus grande autonomie ou reconnaissance pour une région sans nécessairement réclamer l’indépendance.",
+"zh-CN":"寻求提升某一地区的自治权或地位，但不一定要求独立。",
+id:"Mengupayakan otonomi atau pengakuan yang lebih besar bagi suatu wilayah tanpa harus menuntut kemerdekaan.",
+ka:"ისწრაფვის რეგიონისთვის მეტი ავტონომიის ან აღიარების მოპოვებისკენ, დამოუკიდებლობის მოთხოვნის აუცილებლობის გარეშე.",
+es:"Busca una mayor autonomía o reconocimiento para una región sin exigir necesariamente la independencia.",
+ja:"必ずしも独立を要求せず、地域の自治拡大や承認を求める。",
+ko:"반드시 독립을 요구하지는 않으면서 지역의 더 큰 자치권이나 인정을 추구한다."
+},
+"Prefers decisions and services at the lowest practical level of government and community.":{
+ru:"Предпочитает принимать решения и предоставлять услуги на самом низком практически возможном уровне власти и сообщества.",
+de:"Bevorzugt Entscheidungen und Dienstleistungen auf der niedrigsten praktikablen Ebene von Regierung und Gemeinschaft.",
+fr:"Préfère que les décisions et les services soient assurés au niveau de gouvernement et de communauté le plus bas possible.",
+"zh-CN":"倾向于在政府和社区能够有效运作的最低层级作出决策并提供服务。",
+id:"Lebih memilih keputusan dan layanan diberikan pada tingkat pemerintahan dan komunitas serendah mungkin secara praktis.",
+ka:"უპირატესობას ანიჭებს გადაწყვეტილებების მიღებასა და სერვისების მიწოდებას მმართველობისა და საზოგადოების პრაქტიკულად ყველაზე დაბალ დონეზე.",
+es:"Prefiere que las decisiones y los servicios se presten en el nivel más bajo viable del gobierno y la comunidad.",
+ja:"行政と地域社会の実務上可能な最も低いレベルで意思決定とサービス提供を行うことを好む。",
+ko:"정부와 공동체의 실무적으로 가능한 가장 낮은 수준에서 의사결정과 서비스를 제공하는 것을 선호한다."
+},
+"Critiques political elites independent of left–right issues, often promising clean government and competence.":{
+ru:"Критикует политические элиты вне зависимости от разделения на левых и правых, часто обещая честное и компетентное управление.",
+de:"Kritisiert politische Eliten unabhängig von Links-rechts-Fragen und verspricht häufig eine integre und kompetente Regierungsführung.",
+fr:"Critique les élites politiques indépendamment des clivages gauche-droite, en promettant souvent un gouvernement intègre et compétent.",
+"zh-CN":"不拘泥于左右议题而批评政治精英，通常承诺实现廉洁且有能力的政府。",
+id:"Mengkritik elite politik terlepas dari isu kiri-kanan, sering menjanjikan pemerintahan yang bersih dan kompeten.",
+ka:"აკრიტიკებს პოლიტიკურ ელიტებს მემარცხენე-მემარჯვენე საკითხებისგან დამოუკიდებლად და ხშირად სუფთა და კომპეტენტურ მმართველობას ჰპირდება ამომრჩეველს.",
+es:"Critica a las élites políticas al margen del eje izquierda-derecha y suele prometer un gobierno limpio y competente.",
+ja:"左右の争点とは切り離して政治エリートを批判し、しばしば清潔で有能な政府を約束する。",
+ko:"좌우 쟁점과 관계없이 정치 엘리트를 비판하며, 대개 청렴하고 유능한 정부를 약속한다."
+},
+"Classification is debated; some analysts treat these parties as conservative-democrats, others as Islamist.":{
+ru:"Классификация спорна: одни аналитики считают такие партии консервативно-демократическими, другие — исламистскими.",
+de:"Die Einordnung ist umstritten: Einige Analysten betrachten diese Parteien als konservativ-demokratisch, andere als islamistisch.",
+fr:"Le classement fait débat : certains analystes considèrent ces partis comme conservateurs-démocrates, d’autres comme islamistes.",
+"zh-CN":"其分类存在争议：一些分析人士将这些政党视为保守民主派，另一些则将其视为伊斯兰主义者。",
+id:"Klasifikasinya diperdebatkan; sebagian analis menganggap partai-partai ini sebagai konservatif-demokrat, sementara yang lain menyebutnya Islamis.",
+ka:"კლასიფიკაცია სადავოა: ზოგი ანალიტიკოსი ამ პარტიებს კონსერვატიულ-დემოკრატიულად მიიჩნევს, სხვები კი — ისლამისტურად.",
+es:"La clasificación es debatida: algunos analistas consideran estos partidos conservadores-demócratas y otros, islamistas.",
+ja:"分類には議論があり、保守民主主義政党とみなす分析者もいれば、イスラーム主義政党とみなす分析者もいる。",
+ko:"분류는 논쟁적이다. 일부 분석가는 이 정당들을 보수 민주주의 정당으로, 다른 분석가는 이슬람주의 정당으로 본다."
+},
+"Liberalism spans centre-right (classical) to centre-left (social liberalism); it is placed at the centre as the umbrella tradition.":{
+ru:"Либерализм охватывает спектр от правоцентристского классического до левоцентристского социального либерализма; здесь он помещён в центр как обобщающая традиция.",
+de:"Liberalismus reicht vom mitte-rechten klassischen bis zum mitte-linken sozialen Liberalismus; hier wird er als übergreifende Tradition in der Mitte eingeordnet.",
+fr:"Le libéralisme va du centre droit (classique) au centre gauche (social) ; il est placé au centre ici comme tradition générale.",
+"zh-CN":"自由主义涵盖从中右的古典自由主义到中左的社会自由主义；此处将其作为总体传统置于中间位置。",
+id:"Liberalisme mencakup spektrum dari kanan-tengah (klasik) hingga kiri-tengah (sosial); di sini ditempatkan di tengah sebagai tradisi payung.",
+ka:"ლიბერალიზმი მოიცავს მემარჯვენე-ცენტრისტულ (კლასიკურ) და მემარცხენე-ცენტრისტულ (სოციალურ) მიმართულებებს; აქ იგი საერთო ტრადიციის სახით ცენტრშია მოთავსებული.",
+es:"El liberalismo abarca desde el centro-derecha (clásico) hasta el centro-izquierda (social); aquí se sitúa en el centro como tradición general.",
+ja:"自由主義は中道右派の古典的自由主義から中道左派の社会自由主義まで幅があるため、包括的な伝統として中央に配置している。",
+ko:"자유주의는 중도우파의 고전적 자유주의부터 중도좌파의 사회자유주의까지 포괄하므로, 여기서는 포괄적 전통으로서 중앙에 배치한다."
+},
+"Agrarian parties range from centre to centre-right and, historically, left-leaning peasant movements.":{
+ru:"Аграрные партии варьируются от центристских до правоцентристских; исторически существовали и крестьянские движения левого толка.",
+de:"Agrarparteien reichen von der Mitte bis zur Mitte-rechts; historisch gab es auch linksgerichtete Bauernbewegungen.",
+fr:"Les partis agraires vont du centre au centre droit ; historiquement, il a également existé des mouvements paysans de gauche.",
+"zh-CN":"农业政党从中间派到中右派不等；历史上也存在偏左的农民运动。",
+id:"Partai agraris berkisar dari tengah hingga kanan-tengah; secara historis juga terdapat gerakan tani berhaluan kiri.",
+ka:"აგრარული პარტიები ცენტრიდან მემარჯვენე-ცენტრამდე მერყეობენ; ისტორიულად მემარცხენე გლეხთა მოძრაობებიც არსებობდა.",
+es:"Los partidos agrarios abarcan desde el centro hasta el centro-derecha; históricamente también hubo movimientos campesinos de izquierda.",
+ja:"農業政党は中道から中道右派まで幅があり、歴史的には左派寄りの農民運動も存在した。",
+ko:"농업 정당은 중도부터 중도우파까지 다양하며, 역사적으로 좌파 성향의 농민운동도 존재했다."
+}
+});
+
 export default rows;
