@@ -303,4 +303,70 @@ ru:"Также:",de:"Auch:",fr:"Aussi :","zh-CN":"亦称：",id:"Juga:",ka:"ა�
 ru:"Источники и литература",de:"Quellen und Literatur",fr:"Sources et références","zh-CN":"来源与参考资料",id:"Sumber dan referensi",ka:"წყაროები და ლიტერატურა",es:"Fuentes y referencias",ja:"出典・参考文献",ko:"출처 및 참고문헌"},
 });
 
+
+Object.assign(rows, {
+// Parliament settings, government roles and independent deputies.
+"Governing coalition (optional)":{
+ru:"Правящая коалиция (необязательно)",de:"Regierungskoalition (optional)",fr:"Coalition au pouvoir (facultatif)","zh-CN":"执政联盟（可选）",id:"Koalisi pemerintahan (opsional)",ka:"მმართველი კოალიცია (არასავალდებულო)",es:"Coalición de gobierno (opcional)",ja:"与党連合（任意）",ko:"집권 연합(선택 사항)"},
+"Informational. Designations below are set manually and never follow coalition membership automatically.":{
+ru:"Информационный параметр. Назначения ниже задаются вручную и не меняются автоматически в зависимости от членства в коалиции.",
+de:"Nur zur Information. Die folgenden Funktionen werden manuell festgelegt und ändern sich nicht automatisch mit der Koalitionszugehörigkeit.",
+fr:"À titre informatif. Les désignations ci-dessous sont définies manuellement et ne suivent jamais automatiquement l’appartenance à une coalition.",
+"zh-CN":"仅供参考。以下职务由用户手动设置，不会根据联盟成员身份自动变化。",
+id:"Informasi saja. Penetapan di bawah diatur secara manual dan tidak otomatis mengikuti keanggotaan koalisi.",
+ka:"საინფორმაციოა. ქვემოთ მოცემული სტატუსები ხელით განისაზღვრება და კოალიციაში წევრობას ავტომატურად არ მიჰყვება.",
+es:"Solo informativo. Las designaciones siguientes se establecen manualmente y nunca siguen automáticamente la pertenencia a una coalición.",
+ja:"参考情報です。以下の役職は手動で設定され、連合への所属に自動的に連動しません。",
+ko:"정보 제공용입니다. 아래 직책은 수동으로 설정되며 연합 소속에 따라 자동으로 바뀌지 않습니다."
+},
+"None specified":{
+ru:"Не указано",de:"Nicht angegeben",fr:"Non spécifié","zh-CN":"未指定",id:"Belum ditentukan",ka:"მითითებული არ არის",es:"No especificado",ja:"指定なし",ko:"지정되지 않음"},
+"Small councils to very large assemblies (up to 20,000).":{
+ru:"От небольших советов до крупных собраний (до 20 000 мест).",de:"Von kleinen Räten bis zu sehr großen Versammlungen (bis zu 20.000 Sitze).",fr:"Des petits conseils aux très grandes assemblées (jusqu’à 20 000 sièges).","zh-CN":"从小型委员会到大型议会（最多20,000席）。",id:"Dari dewan kecil hingga majelis sangat besar (hingga 20.000 kursi).",ka:"მცირე საბჭოებიდან ძალიან დიდ ასამბლეებამდე (20 000-მდე ადგილი).",es:"Desde pequeños consejos hasta grandes asambleas (hasta 20.000 escaños).",ja:"小規模な評議会から大規模な議会まで（最大20,000議席）。",ko:"소규모 의회부터 대규모 의회까지(최대 20,000석)."},
+"Parties are scaled down proportionally (largest remainder).":{
+ru:"Число мест партий пропорционально уменьшается (метод наибольших остатков).",de:"Die Sitzzahlen der Parteien werden proportional reduziert (Hare-Niemeyer-Verfahren).",fr:"Le nombre de sièges des partis est réduit proportionnellement (méthode des plus forts restes).","zh-CN":"按比例缩减各政党的席位（最大余数法）。",id:"Jumlah kursi partai dikurangi secara proporsional (metode sisa terbesar).",ka:"პარტიების ადგილები პროპორციულად მცირდება (უდიდესი ნაშთის მეთოდი).",es:"Los escaños de los partidos se reducen proporcionalmente (método de restos mayores).",ja:"政党の議席数を比例配分で縮小します（最大剰余方式）。",ko:"정당 의석을 비례적으로 축소합니다(최대 잔여 방식)."},
+"Resize is refused until you free seats manually.":{
+ru:"Изменение размера запрещено, пока вы вручную не освободите места.",de:"Eine Verkleinerung wird abgelehnt, bis Sie manuell Sitze freigeben.",fr:"La réduction est refusée tant que vous n’avez pas libéré des sièges manuellement.","zh-CN":"在手动释放席位之前，系统不会调整规模。",id:"Perubahan ukuran ditolak sampai Anda mengosongkan kursi secara manual.",ka:"ზომის შეცვლა უარყოფილია, სანამ ადგილებს ხელით არ გაათავისუფლებთ.",es:"No se permite reducir el tamaño hasta que libere escaños manualmente.",ja:"手動で議席を空けるまで、規模の縮小は拒否されます。",ko:"수동으로 좌석을 비우기 전까지 규모를 줄일 수 없습니다."},
+"Rescale parties proportionally":{
+ru:"Перераспределить места партий пропорционально",de:"Parteien proportional neu skalieren",fr:"Redimensionner les partis proportionnellement","zh-CN":"按比例重新分配政党席位",id:"Skalakan partai secara proporsional",ka:"პარტიების პროპორციულად გადანაწილება",es:"Redimensionar los partidos proporcionalmente",ja:"政党の議席を比例的に再調整",ko:"정당 의석 비례 재조정"},
+"Refuse (strict)":{
+ru:"Отказать (строго)",de:"Ablehnen (streng)",fr:"Refuser (strict)","zh-CN":"拒绝（严格）",id:"Tolak (ketat)",ka:"უარყოფა (მკაცრი)",es:"Rechazar (estricto)",ja:"拒否（厳格）",ko:"거부(엄격)"},
+"Re-sort seats into party blocks":{
+ru:"Пересортировать места по партийным блокам",de:"Sitze wieder nach Parteiblöcken sortieren",fr:"Réorganiser les sièges par blocs de partis","zh-CN":"按政党区块重新排列席位",id:"Urutkan kembali kursi ke dalam blok partai",ka:"ადგილების პარტიულ ბლოკებად ხელახლა დალაგება",es:"Reordenar los escaños en bloques de partidos",ja:"議席を政党ブロックごとに並べ直す",ko:"정당 블록별로 좌석 재정렬"},
+"How many":{
+ru:"Количество",de:"Wie viele",fr:"Combien","zh-CN":"数量",id:"Berapa banyak",ka:"რამდენი",es:"Cuántos",ja:"人数",ko:"인원 수"},
+"Behaviour":{
+ru:"Поведение",de:"Verhalten",fr:"Comportement","zh-CN":"行为",id:"Perilaku",ka:"ქცევა",es:"Comportamiento",ja:"行動",ko:"행동"},
+"Follows own ideology":{
+ru:"Следует собственной идеологии",de:"Folgt der eigenen Ideologie",fr:"Suit sa propre idéologie","zh-CN":"遵循自身意识形态",id:"Mengikuti ideologinya sendiri",ka:"საკუთარ იდეოლოგიას მიჰყვება",es:"Sigue su propia ideología",ja:"自身のイデオロギーに従う",ko:"자신의 이념을 따름"},
+"Always For":{
+ru:"Всегда «За»",de:"Immer Dafür",fr:"Toujours pour","zh-CN":"始终赞成",id:"Selalu Setuju",ka:"ყოველთვის მომხრე",es:"Siempre a favor",ja:"常に賛成",ko:"항상 찬성"},
+"Always Against":{
+ru:"Всегда «Против»",de:"Immer Dagegen",fr:"Toujours contre","zh-CN":"始终反对",id:"Selalu Menolak",ka:"ყოველთვის წინააღმდეგი",es:"Siempre en contra",ja:"常に反対",ko:"항상 반대"},
+"Always Abstain":{
+ru:"Всегда воздерживается",de:"Immer Enthaltung",fr:"Toujours abstention","zh-CN":"始终弃权",id:"Selalu abstain",ka:"ყოველთვის თავს იკავებს",es:"Siempre se abstiene",ja:"常に棄権",ko:"항상 기권"},
+"Names (optional, one per line — overrides the count)":{
+ru:"Имена (необязательно, по одному в строке — заменяют количество)",de:"Namen (optional, einer pro Zeile – überschreibt die Anzahl)",fr:"Noms (facultatif, un par ligne — remplace le nombre)","zh-CN":"姓名（可选，每行一个——将覆盖数量）",id:"Nama (opsional, satu per baris — menggantikan jumlah)",ka:"სახელები (არასავალდებულო, თითოეული ახალ ხაზზე — ცვლის რაოდენობას)",es:"Nombres (opcional, uno por línea: sustituye la cantidad)",ja:"名前（任意、1行に1人 — 人数の指定より優先）",ko:"이름(선택 사항, 한 줄에 하나씩 — 인원 수 설정을 대체)"},
+"Designation":{
+ru:"Статус",de:"Funktion",fr:"Désignation","zh-CN":"职务",id:"Jabatan",ka:"სტატუსი",es:"Cargo",ja:"役職",ko:"직책"},
+"Own ideology":{
+ru:"Собственная идеология",de:"Eigene Ideologie",fr:"Propre idéologie","zh-CN":"个人意识形态",id:"Ideologi sendiri",ka:"საკუთარი იდეოლოგია",es:"Ideología propia",ja:"独自のイデオロギー",ko:"개인 이념"},
+"Affiliation / description":{
+ru:"Принадлежность / описание",de:"Zugehörigkeit / Beschreibung",fr:"Affiliation / description","zh-CN":"派别/描述",id:"Afiliasi / deskripsi",ka:"კუთვნილება / აღწერა",es:"Afiliación / descripción",ja:"所属／説明",ko:"소속 / 설명"},
+"Search independents…":{
+ru:"Поиск независимых депутатов…",de:"Unabhängige suchen …",fr:"Rechercher les indépendants…","zh-CN":"搜索独立议员…",id:"Cari anggota independen…",ka:"დამოუკიდებელი დეპუტატების ძიება…",es:"Buscar independientes…",ja:"無所属議員を検索…",ko:"무소속 의원 검색…"},
+"No independent deputies.":{
+ru:"Нет независимых депутатов.",de:"Keine unabhängigen Abgeordneten.",fr:"Aucun député indépendant.","zh-CN":"没有独立议员。",id:"Tidak ada anggota independen.",ka:"დამოუკიდებელი დეპუტატები არ არიან.",es:"No hay diputados independientes.",ja:"無所属議員はいません。",ko:"무소속 의원이 없습니다."},
+"Find on chart":{
+ru:"Найти на схеме",de:"Im Diagramm finden",fr:"Trouver sur le graphique","zh-CN":"在图表中查找",id:"Temukan pada bagan",ka:"დიაგრამაზე პოვნა",es:"Buscar en el gráfico",ja:"図表上で探す",ko:"차트에서 찾기"},
+"Dashboard":{
+ru:"Панель управления",de:"Dashboard",fr:"Tableau de bord","zh-CN":"仪表板",id:"Dasbor",ka:"მართვის პანელი",es:"Panel de control",ja:"ダッシュボード",ko:"대시보드"},
+"Parliament size & seating":{
+ru:"Размер парламента и рассадка",de:"Parlamentsgröße und Sitzordnung",fr:"Taille du parlement et disposition des sièges","zh-CN":"议会规模与席位安排",id:"Ukuran parlemen dan susunan kursi",ka:"პარლამენტის ზომა და განლაგება",es:"Tamaño del parlamento y distribución de escaños",ja:"議会規模・座席配置",ko:"의회 규모 및 좌석 배치"},
+"Government designations":{
+ru:"Статусы правительства",de:"Regierungsfunktionen",fr:"Fonctions gouvernementales","zh-CN":"政府职务",id:"Jabatan pemerintahan",ka:"მთავრობის სტატუსები",es:"Cargos gubernamentales",ja:"政府役職",ko:"정부 직책"},
+"Independent deputies":{
+ru:"Независимые депутаты",de:"Unabhängige Abgeordnete",fr:"Députés indépendants","zh-CN":"独立议员",id:"Anggota independen",ka:"დამოუკიდებელი დეპუტატები",es:"Diputados independientes",ja:"無所属議員",ko:"무소속 의원"},
+});
+
 export default rows;
