@@ -58,6 +58,12 @@ export function useLanguage() {
 }
 
 const COMPOSITE_TRANSLATION_KEYS = [
+  "Delete coalition ",
+  "? Its member parties are kept.",
+  "Delete faction ",
+  "? Its deputies stay in the party.",
+  "? It is used by ",
+  " party/faction/deputy entries, which will become unassigned.",
   "Delete project “",
   "” permanently?",
   "Delete issue “",
@@ -131,7 +137,7 @@ const COMPOSITE_TRANSLATION_KEYS = [
   "Absent",
   "Vote:",
   "Normalised:",
-] as const;;;
+] as const;;;;
 
 function escapeRegExp(value: string): string {
   const special = new Set([".", "*", "+", "?", "^", "$", "{", "}", "(", ")", "|", "[", "]", "\\"]);
