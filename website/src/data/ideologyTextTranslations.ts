@@ -1781,4 +1781,95 @@ ko:"학자들은 포퓰리즘을 독자적인 좌우 입장이 아니라 다른 
 }
 });
 
+
+Object.assign(rows, {
+// Economic descriptors: conservative, nationalist, liberal and mixed-market traditions.
+"Mixed; nationalist-developmental":{
+ru:"Смешанная; национально ориентированное развитие",de:"Gemischt; national entwicklungsorientiert",fr:"Mixte ; développement national","zh-CN":"混合型；民族发展主义",id:"Campuran; pembangunan nasional",ka:"შერეული; ეროვნულ განვითარებაზე ორიენტირებული",es:"Mixta; desarrollo nacional",ja:"混合型・国家開発重視",ko:"혼합형; 국가 발전 지향"},
+"Welfare chauvinism":{
+ru:"Шовинизм социального обеспечения",de:"Wohlfahrtschauvinismus",fr:"Chauvinisme social","zh-CN":"福利沙文主义",id:"Chauvinisme kesejahteraan",ka:"კეთილდღეობის შოვინიზმი",es:"Chovinismo del bienestar",ja:"福祉ショーヴィニズム",ko:"복지 쇼비니즘"},
+"Generally pro-market, property rights":{
+ru:"В целом за рынок и защиту прав собственности",de:"Im Allgemeinen marktorientiert, Schutz des Eigentums",fr:"Globalement favorable au marché et aux droits de propriété","zh-CN":"总体支持市场和财产权",id:"Umumnya pro-pasar, hak milik",ka:"ზოგადად საბაზრო ეკონომიკისა და საკუთრების უფლებების მხარდამჭერი",es:"Generalmente favorable al mercado y a los derechos de propiedad",ja:"概ね市場重視・財産権擁護",ko:"대체로 시장 친화적, 재산권 중시"},
+"Often agrarian / paternalist":{
+ru:"Часто аграрная / патерналистская",de:"Häufig agrarisch / paternalistisch",fr:"Souvent agraire / paternaliste","zh-CN":"通常偏农业/家长主义",id:"Sering agraris / paternalistik",ka:"ხშირად აგრარული / პატერნალისტური",es:"A menudo agraria / paternalista",ja:"農本主義的／父権主義的な場合が多い",ko:"농업 중심 / 온정주의적 성향이 흔함"},
+"Protectionist-leaning":{
+ru:"Склонность к протекционизму",de:"Eher protektionistisch",fr:"Tendance protectionniste","zh-CN":"倾向保护主义",id:"Cenderung proteksionis",ka:"პროტექციონიზმისკენ მიდრეკილი",es:"Tendencia proteccionista",ja:"保護主義寄り",ko:"보호무역주의 성향"},
+"Market-oriented":{
+ru:"Рыночно ориентированная",de:"Marktorientiert",fr:"Orientée vers le marché","zh-CN":"市场导向",id:"Berorientasi pasar",ka:"საბაზრო ორიენტაციის",es:"Orientada al mercado",ja:"市場志向",ko:"시장 지향적"},
+"Economic nationalism":{
+ru:"Экономический национализм",de:"Wirtschaftsnationalismus",fr:"Nationalisme économique","zh-CN":"经济民族主义",id:"Nasionalisme ekonomi",ka:"ეკონომიკური ნაციონალიზმი",es:"Nacionalismo económico",ja:"経済ナショナリズム",ko:"경제 민족주의"},
+"Variable":{
+ru:"Варьируется",de:"Variabel",fr:"Variable","zh-CN":"不固定",id:"Bervariasi",ka:"ცვალებადია",es:"Variable",ja:"多様",ko:"다양함"},
+"Low taxes, small deficits":{
+ru:"Низкие налоги, небольшой дефицит бюджета",de:"Niedrige Steuern, geringe Haushaltsdefizite",fr:"Faibles impôts, faibles déficits","zh-CN":"低税收、小规模财政赤字",id:"Pajak rendah, defisit kecil",ka:"დაბალი გადასახადები, მცირე დეფიციტი",es:"Impuestos bajos y déficits reducidos",ja:"低税率・小幅な財政赤字",ko:"낮은 세금, 적은 재정적자"},
+"Often pro-market":{
+ru:"Часто за рыночную экономику",de:"Häufig marktwirtschaftlich",fr:"Souvent favorable au marché","zh-CN":"通常支持市场经济",id:"Sering pro-pasar",ka:"ხშირად საბაზრო ეკონომიკის მხარდამჭერი",es:"A menudo favorable al mercado",ja:"市場重視が多い",ko:"시장 친화적인 경우가 많음"},
+"Welfare chauvinism, variable":{
+ru:"Шовинизм социального обеспечения; подходы различаются",de:"Wohlfahrtschauvinismus; unterschiedlich ausgeprägt",fr:"Chauvinisme social, variable","zh-CN":"福利沙文主义，具体形式不一",id:"Chauvinisme kesejahteraan; bervariasi",ka:"კეთილდღეობის შოვინიზმი; ფორმები ცვალებადია",es:"Chovinismo del bienestar, variable",ja:"福祉ショーヴィニズム（形態は多様）",ko:"복지 쇼비니즘; 형태는 다양함"},
+"Free markets, privatisation":{
+ru:"Свободный рынок, приватизация",de:"Freie Märkte, Privatisierung",fr:"Marchés libres, privatisation","zh-CN":"自由市场、私有化",id:"Pasar bebas, privatisasi",ka:"თავისუფალი ბაზარი, პრივატიზაცია",es:"Mercados libres y privatización",ja:"自由市場・民営化",ko:"자유시장, 민영화"},
+"Monetarist, privatising":{
+ru:"Монетаризм, приватизация",de:"Monetaristisch, privatisierend",fr:"Monétariste, privatisations","zh-CN":"货币主义、私有化",id:"Moneteris, privatisasi",ka:"მონეტარისტული, პრივატიზაცია",es:"Monetarista y privatizadora",ja:"マネタリズム・民営化",ko:"통화주의, 민영화"},
+"Laissez-faire":{
+ru:"Политика невмешательства",de:"Laissez-faire",fr:"Laissez-faire","zh-CN":"自由放任",id:"Laissez-faire",ka:"ლაისე-ფერი (ჩაურევლობა)",es:"Laissez-faire",ja:"自由放任",ko:"자유방임"},
+"Pure market, private property":{
+ru:"Чистый рынок, частная собственность",de:"Reiner Markt, Privateigentum",fr:"Marché pur, propriété privée","zh-CN":"纯粹ный市场、私有财产",id:"Pasar murni, kepemilikan pribadi",ka:"სუფთა ბაზარი, კერძო საკუთრება",es:"Mercado puro y propiedad privada",ja:"純粋な市場・私有財産",ko:"순수 시장, 사유재산"},
+"Pro-business, state-aligned":{
+ru:"В поддержку бизнеса, лояльная государству",de:"Unternehmensfreundlich, staatsnah",fr:"Pro-entreprises, alignée sur l’État","zh-CN":"亲商、与国家立场一致",id:"Pro-bisnis, selaras dengan negara",ka:"ბიზნესის მხარდამჭერი, სახელმწიფოსთან დაახლოებული",es:"Favorable a las empresas y alineada con el Estado",ja:"企業寄り・国家協調型",ko:"친기업적, 국가와 협력"},
+"Mixed; often market-friendly with zakat/welfare":{
+ru:"Смешанная; часто рыночная с закятом и социальной поддержкой",de:"Gemischt; häufig marktorientiert mit Zakat und Sozialleistungen",fr:"Mixte ; souvent favorable au marché avec zakat et protection sociale","zh-CN":"混合型；通常支持市场并辅以天课和福利",id:"Campuran; sering pro-pasar dengan zakat/kesejahteraan",ka:"შერეული; ხშირად საბაზრო ორიენტაციის ზაქათისა და სოციალური დახმარებით",es:"Mixta; a menudo favorable al mercado con zakat y bienestar social",ja:"混合型・市場重視にザカートや福祉を組み合わせる",ko:"혼합형; 자카트·복지를 결합한 시장 친화적 성향"},
+"Free markets with safety net":{
+ru:"Свободный рынок с социальной защитой",de:"Freie Märkte mit sozialem Netz",fr:"Marchés libres avec filet de sécurité sociale","zh-CN":"自由市场与社会保障",id:"Pasar bebas dengan jaring pengaman sosial",ka:"თავისუფალი ბაზარი სოციალური დაცვის სისტემით",es:"Mercados libres con red de protección social",ja:"自由市場と社会的セーフティネット",ko:"사회안전망을 갖춘 자유시장"},
+"Mixed economy, welfare":{
+ru:"Смешанная экономика, социальное обеспечение",de:"Gemischte Wirtschaft, Sozialleistungen",fr:"Économie mixte, protection sociale","zh-CN":"混合经济、社会福利",id:"Ekonomi campuran, kesejahteraan",ka:"შერეული ეკონომიკა, სოციალური კეთილდღეობა",es:"Economía mixta y bienestar social",ja:"混合経済・福祉",ko:"혼합경제, 복지"},
+"Social market economy":{
+ru:"Социальная рыночная экономика",de:"Soziale Marktwirtschaft",fr:"Économie sociale de marché","zh-CN":"社会市场经济",id:"Ekonomi pasar sosial",ka:"სოციალური საბაზრო ეკონომიკა",es:"Economía social de mercado",ja:"社会的市場経済",ko:"사회적 시장경제"},
+"Dirigiste mixed economy":{
+ru:"Дирижистская смешанная экономика",de:"Dirigistische Mischwirtschaft",fr:"Économie mixte dirigiste","zh-CN":"国家指导型混合经济",id:"Ekonomi campuran dirigis",ka:"დირიჟისტული შერეული ეკონომიკა",es:"Economía mixta dirigista",ja:"国家主導型混合経済",ko:"국가 주도 혼합경제"},
+"Free market, free trade":{
+ru:"Свободный рынок, свободная торговля",de:"Freier Markt, Freihandel",fr:"Marché libre, libre-échange","zh-CN":"自由市场、自由贸易",id:"Pasar bebas, perdagangan bebas",ka:"თავისუფალი ბაზარი, თავისუფალი ვაჭრობა",es:"Mercado libre y libre comercio",ja:"自由市場・自由貿易",ko:"자유시장, 자유무역"},
+"Market-based":{
+ru:"Основанная на рынке",de:"Marktbasiert",fr:"Fondée sur le marché","zh-CN":"以市场为基础",id:"Berbasis pasar",ka:"საბაზრო საფუძვლის მქონე",es:"Basada en el mercado",ja:"市場に基づく",ko:"시장 기반"},
+"Rule-bound competitive markets":{
+ru:"Конкурентные рынки, регулируемые правилами",de:"Regelgebundene Wettbewerbsmärkte",fr:"Marchés concurrentiels encadrés par des règles","zh-CN":"受规则约束的竞争性市场",id:"Pasar kompetitif berbasis aturan",ka:"წესებით რეგულირებული კონკურენტული ბაზრები",es:"Mercados competitivos sujetos a reglas",ja:"ルールに基づく競争市場",ko:"규칙 기반 경쟁시장"},
+"Market + welfare":{
+ru:"Рынок и социальное обеспечение",de:"Markt und Sozialleistungen",fr:"Marché et protection sociale","zh-CN":"市场与福利",id:"Pasar + kesejahteraan",ka:"ბაზარი + სოციალური კეთილდღეობა",es:"Mercado y bienestar",ja:"市場＋福祉",ko:"시장 + 복지"},
+"Market-friendly with targeted aid":{
+ru:"Рыночная экономика с адресной помощью",de:"Marktfreundlich mit gezielter Unterstützung",fr:"Favorable au marché avec aides ciblées","zh-CN":"亲市场并辅以定向援助",id:"Pro-pasar dengan bantuan terarah",ka:"საბაზრო ორიენტაციის მიზნობრივი დახმარებით",es:"Favorable al mercado con ayudas específicas",ja:"市場重視・対象を絞った支援",ko:"시장 친화적, 표적 지원 병행"},
+"Free market":{
+ru:"Свободный рынок",de:"Freier Markt",fr:"Marché libre","zh-CN":"自由市场",id:"Pasar bebas",ka:"თავისუფალი ბაზარი",es:"Mercado libre",ja:"自由市場",ko:"자유시장"},
+"Market-based environmental policy":{
+ru:"Экологическая политика на рыночных инструментах",de:"Marktbasierte Umweltpolitik",fr:"Politique environnementale fondée sur le marché","zh-CN":"以市场为基础的环境政策",id:"Kebijakan lingkungan berbasis pasar",ka:"საბაზრო ინსტრუმენტებზე დაფუძნებული გარემოსდაცვითი პოლიტიკა",es:"Política ambiental basada en el mercado",ja:"市場原理に基づく環境政策",ko:"시장 기반 환경정책"},
+"Market-friendly, social solidarity":{
+ru:"Рыночная экономика, социальная солидарность",de:"Marktfreundlich, soziale Solidarität",fr:"Favorable au marché, solidarité sociale","zh-CN":"亲市场、社会团结",id:"Pro-pasar, solidaritas sosial",ka:"საბაზრო ორიენტაციის, სოციალური სოლიდარობა",es:"Favorable al mercado y a la solidaridad social",ja:"市場重視・社会的連帯",ko:"시장 친화적, 사회적 연대"},
+"Mixed economy":{
+ru:"Смешанная экономика",de:"Gemischte Wirtschaft",fr:"Économie mixte","zh-CN":"混合经济",id:"Ekonomi campuran",ka:"შერეული ეკონომიკა",es:"Economía mixta",ja:"混合経済",ko:"혼합경제"},
+"Market + targeted reform":{
+ru:"Рынок и адресные реформы",de:"Markt und gezielte Reformen",fr:"Marché et réformes ciblées","zh-CN":"市场与定向改革",id:"Pasar + reformasi terarah",ka:"ბაზარი + მიზნობრივი რეფორმები",es:"Mercado y reformas específicas",ja:"市場＋重点改革",ko:"시장 + 표적 개혁"},
+"Market economy, variable regulation":{
+ru:"Рыночная экономика, регулирование варьируется",de:"Marktwirtschaft, unterschiedliche Regulierung",fr:"Économie de marché, régulation variable","zh-CN":"市场经济，监管程度不一",id:"Ekonomi pasar, regulasi bervariasi",ka:"საბაზრო ეკონომიკა, რეგულირება ცვალებადია",es:"Economía de mercado con regulación variable",ja:"市場経済・規制の程度は多様",ko:"시장경제, 규제 수준 다양"},
+"Property widely dispersed":{
+ru:"Широкое распределение собственности",de:"Breit gestreutes Eigentum",fr:"Propriété largement répartie","zh-CN":"财产广泛分散持有",id:"Kepemilikan tersebar luas",ka:"ფართოდ განაწილებული საკუთრება",es:"Propiedad ampliamente distribuida",ja:"広く分散した所有",ko:"폭넓게 분산된 소유"},
+"Farm/cooperative economy, protection":{
+ru:"Фермерская / кооперативная экономика, защита производителей",de:"Landwirtschaftliche/genossenschaftliche Wirtschaft, Schutz",fr:"Économie agricole ou coopérative, protection","zh-CN":"农场/合作社经济、保护性政策",id:"Ekonomi pertanian/koperasi, perlindungan",ka:"ფერმერული / კოოპერაციული ეკონომიკა, დაცვა",es:"Economía agraria/cooperativa y protección",ja:"農業・協同組合経済、保護政策",ko:"농업·협동조합 경제, 보호"},
+"Not defined":{
+ru:"Не определено",de:"Nicht festgelegt",fr:"Non défini","zh-CN":"未定义",id:"Tidak ditentukan",ka:"განსაზღვრული არ არის",es:"No definido",ja:"未定義",ko:"정의되지 않음"},
+"Open trade, global institutions":{
+ru:"Открытая торговля, глобальные институты",de:"Offener Handel, globale Institutionen",fr:"Commerce ouvert, institutions mondiales","zh-CN":"开放贸易、全球机构",id:"Perdagangan terbuka, lembaga global",ka:"ღია ვაჭრობა, გლობალური ინსტიტუტები",es:"Comercio abierto e instituciones globales",ja:"開放貿易・国際機関",ko:"개방 무역, 국제기구"},
+"Free trade, multilateral":{
+ru:"Свободная торговля, многосторонность",de:"Freihandel, Multilateralismus",fr:"Libre-échange, multilatéralisme","zh-CN":"自由贸易、多边主义",id:"Perdagangan bebas, multilateralisme",ka:"თავისუფალი ვაჭრობა, მრავალმხრივობა",es:"Libre comercio y multilateralismo",ja:"自由貿易・多国間主義",ko:"자유무역, 다자주의"},
+"Fiscal federalism":{
+ru:"Бюджетный федерализм",de:"Fiskalföderalismus",fr:"Fédéralisme budgétaire","zh-CN":"财政联邦主义",id:"Federalisme fiskal",ka:"ფისკალური ფედერალიზმი",es:"Federalismo fiscal",ja:"財政連邦主義",ko:"재정 연방주의"},
+"Whatever works":{
+ru:"Любые эффективные средства",de:"Was funktioniert",fr:"Tout ce qui fonctionne","zh-CN":"以有效为准",id:"Apa pun yang berhasil",ka:"რაც მუშაობს",es:"Lo que funcione",ja:"有効な手段を採用",ko:"효과가 있는 모든 수단"},
+"Neutral":{
+ru:"Нейтральная позиция",de:"Neutral",fr:"Neutre","zh-CN":"中性",id:"Netral",ka:"ნეიტრალური",es:"Neutral",ja:"中立",ko:"중립"},
+"Regional development":{
+ru:"Региональное развитие",de:"Regionale Entwicklung",fr:"Développement régional","zh-CN":"区域发展",id:"Pembangunan regional",ka:"რეგიონული განვითარება",es:"Desarrollo regional",ja:"地域開発",ko:"지역 개발"},
+"Local economy":{
+ru:"Местная экономика",de:"Lokale Wirtschaft",fr:"Économie locale","zh-CN":"地方经济",id:"Ekonomi lokal",ka:"ადგილობრივი ეკონომიკა",es:"Economía local",ja:"地域経済",ko:"지역 경제"},
+"Mixed, pragmatic":{
+ru:"Смешанная, прагматическая",de:"Gemischt, pragmatisch",fr:"Mixte, pragmatique","zh-CN":"混合型、务实",id:"Campuran, pragmatis",ka:"შერეული, პრაგმატული",es:"Mixta y pragmática",ja:"混合型・実用主義的",ko:"혼합형, 실용주의"},
+});
+
 export default rows;
