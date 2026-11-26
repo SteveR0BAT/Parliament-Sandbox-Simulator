@@ -1872,4 +1872,77 @@ ru:"Местная экономика",de:"Lokale Wirtschaft",fr:"Économie loca
 ru:"Смешанная, прагматическая",de:"Gemischt, pragmatisch",fr:"Mixte, pragmatique","zh-CN":"混合型、务实",id:"Campuran, pragmatis",ka:"შერეული, პრაგმატული",es:"Mixta y pragmática",ja:"混合型・実用主義的",ko:"혼합형, 실용주의"},
 });
 
+
+Object.assign(rows, {
+// Economic descriptors: welfare, regulation, social ownership and cooperative production.
+"Mixed economy, high welfare":{
+ru:"Смешанная экономика, высокий уровень социальной защиты",de:"Gemischte Wirtschaft, umfangreiche Sozialleistungen",fr:"Économie mixte, protection sociale élevée","zh-CN":"混合经济、高水平福利",id:"Ekonomi campuran, kesejahteraan tinggi",ka:"შერეული ეკონომიკა, სოციალური დაცვის მაღალი დონე",es:"Economía mixta y alto nivel de bienestar",ja:"混合経済・手厚い福祉",ko:"혼합경제, 높은 복지 수준"},
+"Regulated markets, welfare":{
+ru:"Регулируемые рынки, социальное обеспечение",de:"Regulierte Märkte, Sozialleistungen",fr:"Marchés régulés, protection sociale","zh-CN":"受监管的市场、社会福利",id:"Pasar teregulasi, kesejahteraan",ka:"რეგულირებული ბაზრები, სოციალური კეთილდღეობა",es:"Mercados regulados y bienestar social",ja:"規制市場・福祉",ko:"규제 시장, 복지"},
+"Regulation, progressive taxation":{
+ru:"Регулирование, прогрессивное налогообложение",de:"Regulierung, progressive Besteuerung",fr:"Régulation, fiscalité progressive","zh-CN":"监管、累进税制",id:"Regulasi, pajak progresif",ka:"რეგულირება, პროგრესული დაბეგვრა",es:"Regulación e impuestos progresivos",ja:"規制・累進課税",ko:"규제, 누진과세"},
+"Regulated capitalism":{
+ru:"Регулируемый капитализм",de:"Regulierter Kapitalismus",fr:"Capitalisme régulé","zh-CN":"受监管的资本主义",id:"Kapitalisme teregulasi",ka:"რეგულირებული კაპიტალიზმი",es:"Capitalismo regulado",ja:"規制資本主義",ko:"규제 자본주의"},
+"Pro-union, welfare":{
+ru:"Поддержка профсоюзов и социальной защиты",de:"Gewerkschaftsfreundlich, sozialstaatlich",fr:"Favorable aux syndicats et à la protection sociale","zh-CN":"支持工会和福利",id:"Pro-serikat, kesejahteraan",ka:"პროფკავშირებისა და სოციალური დაცვის მხარდაჭერა",es:"Favorable a los sindicatos y al bienestar",ja:"労組支援・福祉重視",ko:"노조 친화적, 복지 지향"},
+"Gradual collectivism":{
+ru:"Постепенная коллективизация",de:"Schrittweise Kollektivierung",fr:"Collectivisation progressive","zh-CN":"渐进集体化",id:"Kolektivisme bertahap",ka:"თანდათანობითი კოლექტივიზაცია",es:"Colectivización gradual",ja:"漸進的な集団所有化",ko:"점진적 집산화"},
+"Counter-cyclical state spending":{
+ru:"Антициклические государственные расходы",de:"Antizyklische Staatsausgaben",fr:"Dépenses publiques anticycliques","zh-CN":"逆周期政府支出",id:"Belanja negara antisiklus",ka:"ანტიციკლური სახელმწიფო ხარჯები",es:"Gasto público anticíclico",ja:"景気循環に応じた財政支出",ko:"경기대응적 정부 지출"},
+"Regulation, green investment":{
+ru:"Регулирование, зелёные инвестиции",de:"Regulierung, grüne Investitionen",fr:"Régulation, investissements verts","zh-CN":"监管、绿色投资",id:"Regulasi, investasi hijau",ka:"რეგულირება, მწვანე ინვესტიციები",es:"Regulación e inversión ecológica",ja:"規制・グリーン投資",ko:"규제, 녹색 투자"},
+"Equal pay, work-family policy":{
+ru:"Равная оплата труда, политика поддержки семьи и работы",de:"Gleicher Lohn, Vereinbarkeit von Beruf und Familie",fr:"Égalité salariale, politiques de conciliation travail-famille","zh-CN":"同工同酬、工作与家庭政策",id:"Upah setara, kebijakan kerja-keluarga",ka:"თანაბარი ანაზღაურება, სამუშაოსა და ოჯახის შეთავსების პოლიტიკა",es:"Igualdad salarial y políticas de conciliación laboral y familiar",ja:"同一賃金・仕事と家庭の両立政策",ko:"동일임금, 일·가정 양립 정책"},
+"Redistribution within markets":{
+ru:"Перераспределение в рамках рыночной экономики",de:"Umverteilung innerhalb der Marktwirtschaft",fr:"Redistribution dans le cadre du marché","zh-CN":"市场体系内的再分配",id:"Redistribusi dalam pasar",ka:"გადანაწილება საბაზრო სისტემის ფარგლებში",es:"Redistribución dentro del mercado",ja:"市場経済の枠内での再分配",ko:"시장 체제 내 재분배"},
+"Gradual socialisation, welfare":{
+ru:"Постепенное обобществление, социальная защита",de:"Schrittweise Vergesellschaftung, Sozialleistungen",fr:"Socialisation progressive, protection sociale","zh-CN":"渐进社会化、福利保障",id:"Sosialisasi bertahap, kesejahteraan",ka:"თანდათანობითი გასაზოგადოებრივება, სოციალური დაცვა",es:"Socialización gradual y bienestar",ja:"漸進的な社会化・福祉",ko:"점진적 사회화, 복지"},
+"Mixed, cooperative sector":{
+ru:"Смешанная экономика, кооперативный сектор",de:"Gemischtwirtschaftlich, Genossenschaftssektor",fr:"Mixte, secteur coopératif","zh-CN":"混合型、合作社部门",id:"Campuran, sektor koperasi",ka:"შერეული, კოოპერაციული სექტორი",es:"Mixta, sector cooperativo",ja:"混合型・協同組合部門",ko:"혼합형, 협동조합 부문"},
+"Welfare, social justice":{
+ru:"Социальная защита, социальная справедливость",de:"Sozialleistungen, soziale Gerechtigkeit",fr:"Protection sociale, justice sociale","zh-CN":"福利、社会正义",id:"Kesejahteraan, keadilan sosial",ka:"სოციალური კეთილდღეობა, სოციალური სამართლიანობა",es:"Bienestar y justicia social",ja:"福祉・社会正義",ko:"복지, 사회정의"},
+"Social ownership, planning":{
+ru:"Общественная собственность, планирование",de:"Gesellschaftliches Eigentum, Planung",fr:"Propriété sociale, planification","zh-CN":"社会所有制、计划经济",id:"Kepemilikan sosial, perencanaan",ka:"საზოგადოებრივი საკუთრება, დაგეგმვა",es:"Propiedad social y planificación",ja:"社会的所有・計画",ko:"사회적 소유, 계획"},
+"Social ownership":{
+ru:"Общественная собственность",de:"Gesellschaftliches Eigentum",fr:"Propriété sociale","zh-CN":"社会所有制",id:"Kepemilikan sosial",ka:"საზოგადოებრივი საკუთრება",es:"Propiedad social",ja:"社会的所有",ko:"사회적 소유"},
+"Worker-owned firms in markets":{
+ru:"Предприятия в собственности работников на рынке",de:"Arbeitereigene Unternehmen im Wettbewerb",fr:"Entreprises détenues par les travailleurs sur le marché","zh-CN":"市场中的工人所有企业",id:"Perusahaan milik pekerja di pasar",ka:"მუშების საკუთრებაში არსებული საბაზრო საწარმოები",es:"Empresas propiedad de los trabajadores en el mercado",ja:"市場で活動する労働者所有企業",ko:"시장에서 운영되는 노동자 소유 기업"},
+"Workers' councils, commons":{
+ru:"Рабочие советы, общие ресурсы",de:"Arbeiterräte, Gemeingüter",fr:"Conseils ouvriers, biens communs","zh-CN":"工人委员会、公共资源",id:"Dewan pekerja, kepemilikan bersama",ka:"მუშათა საბჭოები, საერთო რესურსები",es:"Consejos obreros y bienes comunes",ja:"労働者評議会・共有財",ko:"노동자 평의회, 공유재"},
+"Social ownership, ecological planning":{
+ru:"Общественная собственность, экологическое планирование",de:"Gesellschaftliches Eigentum, ökologische Planung",fr:"Propriété sociale, planification écologique","zh-CN":"社会所有制、生态规划",id:"Kepemilikan sosial, perencanaan ekologis",ka:"საზოგადოებრივი საკუთრება, ეკოლოგიური დაგეგმვა",es:"Propiedad social y planificación ecológica",ja:"社会的所有・環境計画",ko:"사회적 소유, 생태 계획"},
+"Cooperative / public ownership":{
+ru:"Кооперативная / общественная собственность",de:"Genossenschaftliches / öffentliches Eigentum",fr:"Propriété coopérative / publique","zh-CN":"合作社/公共所有制",id:"Kepemilikan koperasi / publik",ka:"კოოპერაციული / საზოგადოებრივი საკუთრება",es:"Propiedad cooperativa / pública",ja:"協同組合所有／公有",ko:"협동조합 / 공공 소유"},
+"State/zakat-based redistribution":{
+ru:"Перераспределение через государство и закят",de:"Umverteilung über den Staat und Zakat",fr:"Redistribution par l’État et la zakat","zh-CN":"通过国家和天课制度进行再分配",id:"Redistribusi melalui negara/zakat",ka:"სახელმწიფოსა და ზაქათის მეშვეობით გადანაწილება",es:"Redistribución estatal y mediante el zakat",ja:"国家・ザカートによる再分配",ko:"국가 및 자카트를 통한 재분배"},
+"State and cooperative development":{
+ru:"Государственное и кооперативное развитие",de:"Staatliche und genossenschaftliche Entwicklung",fr:"Développement étatique et coopératif","zh-CN":"国家与合作社发展",id:"Pembangunan negara dan koperasi",ka:"სახელმწიფო და კოოპერაციული განვითარება",es:"Desarrollo estatal y cooperativo",ja:"国家・協同組合による開発",ko:"국가 및 협동조합 개발"},
+"Co-op ownership":{
+ru:"Кооперативная собственность",de:"Genossenschaftliches Eigentum",fr:"Propriété coopérative","zh-CN":"合作社所有制",id:"Kepemilikan koperasi",ka:"კოოპერაციული საკუთრება",es:"Propiedad cooperativa",ja:"協同組合所有",ko:"협동조합 소유"},
+"Mutual credit, possession":{
+ru:"Взаимный кредит, владение",de:"Gegenseitigkeitskredit, Besitz",fr:"Crédit mutuel, possession","zh-CN":"互助信贷、占有",id:"Kredit mutual, penguasaan",ka:"ურთიერთკრედიტი, მფლობელობა",es:"Crédito mutuo y posesión",ja:"相互信用・占有",ko:"상호 신용, 점유"},
+"Guild-run industry":{
+ru:"Промышленность под управлением гильдий",de:"Von Gilden verwaltete Industrie",fr:"Industrie administrée par les guildes","zh-CN":"由行业公会管理的工业",id:"Industri yang dikelola serikat",ka:"გილდიების მიერ მართული მრეწველობა",es:"Industria gestionada por gremios",ja:"ギルド運営の産業",ko:"길드가 운영하는 산업"},
+"Redistribution, anti-austerity":{
+ru:"Перераспределение, противодействие политике жёсткой экономии",de:"Umverteilung, gegen Austerität",fr:"Redistribution, opposition à l’austérité","zh-CN":"再分配、反紧缩",id:"Redistribusi, anti-austeritas",ka:"გადანაწილება, ანტი-სიმკაცრის პოლიტიკა",es:"Redistribución y oposición a la austeridad",ja:"再分配・緊縮反対",ko:"재분배, 긴축 반대"},
+"Mixed, social ownership":{
+ru:"Смешанная экономика, общественная собственность",de:"Gemischt, gesellschaftliches Eigentum",fr:"Mixte, propriété sociale","zh-CN":"混合型、社会所有制",id:"Campuran, kepemilikan sosial",ka:"შერეული, საზოგადოებრივი საკუთრება",es:"Mixta, propiedad social",ja:"混合型・社会的所有",ko:"혼합형, 사회적 소유"},
+"Nationalised resources, social missions":{
+ru:"Национализированные ресурсы, социальные программы",de:"Verstaatlichte Ressourcen, soziale Aufgaben",fr:"Ressources nationalisées, missions sociales","zh-CN":"资源国有化、社会项目",id:"Sumber daya dinasionalisasi, misi sosial",ka:"ნაციონალიზებული რესურსები, სოციალური მისიები",es:"Recursos nacionalizados y programas sociales",ja:"資源の国有化・社会的事業",ko:"자원 국유화, 사회적 과제"},
+"Communal / municipal economy":{
+ru:"Общинная / муниципальная экономика",de:"Kommunale Wirtschaft",fr:"Économie communautaire / municipale","zh-CN":"公社/市政经济",id:"Ekonomi komunal / munisipal",ka:"სათემო / მუნიციპალური ეკონომიკა",es:"Economía comunal / municipal",ja:"共同体／自治体経済",ko:"공동체 / 지방자치 경제"},
+"Anti-capitalist, care economy":{
+ru:"Антикапиталистическая экономика заботы",de:"Antikapitalistisch, Sorgeökonomie",fr:"Anticapitaliste, économie du care","zh-CN":"反资本主义、照护经济",id:"Antikapitalis, ekonomi perawatan",ka:"ანტიკაპიტალისტური, ზრუნვის ეკონომიკა",es:"Anticapitalista, economía de los cuidados",ja:"反資本主義・ケア経済",ko:"반자본주의, 돌봄 경제"},
+"State-led economy":{
+ru:"Экономика под руководством государства",de:"Staatlich gelenkte Wirtschaft",fr:"Économie dirigée par l’État","zh-CN":"国家主导经济",id:"Ekonomi yang dipimpin negara",ka:"სახელმწიფოს მიერ მართული ეკონომიკა",es:"Economía dirigida por el Estado",ja:"国家主導経済",ko:"국가 주도 경제"},
+"Redistribution, base communities":{
+ru:"Перераспределение, базовые общины",de:"Umverteilung, Basisgemeinden",fr:"Redistribution, communautés de base","zh-CN":"再分配、基层团体",id:"Redistribusi, komunitas basis",ka:"გადანაწილება, საბაზისო თემები",es:"Redistribución y comunidades de base",ja:"再分配・基礎共同体",ko:"재분배, 기초 공동체"},
+"Social development, nationalisation":{
+ru:"Социальное развитие, национализация",de:"Soziale Entwicklung, Verstaatlichung",fr:"Développement social, nationalisation","zh-CN":"社会发展、国有化",id:"Pembangunan sosial, nasionalisasi",ka:"სოციალური განვითარება, ნაციონალიზაცია",es:"Desarrollo social y nacionalización",ja:"社会開発・国有化",ko:"사회 발전, 국유화"},
+"Collective development":{
+ru:"Коллективное развитие",de:"Kollektive Entwicklung",fr:"Développement collectif","zh-CN":"集体发展",id:"Pembangunan kolektif",ka:"კოლექტიური განვითარება",es:"Desarrollo colectivo",ja:"集団的開発",ko:"집단적 발전"},
+"Post-growth, sufficiency":{
+ru:"Построст, достаточность",de:"Postwachstum, Suffizienz",fr:"Post-croissance, sobriété","zh-CN":"后增长、充足性",id:"Pascapertumbuhan, kecukupan",ka:"პოსტზრდა, საკმარისობა",es:"Poscrecimiento y suficiencia",ja:"脱成長・充足",ko:"탈성장, 충분성"},
+});
+
 export default rows;
