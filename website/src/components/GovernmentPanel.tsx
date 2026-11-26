@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Dashboard } from "./ParliamentPanel";
-import { Field } from "./ui";
+import { computeStats } from "@/lib/stats";
+import { Bar, Field } from "./ui";
 import { useStore } from "@/lib/store";
 import { deputyList, uid } from "@/lib/parliament";
 import { lookupIdeology } from "@/lib/voting";
@@ -42,6 +42,13 @@ export function GovernmentPanel() {
   const [adding, setAdding] = useState(false);
   const [newTitle, setNewTitle] = useState("");
   const [newDescription, setNewDescription] = useState("");
+  const majorityStats = useMemo(() => computeStats(data), [data]);
+  const majorityStatusColor = {
+    good: "var(--good)",
+    warn: "var(--warn)",
+    bad: "var(--bad)",
+    info: "var(--muted)",
+  }[majorityStats.statusKind];
 
   const partyById = useMemo(() => new Map(data.parties.map((party) => [party.id, party])), [data.parties]);
   const eligibleDeputies = useMemo(
@@ -119,8 +126,27 @@ export function GovernmentPanel() {
   return (
     <div className="space-y-4 p-3">
       <section className="space-y-3">
-        <h3 className="px-1 text-sm font-extrabold">Parliament overview</h3>
-        <Dashboard />
+        <div
+          className="card p-3 text-[13px]"
+          style={{ borderLeft: `4px solid ${majorityStatusColor}` }}
+        >
+          <div className="label">Majority status</div>
+          <div className="font-semibold">{majorityStats.status}</div>
+          <div className="muted mt-1 text-xs">
+            Government {majorityStats.roleSeats.government} · Confidence &amp; supply {majorityStats.roleSeats.confidence} · Ind. supporters {majorityStats.roleSeats.supporter} · Opposition {majorityStats.roleSeats.opposition} · Neutral {majorityStats.roleSeats.neutral}
+          </div>
+          <div className="mt-2">
+            <Bar
+              parts={[
+                { v: majorityStats.roleSeats.government, color: "var(--good)", title: "Government" },
+                { v: majorityStats.roleSeats.confidence + majorityStats.roleSeats.supporter, color: "var(--warn)", title: "Support" },
+                { v: majorityStats.roleSeats.neutral, color: "#94a3b8", title: "Neutral" },
+                { v: majorityStats.roleSeats.opposition, color: "var(--bad)", title: "Opposition" },
+                { v: majorityStats.free, color: "var(--border)" },
+              ]}
+            />
+          </div>
+        </div>
       </section>
 
       <section className="space-y-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
