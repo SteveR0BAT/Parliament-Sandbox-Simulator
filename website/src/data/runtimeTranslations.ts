@@ -470,4 +470,113 @@ ru:"Автоматически сохранено в этом браузере. 
 ru:"Причина:",de:"Begründung:",fr:"Pourquoi :","zh-CN":"原因：",id:"Alasan:",ka:"მიზეზი:",es:"Motivo:",ja:"理由:",ko:"이유:"}
 });
 
+
+Object.assign(rows, {
+// Voting setup, voting history, issue configuration and result labels.
+"Voting":{
+ru:"Голосование",de:"Abstimmung",fr:"Vote","zh-CN":"投票",id:"Pemungutan suara",ka:"კენჭისყრა",es:"Votación",ja:"投票",ko:"투표"},
+"Vote":{
+ru:"Голос",de:"Abstimmen",fr:"Voter","zh-CN":"投票",id:"Suara",ka:"ხმის მიცემა",es:"Votar",ja:"投票する",ko:"투표"},
+"Voting mode":{
+ru:"Режим голосования",de:"Abstimmungsmodus",fr:"Mode de vote","zh-CN":"投票模式",id:"Mode pemungutan suara",ka:"კენჭისყრის რეჟიმი",es:"Modo de votación",ja:"投票モード",ko:"투표 방식"},
+"Party voting":{
+ru:"Голосование по партиям",de:"Parteienabstimmung",fr:"Vote par parti","zh-CN":"按政党投票",id:"Pemungutan suara partai",ka:"პარტიული კენჭისყრა",es:"Votación por partido",ja:"政党単位の投票",ko:"정당별 투표"},
+"Ideology voting":{
+ru:"Голосование по идеологиям",de:"Ideologieabstimmung",fr:"Vote par idéologie","zh-CN":"按意识形态投票",id:"Pemungutan suara ideologi",ka:"იდეოლოგიური კენჭისყრა",es:"Votación por ideología",ja:"イデオロギー別投票",ko:"이념별 투표"},
+"Faction voting":{
+ru:"Голосование по фракциям",de:"Fraktionsabstimmung",fr:"Vote par faction","zh-CN":"按派系投票",id:"Pemungutan suara faksi",ka:"ფრაქციული კენჭისყრა",es:"Votación por facción",ja:"派閥単位の投票",ko:"파벌별 투표"},
+"Individual voting":{
+ru:"Индивидуальное голосование",de:"Individuelle Abstimmung",fr:"Vote individuel","zh-CN":"个人投票",id:"Pemungutan suara individu",ka:"ინდივიდუალური კენჭისყრა",es:"Votación individual",ja:"個人投票",ko:"개별 투표"},
+"Mixed voting":{
+ru:"Смешанное голосование",de:"Gemischte Abstimmung",fr:"Vote mixte","zh-CN":"混合投票",id:"Pemungutan suara campuran",ka:"შერეული კენჭისყრა",es:"Votación mixta",ja:"混合投票",ko:"혼합 투표"},
+"Random voting":{
+ru:"Случайное голосование",de:"Zufällige Abstimmung",fr:"Vote aléatoire","zh-CN":"随机投票",id:"Pemungutan suara acak",ka:"შემთხვევითი კენჭისყრა",es:"Votación aleatoria",ja:"ランダム投票",ko:"무작위 투표"},
+"Run vote":{
+ru:"Провести голосование",de:"Abstimmung durchführen",fr:"Lancer le vote","zh-CN":"进行投票",id:"Jalankan pemungutan suara",ka:"კენჭისყრის ჩატარება",es:"Realizar votación",ja:"投票を実行",ko:"투표 실행"},
+"Run simulation":{
+ru:"Запустить симуляцию",de:"Simulation starten",fr:"Lancer la simulation","zh-CN":"运行模拟",id:"Jalankan simulasi",ka:"სიმულაციის გაშვება",es:"Iniciar simulación",ja:"シミュレーションを実行",ko:"시뮬레이션 실행"},
+"Issue name":{
+ru:"Название вопроса",de:"Vorlagenname",fr:"Nom du texte","zh-CN":"议案名称",id:"Nama isu",ka:"საკითხის სახელი",es:"Nombre del asunto",ja:"議案名",ko:"안건 이름"},
+"Bill":{
+ru:"Законопроект",de:"Gesetzentwurf",fr:"Projet de loi","zh-CN":"法案",id:"RUU",ka:"კანონპროექტი",es:"Proyecto de ley",ja:"法案",ko:"법안"},
+"Resolution":{
+ru:"Резолюция",de:"Resolution",fr:"Résolution","zh-CN":"决议",id:"Resolusi",ka:"რეზოლუცია",es:"Resolución",ja:"決議",ko:"결의안"},
+"Motion":{
+ru:"Предложение",de:"Antrag",fr:"Motion","zh-CN":"动议",id:"Mosi",ka:"წინადადება",es:"Moción",ja:"動議",ko:"동의안"},
+"Amendment":{
+ru:"Поправка",de:"Änderungsantrag",fr:"Amendement","zh-CN":"修正案",id:"Amandemen",ka:"შესწორება",es:"Enmienda",ja:"修正案",ko:"수정안"},
+"Confidence vote":{
+ru:"Голосование о доверии",de:"Vertrauensabstimmung",fr:"Vote de confiance","zh-CN":"信任投票",id:"Pemungutan suara kepercayaan",ka:"ნდობის კენჭისყრა",es:"Voto de confianza",ja:"信任投票",ko:"신임 투표"},
+"Other":{
+ru:"Другое",de:"Sonstiges",fr:"Autre","zh-CN":"其他",id:"Lainnya",ka:"სხვა",es:"Otro",ja:"その他",ko:"기타"},
+"Background":{
+ru:"Предыстория",de:"Hintergrund",fr:"Contexte","zh-CN":"背景",id:"Latar belakang",ka:"ფონი",es:"Antecedentes",ja:"背景",ko:"배경"},
+"Notes":{
+ru:"Примечания",de:"Notizen",fr:"Notes","zh-CN":"备注",id:"Catatan",ka:"შენიშვნები",es:"Notas",ja:"メモ",ko:"메모"},
+"Category":{
+ru:"Категория",de:"Kategorie",fr:"Catégorie","zh-CN":"类别",id:"Kategori",ka:"კატეგორია",es:"Categoría",ja:"カテゴリー",ko:"범주"},
+"Threshold":{
+ru:"Порог",de:"Schwellenwert",fr:"Seuil","zh-CN":"门槛",id:"Ambang batas",ka:"ზღვარი",es:"Umbral",ja:"しきい値",ko:"기준"},
+"Quorum":{
+ru:"Кворум",de:"Quorum",fr:"Quorum","zh-CN":"法定人数",id:"Kuorum",ka:"კვორუმი",es:"Quórum",ja:"定足数",ko:"정족수"},
+"Simple majority":{
+ru:"Простое большинство",de:"Einfache Mehrheit",fr:"Majorité simple","zh-CN":"简单多数",id:"Mayoritas sederhana",ka:"უბრალო უმრავლესობა",es:"Mayoría simple",ja:"単純過半数",ko:"단순 과반수"},
+"Absolute majority":{
+ru:"Абсолютное большинство",de:"Absolute Mehrheit",fr:"Majorité absolue","zh-CN":"绝对多数",id:"Mayoritas absolut",ka:"აბსოლუტური უმრავლესობა",es:"Mayoría absoluta",ja:"絶対多数",ko:"절대 과반수"},
+"Qualified majority":{
+ru:"Квалифицированное большинство",de:"Qualifizierte Mehrheit",fr:"Majorité qualifiée","zh-CN":"特别多数",id:"Mayoritas khusus",ka:"კვალიფიციური უმრავლესობა",es:"Mayoría cualificada",ja:"特別多数",ko:"특별 다수"},
+"Two-thirds majority":{
+ru:"Большинство в две трети",de:"Zwei-Drittel-Mehrheit",fr:"Majorité des deux tiers","zh-CN":"三分之二多数",id:"Mayoritas dua pertiga",ka:"ორი მესამედის უმრავლესობა",es:"Mayoría de dos tercios",ja:"3分の2の多数",ko:"3분의 2 다수"},
+"Three-fifths majority":{
+ru:"Большинство в три пятых",de:"Drei-Fünftel-Mehrheit",fr:"Majorité des trois cinquièmes","zh-CN":"五分之三多数",id:"Mayoritas tiga perlima",ka:"სამი მეხუთედის უმრავლესობა",es:"Mayoría de tres quintos",ja:"5分の3の多数",ko:"5분의 3 다수"},
+"Custom threshold":{
+ru:"Пользовательский порог",de:"Benutzerdefinierter Schwellenwert",fr:"Seuil personnalisé","zh-CN":"自定义门槛",id:"Ambang batas khusus",ka:"მორგებული ზღვარი",es:"Umbral personalizado",ja:"カスタムしきい値",ko:"사용자 지정 기준"},
+"For % present":{
+ru:"За, % присутствующих",de:"Dafür, % der Anwesenden",fr:"Pour, % des présents","zh-CN":"赞成，占出席者比例",id:"Setuju, % hadir",ka:"მომხრე, დამსწრეთა %",es:"A favor, % de presentes",ja:"賛成（出席者比）",ko:"찬성, 출석자 비율"},
+"Votes held":{
+ru:"Проведённые голосования",de:"Durchgeführte Abstimmungen",fr:"Votes tenus","zh-CN":"已举行的投票",id:"Pemungutan suara yang dilakukan",ka:"ჩატარებული კენჭისყრები",es:"Votaciones realizadas",ja:"実施された投票",ko:"실시된 투표"},
+"Custom ideologies":{
+ru:"Пользовательские идеологии",de:"Benutzerdefinierte Ideologien",fr:"Idéologies personnalisées","zh-CN":"自定义意识形态",id:"Ideologi khusus",ka:"მორგებული იდეოლოგიები",es:"Ideologías personalizadas",ja:"カスタムイデオロギー",ko:"사용자 정의 이념"},
+"Specific ideology overrides":{
+ru:"Индивидуальные правила для идеологий",de:"Spezifische Ideologie-Überschreibungen",fr:"Remplacements par idéologie spécifique","zh-CN":"特定意识形态覆盖规则",id:"Aturan khusus ideologi",ka:"სპეციფიკური იდეოლოგიის გადაფარვები",es:"Reglas específicas por ideología",ja:"個別イデオロギーの上書き",ko:"특정 이념 재정의"},
+"Overrides the group position for one ideology (also custom ideologies), including custom probabilities.":{
+ru:"Переопределяет позицию группы для одной идеологии (в том числе пользовательской), включая пользовательские вероятности.",
+de:"Überschreibt die Gruppenposition für eine Ideologie (auch benutzerdefinierte) einschließlich eigener Wahrscheinlichkeiten.",
+fr:"Remplace la position du groupe pour une idéologie (y compris personnalisée), avec des probabilités personnalisées.",
+"zh-CN":"为单个意识形态（包括自定义意识形态）覆盖群体立场，并可设置自定义概率。",
+id:"Menggantikan posisi kelompok untuk satu ideologi (termasuk ideologi khusus), beserta probabilitas khusus.",
+ka:"ცვლის ჯგუფის პოზიციას ერთი იდეოლოგიისთვის (მორგებულის ჩათვლით), მათ შორის მორგებული ალბათობებით.",
+es:"Sobrescribe la posición del grupo para una ideología (incluidas las personalizadas), con probabilidades propias.",
+ja:"カスタム確率を含め、1つのイデオロギー（カスタムを含む）のグループ位置を上書きします。",
+ko:"사용자 지정 확률을 포함하여 하나의 이념(사용자 정의 이념 포함)에 대한 그룹 입장을 재정의합니다."
+},
+"Add ideology override…":{
+ru:"Добавить переопределение идеологии…",de:"Ideologie-Überschreibung hinzufügen …",fr:"Ajouter une exception d’idéologie…","zh-CN":"添加意识形态覆盖规则…",id:"Tambahkan aturan khusus ideologi…",ka:"იდეოლოგიის გადაფარვის დამატება…",es:"Añadir excepción de ideología…",ja:"イデオロギーの上書きを追加…",ko:"이념 재정의 추가…"},
+"— not set —":{
+ru:"— не задано —",de:"— nicht festgelegt —",fr:"— non défini —","zh-CN":"— 未设置 —",id:"— belum diatur —",ka:"— მითითებული არ არის —",es:"— sin establecer —",ja:"— 未設定 —",ko:"— 설정 안 됨 —"},
+"— unset —":{
+ru:"— не установлено —",de:"— nicht gesetzt —",fr:"— non défini —","zh-CN":"— 未设定 —",id:"— belum ditetapkan —",ka:"— დაყენებული არ არის —",es:"— sin asignar —",ja:"— 未設定 —",ko:"— 지정 안 됨 —"},
+"No parties to configure.":{
+ru:"Нет партий для настройки.",de:"Keine Parteien zum Konfigurieren.",fr:"Aucun parti à configurer.","zh-CN":"没有可配置的政党。",id:"Tidak ada partai untuk dikonfigurasi.",ka:"კონფიგურაციისთვის პარტიები არ არის.",es:"No hay partidos que configurar.",ja:"設定できる政党はありません。",ko:"구성할 정당이 없습니다."},
+"No factions: deputies follow the party line.":{
+ru:"Фракций нет: депутаты следуют линии партии.",de:"Keine Fraktionen: Abgeordnete folgen der Parteilinie.",fr:"Aucune faction : les députés suivent la ligne du parti.","zh-CN":"没有派系：议员遵循政党立场。",id:"Tidak ada faksi: anggota parlemen mengikuti garis partai.",ka:"ფრაქციები არ არის: დეპუტატები პარტიის ხაზს მიჰყვებიან.",es:"No hay facciones: los diputados siguen la línea del partido.",ja:"派閥がない場合、議員は政党の方針に従います。",ko:"파벌이 없으면 의원은 정당 노선을 따릅니다."},
+"All weights are zero — they will be treated as equal.":{
+ru:"Все веса равны нулю — они будут считаться равными.",de:"Alle Gewichtungen sind null – sie werden als gleich behandelt.",fr:"Tous les poids sont nuls — ils seront considérés comme égaux.","zh-CN":"所有权重均为零——将按相等处理。",id:"Semua bobot bernilai nol — akan dianggap sama.",ka:"ყველა წონა ნულის ტოლია — ისინი თანაბრად ჩაითვლება.",es:"Todos los pesos son cero: se tratarán como iguales.",ja:"すべての重みがゼロのため、同じ重みとして扱われます。",ko:"모든 가중치가 0이므로 동일한 값으로 처리됩니다."},
+"Party decision":{
+ru:"Решение партии",de:"Parteientscheidung",fr:"Décision du parti","zh-CN":"政党决定",id:"Keputusan partai",ka:"პარტიის გადაწყვეტილება",es:"Decisión del partido",ja:"政党の決定",ko:"정당 결정"},
+"Choose how each party's deputies decide. Independents follow their own behaviour; individual overrides (below) always win.":{
+ru:"Выберите, как голосуют депутаты каждой партии. Независимые депутаты следуют собственным настройкам поведения; индивидуальные переопределения (ниже) всегда имеют приоритет.",
+de:"Legen Sie fest, wie die Abgeordneten jeder Partei entscheiden. Unabhängige folgen ihrem eigenen Verhalten; individuelle Überschreibungen (unten) haben immer Vorrang.",
+fr:"Choisissez comment votent les députés de chaque parti. Les indépendants suivent leur propre comportement ; les remplacements individuels (ci-dessous) sont toujours prioritaires.",
+"zh-CN":"选择每个政党的议员如何作出决定。独立议员遵循自身行为设置；个人覆盖规则（下方）始终优先。",
+id:"Pilih bagaimana anggota parlemen setiap partai mengambil keputusan. Anggota independen mengikuti perilakunya sendiri; aturan individu (di bawah) selalu diutamakan.",
+ka:"აირჩიეთ, როგორ იღებენ გადაწყვეტილებას თითოეული პარტიის დეპუტატები. დამოუკიდებელი დეპუტატები საკუთარ ქცევის პარამეტრებს მიჰყვებიან; ინდივიდუალური გადაფარვები (ქვემოთ) ყოველთვის პრიორიტეტულია.",
+es:"Elija cómo deciden los diputados de cada partido. Los independientes siguen su propio comportamiento; las excepciones individuales (abajo) siempre prevalecen.",
+ja:"各政党の議員がどのように判断するかを選択します。無所属議員は独自の行動設定に従い、個別の上書き設定（下記）が常に優先されます。",
+ko:"각 정당 의원의 결정 방식을 선택합니다. 무소속 의원은 자체 행동 설정을 따르며, 개별 재정의(아래)가 항상 우선합니다."
+},
+"No deputies match.":{
+ru:"Нет подходящих депутатов.",de:"Keine passenden Abgeordneten.",fr:"Aucun député correspondant.","zh-CN":"没有匹配的议员。",id:"Tidak ada anggota parlemen yang cocok.",ka:"შესაბამისი დეპუტატები ვერ მოიძებნა.",es:"No hay diputados coincidentes.",ja:"一致する議員はいません。",ko:"일치하는 의원이 없습니다."},
+});
+
 export default rows;
